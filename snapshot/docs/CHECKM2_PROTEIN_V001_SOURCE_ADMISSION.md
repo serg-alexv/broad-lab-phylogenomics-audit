@@ -1,0 +1,13 @@
+# Independent source admission: supported protein route v001
+
+The frozen implementation at local checkpoint `2d96418` is GO for source design while biological execution stays held. Contract SHA256: `87ce9cec98b7d109f2d34df3ac1671941ceec01e64bfe0b4a64fa2389707ed47`. This review imports no reviewed module and opens no genome, FAA, pickle or model; it is not a runtime or biological validation.
+
+The new helper calls the unchanged original ProdigalRunner in a fresh model-free interpreter, preserves automatic table selection, the selected FAA and all ten returned values. Fractional caller N50 and scalar precision survive JSON conversion. The original deletion of GFF/FNA is retained. Independent DNA assembly metrics are attributed separately; the stock protein report remains exactly its five columns, with nine nucleotide columns explicitly absent.
+
+The exact versioned accession FAA is supplied with `--genes --extension faa --threads 1 --lowmem --dbg_vectors --debug`. The ordered 21,241-feature schema is pinned by SHA256 `2be7bda6589a445a8b70023d9cf84ffadc76a380db112b34a70ce0094fc53adb`. The collector requires all columns in original order, finite numeric values in their declared domains, and all 22 exact FAA metadata counts. It does not fill missing values or claim measured nucleotide-route equivalence.
+
+Two concrete review findings were corrected before freezing: a started later unit lacking its execution receipt can no longer inherit an earlier unit's closure; an extra sixth report cell can no longer pass a five-column header check. The owner's 23-fixture receipt covers these findings. The reviewer checked its bound bytes and source changes without rerunning the fixtures.
+
+The native/image/shell adapter was compared against the accepted wrappers. Read-only image, overlay and IPC proofs, global/biological STOP, common locks, source/input hashes and one attempt per exact root strategy remain explicit gates. Annotation has a declared 600-second unit; protein prediction and feature validation jointly share a second 600-second unit. The hard 2 GiB summed group RSS, 1 GiB Linux headroom and 40 GiB volume reserve remain unchanged.
+
+No root strategy admission exists at source review; the owned biological STOP hash is unchanged. The future owner must admit closed engineering evidence, the monitor adapter and the exact owned hold transition before dispatch. Actual workflow/resource viability, full artifact and native/namespace/group/lock closure, and independent scientific controls remain unmeasured by this review. No numerical, genome, taxonomy or production acceptance is granted.

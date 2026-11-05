@@ -1,0 +1,47 @@
+--- scripts/checkm2_benchmark10_inner_v002.py
++++ scripts/checkm2_benchmark10_inner_T1.py
+@@ -1,9 +1,9 @@
+ """HELD ten-genome workflow. Only an exact separately admitted phase can run."""
+ from pathlib import Path
+ import argparse,datetime,fcntl,json,math,os,shutil,time
+-import checkm2_benchmark10_common_v002 as c
++import checkm2_benchmark10_common_T1 as c
+ import checkm2_protein_pilot_v001 as pilot
+-h=pilot.h;R=c.R;STEP=R/'state/checkm2_benchmark10_protein_v002_step.json';LAUNCH=None;CLOSED_TOKENS=set();COMMITTED_COUNT=0;RESUME_PROOF={}
++h=pilot.h;R=c.R;STEP=R/'state/checkm2_benchmark10_protein_recovery_T1_step.json';LAUNCH=None;CLOSED_TOKENS=set();COMMITTED_COUNT=0;RESUME_PROOF={}
+ def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+ def progress(status,detail,done=None,**extra):
+  global COMMITTED_COUNT
+@@ -33,14 +33,31 @@
+  receipt=c.read(c.bind(commit['annotation_receipt']));c.bind(commit['selected_faa'])
+  if receipt['faa_sha256']!=commit['selected_faa']['sha256']:raise RuntimeError('Annotation FAA binding differs')
+  return commit
++
++def new_annotation_budget(session):
++ units=list((session/'annotations').glob('*/unit_annotation/command.json'))
++ if len(units)>10:raise RuntimeError('T1 physical annotation attempt cap exceeded')
++ used=0.0
++ for command in units:
++  terminal=command.with_name('execution.json')
++  if not terminal.exists():raise RuntimeError('T1 prior new-session annotation exit/debit UNKNOWN; no reset or re-execution')
++  execution=c.read(terminal);elapsed=float(execution['elapsed_seconds'])
++  if not math.isfinite(elapsed) or elapsed<0 or execution.get('owned_group_empty') is not True:raise RuntimeError('T1 annotation elapsed/closure unproved')
++  used+=elapsed
++ if used>5400:raise RuntimeError('T1 new-session5400s annotation allowance exhausted')
++ return {'historical_debit_seconds':600,'new_annotation_seconds_debited':used,'new_remaining_seconds':5400-used,'original_total_seconds':6000,'new_physical_attempts':len(units),'total_physical_attempts':1+len(units)}
++
+ def annotate(item,runtime,plan,session,run):
+  folder=session/'annotations'/item['accession'];binding=annotation_binding(item,runtime,plan)
+  if folder.exists():return committed_annotation(folder,binding),True
++ budget=new_annotation_budget(session)
++ if budget['new_remaining_seconds']<=0:raise TimeoutError('No remaining T1 annotation budget')
+  source=pilot.verify_input(item);folder.mkdir(parents=True,exist_ok=False);staged=folder/(item['accession']+'.fna');shutil.copyfile(source,staged)
+  if c.sha(staged)!=item['fasta_sha256']:raise RuntimeError('Staged benchmark DNA differs')
+  annotation_plan={'input':{**item,'staged_fna':str(staged)},'runtime_prefix':runtime['prefix'],'original_prodigal_source_sha256':plan['original_prodigal_source_sha256'],'prodigal_program_sha256':runtime['tools']['prodigal']['sha256']}
+  c.save(folder/'annotation_plan.json',annotation_plan);output=folder/'annotation'
+- invoke('unit_annotation',[str(Path(runtime['prefix'])/'bin/python'),'-B',str(R/'scripts/checkm2_protein_helpers_v001.py'),'annotate','--plan',str(folder/'annotation_plan.json'),'--output',str(output)],pilot.environment(Path(runtime['prefix'])),folder,run,600)
++ invoke('unit_annotation',[str(Path(runtime['prefix'])/'bin/python'),'-B',str(R/'scripts/checkm2_protein_helpers_v001.py'),'annotate','--plan',str(folder/'annotation_plan.json'),'--output',str(output)],pilot.environment(Path(runtime['prefix'])),folder,run,min(600,budget['new_remaining_seconds']))
++ c.save(session/'annotation_budget_ledger.json',new_annotation_budget(session))
+  receipt=c.read(output/'annotation_receipt.json');faa=c.path(receipt['faa_path'])
+  if receipt['status']!='ORIGINAL_SEQUENTIAL_PRODIGAL_COMPLETED_NOT_GENOME_ACCEPTANCE' or receipt['accession']!=item['accession'] or c.sha(faa)!=receipt['faa_sha256'] or receipt['ML_modules_loaded']!=[]:raise RuntimeError('Original annotation/FAA checkpoint invalid')
+  if h.validate_author_return(receipt['all10_original_return_values'],item['accession'])!=receipt['original_measurements']:raise RuntimeError('Original ten values/sidecar differ')

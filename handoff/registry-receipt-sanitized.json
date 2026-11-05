@@ -1,0 +1,110 @@
+{
+  "original": {
+    "path": "evidence/model_routes/oci_metadata_20261027/registry_manifest_receipts.json",
+    "sha256": "3f7f2556ce5fea7e0402f5df397cc1f8c0e302e4ca42eeb3b197266a0b184908",
+    "bytes": 5812,
+    "type": "file",
+    "reason": "original_registry_receipt_contains_presigned_URL_credentials"
+  },
+  "redacted_query_strings": 2,
+  "receipt": {
+    "records": [
+      {
+        "label": "quay_padloc_manifest_challenge",
+        "url": "https://quay.io/v2/biocontainers/padloc/manifests/sha256:57dc14167c536f17c4ef2c9aed9ffa972a68a1087640e9079f128c4fd4493aca",
+        "at_utc": "2026-10-27T04:09:03.440594+00:00",
+        "http_status": 200,
+        "content_type": "application/vnd.docker.distribution.manifest.v2+json",
+        "location": null,
+        "docker_content_digest": "sha256:57dc14167c536f17c4ef2c9aed9ffa972a68a1087640e9079f128c4fd4493aca",
+        "redirects_followed": false,
+        "bytes": 753,
+        "sha256": "57dc14167c536f17c4ef2c9aed9ffa972a68a1087640e9079f128c4fd4493aca",
+        "path": "evidence/model_routes/oci_metadata_20261027/quay_padloc_manifest_challenge.body"
+      },
+      {
+        "label": "quay_padloc_config",
+        "url": "https://quay.io/v2/biocontainers/padloc/blobs/sha256:a843ccf974b87e0ee3fc63d6402536a2f377c0322241d2a59507071a10f9aa73",
+        "at_utc": "2026-10-27T04:09:04.533027+00:00",
+        "http_status": 302,
+        "content_type": "text/html; charset=utf-8",
+        "location": "https://cdn01.quay.io/quayio-production-s3/sha256/a8/a843ccf974b87e0ee3fc63d6402536a2f377c0322241d2a59507071a10f9aa73",
+        "docker_content_digest": "sha256:a843ccf974b87e0ee3fc63d6402536a2f377c0322241d2a59507071a10f9aa73",
+        "redirects_followed": false,
+        "bytes": 1345,
+        "sha256": "f915a09a78891be5aa03c39b8cdceeb6c1f472b50d4551c2caa8431a94e53f29",
+        "path": "evidence/model_routes/oci_metadata_20261027/quay_padloc_config.body",
+        "location_query_omitted": true
+      },
+      {
+        "label": "quay_defense_finder_manifest_challenge",
+        "url": "https://quay.io/v2/biocontainers/defense-finder/manifests/sha256:daf59f3d18103f0749e5c0dc7e138979f4fd96740f3f033a087c8255907f4d8f",
+        "at_utc": "2026-10-27T04:09:05.693142+00:00",
+        "http_status": 200,
+        "content_type": "application/vnd.docker.distribution.manifest.v2+json",
+        "location": null,
+        "docker_content_digest": "sha256:daf59f3d18103f0749e5c0dc7e138979f4fd96740f3f033a087c8255907f4d8f",
+        "redirects_followed": false,
+        "bytes": 753,
+        "sha256": "daf59f3d18103f0749e5c0dc7e138979f4fd96740f3f033a087c8255907f4d8f",
+        "path": "evidence/model_routes/oci_metadata_20261027/quay_defense_finder_manifest_challenge.body"
+      },
+      {
+        "label": "quay_defense_finder_config",
+        "url": "https://quay.io/v2/biocontainers/defense-finder/blobs/sha256:64298b0511f1ca55c7ecdf3c4dd770e2de3f4440c5b92e070f5b5904d3fe2011",
+        "at_utc": "2026-10-27T04:09:06.761795+00:00",
+        "http_status": 302,
+        "content_type": "text/html; charset=utf-8",
+        "location": "https://cdn01.quay.io/quayio-production-s3/sha256/64/64298b0511f1ca55c7ecdf3c4dd770e2de3f4440c5b92e070f5b5904d3fe2011",
+        "docker_content_digest": "sha256:64298b0511f1ca55c7ecdf3c4dd770e2de3f4440c5b92e070f5b5904d3fe2011",
+        "redirects_followed": false,
+        "bytes": 1361,
+        "sha256": "32314c0db6396c0820ff5e7b4612980e96dba0fff294690daaa518cfd3965504",
+        "path": "evidence/model_routes/oci_metadata_20261027/quay_defense_finder_config.body",
+        "location_query_omitted": true
+      },
+      {
+        "label": "docker_bjhall_defense_finder",
+        "url": "https://hub.docker.com/v2/repositories/bjhall/defense-finder/",
+        "at_utc": "2026-10-27T04:09:08.418120+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "location": null,
+        "docker_content_digest": null,
+        "redirects_followed": false,
+        "bytes": 744,
+        "sha256": "444439b9d617ba068287b940e74d905ffa68ee71c5e6f975581cfac965b8c064",
+        "path": "evidence/model_routes/oci_metadata_20261027/docker_bjhall_defense_finder.body"
+      },
+      {
+        "label": "docker_naveendockr_defense_finder",
+        "url": "https://hub.docker.com/v2/repositories/naveendockr/defense-finder/",
+        "at_utc": "2026-10-27T04:09:09.431651+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "location": null,
+        "docker_content_digest": null,
+        "redirects_followed": false,
+        "bytes": 715,
+        "sha256": "e742d7193eba167b91a3dbbb2a5bfa24ee04c58f70600fdf941988061082b2c7",
+        "path": "evidence/model_routes/oci_metadata_20261027/docker_naveendockr_defense_finder.body"
+      },
+      {
+        "label": "docker_yuxiangtan_padloc",
+        "url": "https://hub.docker.com/v2/repositories/yuxiangtan/padloc/",
+        "at_utc": "2026-10-27T04:09:10.459976+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "location": null,
+        "docker_content_digest": null,
+        "redirects_followed": false,
+        "bytes": 998,
+        "sha256": "64965c5ca9f040e31f16c8c6c0bd68831a997538034c2141d67decaef9df6072",
+        "path": "evidence/model_routes/oci_metadata_20261027/docker_yuxiangtan_padloc.body"
+      }
+    ],
+    "anonymous_tokens_not_saved": true,
+    "OCI_filesystem_layers_downloaded": false,
+    "forbidden_hosts_contacted": false
+  }
+}

@@ -1,0 +1,1135 @@
+{
+  "schema": "TREE2_SOURCE_METADATA_ONLY_RESCUE_REVIEW_V001",
+  "source_bindings": {
+    "preserved_discovery_candidates": {
+      "path": "metadata/candidates_qc.json",
+      "sha256": "11787bbf3f0f1bba082f4acf89af47e6913a7cb1b57a158e42603ded84049901",
+      "bytes": 25665165
+    },
+    "acquired_and_held_inventory": {
+      "path": "metadata/tree2_qc_campaign_queue_v001.json",
+      "sha256": "44d456e79af0f84a2c35a2dd3e1b6f8cd748df31d17ee8273becca7a765b75f1",
+      "bytes": 4154855
+    },
+    "frozen919": {
+      "path": "metadata/checkm1_lactobacillales_full919_v001/queue_manifest.json",
+      "sha256": "5ef514a1a39776ab79281128a725c9188a787b054452804150a58d30079f116f",
+      "bytes": 8605479
+    }
+  },
+  "rows": [
+    {
+      "source_species_label": "Amylolactobacillus amylotrophicus",
+      "held_current_accessions": [
+        "GCF_001434555.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Enterococcus massiliensis",
+      "held_current_accessions": [
+        "GCF_001050095.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Lactobacillus helsingborgensis",
+      "held_current_accessions": [
+        "GCF_003173695.1"
+      ],
+      "preserved_census_candidates_not_held_current": [
+        {
+          "accession": "GCF_030758675.1",
+          "paired_accession": "GCA_030758675.1",
+          "species_taxid": 1218494,
+          "biosample": "SAMN36908626",
+          "strain": "K-FP18",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 1929403,
+          "ncbi_checkm_completeness": 96.83,
+          "ncbi_checkm_contamination": 0.65,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_026428255.1",
+          "paired_accession": "GCA_026428255.1",
+          "species_taxid": 1218494,
+          "biosample": "SAMN21529764",
+          "strain": "IBH002",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 3,
+          "n50": 1889802,
+          "ncbi_checkm_completeness": 98.06,
+          "ncbi_checkm_contamination": 0.83,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_026428235.1",
+          "paired_accession": "GCA_026428235.1",
+          "species_taxid": 1218494,
+          "biosample": "SAMN21529765",
+          "strain": "IBH003",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 5,
+          "n50": 1918363,
+          "ncbi_checkm_completeness": 98.06,
+          "ncbi_checkm_contamination": 0.83,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        }
+      ],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Lactobacillus leichmannii",
+      "held_current_accessions": [
+        "GCF_024701915.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Lactobacillus panisapium",
+      "held_current_accessions": [
+        "GCF_019469265.1"
+      ],
+      "preserved_census_candidates_not_held_current": [
+        {
+          "accession": "GCF_019469325.1",
+          "paired_accession": "GCA_019469325.1",
+          "species_taxid": 2012495,
+          "biosample": "SAMN13893451",
+          "strain": "ESL0413",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 1934772,
+          "ncbi_checkm_completeness": 97.74,
+          "ncbi_checkm_contamination": 0.4,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_019469345.1",
+          "paired_accession": "GCA_019469345.1",
+          "species_taxid": 2012495,
+          "biosample": "SAMN13893450",
+          "strain": "ESL0411",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2296192,
+          "ncbi_checkm_completeness": 97.74,
+          "ncbi_checkm_contamination": 0.4,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_019469365.1",
+          "paired_accession": "GCA_019469365.1",
+          "species_taxid": 2012495,
+          "biosample": "SAMN13893449",
+          "strain": "ESL0409",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2151073,
+          "ncbi_checkm_completeness": 97.74,
+          "ncbi_checkm_contamination": 0.4,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        }
+      ],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Lactobacillus porci",
+      "held_current_accessions": [
+        "GCF_009695985.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Lactobacillus selangorensis",
+      "held_current_accessions": [
+        "GCF_001436805.1"
+      ],
+      "preserved_census_candidates_not_held_current": [
+        {
+          "accession": "GCF_001437205.1",
+          "paired_accession": "GCA_001437205.1",
+          "species_taxid": 81857,
+          "biosample": "SAMN02797771",
+          "strain": "DSM 13344",
+          "assembly_level": "Contig",
+          "assembly_status": "current",
+          "type_material": true,
+          "reference": true,
+          "contigs": 32,
+          "n50": 230529,
+          "ncbi_checkm_completeness": 97.93,
+          "ncbi_checkm_contamination": 0.98,
+          "ncbi_ani_taxonomy_status": "OK",
+          "metadata_qc": "QC_METADATA_PASS",
+          "exclusion_reasons": [],
+          "pending_reasons": [],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        }
+      ],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Limosilactobacillus alvi",
+      "held_current_accessions": [
+        "GCF_016900115.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus humanilactis",
+      "held_current_accessions": [
+        "GCF_019448275.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus iniae",
+      "held_current_accessions": [
+        "GCF_000831485.1"
+      ],
+      "preserved_census_candidates_not_held_current": [
+        {
+          "accession": "GCA_000648525.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN02726853",
+          "strain": "ISET0901",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2070822,
+          "ncbi_checkm_completeness": 97.81,
+          "ncbi_checkm_contamination": 0.39,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_000648555.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN02728459",
+          "strain": "ISNO",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2070182,
+          "ncbi_checkm_completeness": 97.93,
+          "ncbi_checkm_contamination": 0.39,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_001885145.1",
+          "paired_accession": "GCA_001885145.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN05967356",
+          "strain": "89353",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2098647,
+          "ncbi_checkm_completeness": 98.84,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_002220115.1",
+          "paired_accession": "GCA_002220115.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN06909305",
+          "strain": "QMA0248",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2116570,
+          "ncbi_checkm_completeness": 98.46,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_003589905.1",
+          "paired_accession": "GCA_003589905.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN10067964",
+          "strain": "GX005",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2095003,
+          "ncbi_checkm_completeness": 97.68,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_003589945.1",
+          "paired_accession": "GCA_003589945.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN10067963",
+          "strain": "YM011",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2101557,
+          "ncbi_checkm_completeness": 98.84,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_030020365.1",
+          "paired_accession": "GCA_030020365.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN34895452",
+          "strain": "DFSM220524",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2117496,
+          "ncbi_checkm_completeness": 98.46,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_030582735.1",
+          "paired_accession": "GCA_030582735.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN32967000",
+          "strain": "LSSM211007SI",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2100190,
+          "ncbi_checkm_completeness": 98.46,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_030732225.1",
+          "paired_accession": "GCA_030732225.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN36835238",
+          "strain": "BH15-2",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2175659,
+          "ncbi_checkm_completeness": 98.65,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_030732245.1",
+          "paired_accession": "GCA_030732245.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN36835239",
+          "strain": "BH16-24",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2153918,
+          "ncbi_checkm_completeness": 98.65,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_040930395.1",
+          "paired_accession": "GCA_040930395.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN42178554",
+          "strain": "ZQ2205",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2128105,
+          "ncbi_checkm_completeness": 98.46,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_055797375.1",
+          "paired_accession": "GCA_055797375.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN33396489",
+          "strain": "WS-6H",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2308830,
+          "ncbi_checkm_completeness": 98.33,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_002787125.1",
+          "paired_accession": "GCA_002787125.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN07962172",
+          "strain": "FP5228",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 2,
+          "n50": 2090625,
+          "ncbi_checkm_completeness": 98.78,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_040783505.1",
+          "paired_accession": "GCA_040783505.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN41643046",
+          "strain": "QMA0139",
+          "assembly_level": "Chromosome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 2,
+          "n50": 2337380,
+          "ncbi_checkm_completeness": 99.03,
+          "ncbi_checkm_contamination": 0.39,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_046581345.1",
+          "paired_accession": "GCA_046581345.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN33244440",
+          "strain": "SIKU01",
+          "assembly_level": "Chromosome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 3,
+          "n50": 1365869,
+          "ncbi_checkm_completeness": 98.46,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_032616015.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190538",
+          "strain": "Si 7-21",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2102756,
+          "ncbi_checkm_completeness": 66.28,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_032616875.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190537",
+          "strain": "Si 6-21",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2100739,
+          "ncbi_checkm_completeness": 65.6,
+          "ncbi_checkm_contamination": 0.06,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_032623075.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190540",
+          "strain": "CB Si-1",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2119653,
+          "ncbi_checkm_completeness": 66.7,
+          "ncbi_checkm_contamination": 0.06,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_032624055.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190539",
+          "strain": "Si 8-21",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2102750,
+          "ncbi_checkm_completeness": 68.16,
+          "ncbi_checkm_contamination": 0.01,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_040782655.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464617",
+          "strain": "QMA0445",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2107970,
+          "ncbi_checkm_completeness": 46.86,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_040782665.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464618",
+          "strain": "QMA0462",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2128764,
+          "ncbi_checkm_completeness": 65.61,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_040782835.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464616",
+          "strain": "QMA0186",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2031215,
+          "ncbi_checkm_completeness": 52.48,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_000403625.1",
+          "paired_accession": "GCA_000403625.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN02603405",
+          "strain": "SF1",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "suppressed",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2149844,
+          "ncbi_checkm_completeness": 96.96,
+          "ncbi_checkm_contamination": 0.39,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "assembly_not_current_or_unknown"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_032617675.1",
+          "paired_accession": "GCA_032617675.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190536",
+          "strain": "P3SAB",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2110154,
+          "ncbi_checkm_completeness": 75.86,
+          "ncbi_checkm_contamination": 0.01,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_032618495.1",
+          "paired_accession": "GCA_032618495.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190535",
+          "strain": "Si 4-21",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2103507,
+          "ncbi_checkm_completeness": 77.02,
+          "ncbi_checkm_contamination": 0.01,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_032619275.1",
+          "paired_accession": "GCA_032619275.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN36190534",
+          "strain": "Si 1-19",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2099567,
+          "ncbi_checkm_completeness": 77.95,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCF_040782845.1",
+          "paired_accession": "GCA_040782845.1",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464615",
+          "strain": "QMA0177",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 2110440,
+          "ncbi_checkm_completeness": 79.39,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_040782825.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464613",
+          "strain": "QMA0139",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 2,
+          "n50": 2339923,
+          "ncbi_checkm_completeness": 48.13,
+          "ncbi_checkm_contamination": 0.19,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        },
+        {
+          "accession": "GCA_040782855.1",
+          "paired_accession": "",
+          "species_taxid": 1346,
+          "biosample": "SAMN41464614",
+          "strain": "QMA0139_CTAB",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 2,
+          "n50": 2337784,
+          "ncbi_checkm_completeness": 29.42,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "EXCLUDED",
+          "exclusion_reasons": [
+            "checkm_completeness_outside_threshold"
+          ],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing",
+            "isolate_source_unresolved"
+          ],
+          "source_provenance_status": "HOLD_SOURCE_UNRESOLVED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        }
+      ],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus lingualis",
+      "held_current_accessions": [
+        "GCF_034134805.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus milleri",
+      "held_current_accessions": [
+        "GCF_900636715.1"
+      ],
+      "preserved_census_candidates_not_held_current": [
+        {
+          "accession": "GCF_900636525.1",
+          "paired_accession": "GCA_900636525.1",
+          "species_taxid": 33040,
+          "biosample": "SAMEA3649034",
+          "strain": "NCTC11169",
+          "assembly_level": "Complete Genome",
+          "assembly_status": "current",
+          "type_material": false,
+          "reference": false,
+          "contigs": 1,
+          "n50": 1856804,
+          "ncbi_checkm_completeness": 99.39,
+          "ncbi_checkm_contamination": null,
+          "ncbi_ani_taxonomy_status": "Inconclusive",
+          "metadata_qc": "QC_PENDING",
+          "exclusion_reasons": [],
+          "pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_provenance_status": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+          "current_inventory_rows": [],
+          "accepted_independent_QC": false,
+          "admitted_as_replacement_by_this_review": false
+        }
+      ],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus taoyuanensis",
+      "held_current_accessions": [
+        "GCF_029589235.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    },
+    {
+      "source_species_label": "Streptococcus viridans",
+      "held_current_accessions": [
+        "GCF_900636365.1"
+      ],
+      "preserved_census_candidates_not_held_current": [],
+      "no_candidate_or_QC_does_not_establish_species_absence": true
+    }
+  ],
+  "independent_QC_or_taxonomy_NOT_accepted": true
+}

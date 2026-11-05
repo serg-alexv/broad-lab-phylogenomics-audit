@@ -1,0 +1,18 @@
+Continue the already authorized local Tree2 task at this REAL retained-worker terminal event. This V007 controller is a separately reviewed fresh attach-only activation for the finite attempt006 finalization recovery; no initial AI or science launch and no new retry/process-repair budget comes from this controller.
+Exact event: {{EVENT_PATH}}
+Event SHA256: {{EVENT_SHA256}}
+Required event-acknowledging handoff: {{HANDOFF_PATH}}
+Tree2 root: {{PROJECT_ROOT}}
+Controller source root: {{HARNESS_ROOT}}
+
+{{V5_CONTEXT_JSON}}
+
+Read current AGENTS.md, the exact event/source/authority/launch/claims and scientific plan/admission. Initial science is stock checkpoint continuation at one thread with500M internal cache under unchanged1.75GiB LinuxRSS+privateRAM cap,1.25GiB available headroom and40GiB backingreserve. It preserves the exact900x54x13071matrix, modelLG+F+G4, seed20261029,1000UFBoot+1000SH-aLRT,BNNI, original total604800seconds, cumulative prior323573.68443513seconds and absolute deadline1793887122.165764. Later workers must use their own actual current scientific/source/admission bindings and budgets. Every historical failure/one-shot claim/debit remains consumed. The resourcefallbackcount1 and new finalization recoverycount1 cannot be reset or reused. No automatic further recovery attempt or controller process repair is authorized.
+
+No ordinary AI polling. Keep current30second monitor/publisher; no duplicate science/controller/GUI or app-chat schedule. Never read private auth/session homes or inspect opaque privateinvocation; the pinned legacy runtime alone applies its original invocation binding. Tree2 containment remains strict. Do not use oldV004 claims or infer clean exit from stalePID/status.
+
+At actual nonzero, prove exact native/WSL/IQTREE/descendant/group/private mount+IPC/FD/fourlease closure and preserve whole quiescent prefix/checkpoint in an immutable SHA256 snapshot. Failed/unknown/unsearched is never absence. If this attempt fails no retry is admitted; truthfullyBLOCKED, preserve evidence and report precise resource/source problem. Do not relaxguards, altermethod/model/panel/supports, editcheckpoint, --redo/--undo, resetbudget/deadline or manufactureterminalproof.
+
+At actual0, independentlyvalidate finalized900leaf tree/consensus/exact1000bootstrapreplicates and SH-aLRTsupport output plus wholeownershipclosure forStage09. Computation/integrity acceptance is not finalscientificacceptance: retain19genomeholds/3alignment-sensitive markers/9composition flags, taxonomy/orthology/modeladequacy/expandedseed/eligible-species-rescue and all defence-availability UNKNOWN obligations. Then proceed ordered admissible defence/fullcomplete-system rings and distinct representative-tree stages under separatelysourcebound resource/science admission; no rerun of accepted upstream work and3D remainsdeferred. No GitHub beyond existingofficialmodels exception, uploads, Tree1/olderfolders/globalWSLchanges or publication.
+
+Write a fresh typed handoff acknowledging this eventSHA at the exact path above. WAITING_WORKER must bind one genuinely new retained native identity and launchreceipt. One event can earlyattach only ONE nextworker; if it exits early keep that identity and return cleanly so its separate typedexit event is processed. COMPLETE requires both independentlyvalidated conventional deliverables. No user/desktop reminder is needed for useful authorized work within these gates.

@@ -1,0 +1,283 @@
+{
+  "schema": "TREE2_HANDOFF_DEPENDENCY_AND_MODEL_PINS_V001",
+  "created_utc": "2026-11-05T17:30:17.370067+00:00",
+  "historical_pins_not_installer": true,
+  "software": {
+    "PADLOC": {
+      "version": "2.0.0",
+      "package_build": "padloc-2.0.0-hdfd78af_1",
+      "stock_R": {
+        "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc.R",
+        "sha256": "d21ba942e80720d80027aa1740d756322560feaeb168bfa2890640d88950d4c0",
+        "bytes": 32017
+      },
+      "stock_launcher": {
+        "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc",
+        "sha256": "d2f74955264e7b30f110ca582e7d513576ca4dfcf3de060e3ec771cdf0e37cf9",
+        "bytes": 16277
+      },
+      "runtime_payload_manifest": {
+        "path": "work/padloc_R_case_extract_20261029/payload_manifest.json",
+        "sha256": "c2d69729282a0e9a6c5cfeaf529b03edada08ea06b33f3aefab7664f80f4be50",
+        "bytes": 4635859
+      },
+      "native_model_control_receipt": {
+        "path": "metadata/defence_parallel_preparation_20261029/PADLOC_native_ACCEPTED.json",
+        "sha256": "be84392587afbde66335ac6f8c1d19dfaadd74f2893d989847a8b36d8cefb2b0",
+        "bytes": 2567
+      }
+    },
+    "PADLOC_R_stack": {
+      "R": "4.3.1",
+      "tidyverse": "2.0.0",
+      "getopt": "1.20.3",
+      "yaml": "2.3.7"
+    },
+    "DefenseFinder_and_MacSyFinder": {
+      "versions": {
+        "mdmparis-defense-finder": "3.0.0",
+        "macsyfinder": "2.1.4",
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "pyhmmer": "0.12.1",
+        "pyrodigal": "3.7.1",
+        "click": "8.0.3",
+        "colorlog": "6.3.0a1",
+        "PyYAML": "6.0.2",
+        "networkx": "3.4.2"
+      },
+      "runtime_manifest": {
+        "path": "metadata/defence_runtime_preparation_20261029/installed_overlay_payload_manifest.json",
+        "sha256": "008cbca2afb23a766cd8920715fcf4348e42ed8572530ddd448fadd28fba796b",
+        "bytes": 1463624
+      },
+      "core_runtime_receipt": {
+        "path": "metadata/defence_runtime_preparation_20261029/CORE_RUNTIME_READY.json",
+        "sha256": "7c1a4f1b8a091a72834580dd85b40d65db188eb999c27b0c9d4e806882cb101d",
+        "bytes": 2838
+      },
+      "native_model_control_receipt": {
+        "path": "metadata/defence_parallel_preparation_20261029/DefenseFinder_native_ACCEPTED.json",
+        "sha256": "297964ef361b75198353d5bda8db966757ee25b43b4dada17b36fcd20decedc5",
+        "bytes": 2270
+      }
+    },
+    "HMMER_hmmsearch": {
+      "version": "3.4",
+      "historical_executable_path": "/mnt/c/Users/wheel/Documents/Codex/2026-10-26/referenced-chatgpt-conversation-this-is-an/outputs/TREE2_WD_20261026/tools/bioenv/bin/hmmsearch",
+      "sha256": "afbcad8930a4b1252023fcb2f9d35e3a5a5c92ce768370ea6576a3644dff51ab",
+      "recorded_version_exit": 0
+    },
+    "HMMER_hmmbuild": {
+      "version": "3.4",
+      "historical_executable_path": "/mnt/c/Users/wheel/Documents/Codex/2026-10-26/referenced-chatgpt-conversation-this-is-an/outputs/TREE2_WD_20261026/tools/bioenv/bin/hmmbuild",
+      "sha256": "cb102977399e55adaf28d13d8cdf5caf0ce0980872f520c5f42c9ff19afdc411",
+      "recorded_version_exit": 0
+    },
+    "MAFFT": {
+      "version": "7.526",
+      "historical_executable_path": "/root/miniconda3/envs/phylogeny/bin/mafft",
+      "sha256": "9e4b9f4cdcf309980bf15a7140099eaa4efb3201585c59d11fc5814ac8820966",
+      "recorded_version_exit": 0
+    },
+    "IQ_TREE": {
+      "version": "3.1.4",
+      "historical_executable_path": "/root/miniconda3/envs/phylogeny/bin/iqtree3",
+      "sha256": "7d2cf1ccc5a02197e8910702314d4fcd6ea5ea8d9c8062e5fa0bdfbe38c26c8f",
+      "recorded_version_exit": 0,
+      "final_model": "LG+F+G4",
+      "seed": 20261029,
+      "supports": {
+        "UFBoot": 1000,
+        "SHaLRT": 1000,
+        "bnni": true,
+        "emit_bootstrap_trees": true
+      },
+      "unpartitioned": true,
+      "finalization_stock_memory_target": "500M"
+    },
+    "Prodigal": {
+      "version": "2.6.3",
+      "executable": {
+        "path": "tools/bioenv/bin/prodigal",
+        "sha256": "b595f2855e7407dc4a2e3b6aa60704ab6478170630327d41802f9a64491a9e16",
+        "bytes": 12232952
+      },
+      "package_record": {
+        "path": "tools/bioenv/conda-meta/prodigal-2.6.3-h577a1d6_11.json",
+        "sha256": "83d9515520f3ba0039bf2a4d08b799630653dcd3dfd7a9a86ba5792581c4212e",
+        "bytes": 2347
+      }
+    },
+    "CheckM1": {
+      "version": "1.2.5",
+      "database": "checkm1_2015_01_16/reference",
+      "method": "Lactobacillales taxon set",
+      "runtime": {
+        "path": "metadata/checkm1_taxon_setup_v001/runtime_READY.json",
+        "sha256": "4facb4e69e82bf4031be70299cbd886fb4fe0dd65ac26cf1f92cf4b21bfdb383",
+        "bytes": 7636
+      },
+      "reference_manifest": {
+        "path": "tools/databases/checkm1_2015_01_16/reference/.dmanifest",
+        "sha256": "977de44ac8db9466100ac23c6b05ce3508d7488349c79b3154ad7a1f80a55b4c",
+        "bytes": 3669
+      }
+    },
+    "historical_defence_Python": {
+      "version": "3.11.18",
+      "executable": {
+        "path": "tools/checkm1_env/bin/python3.11",
+        "sha256": "14d8c350323346259978757c990c3592a991a5900a560230122cc4782d56fe41",
+        "bytes": 25909944
+      }
+    },
+    "historical_Windows_control_Python": {
+      "version": "3.12.14",
+      "file_repin_evidence": {
+        "path": "metadata/defence_C008_recovery_20261105/controller_v008/RUNTIME_SIGNATURE_PIN_REVIEW.json",
+        "sha256": "3a2452ccd38b280c912c25b7661a1009ba5792eabba06b82ad8f49a4ba4037eb",
+        "bytes": 6699
+      }
+    }
+  },
+  "model_catalogues": [
+    {
+      "name": "PADLOC-DB",
+      "tag": "v2.0.0",
+      "commit": "7f99b47b75e232b111c18626badb9ac32e8e0b5a",
+      "git_tree": "c173118195aceb14459ab3ee500a995d2c098366",
+      "official_archive": {
+        "url": "https://codeload.github.com/padlocbio/padloc-db/tar.gz/7f99b47b75e232b111c18626badb9ac32e8e0b5a",
+        "sha256": "de1c9697ee735c7c8a856295ace5614c9c1959b6010cbc074a29125aa9c04fc9",
+        "bytes": 146280058
+      },
+      "compiled_HMM_sha256": "a03df990d47ef40d2573a04d9a0f513e70999c3b9104216e3f6656a9bef8d5da",
+      "compiled_manifest": {
+        "path": "metadata/defence_parallel_preparation_20261029/PADLOC_compiled_database.json",
+        "sha256": "26940a1387ae6e4209c3ea2c5e2c780a7ddb1283a6be3de325f23b0912c50152",
+        "bytes": 1254593
+      },
+      "model_evidence_rules": {
+        "path": "evidence/model_routes/PADLOC_20261029/authorized_official_v2/static_validation_v002_20261029/per_model_rule_and_evidence_inventory.json",
+        "sha256": "c52b6c450fbeff808c00a8f84e360c60236d020a3323f1ccd89ec15557dbe08e",
+        "bytes": 1117741
+      },
+      "RNA_models_unavailable": 51,
+      "acquisition_receipt": {
+        "path": "evidence/model_routes/PADLOC_20261029/authorized_official_v2/immutable_acquisition_receipt.json",
+        "sha256": "924b756a7663e145e2201b5095834eabb1fa13cdc63aa79db376ce8f27ed0693",
+        "bytes": 1854
+      }
+    },
+    {
+      "name": "defense-finder-models",
+      "tag": "3.1.0",
+      "commit": "afb0e5a8b466be53586b13266f5d38d98c3ac268",
+      "upstream_source": "https://github.com/mdmparis/defense-finder-models/releases/tag/3.1.0",
+      "official_archive": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/defense-finder-models-3.1.0.tar.gz",
+        "sha256": "a8ba9edd8202a17e79d57b72cca7cb1c83f969da4914a04bb6d4e8c1a3bb1996",
+        "bytes": 51771773
+      },
+      "model_directory": "tools/databases/defensefinder_staged_20261029/official/defense-finder-models",
+      "definitions": 666,
+      "HMM_count": 1332,
+      "model_manifest": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/official_model_files_manifest.json",
+        "sha256": "a0417de2566a4f5aca61d7250d3de2e3c1ee80453e0277ac8b4757a00ade1f2b",
+        "bytes": 1199886
+      },
+      "model_evidence_rules": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/model_evidence_and_complete_rule_inventory.json",
+        "sha256": "4240c61a6adfa87935e55b11fcdd4a7161aaa2f5532ae6dd0813b1cfaca47a8e",
+        "bytes": 694968
+      }
+    },
+    {
+      "name": "CasFinder",
+      "tag": "3.1.0",
+      "commit": "ad7096548a814788ca04538602d71f85115b4c71",
+      "upstream_source": "https://github.com/macsy-models/CasFinder/tree/3.1.0",
+      "official_archive": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/CasFinder-3.1.0-commit-ad709654.tar.gz",
+        "sha256": "c2f7cb124d0500ed97826a77fefd1c6a2ebce7c791e5e990c445f9cbf8da0bc8",
+        "bytes": 14908642
+      },
+      "model_directory": "tools/databases/defensefinder_staged_20261029/official/CasFinder",
+      "definitions": 44,
+      "HMM_count": 535,
+      "model_manifest": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/official_model_files_manifest.json",
+        "sha256": "a0417de2566a4f5aca61d7250d3de2e3c1ee80453e0277ac8b4757a00ade1f2b",
+        "bytes": 1199886
+      },
+      "model_evidence_rules": {
+        "path": "evidence/model_routes/DEFENSEFINDER_20261029/model_evidence_and_complete_rule_inventory.json",
+        "sha256": "4240c61a6adfa87935e55b11fcdd4a7161aaa2f5532ae6dd0813b1cfaca47a8e",
+        "bytes": 694968
+      }
+    }
+  ],
+  "supporting_evidence": [
+    {
+      "path": "work/marker_discovery_start/fresh_linux_resource_tools.json",
+      "sha256": "5df0ff95e40c48bdac918d92ed4752fe3bf8b9b8bf460f5da8d54b2c038a4768",
+      "bytes": 5230
+    },
+    {
+      "path": "work/padloc_R_smoke_20261029/CORE_READY.json",
+      "sha256": "ab94c07f0083e1db1e738d9bbc7e0348013d3206bd185897b80117a215d22013",
+      "bytes": 330
+    },
+    {
+      "path": "evidence/model_routes/DEFENSEFINDER_20261029/STATIC_READY_FOR_CONTROLS.json",
+      "sha256": "294c0f777c586ac5549d43575a344e824218a45f0f8063100b1e1c05afc125bb",
+      "bytes": 4740
+    },
+    {
+      "path": "metadata/defence_parallel_preparation_20261029/STAGE_PREPARATION_READY.json",
+      "sha256": "b25b057527b95830a3d6a2ffa55edbdc36d1e303e13a85f880f656db4d221b9a",
+      "bytes": 3109
+    }
+  ],
+  "direct_plan_dependencies_excluded_by_bundle_policy": [
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/Rscript",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc.R",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/bioenv/bin/hmmsearch",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/checkm1_env/bin/python3.11",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    }
+  ],
+  "external_host_dependencies": [
+    {
+      "path": "/root/miniconda3/envs/phylogeny/bin/iqtree3",
+      "reason": "external_host_dependency",
+      "reference": {
+        "path": "/root/miniconda3/envs/phylogeny/bin/iqtree3",
+        "sha256": "7d2cf1ccc5a02197e8910702314d4fcd6ea5ea8d9c8062e5fa0bdfbe38c26c8f",
+        "bytes": 13205856
+      }
+    }
+  ],
+  "new_host_requirement": "Rehydrate exact referenced dependencies, verify their digests and original notices, and admit a new host-local QA wrapper. Names/versions alone do not prove identical bytes."
+}

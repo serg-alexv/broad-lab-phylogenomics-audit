@@ -1,0 +1,11 @@
+{
+  "actual_exit_code": 0,
+  "identity": {
+    "pid": 30396,
+    "windows_creation_filetime_100ns": 134383497958399524,
+    "creation_time_utc": "2026-11-05T10:56:35.8399524Z"
+  },
+  "exact_birth_handle_retained": true,
+  "waited_and_reaped": true,
+  "observed_utc": "2026-11-05T13:21:57.882630+00:00"
+}

@@ -1,0 +1,19 @@
+--- scripts/checkm2_benchmark10_close_v002.py
++++ scripts/checkm2_benchmark10_close_T1.py
+@@ -1,6 +1,6 @@
+ """File-only external closure/finalization; cannot dispatch science or resume."""
+ import datetime,time
+-import checkm2_benchmark10_common_v002 as c
++import checkm2_benchmark10_common_T1 as c
+ def finalize(plan_path,plan_sha,external_closure):
+  start=time.monotonic();plan,strategy,admission=c.plan_gate(plan_path,plan_sha);proof=c.read(c.bind(external_closure));launch=c.read(c.LAUNCH)
+  execution_path=c.E/'execution_pending_owner_exit.json';execution=c.read(execution_path)
+@@ -38,7 +38,7 @@
+   ledger=set(batch_folder.glob('validation_*_budget.json'))|set(batch_folder.glob('validation_*/execution.json'));authority['validation_budget_bindings']=[c.row(p) for p in sorted(ledger)]
+  destination=c.E/'closed_phases'/c.sha(c.ADMISSION);destination.mkdir(parents=True,exist_ok=False)
+  c.save(destination/'resume_authority.json',authority)
+- output={'status':status,'phase':phase,'input_plan_sha256':plan_sha,'result':c.row(run/'result.json'),'external_closure':external_closure,'resume_authority':c.row(destination/'resume_authority.json'),'annotation_commit_sha256s':commit_hashes,'all3_ancillary_holds_preserved':True,'source_scores_are_context_only':True,'production_or_full_panel_acceptance':False,'actual_boundary_stop_resume_demonstrated':False,'boundary_note':'First boundary closure alone is not a demonstrated continuation. Root must admit a separate CONTINUE phase and verify first accession reused without another gene call.'}
++ output={'status':status,'phase':phase,'input_plan_sha256':plan_sha,'result':c.row(run/'result.json'),'external_closure':external_closure,'resume_authority':c.row(destination/'resume_authority.json'),'annotation_commit_sha256s':commit_hashes,'all3_ancillary_holds_preserved':True,'source_scores_are_context_only':True,'production_or_full_panel_acceptance':False,'operational_recovery_policy':plan['operational_recovery_policy'],'historical_unknown_annotation_debit_seconds':600,'new_session_annotation_ceiling_seconds':5400,'actual_boundary_stop_resume_demonstrated':False,'boundary_note':'First boundary closure alone is not a demonstrated continuation. Root must admit a separate CONTINUE phase and verify first accession reused without another gene call.'}
+  if phase=='CONTINUE':
+   prior=c.resume_proof(admission,plan['session_identity_sha256']);first=strategy['inputs'][0]['accession'];invocations=c.read(run/'invocations.json')
+   output['actual_boundary_stop_resume_demonstrated']=(prior.get('phase')=='BOUNDARY_AFTER_FIRST_ANNOTATION' and result['reused'][0]=={'accession':first,'reused':True} and not any('/annotations/'+first+'/' in str(p).replace('\\','/') for p in invocations))

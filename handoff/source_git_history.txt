@@ -1,0 +1,274 @@
+Tree 2 local source history at packaging time
+254166474375cd02a1d176e1467bdf89a9e4d2f86c9c976a58a0f4229877764d
+
+254166474375cd02a1d176e1467bdf89a9e4d2f86c9c976a58a0f4229877764d 2026-11-05T10:56:43+03:00 Restore the live C008 recovery display feed
+2be797409335b5ec5ded3c4b9dd07b59c2194073b152334b6b2a5e4703a09b7d 2026-11-05T10:54:32+03:00 Repair and resume C008 from nine verified PADLOC phases
+89eb1053ddaca7b2255b3348e81bfb787dc431d097dad6b40c4f222ca3620f5f 2026-11-04T08:01:51+03:00 Prepare four-CPU defence production preserving memory guards and checkpoints
+3798452db8707436cd6fbf86dded9d1926f4928e62ce1a4b5f544b423427f282 2026-11-03T09:23:28+03:00 Preserve guard failures and verified999 checkpoint recovery with T1 500M and tested V007 custody
+1994ecf626723d4ce89f5e7e4acc27f77d5c02a35fa68afde9a5f0c493702060 2026-11-01T23:32:53+03:00 Checkpoint verified four-thread resume with733durable BNNI refinements and guarded T2 fallback
+5f6e5fe331ebcb50d50b822a9f36a0f0bc26906c62bb455be98c2bebe91b8cf3 2026-10-31T11:59:26+03:00 Resume saved146 after reboot with actual stock restoration and visible30s monitor
+0a12caaaedf8764e314e4541737cdf2106b05b29f32dc982383ff5432db379fe 2026-10-31T10:23:46+03:00 Pause Tree2 for user reboot with verified checkpoint146 and explicit-resume hold
+8a9ba7d4448673597d7e34679d53ca22239a75f806a2b06b1a60294b6b5a1d23 2026-10-30T21:41:39+03:00 Accept actual two-thread resume and independently verified readable V5.3 monitor
+f898a4a2132966248df1e6db572cacbd4dbcd0e9638045fa04a3965c05eebc5f 2026-10-30T21:34:59+03:00 Preserve actual T2 checkpoint restoration and closed T1 recovery evidence
+87fbe1f3ddeea8a4cfdf5951757d2595cd67b722684a4d195037a9973aa690a2 2026-10-30T21:13:14+03:00 Checkpoint reviewed two-thread production resume and display preparation
+f26726ab54b56de93cbd964a9ecdfaf04727c6aa23d18d6efc72dabad0e9c451 2026-10-29T21:58:54+03:00 Replace cluttered monitor with measured live phylogeny tables
+d4dc6a761a6e424ba48cda1994beb1ffb18935ba6199b9f877c7d3c46eae91ee 2026-10-29T17:13:27+03:00 Launch real full900 ML inference with branch supports and automatic checkpoint supervision
+ac512fb64f37da9799fc80f375d18495a9c0097d85d435f5f8b7e38c560f8daa 2026-10-29T15:01:53+03:00 Restore phylogeny stage priority and validate conservative 900-genome supermatrix
+33e32da08018e67adb2967e01e352de13f0285e09a9bcda265bc75d145bc2d37 2026-10-29T11:58:55+03:00 Prepare verified current defence models and native controls for automatic continuation
+42959abbf352ebe50b9311c1b2d6794567db70ef1727f50111b14ecc3f54371a 2026-10-28T20:44:43+03:00 Verify first32 RAM QC scores and automatic next-batch progress
+ff4dbed6222f7903ae4639d55302767dfafd9f71ca9f0f3468a0aa1efdc0f02a 2026-10-28T20:42:04+03:00 Record automatic GUI calibration from first complete RAM-backed QC batch
+afcd69debc867f33ea5dc0cc57f4bd5bb3622118db1980df6dd622c31368cfc1 2026-10-28T20:39:16+03:00 Accept CheckM1 pilot and resume automatic QC with private RAM scratch
+b1af7c1f5601e79553d8fd996a1ddfd077ecef17819e094b71581a8e4cd63dd7 2026-10-28T20:38:19+03:00 Bind RAM continuation and display memory plus completed-batch timing
+c5fd9513884c77fe02d555080d545fd718ff1c5b0cd7e7e1d7cbe09c5e243886 2026-10-28T20:23:13+03:00 Show receipt-backed raw marker progress separately from measured QC
+6b5e78c32f81de8f56a85dd51360a0e13735294d08ea66c929ca45dd9ed7c8cd 2026-10-28T20:22:24+03:00 Audit stock clan expansion and prepare independent pilot arithmetic
+644eca0c9425e664ff87aa94d0970ae7d661fa9cb6a39ff8da7fc19c47ef120a 2026-10-28T19:58:40+03:00 Display actual CheckM1 queue progress with verified owners and direct SHA256
+2512051849144f26ba18459733d28782d824015930552a2668dbfac896faff01 2026-10-28T19:48:06+03:00 Record verified CheckM1 taxonomic runtime and preserved setup evidence
+8a0cf8c39bf56b8bf40364c58b8b17bc0ad1926bea5eabeb8b1616c4b933fc3e 2026-10-28T19:37:34+03:00 Review stock CheckM1 worker source ABI and reuse gates
+2d4f9b56aafdb5fc76aa6f400ed33287dfe58075fc6f923bd87c93d1e5842d97 2026-10-28T19:21:13+03:00 Freeze full919 distinct CheckM1 queue pilot-first atomic batch plan
+f96a2a68a1df0357b6a9c14906aa9cfadc1e30e1a410beb3ed725ee756881876 2026-10-28T19:15:05+03:00 Freeze18-bin CheckM1 marker-QC pilot metadata and scientific criteria
+cfbb8ea646ae0b210beb09291b085a09797361090a146ee08747e08a326b81d9 2026-10-28T19:08:46+03:00 Show alternative QC preparation and retain closed scientific hold
+57bf71182f47db45133042f5c8dcc79f4ffb7a5cb65ab781b1bde031ad01f0e4 2026-10-28T15:29:54+03:00 Show verified QC counts and protein-weighted ETA in persistent monitor
+29a39b7e8a3d5f5eea0133955a1826c727b1cb3260d46eb0547b3c5d5a37642f 2026-10-28T15:04:40+03:00 Record recovery owner OPS review and censored QC timing evidence
+0bc49d1ba376fdb28bdb75fed4b280d49644686f78058e78dcb14955e7a92ba1 2026-10-28T14:43:32+03:00 Checkpoint real automatic QC batch after validated saved feature repair
+10fc44d0468bf4c4355c60250774a4e797ed2df50d3548bc3654b0279a3429a1 2026-10-28T14:42:18+03:00 Present V002 QC owner, reused feature validation and fresh shared-search evidence
+1f9ee8f25fcdccdc3426d741b45fb32a62f187fc27ae010f0a029afb7b6a5048 2026-10-28T14:29:14+03:00 Freeze final recovery owner hash deadline and identity fixtures
+161dc841af99b1921053ad3b251b7ac945aa48a959ebf13c563ce166c89c5557 2026-10-28T14:27:00+03:00 Preserve actual failed hash outcome and bound efficient closed-image verification
+3a7f83fc6503b264c04d8763713be5c24b142a598c4a8c9713ad4c010ca75d4d 2026-10-28T14:20:47+03:00 Bind repaired cohort telemetry to native owner and test two real configure cycles
+4f17dad95ac35bbc3bb0cc5a644d93644536657331ec76f50bce1ee529fd0727 2026-10-28T14:20:03+03:00 Prepare isolated owner reusing closed FIRSTFV checkpoint without replay
+9604199eee2eba9c2dd48fed03247c168958a8e5b9f98a8c6658f10256e6da5b 2026-10-28T14:18:12+03:00 Test work-only bulk import and configured path repair against real dependencies
+72890722f4e26f75b5e509c83dfe013b2441c806354c81d21f43139dabc2da1d 2026-10-28T14:14:32+03:00 Audit five historical annotation donors without replay or QC promotion
+05c8733a27a40a188032859c6967030e9efbe20f728d0e7206496abbe34075c9 2026-10-28T14:09:05+03:00 Review continuous QC bulk scientific ABI and debit bindings
+0deec86cacd9d15a6ae4201ad9c2a00f7d74138f91830b3c13a7813f815a66bc 2026-10-28T14:02:21+03:00 Refresh QC monitor paths and display the closed pre-runtime failure and queued campaign
+f4ba03f3206ae0e2efdceb8ea66c1126ba649e91cb0ee7d8c10988a9615cc445 2026-10-28T14:00:24+03:00 Prepare continuous shared-search and batch QC provider without replay
+b596aceee2d10560f5f0d8ce916930183273478c5b7cb8f934e6671d96cc1c9e 2026-10-28T11:17:44+03:00 Add honest uniform protein cache adapter and QC timing assessment
+6de4a9d2f42277e730b029c54df0afaf1fbb9c2e7ed2a2def9a96105c71eb069 2026-10-28T10:28:39+03:00 Prepare saved-feature first and conditional continuous QC queue hooks
+cb01494c868187ee80aa1c41e1ec9338eb37b78cc133dae45abeddcbc73ff0cb 2026-10-28T09:20:37+03:00 Recover CheckM2 stock score in parallel and queue exact feature-request repair
+a6d685705d5fdf0c817e4076b53e3d9d0a9252527a839ef2b85a66a10ac4ec03 2026-10-28T08:50:04+03:00 Review exact monitor and marker proxy classification correction
+2316148a67c90426063ee534a637e7da4c93be1c7e79621dd58bd4b8fd97c79e 2026-10-28T08:48:21+03:00 Classify exact known monitor and marker WSL proxy owners in fresh QC preflight
+364f790662f335803aa35b0f6fff1c7f9678cc96767e364745feddbea0bf202c 2026-10-28T08:46:08+03:00 Record independent saved-stock parallel lifecycle source GO
+aeb6e809f07f7cdf02953e94ec72ef724cd839e20d4e1d42082a322696cb405a 2026-10-28T08:45:06+03:00 Prepare bounded saved-stock companion runtime without marker interruption
+cfa567566d7300a79b6ad74f624186a4a81ba0a119a06737ed0b858a50ac3a3b 2026-10-28T08:29:28+03:00 Prepare bounded parallel saved-stock QC recovery without search replay
+1d975c1f59c727655bcb7c3cea5278857b1e263037302afdce2c1a95df7000f2 2026-10-27T23:32:08+03:00 Complete real marker pilot and run919 paired annotations with tested stop-resume
+5985577973282b4906cd763236ced4854fc5f60f2ecca6391e5ab115be0db7ce 2026-10-27T23:08:11+03:00 Run281 Tree2 marker alignments and profiles with verified scientific closure
+19aa8190358db6a772f99b1da94025e887cac154314f7411a4a78347b9136c6c 2026-10-27T22:28:38+03:00 Document reviewed QC repair and automatic queue continuation
+7cc41bacdaeb981d00e97480abb04682d2603d4307266b52d383c2b82407535b 2026-10-27T22:08:02+03:00 Publish reviewed held distinct-profile policy with preserved mismatch
+d4260e7639b8f626c8b86d2a7a17df00f4979e172fce2f23d06e82e6349263a7 2026-10-27T22:07:41+03:00 Preserve actual control inequality and distinct-profile scientific policy review
+20b9208a565c48204d3be3866a933489831f64e9f34be01fffb4178252d39ecd 2026-10-27T22:05:18+03:00 Preserve held distinct index8 own-row policy without equivalence or replay
+e654992580316cbaada8004fc2cd869943c03cc72f1be9f8f9de3e6e2e13dec1 2026-10-27T21:57:13+03:00 Prepare held shared-query V3 OPS provider redirects
+c221f02914300452aada61c3eb63fd2f2df57448910192b2aedcab130e181442 2026-10-27T21:54:14+03:00 Show computed QC rows and reference validation in display V4.2
+f38d8ae648e77d2469f5964a9a1a3eed14411f585c56091c21ced3d915f0b375 2026-10-27T21:52:10+03:00 Freeze reviewed future shared search provider with accepted-control joins
+d6eca6cd4be5adaf1b531997b5154006a8ceccd02e12fc671d9c98039416f2eb 2026-10-27T21:51:13+03:00 Checkpoint independent held shared-query global debit and scientific source review
+09cf506ae5c1952b4ff8f532fb06eca9991bd7c797dda6740aa475f4675ae56c 2026-10-27T21:46:17+03:00 Preserve held future shared index8 provider and pure source checks
+dac506e1341460d2b4f4fb9debf700873fdd57f15c758e983f651c81361cfa0c 2026-10-27T21:40:19+03:00 Prepare held shared-search raw validator and synthetic checks
+958da43e33cc500547ed17e5b9fad2b3b71237b72b5816da11c73ff8359bc571 2026-10-27T21:25:45+03:00 Prepare held shared-query own-row feature preflight with unchanged numerical main
+72685a7f6c6b455bdcfe0cb5bc9afef334624bdc8dfc950cb08a86f691a2468f 2026-10-27T21:11:00+03:00 Separate durable binary search success from file validation with data-bound guards
+1da6c3e564a5ed3aa5d0c8fb805425990709efefb07fe41fdd132d0184b4b416 2026-10-27T21:09:53+03:00 Checkpoint composite-exit diagnosis and separated-search source review
+5dfcc80c671b9a13b0d46c9bb0913e1b5c853e423570a35bac162db0a835dc6f 2026-10-27T21:00:03+03:00 Route corrected campaign ownership adapter to separated-search V2 provider
+6bc60e7322bc668a7913ba198b9ef57e3ea26f4176e836c5fb378ae191c96f43 2026-10-27T20:35:59+03:00 Prepare future merged-search splitter preserving raw fields and one global debit
+5927e23f8abe5bebaf91bd013d731f5ce156400538637f3542aa00c29b8facdb 2026-10-27T20:14:18+03:00 Checkpoint independent index8 scientific debit and mask review
+d969b57339a71f89a66b644fbc351d61756e87e7444af01dab13420f756e91f1 2026-10-27T20:08:54+03:00 Prepare reusable serial QC cohort providers with conditional index8 promotion
+e3bed9f704d37f179f6a32cef4817840e10017ebe2cdf8c65d66bbfb06dd7685 2026-10-27T20:08:12+03:00 Keep current local preparation separate from historical failed attempt
+f7eba209dd0f025a2ef0e0e8adaca766175fa3c53f69ef93bf43222e8a738d54 2026-10-27T20:00:04+03:00 Configure campaign OPS ownership and deadlines from immutable cohort plans
+b4fa360dcab6219a59b35a83b576869272d65727e04181da0625cf57a7e4ef1e 2026-10-27T19:51:06+03:00 Separate current work phases and live accepted campaign counts in V4 display
+5310162ffa5784005b8924e0a59da115f7c0c4c5749d399b1201b7f04f22a063 2026-10-27T17:22:26+03:00 Deploy persistent whole-genome QC queue with automatic next-cohort event hook
+9679f5a98e961ab169693f0ff9b4145efecaa59f8ba2267d5aa520da37f480f2 2026-10-27T17:09:13+03:00 Review queue runtime namespace and next-boundary hook
+192c07a8fb1ee1441a8fd64b271f0a032fc52b9ab0dbac417780270d3b23bffb 2026-10-27T17:06:22+03:00 Verify breakaway from caller job with nested job evidence
+6037749e860144a4f1e0f01ddd08a09c8d4a29527a01735b0aa24ae53dfca2fe 2026-10-27T17:00:09+03:00 Gate persistent native workers outside tool-turn jobs
+241fd6442a94b3d7f3e640c2d95e7aa95e075d7a2c88619e74e2bfde74cb997f 2026-10-27T16:58:38+03:00 Independently review durable QC queue resume and next-cohort policy
+31ccd65c08ef3bbefff2f1658394683a6c7d15ef322ee7c6037f0f587cb8cb8c 2026-10-27T16:57:39+03:00 Reverify stored QC queue proposal and closure bindings at every boundary
+795031627086240bc4d9a66cf41ab1671b20f37628705e9e0e363e11a18f1d81 2026-10-27T16:55:47+03:00 Add durable QC queue intentions and accepted-boundary auto-next ledger
+a4855e5dc5520123a48adb466f30ba5d3cc295c11626c495cf35e10c9dd2061e 2026-10-27T16:53:31+03:00 Freeze durable species-balanced QC campaign queue with explicit reuse and holds
+76471f8c2e4d5dcfec6095aa0eb60c55dddef0b856608f623a47b0d4548c2f52 2026-10-27T16:30:18+03:00 Checkpoint P5 foreground gate and held reviewed P20 postrun adapters
+f36847ecf381f496b6b5838f9c9171462cf0ef8a68162dfb06e70397e7df3a86 2026-10-27T16:29:29+03:00 Prepare saved-output-only P20 metadata ABI repair without genome replay
+ef5a747f8305ccecb7798faf8a356a4e49ca07d6b466092df0db2b0cccc434fe 2026-10-27T16:19:00+03:00 Review P20 file-only ownership and closure adapters
+aff281622279bdde623ff83eff45f9fdf58c6e4f78358459695d1397428e043a 2026-10-27T16:17:35+03:00 Register supervised V3 bulk continuation and local failure recovery ownership
+04563a73293f8c236f7200da78d203130b07f89cf13f0e864fe2ca098f572132 2026-10-27T16:16:37+03:00 Bound local CLI shutdown and supervised process recovery
+d761f37ff9b0a2925c0d025c572f49df402a32b8f1db88d2d98f65879cb268f9 2026-10-27T16:12:55+03:00 Add V3 local failure signals and bounded completed-turn CLI teardown
+9272e23fb8f40f6c9cf267de05256639448380e91e65a1f41462616747a4ec10 2026-10-27T16:05:18+03:00 Start first bulk QC cohort after closed operational recovery and strict fresh preflight
+6fef42e0d5cf503f30c4508dc08c7d5d815576d333c1f026d0264e2f31d5711c 2026-10-27T14:42:38+03:00 Accept closed N5 outputs and resume corrected early attach controller
+9c1aa71052b85bdb77923eec3000bd9771dafb3685c9b859a838930d7904b5dd 2026-10-27T14:38:10+03:00 Prepare V2 early worker attachment and explicit local recovery seed
+80d1e0a0344b23a5456dff0172a9f5ca2009cd12139bb0567ce2d31cef5ae366 2026-10-27T14:36:09+03:00 Review scoped N5 postrun inventory bridge
+5cbcd50629bb5fa642c8998704a09d89012f8726a544abca4a079b4b1f9db252 2026-10-27T14:33:17+03:00 Record N5 postrun handoff failure from existing receipts
+11ddeb4e317282b26c8f13775eccf656edd8f5af4009fe6946e272ceebb1f97a 2026-10-27T14:01:56+03:00 Replace chat heartbeat with verified event driven local continuation
+aadfdc0ea779229014b7160f485f5260348923b05ca7195361c84ad8943b509d 2026-10-27T13:55:21+03:00 Add event-driven local continuation dispatcher with bounded native fixture
+f58f747284fe910ff1f048a490ef8537427f1544b4dd9896c552d2993cd0f322 2026-10-27T13:49:28+03:00 Prepare local event-driven CLI handoff configuration
+ec51f6b3c7357ecf8d53359cfd3b7681a7c65ca484e81f070de7ee5047070e82 2026-10-27T13:42:27+03:00 Recover blank thirty-second monitor with local QuickEdit disabled and persistent frames
+9e0ac1c10cd67933d85e5016f4c3ae7342979d0bd9468b77e3a08694e7b28e46 2026-10-27T13:41:31+03:00 Prepare held N5 external success closure without running observer
+9c25ad6ed357ef3d389ff28d30d10cdd05c0721f335a5180026dd7891d9af83f 2026-10-27T13:34:39+03:00 Document native console selection pause without resetting the monitor
+3b5bb6b0db5dc2b3b29f33f0c92db6488689d5df424ad66c38476e9afb184263 2026-10-27T13:28:10+03:00 Document current thirty-second display and immutable historical launch receipts
+3ca794af12d495129b78ae9fc61b8c37efcdd2cacbf6ece56e335eed0ac04db3 2026-10-27T13:27:33+03:00 Use thirty-second monitor refresh with a compatible observer stale threshold
+e55977e0db362fc34a9b57e115ed18bf46d76d56765815cb5fba69dde5707662 2026-10-27T13:25:47+03:00 Set user requested monitor refresh policy to thirty seconds
+8f16544722457a13358a61d41f7c39b31103b6d943457f05e70f4cea7ed99aa4 2026-10-27T13:20:52+03:00 Admit and launch five novel serial QC controls after corrected-source review
+fad0e7e6561e03daad1a54fcc5b1a2d9b2870cd8f435119fadda797761f35e6f 2026-10-27T13:18:19+03:00 Correct N5 shared imports and freeze minimal held preflight sources
+162f210baa511eaa8cb47372e7d86bef821b0296c550729e7d70a76f13e17d39 2026-10-27T13:17:41+03:00 Approve corrected N5 scientific and debit source tuple
+1162f0fb8720390cd39b29b9ee62e08e67e2ab5d1d4dded7f38004f45f50f55b 2026-10-27T13:12:31+03:00 Hold unexecuted N5 tuple for missing shared helper imports
+bbd850b51212cb95f33b55f73efab37bff325d018caa38289e65cd49e8f60e2b 2026-10-27T13:10:14+03:00 Freeze held serial N5 source with five novel inputs and unchanged feature math
+f9537a4193d5300960986c96c5794b0fb12b9e51554db0b3bae53f60478a3e1b 2026-10-27T13:10:06+03:00 Observe all preparation stages with fresh Git refs using compatible collector V4
+9632dfa3a7d20773f75d07d3c61eb219bc6d20ac9096dc8afab9557ee00c38e4 2026-10-27T13:01:06+03:00 Review N5 history exclusion and five novel label selection
+541a4da367d2861fcdb738c359633b344ec291462eb7f1b347e9d08072573417 2026-10-27T12:53:45+03:00 Prepare held serial five-input N5 operational sources
+d89cf7fdca908f4f7e2411c6b9624b0a7e7a725ebc96c4cd6ae6f4867683a86b 2026-10-27T12:48:56+03:00 Accept closed N1 method estimate and authorize bounded N5 source work
+360bc02b2576663c5d598eb8870427b6631884063cc299e17653a6d538ebf881 2026-10-27T12:41:28+03:00 Review actual N1 phases and bound next qualification
+bdb7837fd42c33aaef370d586780df25558cbbfdefd6fb3f5619b5af3d9f24c2 2026-10-27T12:35:43+03:00 Recover V3 progress observer from optional Windows snapshot sharing failures
+4d85ec13e44fb31a3bb48d8ff536e6bc94a11ca0664b08b3e3fd605d52c9e0a2 2026-10-27T12:07:06+03:00 Prepare held monitor V3 source checkpoint and active-worker display correction
+7f4ea2e3035d7ba9ffb280f2be87b6f38f20164e2ac78ad55288d55855114e61 2026-10-27T11:58:59+03:00 Expose real preparation evidence and launch bounded N1 control
+1f3cd3f2f484cefa261e4227a19bec80de473543cf1ea459ccc52f2a3ea7f46f 2026-10-27T11:45:45+03:00 Review frozen N1 novelty and scientific ABI independently
+b7d43ee40e6179b2ca6db619f512bc4462fc473f5be527570c17f92258c29320 2026-10-27T11:41:37+03:00 Prepare held N1 novel-input phase-separated source and immutable history
+bc5b778d93328b27496e7f2cf69ecefb4cd36f612c9f5be592b5aad3c7edc8e9 2026-10-27T11:29:42+03:00 Add pure N1 full-field artifact handshake and held OPS interface evidence
+59e7db79d9f4ea018651f1fc32b43fb24191e5a7523e331820a47de3da9a4001 2026-10-27T11:17:31+03:00 Review corrected N1 prior-genome history and missing-label queue revision
+c85101d49f3795e25363b61d03d5172a84d455cd57b34a81b0c0a6f81afa3686 2026-10-27T11:07:55+03:00 Prepare isolated provisional N1 operational owners and cold-window handoff
+af4a383400afc61bc8e1c035866d2bab5a96d0a5ff7eb54cbcb17c894614a894 2026-10-27T11:00:53+03:00 Record N1 missing historical annotation and priority-queue review blockers
+d7b3c737d55ec8ea2294a45b045c6efe8a77a082211ccf4577b82282b591dda4 2026-10-27T10:50:41+03:00 Accept closed method estimates and prepare one novel phase-separated QC control
+2ef1fc1becd1e606cd0ce9626bb23540bbbe007a177433460e0c2e8039dc8139 2026-10-27T10:45:48+03:00 Seal actual S1R2 file-only finalizer external closure and stable leases
+f48c18732031c6cfb478062857c5be77900dea33ff39dddb1a621a1bc7851830 2026-10-27T10:41:11+03:00 Clarify literal stock thread flag in held N1 design
+e849a65a7d3ca158aedfd1e789341a1a952df10d18c5546e1eee53bd84a512bf 2026-10-27T10:40:38+03:00 Record held N1 phase-separated feasibility contract and fresh-input queue criteria
+e58f0f516597aa1c924f614b17a268e82b7912c03895cb8388598f3f720d1948 2026-10-27T10:32:49+03:00 Prepare held bounded file-only S1R2 compound finalizer owners
+a15f45f907515bd9aa0440f6ea0627a7661e7ed4ca1ddf3eccbba5270eb9b955 2026-10-27T10:32:45+03:00 Clarify unique accepted annotation timing without double counting boundary
+363f1164a2645ece2b7dda239c498333dcff08695cc2073007beb3b127498958 2026-10-27T10:29:27+03:00 Record held V003 phase-separated QC scaling decision from actual unit receipts
+8d6819f8d4909f986ca6a52be64f457b40c29e84b0322e1407cf04a675d20894 2026-10-27T09:40:00+03:00 Keep routine progress local and reserve chat for exceptional consultation
+7e09a8248e3f8cfdaa0e997dab9309911ceb28060c432f543f2cfc56a1508e24 2026-10-27T09:35:32+03:00 Admit and launch S1R2 nine fresh targets with preserved first result
+79504d9206a88f62303e2dd26b7f00df7f75178ccaf8f4b59b0356ef55d822bc 2026-10-27T09:30:24+03:00 Prepare held V002 prelaunch PID reuse and retained child identity checks
+87bba4652defcdfc5cc6e27e905a8a9b0f3a38a7afbe3a97d74cc33ca89c2ae2 2026-10-27T09:22:43+03:00 Prepare held S1R2 compound closure audit and unchanged file-only finalizer call
+a5668423a27ab76f017b832e043f63c68d19e64509a0455b42b8c9b44820df57 2026-10-27T09:21:25+03:00 Prepare held read-only S1R2 prelaunch check with closed proof bindings
+c35954481eea78ebab561d310a5fb2f1620de3f32cc85f5565e3696e2cadb71e 2026-10-27T09:17:12+03:00 Seal S1R2 observer proof with actual external closure and shell syntax audit
+36a739fe8b34f57f4d10bf3a80f4df1802256451b707da2f50a88444c4af35e2 2026-10-27T09:09:18+03:00 Bind scientific debit and original-row reuse review to frozen S1R2 tuple
+52c02f74d444e16001552f1d8cb14b23d5dae6fa1b7e0f98440343031e027500 2026-10-27T09:08:14+03:00 Prepare held S1R2 operational repair with preserved row and carried budgets
+8a7dd6b88ad27aa5fb8b933d54cc5a0c85307a74f554bfd98342d61ca68b5d68 2026-10-27T09:07:36+03:00 Review S1R2 scientific binding, historical debits and exact original-row reuse
+a9cd3f3ff6538ef95546e80707f8ed67d2466f3d73ab89e02ce464e5d427dd1d 2026-10-27T09:05:37+03:00 Prepare held S1R2 owners and non-genomic observer boundary proof
+54f8f5c15518878dbc4e4f18ba984000d44bd5716e48cd08d7c3e377d4b9c4de 2026-10-27T08:37:13+03:00 Close S1 mixed failure and preserve accepted first method row
+d37601e7bc2af493537d91ea7ce7715775549e0ccb394c45dba4a57645a4d478 2026-10-27T08:32:09+03:00 Diagnose held S1 observer PermissionError without promoting partial work
+971a07ae8d5da274d6f65b5176f0fb2a9404622958fbac1fb5a8e788627e16d1 2026-10-27T08:27:42+03:00 Reconcile nine unqueued strain slots against acquired species coverage
+d19baf1ecaaba645f03354973749b5e9affc474f435952b2bb71a41c9aef5540 2026-10-27T08:25:35+03:00 Clarify spacing in held DIAMOND resume source review
+b6f9b55d47005c2ec73a23ebfd15a3cdb5e6f2740136e2ff54ce2faba87eb39e 2026-10-27T08:24:56+03:00 Review held fresh DIAMOND and stock resume separation without executing science
+f32d4a1224ea9cbc42936c13a947681b8800ceeb1e73c36094941c2c1c9b5aaa 2026-10-27T08:15:48+03:00 Checkpoint reviewed and admitted single-FAA inference series under conserved resource budget
+2cba1f99eec74ff6caeae63ae3f502bd7b90842c90f263cec83c83c8b505eb9a 2026-10-27T08:07:51+03:00 Prepare held serial single-FAA inference with conserved shared budget
+33d82acdc10864a0d7000a4b3278fdb7d453e854918ea5f6e3e96a89b8204a05 2026-10-27T08:07:47+03:00 Review frozen S1 orchestration remaining budget and closed-row reuse gates
+308e548373aa812d55d70042834deca06cc483cd40b0ac32b1e81d3e86b05270 2026-10-27T08:03:40+03:00 Prepare held inference-only S1 ownership wrappers without dispatch
+cba52c06bd1d86090159bcbfde83a604bb2c455d3490d747e77f5b17b30a7778 2026-10-27T08:01:17+03:00 Independently review held S1 per-row scientific bindings and source holds
+3de52a38072710548e37729a9b73aefcb98fb558a522cdd71f7c9c45db383c89 2026-10-27T07:56:20+03:00 Preserve single-FAA source row across final artifact verification
+20a131a52ea835c5f1da8ff27350ae4e9444c34da41289fbc6bc48e646a22f13 2026-10-27T07:54:51+03:00 Bind held S1 one-row validation to actual ten-annotation reuse authority
+2d09bbf7a1d726b3bc404a7a0b83a818a1639e8b7becef3b1647f561c135e67e 2026-10-27T07:53:07+03:00 Preserve closed resource failure and accept ten annotation checkpoints for held single-FAA preparation
+2f09e2aa98bcf03f8c35936be8428aca36a6670e28dc2e34fbd2e1a163da38be 2026-10-27T07:52:11+03:00 Prepare held single-FAA feature validation and real-unit cohort contract
+627021f2a6f4253747fce02eb2d7e5d46126e58157be7962d2c470c9d922ddf5 2026-10-27T07:51:38+03:00 Preserve ten annotations and closed resource-failed QC batch without acceptance
+09aa43b04f5434cb133506cab402f416f2b18ccfed877625ff9aa80b58d705fe 2026-10-27T07:42:58+03:00 Bound held per-FAA recovery to conserved failed-batch budget and exact annotation reuse
+2942dd175736af255ee2a677cce41c1e81ef0a7fbda739e1f0d6658dad673c1f 2026-10-27T07:31:03+03:00 Preserve empirical QC coverage for metadata-pending species
+b883b7aabbd0c8b7470074c452a426ee87047873021116eebe3ac38591aa6bc4 2026-10-27T07:29:46+03:00 Checkpoint accepted first boundary and active scoped benchmark continuation
+6d509cb843a6b9a511a41663a0c301bf96e650f2b8b2f472ff87b25308d53511 2026-10-27T07:25:43+03:00 Correct checkpoint list formatting in closure notes
+14a2b163b046bf89f195ffa6be61e76af07f0992b586509c4cd90722aa3b1e41 2026-10-27T07:25:27+03:00 Record actual first T1 annotation boundary and file-only closure
+7ac37b0e57bd5ddc428618386610649ef9a3141896d4dace7b3a20f4d4f5049f 2026-10-27T07:17:15+03:00 Document held bounded post-benchmark QC scaling design
+c4cccdbc7720c1e478b95ee806819d2a9b870f8fa344a3d3167b3311eb8305ab 2026-10-27T07:13:38+03:00 Audit public OCI metadata without accepting unverified defence model catalogs
+7e775024f0dc075752b6696ea47ba3e3816fb94ef217de942a74c0bd14a09e08 2026-10-27T07:07:22+03:00 Record admitted active T1 first-boundary worker and preserved failure limits
+d175a14a52ee4b50f4fc87b9dce7579ebee804419600e7c5515d9e9217b5dd61 2026-10-27T07:01:00+03:00 Preserve failed stat comparison and actual supplemental prelaunch gates
+6c5b0a252d9f44dc9f8255ce66af84f4a6715dd731fb864cb3bfc36bfb2427bf 2026-10-27T06:50:57+03:00 Accept reviewed T1 operational source after exact bounded ownership proof
+b6e2d4ee9bc7c74d11db63bf170746735b6b06078c7a7f8db9308342335ed143 2026-10-27T06:48:35+03:00 Record one exact fatal cleanup guard proof and truthful closure limits
+08e3121d6fd478403cb5416ec0ac9f05051fbe2dc840bf68c43dc2d6887c0c45 2026-10-27T06:47:37+03:00 Preserve held T1 source revision and bind final monitor ownership wrappers
+ed3958d40777c658f1e7e9707a34af65bc744b288d37765144d36fe7443b97b2 2026-10-27T06:46:48+03:00 Review isolated T1 recovery budgets and unchanged benchmark input holds
+cbde8c1e8e48b0df6eeabe0f1887fdb54a59dda85a5d4208731793f76250aa38 2026-10-27T06:43:33+03:00 Freeze held exact fatal cleanup guard fixture without dispatch
+8d512a05205e40ae5df739e3ba58c6398ac6d29174facabfb4dfc6f4dd3b3bad 2026-10-27T06:39:27+03:00 Hold T1 optional telemetry ownership repair and conserved recovery budget
+ae9188db4161a3c1b026d3fb9b398e7565f77c77a777f680945dfd3667e50f30 2026-10-27T06:24:13+03:00 Record held benchmark recovery with preserved unknown attempt and budget debit
+5c819e603791a44f753ba1dc5193e0e994163775e11977aa9e7ec248a8d09882 2026-10-27T06:17:52+03:00 Verify optional observer cache and child ownership with bounded dummy diagnostic
+796bdbdc01fbb12e788afc698c639ae0f3c81796b6f3f3610feed2883f1e85d9 2026-10-27T06:01:48+03:00 Record failed benchmark boundary and closed uncommitted annotation evidence
+87cd1ee07cc963fa6544fa3d67936b8490148f9759c9cc09f42f5f01ff27fc51 2026-10-27T05:41:41+03:00 Review held benchmark orchestration phase and shared-budget bindings
+2939a8d20151bd995322dc7be12a0b4ec6a0dd3f3d02b7ef1b2bf04246fa23bc 2026-10-27T05:39:56+03:00 Record independent exact-ten benchmark source and resume review
+c1f8f80a451f3424fc624bafbd79fee67418dafc0e02070bfb4721db10fb489a 2026-10-27T05:36:21+03:00 Prepare held checkpointed ten-genome protein workflow and boundary resume source
+d9ba1dd7d2b80d6f066f07662930b11edc0b0d872584175473d37832244fc711 2026-10-27T05:34:31+03:00 Record accepted format gate and explicit conditional cohort budget
+d0c4894ba73af5cb37ec58e8c0f0612045f11cf7ccb0f62e13f6f7595fcb0ec4 2026-10-27T05:27:28+03:00 Prepare held exact-ten feature validator and preserve source holds per accession
+788ca23b456089d75e82a4e1e7180b75cb3c71794634ba7e5f97fab2bb3e70f3 2026-10-27T05:17:34+03:00 Record exact format-control PASS with observed exits and full closure
+14833c7a6c9d42eb569feb44912d1bbc538a0b3058b5b1afa6a81c46fa587613 2026-10-27T05:05:17+03:00 Record active ENV1 control and retained pre-entry failure evidence
+5bd4a7adc4a91154511d130d3fe1e5581fd730282be1ac9ae1a09e52247d34a2 2026-10-27T04:56:43+03:00 Carry math admission forward for exact process-local Linux environment transport correction
+86ebb23380c1f9fc2daf32fb856df6ddb5c82fb1e870deefc0e093f58ec06f38 2026-10-27T04:54:21+03:00 Prepare isolated ENV1 transport correction with direct harmless observer proof
+6404bf1acf5cfe4ea4bc656237db0d023441f6a269e1e5acea3c4043782c6629 2026-10-27T04:53:32+03:00 Record explicit WSL transport correction with pre-entry failures preserved
+914c74ce414fd768cd63c84fd9a1fcdf77ef5a2aa679a0860e3c9d9a6bcea349 2026-10-27T04:50:56+03:00 Propose held ten-genome protein batch strategy with explicit cohort budget and resume barriers
+db23188436ad500e309dae008fe73e705daba0e3637b74fbb335cbec1a7a2e19 2026-10-27T04:43:08+03:00 Carry math admission forward for exact LF-only pre-entry launcher correction
+c14958d9f3de27a9abbcff5023a85b4889596f93655f0e7f017db28505ec50a9 2026-10-27T04:40:55+03:00 Record one pre-entry LF correction with original attempt preserved
+be505d2a03807e8d3fb0172c54c5b6d7e40bf8cb2720679b2e54587418dc12a1 2026-10-27T04:40:47+03:00 Prepare isolated LF1 launcher correction preserving failed pre-entry attempt
+1c7e9f4a5c4c5a37e767a9ddf8e98d5538f667b6fce8bb3c05a1a43a1dcdb8ed 2026-10-27T04:31:33+03:00 Record final focused math and provenance review for held format executor
+64ff0732b91ebca50842a475c1e3f471213000086d662d633d3b43d33b12984d 2026-10-27T04:28:09+03:00 Document exact inner progress handoff fixture
+721318c8b7570108e66635c133bc399bd87e24137069834e0c3982f080cf3a45 2026-10-27T04:26:40+03:00 Bind inner scientific progress to the exact native control launch token
+fc3ef9bfa60df0cd80ecb3cc6d27d45bdb99f8f96b7a1d40c255ea36e51d6a6b 2026-10-27T04:25:17+03:00 Require typed observed native and WSL exit codes in control finalization
+f3ce03c57e7e28e3f51b25edf18b4df8a057045437d2976918ffcec0ad5f795a 2026-10-27T04:23:28+03:00 Prepare held one-shot protein format executor and external closure comparison
+e7da9cd6c32431be2775ca2da2fa737312291aeaee017734f1ca02192292e3a7 2026-10-27T04:22:59+03:00 Preserve permitted legacy PADLOC candidate without accepting broad models
+abe7bab118a40958cedc5c829fe5b5267d4ed4f1ab6fa038086d0fce2207a235 2026-10-27T04:14:49+03:00 Bind accepted method baseline and prepare held generic control feature validator
+98f071ea043633645383081e0b7edb390f7dfedacae3c4323aa812475ba3c13e 2026-10-27T04:08:19+03:00 Record recovered-baseline decision and standard live-stage ownership
+2480401b30ab5b26bbd116e3af8469dcb0cddae94640274d5232e4568b2de02c 2026-10-27T04:06:20+03:00 Freeze held corrected protein format-control template and pure receipt interface
+bcd4a8904580942ab98ab55809819328185b99e13fa0657212dc9f8d789e2cb8 2026-10-27T04:05:09+03:00 Record recovered quality baseline and complete validator closure
+245e30ec6ca498aeea4ce5a05d9663a86b3b62443d88dc46dcdd2f8808b5deab 2026-10-27T04:03:10+03:00 Record preserved CheckM2 baseline validation and full closure
+5b4dae4537bdbf11e38899ba049ed211831840d18b33907c4d287b257f6becfe 2026-10-27T03:50:58+03:00 Show actual posthoc worker while preserving failed-checker history
+1e06465a4ad2b38e3dc57a745c51545cd7933061e9705cd6a361e2deb8c54f65 2026-10-27T03:49:32+03:00 Prepare single file-only CheckM2 v002 rescue validation
+488c6d000a67fd7ac2b0dec4fe9fce0b03028c71c3c826a665cb587caab3d1c5 2026-10-27T03:49:29+03:00 Carry forward file-validation math admission for lifecycle-only controller revision
+903d8444271447c1e26eb945044013699db99073dfb288283c56b341bdf354b0 2026-10-27T03:48:15+03:00 Record focused source and math admission for preserved-output validation
+98bd0630d1e0a5052dc042a05acdae2354f2a632f9d98979a3b266c7f21bceae 2026-10-27T03:45:14+03:00 Keep unobserved outer launcher exit explicit
+255bdb03ac84eb58844abb161a84b5009e1589c6ac59b11543f04458013f581b 2026-10-27T03:41:49+03:00 Record held protein prediction and corrected validation path
+63d4e9100905f39cee3de9117fc2855bdf34ee1425aa1f249b79587e553cefd4 2026-10-27T03:36:19+03:00 Add independent raw-count membership verifier with bounded source-only fixtures
+82b6e1e090833386d9c153276d686b7a25b643e6f9e5ed8b1d76bf22f3f49640 2026-10-27T03:27:34+03:00 Record closed 04R1 computation and held schema correction
+b8ce806eaae1a43fa6d1ccb9f1b543e78357e873c60e36943079ad6b6dee44b9 2026-10-27T03:26:09+03:00 Correct module feature domains from original raw KO copy-count calculation
+566ebe64d11c249522b770f64382c4e38fed73c50c9a5dee57bd044cf90d0cae 2026-10-27T03:17:41+03:00 Prepare held protein-route format-invariance contract and pure comparators
+c7684da28f7cc15339df4c8fd6803cffaef38857b8e654e34fde554c2cc07802 2026-10-27T03:06:15+03:00 Preserve root validation and one-time 04R1 admission workflow
+b0c3b9048bb910c822843f5231da4eee42c8fe9398e5fd1258bf0e9888c339b4 2026-10-27T03:03:10+03:00 Register admitted protein pilot and preserve historical FNA resource attention
+e8d6191970cf1e5cf77ff1dc5fa706d1379d9736e26fc07ee8e7e16ee401d668 2026-10-27T03:00:34+03:00 Record independent held protein-route source admission and resolved closure gates
+2d9641816b0acb24b69ed8790a2850114db548a408d9ffe792951d1b840c8942 2026-10-27T02:57:42+03:00 Prepare held official protein resource pilot with full feature evidence
+4d1c07fa61381630da380967fd69c0d2c250396860a23a7ead129e2efe3ba5d9 2026-10-27T02:41:43+03:00 Record closed engineering memory measurements and conditional next route
+0c0b6b9b591365b44a177b943c085241d9537f05417ce97730c2e49114804cd4 2026-10-27T02:40:00+03:00 Freeze original ordered CheckM2 feature schema for held protein route
+4cefb2ceccfa2c14201dd7c51fca8ff14d710f819601f4fca947af750da9fbc2 2026-10-27T02:38:30+03:00 Record closed default-fork memory observations without QC promotion
+220e28258cc8c0e3c2ef4d634c3af27794726968e1e7820f0261dfffaf576e91 2026-10-27T02:36:05+03:00 Choose conditional supported protein QC pilot under unchanged resource gates
+439c957733d00b168070b911d56cca41e1de16f7f093376342269d45a2133272 2026-10-27T02:23:53+03:00 Prepare one bounded default-fork engineering memory diagnostic
+2b1f3622db65508f3b5b4ef8412a15a5e6ac635fc7c088f0d951ac082fc85382 2026-10-27T02:12:29+03:00 Specify held official protein-input QC variant and collector contract
+d9328b612bce0f3338c2efeaf726c940d3d0da50effa4b9cee185e50d754858b 2026-10-27T02:11:39+03:00 Assess supported protein input feature recipe and resource topology
+5b2a698ce1615d084af5a2c062dcf3c237465f34ab98750355c554b6f05cf3b8 2026-10-27T02:07:25+03:00 Record closed memory-limited pilot and bounded engineering investigation
+1f40914d49d863f654836170e1c7601d19d65f66e782f0a500c2a77e05637a8e 2026-10-27T02:05:51+03:00 Audit bound Predictor state and forkserver import limitations
+b5ada1e87e37dc3eda5ccd1e2cb8d773ed82dd2fdab39cf9c7f0b80d91c563de 2026-10-27T02:01:34+03:00 Reject absent required integer metrics in format control
+fd2b6354ee1627f0c2e1b22574131c8f2f715ee93007ae10d12508744b338e35 2026-10-27T01:46:18+03:00 Prepare guarded FASTA invariance control without applying or running it
+58e7fc714a5827e1726e1eafeb73b2f8a312fe415e9f1e5a3bb52e5f7f912687 2026-10-27T01:46:13+03:00 Audit fixed Manager process overhead behind CheckM2 RSS stop
+15c8f9f0f27ba637963e5b1abc0a51102af701473d16a1e5e02d7adc21fee2ca 2026-10-27T01:46:10+03:00 Record terminal CheckM2 resource hold and verified closures
+cfb5082a78f8f13cd99e194adf4d8798a9aa843b3899c322ba0d63e792c3ecc4 2026-10-27T01:35:15+03:00 Freeze six-component nomenclature and type-source holds for downstream panel curation
+56d344c897027c19f18673afc89b24663247171670f47b05efa1b9e3e8c15f59 2026-10-27T01:32:52+03:00 Record proven private IPC fix and bounded fresh pilot launch
+bacf134e2335e4850a458af82ec16774d38c3dccae7534a27667e8a39e65501f 2026-10-27T01:29:17+03:00 Resolve stacked IPC alias through kernel effective mount identity
+90ada99d2f87ea49d11d7fe2d241ab392a379947ba661f947128e835ad6a5768 2026-10-27T01:26:29+03:00 Bind proven private IPC routing for one bounded CheckM2 retry
+4a383b5168252751506cd0b21a0c0f53eb71adfdaf641f9dd76723a214d5bd6f 2026-10-27T01:21:09+03:00 Record conditional source admission for one private IPC capability proof
+7b1849627f39009dc83dae8ff1183280ffb2f6833b2083b4eaa64cefcb53fd72 2026-10-27T01:20:57+03:00 Prepare one bounded private short IPC capability proof
+c045aed402b97b19b002629098bec2e9abec6fec686fd16bd70f7e27a7293eb0 2026-10-27T01:17:07+03:00 Document author tmpdir override and separate multiprocessing IPC cache gate
+3ed64d349fc22bfea2be22395928d0463a4e97bae8ea61bb6724b60f6f91d269 2026-10-27T01:11:40+03:00 Record first resource attempt and isolated IPC blocker
+1ca5951dc6d8a859caeb03d5f3f409801c799e338a70b826a8ab42a15163ade9 2026-10-27T01:09:55+03:00 Checkpoint source-only nomenclature review for priority components four through six
+9c358ba9cf66e3a053126a360a28e1fa2247096bfa55cd1aa3ed784f1dce2f3f 2026-10-27T00:49:35+03:00 Fix mounted package binding and native pilot exit receipts
+91ecff5c2db14959b9d9209532c6d21b3dbf113e0b94f9a43ac3f839b8f2fc8d 2026-10-27T00:43:52+03:00 Verify immutable source-review resume and keep uncollected control features explicit
+382a16af52ad7870f634b1db4e4f9375d7fb94a9cb2a40bd26ce721f738139b5 2026-10-27T00:42:47+03:00 Review first three ANI conflict components against primary nomenclature sources
+6d58a9865c534f6fe969cbf24c7df0b74f7bdf666c8ffdca9a392de0879d9367 2026-10-27T00:40:01+03:00 Specify one bounded repeatability control without inventing numerical truth
+3c50f2ac3e64411024cbace492c8cb3914b25acd4da01b94176fcb17d9dd6185 2026-10-27T00:37:53+03:00 Checkpoint bounded CheckM2 pilot and validated runtime gates
+6c6cabed512517de60f632de923a61b148c33f434bb7e5dc6fe84877ebdbb1c5 2026-10-27T00:34:02+03:00 Record matching-version import and numerical-control acceptance with resource-only scope
+cd2dc38e95ae6ca3599ba2dc4cb5fbda01dce554079f90f7d975103e8c67b873 2026-10-27T00:33:55+03:00 Record matching runtime controls and independent admission proof
+a5c54b504c7af7cd25cdfbb8abb46d3b827dba5e093a3ac8f1fb297d88c92d58 2026-10-27T00:23:48+03:00 Characterize saved extrema and independent Decimal affine arithmetic across all scaler columns
+18e7b4bfa4220777d299559c57b239b049be234acc2027d5fb2937f58ee4b1b7 2026-10-27T00:23:04+03:00 Clarify upstream cosine crop in scaler compatibility review
+9e0aebf6b0919e9a6107213a31deaf2d59b5ea69b5adf8cb860f6988276fa4fa 2026-10-27T00:22:13+03:00 Bind validated effective overlay before read-only pilot child startup
+0c9f5287d807564d42bebb8d9c538282ea2fb4965439cbf340cf7a3a27197a84 2026-10-27T00:20:46+03:00 Add read-only matching-version bootstrap and bound affine forward selection controls
+cb8670e265184c5775c0263cc5a279d7a08b499b406739cf59aa9c837f7a7e64 2026-10-27T00:16:39+03:00 Bind matching-version overlay and document unresolved numerical production gate
+9bcce0e061c489248d7b27c69a537e259625fab5ab360b0f7212eabe89170fb8 2026-10-27T00:13:13+03:00 Acquire and statically inspect one exact matching sklearn wheel overlay
+a21d48b0a5897f5e07b50ba214310389fa1b3d8ac1208fdd5940f171e8ba6c30 2026-10-27T00:05:30+03:00 Record completed runtime loading and unresolved scaler gate
+f9d92549c06e7e4f200a7adc6ec7ad5a1e4b91db5e07383915799dbaccecc206 2026-10-26T23:56:55+03:00 Document completed install and supported process-local loader compatibility test
+a311c8be1cd5601fec382d4525fc6a03b0e97db942f94e085b726a45e521cba9 2026-10-26T23:53:36+03:00 Expose canonical native identity in post-install environment receipt
+20e19daffe82635cf7d4778c4078a1e9ebbf541780d44950d5d5d49a29e3257c 2026-10-26T23:49:32+03:00 Add bounded read-only post-install loader compatibility smoke without reinstall or binary patches
+bc0ba5c9154ea37fb40c3d79695b4d4101b80c02056f064be591ca07d2723314 2026-10-26T23:48:11+03:00 Diagnose official TensorFlow ELF stack requirement against host glibc tunables
+5ca5a0b28462f8c27881ce8845c4ed01464afcbd588a849fdb7c9a9837d03d86 2026-10-26T23:36:38+03:00 Preserve null backup semantics in native publisher receipt replacement
+e8d0b630162faadcd5f0df95fba29c2430d12300d118e05f42994499a3fe96d5 2026-10-26T23:35:23+03:00 Expose terminal setup failures and safely restart only the progress publisher
+7a2e479e2ee802a59b417ae320d7bfa5afb6b6725579cfde3f285ab27c35247c 2026-10-26T23:34:50+03:00 Checkpoint ANI integrity reuse and source-only review
+3a8677b9c4570ef71f215e0763a246c1e73648367675741e7abfada0e1aca7e3 2026-10-26T23:34:47+03:00 Document measured image proof, preserved inputs, runtime mount contract and recovery gates
+b4679a3f2b3cc97ffdedc3a36c3fe8acbd6138ce54ae44f9f298ad5a08a8a153 2026-10-26T23:31:26+03:00 Refresh local status and automatic continuation evidence
+0b236ed5d167720ecd972d3e47e230d802cfa3f3e6c272870a5a761571ce010e 2026-10-26T23:30:56+03:00 Reject an already claimed recovery before reading its possibly active image
+ab0fd3d177175f7c13660203ea0b4d0bb1ab2e1bf2d83f195164df34bd7b12d2 2026-10-26T23:30:15+03:00 Recheck the clean prepared image and durably claim the single recovery attempt
+ee6a3a994182f13f5e3e010d6a61db4a8c988686518f66ed60e45549b26de714 2026-10-26T23:29:13+03:00 Validate all final runtime receipts before reporting recovery success
+a5c82649416d07fe9c33367d419047fd88393b0cdba9bef53f178f9c9786a3c0 2026-10-26T23:26:31+03:00 Bound read-only image verification and publish actual byte progress
+6413692f6e587c5e98a13a8106c56f655eb48d6e3700a981d2a7c46c0f7bc1b7 2026-10-26T23:17:40+03:00 Prepare isolated ext4 image recovery with atomic owned loop binding and persistence gates
+6e04b0327ef2f60694066f703791559144acba4ff3efe422364aa1b1209ab9cf 2026-10-26T23:13:15+03:00 Record read-only image teardown ordering found in independent review
+a876cae4fb5ca254044b1cb19f96d48804831ecad1857a42016e1008f36707d2 2026-10-26T23:08:56+03:00 Review accepted source materialization and bounded ext4 recovery guards
+220f229b7f5db2fef707254acc17bcc0c1b36174c7d3216e3f6bcd7a44fbdb72 2026-10-26T22:52:09+03:00 Record bounded installation timeout and independently verified closure
+76ea59d5276f8b4657db3fcb3b69e55255aa99894bb0078abd1182de9ae47a1d 2026-10-26T22:13:42+03:00 Bind runtime smoke evidence to executed helper source hash
+90d7ef6d342fe5b6e50565502432376c313fc8418f86c25d1ac48037e45201a5 2026-10-26T22:06:15+03:00 Register bounded CheckM2 pilots in live scientific progress journal
+c7874a595aac6e5798bb7d725e0e33ef88a46be115ebfffd67f2ad60113fd0f0 2026-10-26T22:02:24+03:00 Verify model payload against original package metadata and expose stale author table
+46e1dff9a4a87aee2b76f2b266ef060bcbfa435efb46025018092b23641ebb46 2026-10-26T21:53:39+03:00 Build isolated offline CheckM2 installer and measured model-loading gates
+37fc8e6760e2e7170e7181ce5a752614cf891a46f236d0512bc25dcf395bd3e3 2026-10-26T21:41:18+03:00 Cache and inspect pinned CPU CheckM2 archives with resumable receipts
+233aeeb849a83a6f89f2d81763b472622b6bd499e338a661a0161ea49326d900 2026-10-26T21:08:23+03:00 Resolve pinned hardware-compatible CPU CheckM2 dependency closure privately
+7eb37e8e62393319ef9b216888b13f7a4f27d3b4dbd639e1283d0257927ed1a1 2026-10-26T20:55:41+03:00 Prove private registry-free setup namespace for CheckM2
+9936b1397f834b8756e2b099c49ee8718facc989c44684058f6395b0da27ba2a 2026-10-26T20:49:57+03:00 Distinguish automatic internal setup from user input in live monitor
+52452bd5631e7102871d5c7c3e4c8d4a5c16ecd1a8d3ac764322a1e48962bb8b 2026-10-26T20:41:03+03:00 Start pinned official CheckM2 database acquisition and record QC readiness gates
+0b4ed8943e277d4c4b77e84d6f2791ddfa5c325f39facd259a19e05828bc5d1c 2026-10-26T20:40:22+03:00 Require live journal updates for every subsequent scientific stage
+c976af3d699a01c06cab7f2032de8d098514ae705f8204cc9000577906711a5f 2026-10-26T20:37:49+03:00 Start visible live progress and evidence-backed automatic stage continuation
+ccce2532a8ee8341d0b3d3bcf947e5aa8b41dadcb280cf4cbcf4065ec5c3e641 2026-10-26T20:10:30+03:00 Verify Tree2 census acquisition provenance and fresh marker pilot
+db618d5f043e7e1ffe787ad194e0fae6464ee93b82a1466d61f81d6a65d89829 2026-10-26T19:04:12+03:00 Start isolated WD Tree 2 discovery and verified resumable acquisition

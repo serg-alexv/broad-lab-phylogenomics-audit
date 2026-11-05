@@ -1,0 +1,4 @@
+__pycache__/
+.tree2-verify-*/
+/tree2_bundle/
+/tree2_restored/

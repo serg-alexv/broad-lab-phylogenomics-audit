@@ -1,0 +1,15 @@
+--- a/scripts/NEW_ROOT_VERSIONED_COMMON_COPY.py
++++ b/scripts/NEW_ROOT_VERSIONED_COMMON_COPY.py
+@@ -66,9 +66,9 @@
+  for ref in value:bind(ref)
+ 
+ def qualification_gate(ref):
+- q=read(bind(ref))
+- if q.get('status')!='ROOT_ACCEPTED_CLOSED_INDEX8_METHOD_FOR_BULK' or any(q.get(k)is not True for k in('empirical_qualification_accepted','own_feature_math_verified','resource_gates_unchanged','all_owner_context_and_lease_closure_verified')) or type(q.get('actual_native_exit_code'))is not int or q['actual_native_exit_code']!=0 or type(q.get('actual_WSL_exit_code'))is not int or q['actual_WSL_exit_code']!=0 or q.get('index_chunks')!=8 or q.get('block_size')!=0.5 or q.get('threads')!=1:raise RuntimeError('Actual closed successful index8 qualification not accepted')
+- bound_evidence(q.get('closure_and_result_evidence'));return q
++ from checkm2_distinct_index8_profile_policy_v001 import qualification_gate as distinct_gate
++ return distinct_gate(ref,read=read,bind=bind,unit_closed=unit_closed,bound_evidence=bound_evidence)
++
+ 
+ def accepted_gate(ref):
+  registry=read(bind(ref));entries=registry['rows']+[registry['additional_baseline']];ids=set();aliases=set();dna=set()

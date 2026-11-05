@@ -1,0 +1,13 @@
+# CheckM2 ordered feature schema v002: module domain correction
+
+This source-only correction supersedes the module-domain assumption in schema v001 (`2be7bda6589a445a8b70023d9cf84ffadc76a380db112b34a70ce0094fc53adb`). The original schema, helper and failed validation record remain unchanged. No preserved run pickle, FAA, genome, model or numerical report is read here.
+
+Original `checkm2/keggData.py` lines 38-57 use a clipped presence/absence copy for pathway/category calculations; those features stay within [0,1]. Lines 62-76 create the same clipped temporary but calculate modules at line 74 from the original, unclipped KO count table. Thus module values are nonnegative mean copy counts and can legitimately exceed 1. The clipped module temporary is unused by the result calculation. The v001 schema incorrectly applied a common fraction domain to all three groups; that source-variable distinction was missed during its review.
+
+For each module, the source sums raw KO counts using its original membership list, including duplicate occurrences, after removing missing KO identifiers. It divides by the original list length obtained before filtering. Both the 63 duplicate memberships and 14 missing-KO occurrences remain part of the documented algorithm. None of those missing identifiers refers to an earlier module column or Name, so no hidden recursive column references occur in this packaged data.
+
+V002 changes only the module semantic/domain fields and related validator requirements. All 21,241 feature names, order, model slices, data assets, counts and pathway/category domains remain unchanged. The module domain is finite real >=0, with no universal upper bound of 1. A stricter independent check can recompute each module from its bound raw KO count features and original list/denominator; it must preserve multiplicity and must never clip or rewrite actual vectors.
+
+The builder checks exact original source AST variable selection and package hashes. Its stdlib-only synthetic all-counts-two example produces module 2.0 but clipped fraction 1.0; additional fixtures preserve duplicates and missing-KO denominators. These are implementation-semantic controls, not genome/model runs or scientific accuracy tests.
+
+Preserved actual run artifacts may be examined only after full native/namespace/group closure and root authorization. A separate post hoc validator must bind the original successful annotation/CheckM2 execution, raw artifacts and new v002 schema, retain the earlier failure, and produce a new receipt. This correction does not call for rerunning annotation, DIAMOND or ML, and grants no biological acceptance.

@@ -1,0 +1,334 @@
+--- a/scripts/checkm2_pilot.py
++++ b/scripts/checkm2_pilot.py
+@@ -6,6 +6,7 @@
+ import argparse,csv,datetime,fcntl,hashlib,json,math,os,re,resource,shutil,signal,socket,struct,subprocess,sys,time,uuid
+ R=Path(__file__).resolve().parents[1];ROOT=R.resolve();OUT=R/'analysis/checkm2_pilot';STATE=R/'state/checkm2_pilot_progress.json'
+ MAX_RSS=2*1024**3;HEADROOM=1024**3;TIMEOUT=600
++STOP_FILE=R/'state/STOP_CHECKM2_PILOT';LAUNCH_STATE=R/'state/launch_checkm2_pilot.json';OWNER_STATE=R/'state/checkm2_pilot_owner.json';NAMESPACE_ROOT=R/'evidence/checkm2_pilot/namespace_runs'
+ START=datetime.datetime.now(datetime.timezone.utc).isoformat()
+ def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+ def sha(p):
+@@ -43,7 +44,7 @@
+ 
+ def stop_gate(allow_preflight=False):
+  if socket.gethostname().upper()!='WD':raise RuntimeError('WD-only guard')
+- if (R/'state/STOP').exists() or ((R/'state/STOP_CHECKM2_PILOT').exists() and not allow_preflight):raise InterruptedError('STOP requested')
++ if (R/'state/STOP').exists() or (STOP_FILE.exists() and not allow_preflight):raise InterruptedError('STOP requested')
+  available=mem_available()
+  if available<HEADROOM:raise RuntimeError(f'RESOURCE_GATE: Linux available memory {available} bytes below1GiB')
+  if shutil.disk_usage(R).free<40*1024**3:raise RuntimeError('RESOURCE_GATE: backing volume below40GiB free')
+@@ -384,34 +385,48 @@
+  save(run/'manifest.json',{'files':manifest});return result
+ 
+ def main(args):
++ global OUT,STATE,LAUNCH,STOP_FILE,LAUNCH_STATE,OWNER_STATE,NAMESPACE_ROOT
++ control_plan=None
++ if args.input_plan:
++  import checkm2_fasta_invariance as formatctl
++  STATE=R/formatctl.ROUTES['progress_path'];STOP_FILE=R/formatctl.ROUTES['stop_path'];LAUNCH_STATE=R/formatctl.ROUTES['native_launch_state_path'];OWNER_STATE=R/formatctl.ROUTES['owner_state_path'];NAMESPACE_ROOT=R/formatctl.ROUTES['namespace_runs_path']
++  if args.resume_from or args.mount_smoke:raise RuntimeError('One format control permits neither resume nor mount-only launch')
++  control_plan=formatctl.load_input_plan(R,args.input_plan,args.input_plan_sha256,True)
++  OUT=inside(control_plan['control_workspace'])
+  if (args.run or args.mount_smoke) and os.environ.get('TREE2_CHECKM2_READONLY_RUNTIME_VERIFIED')!='1':raise RuntimeError('WAITING_RUNTIME_NAMESPACE: private read-only image runtime must be verified before prediction preflight')
+- plan=prepare()
++ plan=control_plan or prepare()
+  if not args.run and not args.mount_smoke:
+   progress('PREPARED','One-genome plan ready; awaiting installed runtime/model/database smoke acceptance');print(json.dumps(plan));return
+- global LAUNCH
+  if not args.launch_token:raise RuntimeError('Native Windows launcher token is required')
+  for _ in range(100):
+-  p=R/'state/launch_checkm2_pilot.json'
++  p=LAUNCH_STATE
+   if p.exists():
+    v=read(p)
+    if v.get('token')==args.launch_token:LAUNCH=v;break
+   time.sleep(.1)
+  else:raise RuntimeError('No matching native Windows WSL-launch receipt')
++ if control_plan and (LAUNCH.get('input_plan_sha256')!=args.input_plan_sha256 or LAUNCH.get('alternate_control_source_sha256')!=sha(formatctl.__file__) or LAUNCH.get('input_plan_handoff_sha256')!=sha(inside(control_plan['owner_handoff_required_path']))):raise RuntimeError('Immutable native control plan/handoff/source binding differs')
+  lock=open(R/'state/checkm2_pilot.lock','a+b');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+  try:
+   stop_gate(args.mount_smoke);runtime=ready_gate(args.ready_receipt,require_effective=True);runtime['ipc_routing'],runtime['private_ipc_namespace']=ipc_runtime_gate(runtime);no_heavy_science();stop_gate(args.mount_smoke)
+   if args.mount_smoke:
+-   target=R/'evidence/checkm2_pilot/namespace_runs'/(LAUNCH['token']+'_preflight.json')
++   target=NAMESPACE_ROOT/(LAUNCH['token']+'_preflight.json')
+    save(target,{'status':'READONLY_TOOL_PREFLIGHT_PASS_PENDING_CLOSURE','runtime':runtime,'scientific_prediction':'NOT_RUN','native_windows_launch':LAUNCH,'controller_sha256':sha(__file__)})
+    progress('PREFLIGHT_DONE_PENDING_NAMESPACE_CLOSURE','Read-only namespace/tool preflight passed; prediction not run',preflight_receipt=str(target),scientific_prediction='NOT_RUN');return
+   if not runtime.get('effective_runtime'):raise RuntimeError('WAITING_RUNTIME_EFFECTIVE: matching-version overlay, bound forward diagnostic and audited bootstrap are not yet accepted; no prediction started')
+   allowed=sorted(os.sched_getaffinity(0));os.sched_setaffinity(0,set(allowed[:2]))
+   opts={'threads':2,'lowmem':True,'author_diamond_blocksize':0.5,'mode':'auto','translation_table':'author_default_auto','query_cover':80,'subject_cover':80,'identity':30,'evalue':1e-5,'timeout_seconds':600,'group_rss_bytes':MAX_RSS,'headroom_bytes':HEADROOM}
+-  binding={'input':plan['input'],'runtime':runtime,'options':opts};key=binding_digest(binding)
++  binding={'input':plan['input'],'runtime':runtime,'options':opts}
++  if control_plan:
++   reference=control_plan['baseline']['binding']
++   if opts!=reference['options'] or binding_digest({**reference,'runtime':runtime,'options':opts})!=binding_digest(reference):raise RuntimeError('Format control runtime/IPC/bootstrap/database/options differ from baseline')
++   binding.update(experiment_role=formatctl.ROLE,input_plan_path=str(inside(args.input_plan)),input_plan_sha256=args.input_plan_sha256,original_acquisition_input=control_plan['original_input'])
++  key=binding_digest(binding)
+   latest=OUT/'latest.json'
+   if latest.exists():
+    completed=read(latest)
+    if completed.get('binding_sha256')==key:
++    if control_plan:formatctl.verify_cached_control(R,control_plan,completed)
+     manifest=inside(completed['manifest_path']);base=manifest.parent
+     for entry in read(manifest)['files']:
+      f=inside(base/entry['path'])
+@@ -428,11 +443,19 @@
+    failed=read(previous)
+    if failed.get('binding_sha256')==key and failed.get('status')!='COMPLETE_PILOT_ONLY':
+     if not args.resume_from or failed.get('status')=='BLOCKED_RESOURCE':raise RuntimeError('BLOCKED_RESOURCE_OR_PRIOR_FAILURE: same pilot is held; no automatic repeat or budget increase')
++  if control_plan:formatctl.claim_once(R,control_plan)
+   run=OUT/'runs'/(datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+key[:12]);run.mkdir(parents=True,exist_ok=False);save(run/'binding.json',binding);shutil.copyfile(__file__,run/'controller_source_at_execution.py')
+-  save(R/'state/checkm2_pilot_owner.json',{'pid':os.getpid(),'native_linux_identity':stat(os.getpid()),'native_windows_launch':LAUNCH,'started_utc':START,'binding_sha256':key,'run_directory':str(run)})
+-  try:result=prediction(run,binding,args.resume_from)
++  save(OWNER_STATE,{'pid':os.getpid(),'native_linux_identity':stat(os.getpid()),'native_windows_launch':LAUNCH,'started_utc':START,'binding_sha256':key,'run_directory':str(run)})
++  try:
++   result=prediction(run,binding,args.resume_from)
++   if control_plan:
++    comparison=formatctl.compare_runs(R,control_plan,run)
++    formatctl.save_new(OUT/'comparison.json',comparison)
++    if comparison['status']!='PASS_FORMAT_INVARIANCE_CONTROL_PIPELINE_ONLY':raise RuntimeError('FORMAT_CONTROL_INVARIANCE_FAILED: preserve output and production hold')
+   except BaseException as e:
+    status='STOPPED' if isinstance(e,InterruptedError) or 'STOP requested' in str(e) else 'BLOCKED_RESOURCE' if 'RESOURCE_GATE' in str(e) else 'INTERRUPTED_BUDGET' if '600s' in str(e) else 'FAILED_RUNTIME_OR_FIT'
++   if control_plan and isinstance(e,formatctl.NotEvaluable):status='CONTROL_NOT_EVALUABLE'
++   elif control_plan and 'FORMAT_CONTROL_INVARIANCE_FAILED' in str(e):status='CONTROL_DIAGNOSTIC_FAILED'
+    obj={'status':status,'ended_utc':utc(),'error':repr(e),'binding_sha256':key,'run_directory':str(run),'source_input_untouched':True,'completeness':None,'contamination':None,'biological_absence_inference':'NONE','production_acceptance':'NOT_GRANTED'}
+    save(run/'failure_receipt.json',obj)
+    execution=read(run/'execution_receipt.json') if (run/'execution_receipt.json').exists() else {}
+@@ -441,16 +464,18 @@
+    artifacts=[{'path':f.relative_to(run).as_posix(),'bytes':f.stat().st_size,'sha256':sha(f)} for f in sorted(run.rglob('*')) if f.is_file() and (closed or f.name in stable_names)]
+    save(run/'failure_manifest.json',{'files':artifacts,'all_preserved_files_stable_and_hashed':closed,'owned_group_empty':execution.get('owned_group_empty'),'unstable_intermediates_excluded_if_closure_unproven':not closed})
+    save(OUT/'last_exit.json',{**obj,'failure_manifest_path':str(run/'failure_manifest.json'),'failure_manifest_sha256':sha(run/'failure_manifest.json')});progress(status,str(e),log_path=str(run/'predict.stderr.txt'),run_directory=str(run));raise
+-  save(OUT/'latest.json',{'result_path':str(run/'result.json'),'manifest_path':str(run/'manifest.json'),'binding_sha256':key,'result':result,'namespace_execution_receipt_path':str(R/'evidence/checkm2_pilot/namespace_runs'/(LAUNCH['token']+'.json'))});save(OUT/'last_exit.json',{'status':'COMPLETE_PILOT_ONLY','ended_utc':utc(),'run_directory':str(run),'binding_sha256':key,'production_acceptance':'NOT_GRANTED'});progress('PREDICTION_DONE_PENDING_NAMESPACE_CLOSURE','One-genome numeric estimate obtained; compatibility/quality review and cohort gates remain',1,result_path=str(run/'result.json'),completeness=result['Completeness'],contamination=result['Contamination'],group_rss_peak_bytes=result['execution']['sampled_peak_group_rss_bytes'],binding_sha256=key,manifest_path=str(run/'manifest.json'));print(json.dumps(result))
++  save(OUT/'latest.json',{'result_path':str(run/'result.json'),'manifest_path':str(run/'manifest.json'),'binding_sha256':key,'result':result,'namespace_execution_receipt_path':str(NAMESPACE_ROOT/(LAUNCH['token']+'.json'))});save(OUT/'last_exit.json',{'status':'COMPLETE_PILOT_ONLY','ended_utc':utc(),'run_directory':str(run),'binding_sha256':key,'production_acceptance':'NOT_GRANTED'});progress('PREDICTION_DONE_PENDING_NAMESPACE_CLOSURE','One-genome numeric estimate obtained; compatibility/quality review and cohort gates remain',1,result_path=str(run/'result.json'),completeness=result['Completeness'],contamination=result['Contamination'],group_rss_peak_bytes=result['execution']['sampled_peak_group_rss_bytes'],binding_sha256=key,manifest_path=str(run/'manifest.json'));print(json.dumps(result))
++  if control_plan:
++   latest=read(OUT/'latest.json');latest.update(experiment_role=formatctl.ROLE,input_plan_sha256=args.input_plan_sha256,comparison_path=str(OUT/'comparison.json'),comparison_sha256=sha(OUT/'comparison.json'));save(OUT/'latest.json',latest)
+  finally:fcntl.flock(lock,fcntl.LOCK_UN);lock.close()
+ 
+ if __name__=='__main__':
+  LAUNCH=None
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--run',action='store_true');p.add_argument('--mount-smoke',action='store_true');p.add_argument('--ready-receipt',default=str(R/'state/checkm2_runtime_ready.json'));p.add_argument('--launch-token');p.add_argument('--resume-from');args=p.parse_args()
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--run',action='store_true');p.add_argument('--mount-smoke',action='store_true');p.add_argument('--ready-receipt',default=str(R/'state/checkm2_runtime_ready.json'));p.add_argument('--launch-token');p.add_argument('--resume-from');p.add_argument('--input-plan');p.add_argument('--input-plan-sha256');args=p.parse_args()
+  try:main(args)
+  except BaseException as e:
+   if 'WAITING_RUNTIME' in str(e) or 'WAITING_HEAVY_PROCESS' in str(e):progress('WAITING_READY_OR_RESOURCE',str(e))
+   elif 'BLOCKED_RESOURCE_OR_PRIOR_FAILURE' in str(e):progress('HELD_PREVIOUS_ATTEMPT',str(e))
+   elif 'RESOURCE_GATE' in str(e):progress('BLOCKED_RESOURCE',str(e))
+-  elif not STATE.exists() or read(STATE).get('status') not in ('FAILED_RUNTIME_OR_FIT','BLOCKED_RESOURCE','INTERRUPTED_BUDGET','STOPPED'):progress('FAILED_PRECHECK',repr(e))
++  elif not STATE.exists() or read(STATE).get('status') not in ('FAILED_RUNTIME_OR_FIT','BLOCKED_RESOURCE','INTERRUPTED_BUDGET','STOPPED','CONTROL_NOT_EVALUABLE','CONTROL_DIAGNOSTIC_FAILED'):progress('FAILED_PRECHECK',repr(e))
+   raise
+--- a/scripts/checkm2_pilot_image_entry.py
++++ b/scripts/checkm2_pilot_image_entry.py
+@@ -13,6 +13,10 @@
+ 
+ R = Path(__file__).resolve().parents[1]
+ STATE = R / 'state/checkm2_pilot_progress.json'
++LAUNCH_STATE = R / 'state/launch_checkm2_pilot.json'
++NAMESPACE_FOLDER = R / 'evidence/checkm2_pilot/namespace_runs'
++LATEST_PATH = R / 'analysis/checkm2_pilot/latest.json'
++STOP_FILE = R / 'state/STOP_CHECKM2_PILOT'
+ CONTEXT = {}
+ 
+ 
+@@ -86,7 +90,7 @@
+         for block in iter(lambda: handle.read(2 * 1024**2), b''):
+             if time.monotonic() - started > 600:
+                 raise TimeoutError('Closed-image verification exceeded 600 seconds')
+-            if (R / 'state/STOP').exists() or (launch.get('operation') == 'PREDICTION' and (R / 'state/STOP_CHECKM2_PILOT').exists()):
++            if (R / 'state/STOP').exists() or (launch.get('operation') == 'PREDICTION' and STOP_FILE.exists()):
+                 raise InterruptedError('STOP during closed-image verification')
+             available = linux_available_bytes()
+             if available < 1024**3:
+@@ -101,6 +105,7 @@
+ 
+ 
+ def main():
++    global STATE, LAUNCH_STATE, NAMESPACE_FOLDER, LATEST_PATH, STOP_FILE
+     if os.environ.get('TREE2_PRIVATE_NAMESPACE_VERIFIED') != '1':
+         raise RuntimeError('Private namespace wrapper missing')
+     token = os.environ.get('TREE2_CHECKM2_PILOT_LAUNCH_TOKEN', '')
+@@ -108,11 +113,25 @@
+         raise RuntimeError('Native launcher token missing or malformed')
+     CONTEXT['token'] = token
+     request = read(R / 'state/checkm2_pilot_launch_requests' / (token + '.json'))
++    alternate = None
++    if request.get('experiment_role') == 'FASTA_WRAP_INVARIANCE':
++        import checkm2_fasta_invariance as formatctl
++        STATE = R / formatctl.ROUTES['progress_path']
++        LAUNCH_STATE = R / formatctl.ROUTES['native_launch_state_path']
++        NAMESPACE_FOLDER = R / formatctl.ROUTES['namespace_runs_path']
++        STOP_FILE = R / formatctl.ROUTES['stop_path']
++        alternate = formatctl.load_input_plan(R, request['input_plan_path'], request['input_plan_sha256'], True)
++        if request.get('resume_from') or request.get('operation') != 'PREDICTION' or request.get('alternate_control_source_sha256') != sha(formatctl.__file__):
++            raise RuntimeError('Alternate control source/operation budget differs')
++        if request.get('input_plan_handoff_sha256') != sha(inside(alternate['owner_handoff_required_path'])):
++            raise RuntimeError('Alternate owner handoff changed after native admission')
++        LATEST_PATH = inside(alternate['control_workspace']) / 'latest.json'
++        CONTEXT['alternate_input_plan_sha256'] = request['input_plan_sha256']
+     if request.get('token') != token or request.get('operation') not in ('PREDICTION', 'MOUNT_SMOKE_ONLY'):
+         raise RuntimeError('Immutable launch request differs')
+     launch = None
+     for _ in range(100):
+-        receipt = R / 'state/launch_checkm2_pilot.json'
++        receipt = LAUNCH_STATE
+         if receipt.exists():
+             value = read(receipt)
+             if value.get('token') == token:
+@@ -145,7 +164,7 @@
+     helper_environment = os.environ.copy()
+     helper_environment.update(controls)
+     os.sched_setaffinity(0, set(sorted(os.sched_getaffinity(0))[:2]))
+-    folder = R / 'evidence/checkm2_pilot/namespace_runs'
++    folder = NAMESPACE_FOLDER
+     folder.mkdir(parents=True, exist_ok=True)
+     mount_receipt = folder / (token + '_mount.json')
+     ipc_receipt = folder / (token + '_ipc.json')
+@@ -153,6 +172,8 @@
+     inner_command = ['/usr/bin/python3', '-B', str(R / 'scripts/checkm2_pilot.py'),
+                      '--mount-smoke' if request['operation'] == 'MOUNT_SMOKE_ONLY' else '--run',
+                      '--ready-receipt', str(ready_path), '--launch-token', token]
++    if alternate:
++        inner_command += ['--input-plan', str(inside(request['input_plan_path'])), '--input-plan-sha256', request['input_plan_sha256']]
+     if request.get('resume_from'):
+         inner_command += ['--resume-from', str(inside(request['resume_from']))]
+     command = ['/usr/bin/python3', '-B', str(R / 'scripts/checkm2_runtime_image.py'),
+@@ -206,7 +227,10 @@
+         'ipc_closure_path': str(ipc_closure_path), 'ipc_closure_sha256': sha(ipc_closure_path) if ipc_closure_path.exists() else None,
+         'ipc_closure': ipc_closure}
+     save(final_receipt, envelope)
+-    latest_path = R / 'analysis/checkm2_pilot/latest.json'
++    if alternate:
++        envelope.update(experiment_role='FASTA_WRAP_INVARIANCE', input_plan_sha256=request['input_plan_sha256'])
++        save(final_receipt, envelope)
++    latest_path = LATEST_PATH
+     if status == 'NAMESPACE_CLOSED_AND_VERIFIED' and child.returncode == 0 and request['operation'] == 'PREDICTION' and latest_path.exists():
+         latest = read(latest_path)
+         if latest.get('namespace_execution_receipt_path') == str(final_receipt):
+@@ -222,6 +246,10 @@
+         final.update(status='COMPLETED', done=1, detail='One-genome numeric result and runtime closure verified; production QC review remains')
+     else:
+         final['detail'] = inner.get('detail', '') + '; runtime closed and image hash verified'
++    if alternate:
++        final.update(experiment_role='FASTA_WRAP_INVARIANCE', input_plan_sha256=request['input_plan_sha256'])
++        if child.returncode == 0 and status == 'NAMESPACE_CLOSED_AND_VERIFIED':
++            final.update(detail='FASTA format invariance result and namespace closure verified; biological accuracy/production remain unvalidated')
+     save(STATE, final)
+     return child.returncode if status == 'NAMESPACE_CLOSED_AND_VERIFIED' else 4
+ 
+@@ -233,7 +261,7 @@
+         token = CONTEXT.get('token')
+         launch = CONTEXT.get('launch')
+         if launch is None and token:
+-            candidate = R / 'state/launch_checkm2_pilot.json'
++            candidate = LAUNCH_STATE
+             if candidate.exists():
+                 value = read(candidate)
+                 if value.get('token') == token:
+@@ -250,7 +278,7 @@
+                    'production_acceptance': 'NOT_GRANTED', 'scientific_absence_inference': 'NONE',
+                    'entry_source_sha256': sha(__file__)}
+         if token:
+-            path = R / 'evidence/checkm2_pilot/namespace_runs' / (token + '.json')
++            path = NAMESPACE_FOLDER / (token + '.json')
+             save(path, receipt)
+         if launch:
+             current = read(STATE) if STATE.exists() else {}
+--- a/scripts/launch_checkm2_pilot.ps1
++++ b/scripts/launch_checkm2_pilot.ps1
+@@ -1,7 +1,21 @@
+-param([switch]$WaitForReady,[string]$ResumeFrom,[switch]$MountSmoke,[ValidateRange(1,7200)][int]$ReadinessWaitSeconds=5400)
++param([string]$InputPlanPath,[switch]$WaitForReady,[string]$ResumeFrom,[switch]$MountSmoke,[ValidateRange(1,7200)][int]$ReadinessWaitSeconds=5400)
+ $ErrorActionPreference='Stop'
+ $projectRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+ if($env:COMPUTERNAME -ne 'WD'){throw 'WD-only launcher'}
++$controlPlan=$null;$controlPlanSha=$null;$controlPlanResolved=$null
++$routeLaunch='state\launch_checkm2_pilot.json';$routeWaiter='state\checkm2_pilot_waiter.json';$routeExit='state\checkm2_pilot_launcher_exit.json';$routeProgress='state\checkm2_pilot_progress.json';$routeNamespace='evidence\checkm2_pilot\namespace_runs';$routeStop='state\STOP_CHECKM2_PILOT';$routeLog='checkm2_pilot'
++if($InputPlanPath){
++ if($ResumeFrom -or $MountSmoke){throw 'One format control permits neither resume nor mount-only launch'}
++ $routeLaunch='state\launch_checkm2_fasta_invariance.json';$routeWaiter='state\checkm2_fasta_invariance_waiter.json';$routeExit='state\checkm2_fasta_invariance_launcher_exit.json';$routeProgress='state\checkm2_fasta_invariance_progress.json';$routeNamespace='evidence\checkm2_fasta_invariance\namespace_runs';$routeStop='state\STOP_CHECKM2_FASTA_INVARIANCE';$routeLog='checkm2_fasta_invariance'
++ $controlPlanResolved=[IO.Path]::GetFullPath($(if([IO.Path]::IsPathRooted($InputPlanPath)){$InputPlanPath}else{Join-Path $projectRoot $InputPlanPath}))
++ if(-not $controlPlanResolved.StartsWith($projectRoot+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Control input plan escapes project'}
++ $controlPlanSha=(Get-FileHash -LiteralPath $controlPlanResolved -Algorithm SHA256).Hash.ToLowerInvariant()
++ $validator='C:\Users\wheel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
++ $validated=& $validator -B (Join-Path $projectRoot 'scripts/checkm2_fasta_invariance.py') validate --input-plan $controlPlanResolved --sha256 $controlPlanSha --require-handoff
++ if($LASTEXITCODE -ne 0){throw 'Control plan or explicit baseline-owner handoff is invalid'}
++ $controlPlan=($validated -join "`n") | ConvertFrom-Json
++}
++
+ $lockPath=Join-Path $projectRoot 'state\checkm2_pilot_launcher.lock'
+ try{$lock=[System.IO.File]::Open($lockPath,[System.IO.FileMode]::OpenOrCreate,[System.IO.FileAccess]::ReadWrite,[System.IO.FileShare]::None)}catch{throw 'Another pilot launcher owns the OS lock'}
+ $token=[guid]::NewGuid().ToString('N')
+@@ -12,7 +26,7 @@
+  [System.IO.File]::WriteAllText($tmp,($value | ConvertTo-Json -Depth 12),[System.Text.UTF8Encoding]::new($false))
+  if([System.IO.File]::Exists($path)){[System.IO.File]::Replace($tmp,$path,[NullString]::Value)}else{[System.IO.File]::Move($tmp,$path)}
+ }
+-Save-Receipt (Join-Path $projectRoot 'state\checkm2_pilot_waiter.json') $nativeIdentity
++Save-Receipt (Join-Path $projectRoot $routeWaiter) $nativeIdentity
+ function Runtime-Closed($ready){
+  if(-not $ready -or $ready.status -ne 'READY_FOR_RESOURCE_PILOT' -or $ready.import_smoke_passed -ne $true -or $ready.model_load_smoke_passed -ne $true -or $ready.heavy_linux_children_closed -ne $true -or $ready.requires_private_image_mount -ne $true){return $false}
+  if(-not $MountSmoke){
+@@ -77,13 +91,13 @@
+  return $true
+ }
+ try{
+- $priorPath=Join-Path $projectRoot 'state\launch_checkm2_pilot.json'
++ $priorPath=Join-Path $projectRoot $routeLaunch
+  if(Test-Path -LiteralPath $priorPath){
+   $prior=Get-Content -LiteralPath $priorPath -Raw | ConvertFrom-Json
+   $priorProcess=Get-Process -Id $prior.pid -ErrorAction SilentlyContinue
+   if($priorProcess -and $priorProcess.StartTime.ToUniversalTime().Ticks -eq ([datetime]$prior.creation_time_utc).ToUniversalTime().Ticks){throw 'Previous native WSL pilot/namespace worker is still active; no new launch'}
+   if($prior.token -notmatch '^[0-9a-f]{32}$'){throw 'Prior launch identity requires review'}
+-  $priorEnvelope=Join-Path $projectRoot ('evidence\checkm2_pilot\namespace_runs\'+$prior.token+'.json')
++  $priorEnvelope=Join-Path $projectRoot ($routeNamespace+'\'+$prior.token+'.json')
+   if(-not (Test-Path -LiteralPath $priorEnvelope)){throw 'Prior namespace closure is unproven; no relaunch'}
+   $priorResult=Get-Content -LiteralPath $priorEnvelope -Raw | ConvertFrom-Json
+   if($priorResult.status -ne 'NAMESPACE_CLOSED_AND_VERIFIED' -and $priorResult.helper_started -ne $false){throw 'Prior helper/mount closure is unproven; no relaunch'}
+@@ -91,7 +105,7 @@
+  $readyPath=Join-Path $projectRoot 'state\checkm2_runtime_ready.json'
+  $readinessDeadline=[datetime]::UtcNow.AddSeconds($ReadinessWaitSeconds)
+  while($true){
+-  if((Test-Path (Join-Path $projectRoot 'state\STOP')) -or ((Test-Path (Join-Path $projectRoot 'state\STOP_CHECKM2_PILOT')) -and -not $MountSmoke)){throw 'STOP requested before pilot launch'}
++  if((Test-Path (Join-Path $projectRoot 'state\STOP')) -or ((Test-Path (Join-Path $projectRoot $routeStop)) -and -not $MountSmoke)){throw 'STOP requested before pilot launch'}
+   $ready=$null
+   if(Test-Path $readyPath){try{$ready=Get-Content -LiteralPath $readyPath -Raw | ConvertFrom-Json}catch{}}
+   if((Runtime-Closed $ready) -and (Forward-Closed $ready $readyPath)){break}
+@@ -109,6 +123,13 @@
+  $operation=if($MountSmoke){'MOUNT_SMOKE_ONLY'}else{'PREDICTION'}
+  if($MountSmoke -and $ResumeFrom){throw 'Mount smoke does not resume a prediction'}
+  $request=@{token=$token;operation=$operation;ready_receipt_path=($linuxRoot+'/state/checkm2_runtime_ready.json');ready_receipt_sha256=(Get-FileHash -LiteralPath $readyPath -Algorithm SHA256).Hash.ToLowerInvariant();ipc_proof_path=($linuxRoot+'/'+$ipcRelative);ipc_proof_sha256=(Get-FileHash -LiteralPath $ipcPath -Algorithm SHA256).Hash.ToLowerInvariant();resume_from=$null;created_utc=(Get-Date).ToUniversalTime().ToString('o')}
++ if($controlPlan){
++  $request.experiment_role='FASTA_WRAP_INVARIANCE'
++  $request.input_plan_path=$linuxRoot+'/'+$controlPlan.plan_path
++  $request.input_plan_sha256=$controlPlanSha
++  $request.alternate_control_source_sha256=(Get-FileHash -LiteralPath (Join-Path $projectRoot 'scripts/checkm2_fasta_invariance.py') -Algorithm SHA256).Hash.ToLowerInvariant()
++  $request.input_plan_handoff_sha256=(Get-FileHash -LiteralPath (Join-Path $projectRoot $controlPlan.owner_handoff_required_path) -Algorithm SHA256).Hash.ToLowerInvariant()
++ }
+  if($ResumeFrom){
+   $resolved=(Resolve-Path -LiteralPath $ResumeFrom).Path
+   if(-not $resolved.StartsWith($projectRoot+'\',[StringComparison]::OrdinalIgnoreCase)){throw 'Resume path outside project'}
+@@ -119,19 +140,22 @@
+  Save-Receipt (Join-Path $requestFolder ($token+'.json')) $request
+  $pilotArgs=@('-d','Ubuntu','--','/usr/bin/env',('TREE2_CHECKM2_PILOT_LAUNCH_TOKEN='+$token),'/bin/bash',($linuxRoot+'/scripts/checkm2_private_setup_ns.sh'),'outer','run',($linuxRoot+'/scripts/checkm2_pilot_image.sh'))
+  $stamp=(Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ')
+- $stdout=Join-Path $projectRoot ('logs\checkm2_pilot_'+$stamp+'.stdout.jsonl')
+- $stderr=Join-Path $projectRoot ('logs\checkm2_pilot_'+$stamp+'.stderr.txt')
++ $stdout=Join-Path $projectRoot ('logs\'+$routeLog+'_'+$stamp+'.stdout.jsonl')
++ $stderr=Join-Path $projectRoot ('logs\'+$routeLog+'_'+$stamp+'.stderr.txt')
+  $job=Start-Process -FilePath 'C:\Windows\System32\wsl.exe' -ArgumentList $pilotArgs -WorkingDirectory $projectRoot -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru
+  $nativeProcessHandle=$job.Handle
+  $launch=@{pid=$job.Id;creation_time_utc=$job.StartTime.ToUniversalTime().ToString('o');token=$token;launcher=$nativeIdentity;script='scripts/checkm2_pilot_image.sh';operation=$operation;scientific_prediction_requested=(-not $MountSmoke);ready_receipt_sha256=$request.ready_receipt_sha256;stdout=$stdout;stderr=$stderr;started_utc=(Get-Date).ToUniversalTime().ToString('o')}
+- Save-Receipt (Join-Path $projectRoot 'state\launch_checkm2_pilot.json') $launch
++ if($controlPlan){
++  $launch.experiment_role=$request.experiment_role;$launch.input_plan_path=$request.input_plan_path;$launch.input_plan_sha256=$request.input_plan_sha256;$launch.alternate_control_source_sha256=$request.alternate_control_source_sha256;$launch.input_plan_handoff_sha256=$request.input_plan_handoff_sha256
++ }
++ Save-Receipt (Join-Path $projectRoot $routeLaunch) $launch
+  $exited=$job.WaitForExit(3600000)
+  if($exited){$job.Refresh()}
+  $nativeExitCode=if($exited){$job.ExitCode}else{$null}
+  $receipt=@{status=if(-not $exited){'OUTER_WAIT_BOUND_REACHED_CHILD_NOT_CLOSED'}elseif($null -eq $nativeExitCode){'NATIVE_EXIT_CODE_UNAVAILABLE'}elseif($nativeExitCode -eq 0){'CONTROLLER_EXIT0_CHECK_SCIENTIFIC_RECEIPT'}else{'CONTROLLER_STOPPED_OR_FAILED_CHECK_SCIENTIFIC_RECEIPT'};ended_utc=(Get-Date).ToUniversalTime().ToString('o');native_windows_launch=$launch;exit_code=$nativeExitCode;native_child_closed=$exited;outer_wait_limit_seconds=3600;next_action='No automatic resource increase or repeat prediction';production_panel_acceptance='NOT_GRANTED'}
+- Save-Receipt (Join-Path $projectRoot 'state\checkm2_pilot_launcher_exit.json') $receipt
++ Save-Receipt (Join-Path $projectRoot $routeExit) $receipt
+  if(-not $exited){
+-  $progressPath=Join-Path $projectRoot 'state\checkm2_pilot_progress.json'
++  $progressPath=Join-Path $projectRoot $routeProgress
+   $progress=Get-Content -LiteralPath $progressPath -Raw | ConvertFrom-Json
+   $progress.status='INTERRUPTED_BUDGET';$progress.detail='Outer namespace wrapper exceeded3600s; native WSL worker remains active and closure is unproven. No relaunch.';$progress.updated_utc=(Get-Date).ToUniversalTime().ToString('o')
+   Save-Receipt $progressPath $progress

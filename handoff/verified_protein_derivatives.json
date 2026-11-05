@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-11-05T16:11:00.057549+00:00",
+  "checks": [
+    {
+      "accession": "GCF_003885105.1",
+      "validated_translations": 2818,
+      "excluded_CDS_evidence": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003885105.1/prodigal_attempt_03f7cb1fe9ef4db2a903a2d3c82e9789/prodigal.ffn",
+        "sha256": "befe693ba7e79668927b956a7ed377764cc2e62f25dd14aaed205ec825834df6",
+        "bytes": 2939047,
+        "reason": "nucleotide_input_omitted_by_policy"
+      }
+    },
+    {
+      "accession": "GCF_005405125.1",
+      "validated_translations": 2776,
+      "excluded_CDS_evidence": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_005405125.1/prodigal_attempt_570dde17edd346eea3faacf248dcd107/prodigal.ffn",
+        "sha256": "b2c67595b445f714e57b87e500bb3aa2042401108c909aebb6148f9d042761a6",
+        "bytes": 2918859,
+        "reason": "nucleotide_input_omitted_by_policy"
+      }
+    }
+  ],
+  "proteins": [
+    {
+      "path": "analysis/uniform_annotation_v001/units/GCF_003885105.1/prodigal_attempt_03f7cb1fe9ef4db2a903a2d3c82e9789/prodigal.faa",
+      "sha256": "8a4c256ae2a8fcf9149f1800c86bf5eefe27388f7e593cd54773b1f31e388c0e",
+      "bytes": 1225563,
+      "reason": "all_Prodigal_peptides_match_translated_CDS_under_table11"
+    },
+    {
+      "path": "analysis/uniform_annotation_v001/units/GCF_003885105.1/prodigal_attempt_03f7cb1fe9ef4db2a903a2d3c82e9789/proteins.faa",
+      "sha256": "bdba20a56c72b50f56e7bab3d4eedfc003c37789d85392580b7d73e3ab56c3a2",
+      "bytes": 924638,
+      "reason": "canonical_peptides_match_validated_Prodigal_translation"
+    },
+    {
+      "path": "analysis/checkm1_lactobacillales_full919_v001/batch_017/inputs/GCF_003885105.1.faa",
+      "sha256": "8a4c256ae2a8fcf9149f1800c86bf5eefe27388f7e593cd54773b1f31e388c0e",
+      "bytes": 1225563,
+      "reason": "byte_identical_copy_of_validated_Prodigal_protein_FASTA"
+    },
+    {
+      "path": "analysis/checkm1_lactobacillales_full919_v001/batch_017/checkm_output/bins/GCF_003885105.1/genes.faa",
+      "sha256": "8a4c256ae2a8fcf9149f1800c86bf5eefe27388f7e593cd54773b1f31e388c0e",
+      "bytes": 1225563,
+      "reason": "byte_identical_copy_of_validated_Prodigal_protein_FASTA"
+    },
+    {
+      "path": "analysis/uniform_annotation_v001/units/GCF_005405125.1/prodigal_attempt_570dde17edd346eea3faacf248dcd107/prodigal.faa",
+      "sha256": "b7bc89673c0ffe55f95fac77c3d20e1a50a99c8ce8bb55682ed480c856264787",
+      "bytes": 1216143,
+      "reason": "all_Prodigal_peptides_match_translated_CDS_under_table11"
+    },
+    {
+      "path": "analysis/uniform_annotation_v001/units/GCF_005405125.1/prodigal_attempt_570dde17edd346eea3faacf248dcd107/proteins.faa",
+      "sha256": "0ec6a5999facc388637bba48e8367e237ab768d3cec8ed09ee5b834c2a5b04fe",
+      "bytes": 918087,
+      "reason": "canonical_peptides_match_validated_Prodigal_translation"
+    },
+    {
+      "path": "analysis/checkm1_lactobacillales_full919_v001/batch_019/inputs/GCF_005405125.1.faa",
+      "sha256": "b7bc89673c0ffe55f95fac77c3d20e1a50a99c8ce8bb55682ed480c856264787",
+      "bytes": 1216143,
+      "reason": "byte_identical_copy_of_validated_Prodigal_protein_FASTA"
+    },
+    {
+      "path": "analysis/checkm1_lactobacillales_full919_v001/batch_019/checkm_output/bins/GCF_005405125.1/genes.faa",
+      "sha256": "b7bc89673c0ffe55f95fac77c3d20e1a50a99c8ce8bb55682ed480c856264787",
+      "bytes": 1216143,
+      "reason": "byte_identical_copy_of_validated_Prodigal_protein_FASTA"
+    }
+  ]
+}

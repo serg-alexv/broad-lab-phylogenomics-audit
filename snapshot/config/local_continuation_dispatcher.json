@@ -1,0 +1,17 @@
+{
+  "schema": "TREE2_EVENT_DISPATCHER_CONFIG_V1",
+  "project_root": "C:\\Users\\wheel\\Documents\\Codex\\2026-10-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\TREE2_WD_20261026",
+  "handoff_path": "state/local_continuation/handoff.json",
+  "state_directory": "state/local_continuation",
+  "prompt_template": {
+    "path": "config/local_continuation_prompt_v001.md",
+    "sha256": "4d0036b2a00c91e9d1cf3c987eee6c5e2afb97b27f4860a59b81d1eda0463eca",
+    "bytes": 5908
+  },
+  "cli_timeout_seconds": 7200,
+  "allow_initial_useful_handoff": true,
+  "required_complete_outputs": [
+    "tree2_full",
+    "tree2_representative"
+  ]
+}

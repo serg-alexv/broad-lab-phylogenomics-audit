@@ -1,0 +1,405 @@
+{
+  "scientific_checkpoint": {
+    "acquired_source_records": 1170,
+    "checkm1_method_records": 919,
+    "queue_genomes": 919,
+    "tree_tips": 900,
+    "matrix_loci": 54,
+    "matrix_columns": 13071,
+    "reported_bootstrap_trees": 1000,
+    "accepted_defence_genomes": 165,
+    "distinct_acceptance_packets": 9,
+    "unsearched_defence_genomes": 734,
+    "C009_computed_genomes": 20,
+    "C009_engine_commits": 40,
+    "C009_independent_QA_accepted": false
+  },
+  "coverage_by_category": {
+    "methods": {
+      "referenced": 3,
+      "included": 3
+    },
+    "source_provenance": {
+      "referenced": 6,
+      "included": 6
+    },
+    "biological_qc": {
+      "referenced": 5,
+      "included": 5
+    },
+    "markers_and_panel": {
+      "referenced": 7,
+      "included": 7
+    },
+    "defence_ledger": {
+      "referenced": 7,
+      "included": 7
+    },
+    "canonical_canonical_FAA": {
+      "referenced": 919,
+      "included": 919
+    },
+    "canonical_Prodigal_GFF": {
+      "referenced": 919,
+      "included": 919
+    },
+    "canonical_protein_coordinate_map": {
+      "referenced": 919,
+      "included": 919
+    },
+    "annotation_provenance": {
+      "referenced": 920,
+      "included": 920
+    },
+    "matrix": {
+      "referenced": 66,
+      "included": 66
+    },
+    "tree_outputs": {
+      "referenced": 12,
+      "included": 12
+    },
+    "tree_validation": {
+      "referenced": 5,
+      "included": 5
+    },
+    "accepted_defence": {
+      "referenced": 565,
+      "included": 565
+    },
+    "C009_checkpoint": {
+      "referenced": 7,
+      "included": 7
+    },
+    "C009_genomes": {
+      "referenced": 140,
+      "included": 140
+    },
+    "C009_engine_commits": {
+      "referenced": 40,
+      "included": 40
+    },
+    "C009_engine_evidence": {
+      "referenced": 83,
+      "included": 83
+    },
+    "C009_phase_artifacts": {
+      "referenced": 169460,
+      "included": 169460
+    },
+    "defence_model_provenance": {
+      "referenced": 6,
+      "included": 6
+    },
+    "runtime_and_plan_dependencies": {
+      "referenced": 56,
+      "included": 51,
+      "documented_policy_omissions": 5
+    }
+  },
+  "documented_omissions_by_reason": {
+    "installed_runtime_tool_cache_or_unselected_database_payload": 5
+  },
+  "documented_omission_examples": [
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/Rscript",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/padloc_oci_case_runtime_20261029/usr/local/bin/padloc.R",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/bioenv/bin/hmmsearch",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    },
+    {
+      "path": "tools/checkm1_env/bin/python3.11",
+      "category": "runtime_and_plan_dependencies",
+      "reason": "installed_runtime_tool_cache_or_unselected_database_payload"
+    }
+  ],
+  "required_missing_examples": [],
+  "external_host_dependencies": [
+    {
+      "path": "/root/miniconda3/envs/phylogeny/bin/iqtree3",
+      "reason": "external_host_dependency",
+      "reference": {
+        "path": "/root/miniconda3/envs/phylogeny/bin/iqtree3",
+        "sha256": "7d2cf1ccc5a02197e8910702314d4fcd6ea5ea8d9c8062e5fa0bdfbe38c26c8f",
+        "bytes": 13205856
+      }
+    }
+  ],
+  "integrity_errors_by_kind": {},
+  "integrity_error_examples": [],
+  "example_limit_per_list": 60,
+  "status": "PASS_INVENTORY_COVERAGE",
+  "inventory_sha256": "162fc704eb123c4afab60469c546434b381e01106be124533b22d78311012384",
+  "inventory_source_snapshot_utc": "2026-11-05T16:14:31.353411+00:00",
+  "spool": "inventory/scan-20261105T154818323640",
+  "inventory_groups": {
+    "data_provenance": {
+      "members": 12317,
+      "unpacked_bytes": 291575942
+    },
+    "evidence": {
+      "members": 24450,
+      "unpacked_bytes": 1553527905
+    },
+    "evidence--defence_C001_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 128258048
+    },
+    "evidence--defence_C002_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 128372736
+    },
+    "evidence--defence_C003_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 127676416
+    },
+    "evidence--defence_C004_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 128372736
+    },
+    "evidence--defence_C005_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 133226496
+    },
+    "evidence--defence_C006_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 135512064
+    },
+    "evidence--defence_C007_file_QA_v001": {
+      "members": 1,
+      "unpacked_bytes": 136224768
+    },
+    "evidence--defence_C008R_file_QA_v003": {
+      "members": 1,
+      "unpacked_bytes": 135548928
+    },
+    "methods": {
+      "members": 3831,
+      "unpacked_bytes": 36967608
+    },
+    "results": {
+      "members": 10691,
+      "unpacked_bytes": 5582798096
+    },
+    "results--checkm1_lactobacillales_full919_v001": {
+      "members": 17069,
+      "unpacked_bytes": 5783266341
+    },
+    "results--checkm2_benchmark10": {
+      "members": 4,
+      "unpacked_bytes": 13813
+    },
+    "results--checkm2_benchmark10_protein_recovery_T1": {
+      "members": 132,
+      "unpacked_bytes": 42965546
+    },
+    "results--checkm2_benchmark10_protein_v002": {
+      "members": 9,
+      "unpacked_bytes": 2113241
+    },
+    "results--checkm2_campaign_index8_v001": {
+      "members": 17,
+      "unpacked_bytes": 1287082
+    },
+    "results--checkm2_campaign_index8_v002": {
+      "members": 117,
+      "unpacked_bytes": 6700694
+    },
+    "results--checkm2_parallel_saved_stock_v001": {
+      "members": 24,
+      "unpacked_bytes": 1781251
+    },
+    "results--checkm2_phase_separated_N1": {
+      "members": 53,
+      "unpacked_bytes": 3414875
+    },
+    "results--checkm2_phase_separated_N5": {
+      "members": 244,
+      "unpacked_bytes": 18001738
+    },
+    "results--checkm2_phase_separated_P20": {
+      "members": 126,
+      "unpacked_bytes": 8243846
+    },
+    "results--checkm2_pilot": {
+      "members": 23,
+      "unpacked_bytes": 145992
+    },
+    "results--checkm2_protein_format_invariance_v002": {
+      "members": 33,
+      "unpacked_bytes": 3337548
+    },
+    "results--checkm2_protein_pilot_v001": {
+      "members": 30,
+      "unpacked_bytes": 3325030
+    },
+    "results--checkm2_qc_persistent_session_v001": {
+      "members": 11,
+      "unpacked_bytes": 15038
+    },
+    "results--checkm2_qc_persistent_session_v002": {
+      "members": 58,
+      "unpacked_bytes": 24244669
+    },
+    "results--checkm2_qc_persistent_session_v003": {
+      "members": 111,
+      "unpacked_bytes": 39101024
+    },
+    "results--checkm2_single_faa_S1": {
+      "members": 36,
+      "unpacked_bytes": 4782564
+    },
+    "results--checkm2_single_faa_S1R2": {
+      "members": 225,
+      "unpacked_bytes": 17994311
+    },
+    "results--defence_C001_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41472
+    },
+    "results--defence_C002_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41490
+    },
+    "results--defence_C003_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41458
+    },
+    "results--defence_C004_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41480
+    },
+    "results--defence_C005_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41471
+    },
+    "results--defence_C006_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41499
+    },
+    "results--defence_C007_file_QA_v001": {
+      "members": 3,
+      "unpacked_bytes": 41460
+    },
+    "results--defence_C008R_file_QA_v003": {
+      "members": 3,
+      "unpacked_bytes": 47980
+    },
+    "results--defence_C008_failed_c2ad": {
+      "members": 2,
+      "unpacked_bytes": 101199
+    },
+    "results--defence_bulk_C001_v001": {
+      "members": 169722,
+      "unpacked_bytes": 501496823
+    },
+    "results--defence_bulk_C002_v001": {
+      "members": 169722,
+      "unpacked_bytes": 497219247
+    },
+    "results--defence_bulk_C003_v001": {
+      "members": 169722,
+      "unpacked_bytes": 492167644
+    },
+    "results--defence_bulk_C004_v001": {
+      "members": 169722,
+      "unpacked_bytes": 513749760
+    },
+    "results--defence_bulk_C005_v002": {
+      "members": 169722,
+      "unpacked_bytes": 504056388
+    },
+    "results--defence_bulk_C006_v002": {
+      "members": 169722,
+      "unpacked_bytes": 517980233
+    },
+    "results--defence_bulk_C007_v002": {
+      "members": 169722,
+      "unpacked_bytes": 517919057
+    },
+    "results--defence_bulk_C008_recovery_v003": {
+      "members": 169503,
+      "unpacked_bytes": 405842727
+    },
+    "results--defence_bulk_C008_v002": {
+      "members": 216,
+      "unpacked_bytes": 108499916
+    },
+    "results--defence_bulk_C009_v003": {
+      "members": 169722,
+      "unpacked_bytes": 520427112
+    },
+    "results--defence_real_pilot_v001": {
+      "members": 42432,
+      "unpacked_bytes": 153679171
+    },
+    "results--four_thread_resume_20261101": {
+      "members": 18,
+      "unpacked_bytes": 54298948
+    },
+    "results--full900_completed_20261103": {
+      "members": 10,
+      "unpacked_bytes": 58384370
+    },
+    "results--full900_thread_migration_20261030": {
+      "members": 6,
+      "unpacked_bytes": 17686048
+    },
+    "results--marker_discovery": {
+      "members": 19903,
+      "unpacked_bytes": 3021502971
+    },
+    "results--phylogeny": {
+      "members": 254,
+      "unpacked_bytes": 105297320
+    },
+    "results--pilot10": {
+      "members": 113,
+      "unpacked_bytes": 61542855
+    },
+    "results--reboot_pause_20261031": {
+      "members": 11,
+      "unpacked_bytes": 17839623
+    },
+    "results--reboot_resume_20261031": {
+      "members": 11,
+      "unpacked_bytes": 7533
+    },
+    "results--sequence_qc": {
+      "members": 95,
+      "unpacked_bytes": 7096900
+    },
+    "results--uniform_annotation_v001": {
+      "members": 12801,
+      "unpacked_bytes": 4001887929
+    },
+    "tool_notices": {
+      "members": 1600,
+      "unpacked_bytes": 8942942
+    },
+    "methods--late_records": {
+      "members": 6,
+      "unpacked_bytes": 1317919833
+    },
+    "results--verified_protein_supplement": {
+      "members": 14,
+      "unpacked_bytes": 21271331
+    }
+  },
+  "verification_scope": "Inventory membership, group counts, immutable reference dimensions and path safety. Archive bytes are checked separately.",
+  "checked_at_utc": "2026-11-05T16:15:00.031654+00:00"
+}

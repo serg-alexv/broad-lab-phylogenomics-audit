@@ -1,0 +1,333 @@
+{
+  "status": "PASS_ACCEPTED_DEFENCE_RAW_COVERAGE",
+  "inventory_sha256": "162fc704eb123c4afab60469c546434b381e01106be124533b22d78311012384",
+  "inventory_spool": "inventory/scan-20261105T154818323640",
+  "totals": {
+    "genomes": 165,
+    "engine_phases": 330,
+    "declared_phase_artifact_references": 1398703,
+    "sum_of_cohort_unique_paths_included": 1400286,
+    "sum_of_cohort_unique_paths_documented_omitted": 0,
+    "sum_of_cohort_unique_paths_missing_required": 0
+  },
+  "cohorts": {
+    "PILOT": {
+      "engine_phase_counts": {
+        "PADLOC": 5,
+        "DefenseFinder": 5
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 50,
+        "DefenseFinder": 42335
+      },
+      "unique_required_and_policy_sensitive_paths": 42439,
+      "unique_paths_included": 42439,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 5,
+      "acceptance": {
+        "path": "work/defence_close_880c/Root_closed_defence_pilot_acceptance.json",
+        "sha256": "7561549422fffe67dcd5bd727dd1d9cb979b5aad90cfe61b6d15986568e7397c",
+        "bytes": 4030
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "methods",
+        "results",
+        "results--defence_real_pilot_v001",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 2.75
+    },
+    "C001": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C001_accept_efb8/Root_closed_C001_acceptance.json",
+        "sha256": "e4c9d5f27de6c84873cc7f1cab90ef774a3391b7beae959fc5f45aa6ba633dc9",
+        "bytes": 6285
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C001_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C001_file_QA_v001",
+        "results--defence_bulk_C001_v001",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.609
+    },
+    "C002": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C002_accept_d60a/Root_closed_C002_acceptance.json",
+        "sha256": "b9ce10f10427c691b9911db474226d6464b5141b0e040fa57517a0e4105ff043",
+        "bytes": 6301
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C002_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C002_file_QA_v001",
+        "results--defence_bulk_C002_v001",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.844
+    },
+    "C003": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C003_accept_f951/Root_closed_C003_acceptance.json",
+        "sha256": "1c6e6d2726956c48284a23c12953328a9f813cd52f1af39b7da29d93aadb9018",
+        "bytes": 6299
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C003_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C003_file_QA_v001",
+        "results--defence_bulk_C003_v001",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.704
+    },
+    "C004": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C004_accept_9b1f/Root_closed_C004_acceptance.json",
+        "sha256": "54f4c550a6c4b31ec2d2149c64ec43e26a10b67d50a08f13184b090f27667b57",
+        "bytes": 6300
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C004_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C004_file_QA_v001",
+        "results--defence_bulk_C004_v001",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.796
+    },
+    "C005": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C005_accept_520e/Root_closed_C005_acceptance.json",
+        "sha256": "5f2a961a7e09ba57808ee0e7c6481bc8e743ed15a1304d38198b2ed1f0a9bf66",
+        "bytes": 6904
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C005_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C005_file_QA_v001",
+        "results--defence_bulk_C005_v002",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.829
+    },
+    "C006": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C006_accept_dc34/Root_closed_C006_acceptance.json",
+        "sha256": "53eb66fcf25ca2f2e6d62c3706bc41d5ccef84d63fc4f8f252f078aae1b8de5c",
+        "bytes": 6904
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C006_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C006_file_QA_v001",
+        "results--defence_bulk_C006_v002",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.609
+    },
+    "C007": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 200,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169731,
+      "unique_paths_included": 169731,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C007_accept_cd67/Root_closed_C007_acceptance.json",
+        "sha256": "da09044b8d902063b9827fc157b555006c420dcfe8a808ba005918b9a7c42726",
+        "bytes": 6895
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C007_file_QA_v001",
+        "methods",
+        "results",
+        "results--defence_C007_file_QA_v001",
+        "results--defence_bulk_C007_v002",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.593
+    },
+    "C008": {
+      "engine_phase_counts": {
+        "PADLOC": 20,
+        "DefenseFinder": 20
+      },
+      "declared_phase_artifact_references_by_engine": {
+        "PADLOC": 198,
+        "DefenseFinder": 169340
+      },
+      "unique_required_and_policy_sensitive_paths": 169730,
+      "unique_paths_included": 169730,
+      "unique_paths_documented_omitted": 0,
+      "unique_paths_missing_required": 0,
+      "documented_omissions_by_reason": {},
+      "documented_omission_examples": [],
+      "errors_by_reason": {},
+      "error_examples": [],
+      "accepted_genomes": 20,
+      "acceptance": {
+        "path": "work/defence_C008R_accept_ccbf/Root_closed_C008_acceptance.json",
+        "sha256": "1acfffc2b4e95e2c9aa289c14b77f4852ce9d173a29b1cf2704bd22311e635af",
+        "bytes": 9075
+      },
+      "inventory_groups_scanned": [
+        "data_provenance",
+        "evidence",
+        "evidence--defence_C008R_file_QA_v003",
+        "methods",
+        "results",
+        "results--defence_C008R_file_QA_v003",
+        "results--defence_bulk_C008_recovery_v003",
+        "results--defence_bulk_C008_v002",
+        "tool_notices"
+      ],
+      "elapsed_seconds": 8.688
+    }
+  },
+  "omission_examples_limit_per_cohort": 60,
+  "verification_scope": "Membership and bound sizes of accepted phase artifacts. Per-file archive hashes are verified separately.",
+  "checked_at_utc": "2026-11-05T16:17:19.291544+00:00",
+  "elapsed_seconds": 72.469
+}

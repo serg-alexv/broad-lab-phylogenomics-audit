@@ -1,0 +1,11 @@
+# Current-work monitor V4
+
+The display separates PREPARATION, GENOME_PROCESSING, RESULT_VALIDATION, CLEANUP, WAIT, BLOCK and FAIL. A live workflow PID is ownership evidence only. Genome processing additionally requires a fresh, same-launch declared unit and reported scientific child birth identity. Broad `operation=PREDICTION` cannot turn image verification or mounting into genome processing. Stale or mismatched telemetry stays unverified. The monitor reads existing reports; it starts no scientific checks or tools.
+
+The current job's small counter remains separate from the full campaign. Campaign counts come from the newest structurally valid method-result registry, hash-verified acceptance authorities and intersection with the hash-bound queue's source-supported accessions. The initial queue's14/905 values are labelled historical. The read-only V005 preview gives15/919 source-supported accepted method estimates,904 pending and18 estimates across all sources. None of these counters means biological panel acceptance; source holds remain intact.
+
+The new display retains30-second updates, own-console QuickEdit disabled, replacement-frame writing without clearing a valid frame, last-known-frame recovery and read warnings. Its files are isolated in state/monitor_display_v4. The existing publisher, collector, scientific sources, Ready files and old display are unchanged.
+
+`launch_live_progress_v4.ps1` starts only the new visible display, retains its process identity while verifying the first rendered frame and console-mode receipt, and preserves the previous GUI and every historical receipt. It does not change monitor_current_roles.json. Root reviews the new role handoff separately before updating that pointer or retiring the old GUI; an active scientific preflight may still depend on the old receipt. A failed display handoff leaves the old GUI and scientific workers alone.
+
+Seven pure classification fixture groups passed, including false-PREDICTION preflight, four scientific units, saved-feature validation, cleanup, missing identity, stale/mismatched launch data and failure/block states. The actual read-only -Once preview verified the current unit_diamond classification and live registry counters. No scientific code was imported or executed by these tests.

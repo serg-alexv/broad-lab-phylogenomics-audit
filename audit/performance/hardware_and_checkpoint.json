@@ -1,0 +1,107 @@
+{
+  "snapshot_utc": "2026-11-05T17:30:53.868514+00:00",
+  "hardware_inventory_observed_utc": "2026-10-26T15:40:46.3260231Z",
+  "processor": {
+    "Name": "12th Gen Intel(R) Core(TM) i5-1240P",
+    "NumberOfCores": 12,
+    "NumberOfLogicalProcessors": 16,
+    "MaxClockSpeed": 1700
+  },
+  "physical_memory_bytes": 16906502144,
+  "windows": {
+    "Caption": "Майкрософт Windows 11 Pro",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "OSArchitecture": "64-bit"
+  },
+  "project_disk_startup": {
+    "FileSystem": "NTFS",
+    "Size": 510950109184,
+    "FreeSpace": 203773452288
+  },
+  "wsl_startup": {
+    "application_version": "3.0.3.0",
+    "ubuntu": "26.04.1 LTS",
+    "linux_logical_CPUs": 4,
+    "linux_mem_total_bytes": 3580444672,
+    "swap_total_bytes": 8589934592,
+    "source": "evidence/runtime_inventory_ubuntu.txt and evidence/runtime_inventory_wsl.txt"
+  },
+  "C009_preflight": {
+    "CPU_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Linux_available_bytes": 3261292544,
+    "disk_free_bytes": 118024347648
+  },
+  "C009_hard_guards": {
+    "stock_threads": 4,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "native_reserved_bytes": 134217728,
+    "linux_RSS_plus_RAM_bytes": 1879048192,
+    "minimum_linux_available_bytes": 1342177280,
+    "unit_seconds": 2700,
+    "science_seconds": 27000,
+    "cold_seconds": 36000
+  },
+  "project_free_disk_floor_bytes": 42949672960,
+  "C009_terminal": {
+    "native_exit": 0,
+    "WSL_exit": 0,
+    "exact_native_receipt": {
+      "path": "state/local_continuation_v8/events/7111b588e3a5c92e03eb751c67d9f044a922f41fb3124da17d263d18cabcd625/early_worker_actual_exit.json",
+      "sha256": "a1fb8e7acb6dfe53ecfffd0c74709f8325fbc5f1b16824514a5e4ef4a84fd792",
+      "bytes": 731
+    },
+    "native_exit_observed_utc": "2026-11-05T13:21:57.935262+00:00",
+    "WSL_exit_observed_utc": "2026-11-05T13:21:57.882630+00:00",
+    "dispatcher_state": "DISPATCHER_FAILURE_LOCAL_REPAIR_QUEUED",
+    "supervisor_state": "BLOCKED"
+  },
+  "project_volume_free_bytes_at_snapshot": 110590197760,
+  "exact_windows_process_observations": {
+    "custodian": {
+      "pid": 12224,
+      "creation_time_utc": "2026-11-05T07:49:28.9710395Z",
+      "windows_creation_filetime_100ns": 134383385689710395,
+      "observation": "could_not_open_exact_PID",
+      "winerror": 87
+    },
+    "supervisor": {
+      "pid": 3180,
+      "creation_time_utc": "2026-11-05T07:49:29.1787386Z",
+      "windows_creation_filetime_100ns": 134383385691787386,
+      "observation": "could_not_open_exact_PID",
+      "winerror": 87
+    },
+    "dispatcher": {
+      "pid": 30252,
+      "creation_time_utc": "2026-11-05T07:49:29.4059851Z",
+      "windows_creation_filetime_100ns": 134383385694059851,
+      "observation": "could_not_open_exact_PID",
+      "winerror": 87
+    },
+    "C009_native": {
+      "pid": 5124,
+      "creation_time_utc": "2026-11-05T10:56:35.4733646Z",
+      "windows_creation_filetime_100ns": 134383497954733646,
+      "observation": "could_not_open_exact_PID",
+      "winerror": 87
+    },
+    "C009_WSL": {
+      "pid": 30396,
+      "creation_time_utc": "2026-11-05T10:56:35.8399524Z",
+      "windows_creation_filetime_100ns": 134383497958399524,
+      "observation": "could_not_open_exact_PID",
+      "winerror": 87
+    }
+  }
+}

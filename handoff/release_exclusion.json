@@ -1,0 +1,7 @@
+{
+  "path": "evidence/model_routes/oci_metadata_20261027/registry_manifest_receipts.json",
+  "sha256": "3f7f2556ce5fea7e0402f5df397cc1f8c0e302e4ca42eeb3b197266a0b184908",
+  "bytes": 5812,
+  "type": "file",
+  "reason": "original_registry_receipt_contains_presigned_URL_credentials"
+}

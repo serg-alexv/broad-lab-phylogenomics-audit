@@ -1,0 +1,106 @@
+--- work/checkm2_S1R2_actual_prelaunch_gate.py
++++ work/checkm2_S1R2_actual_prelaunch_gate_V002.py
+@@ -1,6 +1,6 @@
+ """One separately granted read-only S1R2 prelaunch gate. No scientific admission or dispatch."""
+ from pathlib import Path
+-import os,sys,json,time,datetime,hashlib,ctypes,subprocess,shutil,msvcrt,traceback,argparse
++import os,sys,json,time,datetime,hashlib,ctypes,subprocess,shutil,msvcrt,traceback,argparse,re
+ R=Path(__file__).resolve().parents[1];L='/mnt/c/'+str(R)[3:].replace('\\','/');START=time.monotonic();DEADLINE=START+55;CHILDREN=[];OBS={}
+ E=None
+ def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+@@ -40,13 +40,44 @@
+    collect_identities(item,linux,windows,namespaces)
+  elif isinstance(value,list):
+   for item in value:collect_identities(item,linux,windows,namespaces)
++def cim_birth_interval(value):
++ # CIM CreationDate is truncated to microseconds; its displayed seventh digit is 0.
++ match=re.fullmatch(r'(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})\.(\d{6})0(?:Z|\+00:00)',value or '')
++ if not match:raise RuntimeError('Reliable microsecond-truncated UTC CIM birth unavailable')
++ born=datetime.datetime.strptime(match.group(1)+'.'+match.group(2),'%Y-%m-%dT%H:%M:%S.%f').replace(tzinfo=datetime.timezone.utc)
++ delta=born-datetime.datetime(1601,1,1,tzinfo=datetime.timezone.utc)
++ low=(delta.days*86400+delta.seconds)*10000000+delta.microseconds*10
++ return {'lower_inclusive_filetime_100ns':low,'upper_exclusive_filetime_100ns':low+10,'source':'CIM CreationDate truncated to microseconds; no submicrosecond equality claim'}
++
++def retained_child_at_cim(row,children):
++ for child in children:
++  captured=child.get('identity',{})
++  if captured.get('pid')!=row['pid']:continue
++  if type(child.get('actual_exit_code')) is not int or child['actual_exit_code']!=0 or child.get('actual_handle_reaped') is not True:raise RuntimeError('Own retained child does not have actual closed exit 0')
++  interval=cim_birth_interval(row.get('birth'));tick=captured.get('windows_creation_filetime_100ns')
++  if type(tick) is not int:raise RuntimeError('Own retained child exact birth missing')
++  if interval['lower_inclusive_filetime_100ns']<=tick<interval['upper_exclusive_filetime_100ns']:return {'captured_exact_identity':captured,'actual_exit_code':0,'actual_handle_reaped':True,'CIM_birth_interval':interval,'method':'OWN_RETAINED_CHILD_CAPTURED_BIRTH_AND_OBSERVED_EXIT0_NO_REOPEN'}
++ return None
++
++def protected_old_pid_reuse(row,old_rows,mandatory_pids,winerror):
++ if winerror!=5 or row['pid'] in mandatory_pids:raise RuntimeError('Unproved/mandatory process identity; access failure is not absence')
++ previous=[x for x in old_rows if x['pid']==row['pid']]
++ command=str(row.get('command') or '').lower()
++ if not previous or str(row.get('name') or '').lower()!='svchost.exe' or any(mark in command for mark in ('tree2_wd_20261026','live_progress','live_stage_publisher','checkm2','diamond','prodigal','iqtree','skani')):raise RuntimeError('Protected PID reuse requires a recognized unrelated system row and historical targets')
++ interval=cim_birth_interval(row.get('birth'));checked=[]
++ for old in previous:
++  tick=old.get('windows_creation_filetime_100ns')
++  if type(tick) is not int or interval['lower_inclusive_filetime_100ns']<=tick<interval['upper_exclusive_filetime_100ns']:raise RuntimeError('An old birth overlaps/has unknown relation to the CIM interval')
++  checked.append({'old_identity':old,'outside_CIM_birth_interval':True})
++ return {'method':'ACCESS5_PROTECTED_SYSTEM_PID_REUSE_CIM_INTERVAL_ALL_OLD_BIRTHS_DISJOINT','OpenProcess_winerror':winerror,'CIM_birth_interval':interval,'all_recorded_old_births_checked':checked,'current_name':row['name'],'exact_native_birth_claimed':False,'system_process_signaled_or_reopened':False}
++
+ def main(args):
+  global E
+  grant_path=(R/args.grant).resolve();assert grant_path.is_relative_to(R) and sha(grant_path)==args.grant_sha256
+- grant=read(grant_path);assert grant['schema']=='TREE2_S1R2_READ_ONLY_PRELAUNCH_GRANT_V001' and grant['status']=='ADMITTED_ONE_READ_ONLY_S1R2_PRELAUNCH_CHECK' and grant['prelaunch_check_authorized'] is True and grant['scientific_execution_authorized'] is False and grant['max_attempts']==1 and grant['budget_seconds']==60 and grant['worker_source_sha256']==sha(__file__)
++ grant=read(grant_path);assert grant['schema']=='TREE2_S1R2_READ_ONLY_PRELAUNCH_GRANT_V002' and grant['status']=='ADMITTED_ONE_READ_ONLY_S1R2_PRELAUNCH_CHECK_V002' and grant['prelaunch_check_authorized'] is True and grant['scientific_execution_authorized'] is False and grant['max_attempts']==1 and grant['budget_seconds']==60 and grant['worker_source_sha256']==sha(__file__)
+  token=grant['token'];assert len(token)==32 and all(x in '0123456789abcdef' for x in token)
+  E=R/'evidence/checkm2_single_faa_S1R2'/('actual_prelaunch_'+token)
+- E.mkdir(parents=True,exist_ok=False);save(E/'launch.json',{'native_owner':OWNER,'started_utc':utc(),'source_sha256':sha(__file__),'budget_seconds':60,'role':'ONE_ACTUAL_READ_ONLY_S1R2_PRELAUNCH_GATE_NO_SCIENCE'});assert os.environ.get('COMPUTERNAME','').upper()=='WD'
++ E.mkdir(parents=True,exist_ok=False);save(E/'launch.json',{'native_owner':OWNER,'started_utc':utc(),'source_sha256':sha(__file__),'budget_seconds':60,'role':'ONE_ACTUAL_READ_ONLY_S1R2_PRELAUNCH_V002_NO_SCIENCE'});assert os.environ.get('COMPUTERNAME','').upper()=='WD'
+  assert shutil.disk_usage(R).free>=40*1024**3
+  stage_before=sha(R/'state/stages/04.json');win_before=checkpoint('Windows_image_before',image_stat());assert win_before['st_size']==17179869184 and win_before['st_nlink']==1
+  refs=[{'path': 'metadata/checkm2_single_faa_implementation_S1R2.json', 'sha256': 'ad3af7a46cf7c0476a5aab31cd35f1049da90b8f9ab5cf4297d759f8f78f69d0'}, {'path': 'metadata/checkm2_single_faa_execution_plan_S1R2.json', 'sha256': '36983b2a849de6eed4578a2d84a2db4a1cb55dd2d8df3f105aa4f49ecacc4268'}, {'path': 'metadata/checkm2_single_faa_cohort_contract_S1R2.json', 'sha256': 'cf4102adf0399294c35b25ca53a113c74bc9470718cb467249cc9c2deaa8b598'}, {'path': 'evidence/checkm2_benchmark10_protein_recovery_T1/root_ten_annotation_reuse_authority.json', 'sha256': 'c9d163bb4a47b4ee5c54d205427b4f8f3e098311931b08f0dd5ad509ff9184f7'}, {'path': 'evidence/checkm2_single_faa_S1/root_first_closed_row_reuse_authority.json', 'sha256': 'e84a54865d3abb988a9de66dde6da4243bcdc385da9e918d9b5c732762059b76'}, {'path': 'metadata/checkm2_single_faa_implementation_S1.json', 'sha256': '04cf0befe7e969694de9698066d8406d2bc65a5de3990dbe9896fa075ecae2a2'}]
+@@ -56,12 +87,14 @@
+ 
+  sys.path.insert(0,str(R/'scripts'));import checkm2_single_faa_common_S1R2 as common
+  plan=read(R/refs[1]['path']);common.observer_proof_gate(plan,{'observer_boundary_proof':grant['observer_boundary_proof']})
+- for key in ('observer_boundary_proof','bash_n_receipt','gui_launch','publisher_launch','root_source_input_review'):assert binding(grant[key])['matches']
++ for key in ('observer_boundary_proof','bash_n_receipt','gui_launch','publisher_launch','root_source_input_review','prior_prelaunch_failure','prior_prelaunch_native_exit'):assert binding(grant[key])['matches']
+  bash=read(R/grant['bash_n_receipt']['path']);assert bash['status']=='EXTERNAL_PROOF_LINUX_IDENTITIES_GROUPS_LEASE_AND_SHELL_CLOSED' and type(bash['bash_n']['exit_code_observed']) is int and bash['bash_n']['exit_code_observed']==0 and bash['bash_n']['CR_bytes']==0 and bash['bash_n']['script_executed'] is False and bash['bash_n']['shell_sha256']=='73b8acd219a89444519b65da6c61f11ed49f734b5aa6448e48c0464cb6c9b487'
+  gui_expected=read(R/grant['gui_launch']['path']);pub_expected=read(R/grant['publisher_launch']['path']);assert sha(R/pub_expected['script'])==pub_expected['script_sha256']
+  assert sha(R/'work/checkm2_S1R2_actual_prelaunch_linux.py')==grant['linux_source_sha256']
+  assert all(name.split('.')[0] not in ('numpy','pandas','tensorflow','sklearn','lightgbm','checkm2') for name in sys.modules)
+  rows=[];linux_ids=[];win_ids=[];namespaces=[]
++ prior_failure=read(R/grant['prior_prelaunch_failure']['path']);prior_exit=read(R/grant['prior_prelaunch_native_exit']['path']);assert prior_failure['status']=='ACTUAL_S1R2_GATE_FAILED_NO_RETRY_NO_DISPATCH' and type(prior_exit.get('actual_native_exit_code_observed')) is int and prior_exit['actual_native_exit_code_observed']==1 and prior_exit['all_children_observed_zero_and_reaped'] is True
++ collect_identities(prior_failure,linux_ids,win_ids,namespaces);collect_identities(prior_exit,linux_ids,win_ids,namespaces)
+  for member in cohort['annotation_members']:
+   bounded();facts=[binding(member[k]) for k in ('selected_faa','annotation_receipt','annotation_unit_execution','annotation_commit')];unit=read(R/member['annotation_unit_execution']['path']);commit=read(R/member['annotation_commit']['path']);input_row=next(x for x in cohort['inputs'] if x['accession']==member['accession']);manifest=read(R/commit['manifest']['path']);payloads=[binding(commit['manifest'])]+[binding({'path':str((Path(commit['manifest']['path']).parent/x['path']).as_posix()),'sha256':x['sha256'],'bytes':x['bytes']}) for x in manifest['files']];record={'accession':member['accession'],'artifact_hashes':facts,'manifest_payloads':payloads,'unit_status':unit['status'],'exit_code':unit['exit_code'],'group_empty':unit['owned_group_empty'],'remaining':unit['remaining_owned_processes'],'source_holds':input_row['source_holds_preserved'],'commit_status':commit['status'],'root_commit_sha_match':member['annotation_commit']['sha256']==authority['accepted_annotation_commit_sha256s'][member['accession']]};rows.append(record);checkpoint('annotation_and_FAA_current_facts',rows);collect_identities(unit,linux_ids,win_ids,namespaces);assert all(x['matches'] for x in facts+payloads) and unit['status']=='UNIT_EXIT0_GROUP_CLOSED' and type(unit['exit_code']) is int and unit['exit_code']==0 and unit['owned_group_empty'] is True and unit['remaining_owned_processes']==[] and record['root_commit_sha_match'] and commit['binding']['input']['accession']==member['accession'] and commit['selected_faa']==member['selected_faa'] and commit['status']=='ANNOTATION_EXIT0_VALIDATED_ATOMIC_COMMIT'
+  assert len(rows)==10 and len({x['accession'] for x in rows})==10 and sum(bool(x['source_holds']) for x in rows)==3
+@@ -97,22 +130,29 @@
+  assert linux['host_registry']==read(R/'evidence/checkm2_runtime/install_registry_before.json') and linux['linux_available_bytes']>=1024**3 and len(linux['cpu_eligible'])>=2
+  ps="$ErrorActionPreference='Stop';@(Get-CimInstance Win32_Process | Where-Object {$_.ProcessId -in @("+str(gui_expected['pid'])+','+str(pub_expected['pid'])+","+','.join(str(x['pid']) for x in win_ids)+") -or ($_.CommandLine -and $_.CommandLine.Contains('TREE2_WD_20261026'))} | ForEach-Object {$p=Get-Process -Id $_.ProcessId -ErrorAction SilentlyContinue;if($p){[pscustomobject]@{pid=$_.ProcessId;name=$_.Name;birth=$_.CreationDate.ToUniversalTime().ToString('o');command=$_.CommandLine;responding=$p.Responding;window_handle=[int64]$p.MainWindowHandle}}})|ConvertTo-Json -Compress"
+  windows=run(['pwsh','-NoProfile','-Command',ps],'actual_Windows_GUI_gates');windows=windows if isinstance(windows,list) else [windows]
++ checkpoint('Windows_raw_CIM_before_any_birth_assertion',json.loads(json.dumps(windows)))
+  for row in windows:
++  retained=retained_child_at_cim(row,CHILDREN)
++  if retained is not None:
++   row['retained_child_exit_evidence']=retained;row['exact_native_identity']=retained['captured_exact_identity'];continue
+   handle=K.OpenProcess(0x1000,False,row['pid'])
+   if handle:
+    try:row['exact_native_identity']=identity(handle,row['pid'])
+    finally:K.CloseHandle(handle)
+-  else:raise OSError('Actual Windows creation identity unavailable; not absence',row['pid'],ctypes.get_last_error())
++  else:
++   winerror=ctypes.get_last_error();row['OpenProcess_error']={'requested_access':4096,'winerror':winerror,'identity':'UNKNOWN_PENDING_CIM_INTERVAL_ASSESSMENT'}
++   checkpoint('Windows_birth_evidence_before_protected_assertion',json.loads(json.dumps(windows)))
++   row['protected_old_pid_reuse_evidence']=protected_old_pid_reuse(row,win_ids,{gui_expected['pid'],pub_expected['pid']},winerror)
+  checkpoint('Windows_full_observations_before_assertions',windows);gui=next(x for x in windows if x['pid']==gui_expected['pid']);pub=next(x for x in windows if x['pid']==pub_expected['pid'])
+  assert gui['exact_native_identity']['creation_time_utc']==gui_expected['creation_time_utc'] and gui['responding'] is True and gui['window_handle']!=0 and 'live_progress.ps1' in gui['command'] and 'TREE2_WD_20261026' in gui['command']
+  assert pub['exact_native_identity']['creation_time_utc']==pub_expected['creation_time_utc'] and pub['responding'] is True and 'live_stage_publisher.py' in pub['command'] and 'TREE2_WD_20261026' in pub['command']
+  assert all(not any(now.get('exact_native_identity',{}).get('windows_creation_filetime_100ns')==old['windows_creation_filetime_100ns'] and now['pid']==old['pid'] for now in windows) for old in win_ids)
+  excluded={OWNER['pid'],gui_expected['pid'],pub_expected['pid']}|{x['identity']['pid'] for x in CHILDREN};suspects=[x for x in windows if x['pid'] not in excluded and x['name'].lower() in ('python.exe','wsl.exe') and ('/scripts/' in x['command'].replace('\\','/') or 'TREE2_CHECKM2_PILOT_LAUNCH_TOKEN' in x['command'])];checkpoint('unexpected_Windows_scientific_workers',suspects);assert not suspects
+  win_after=checkpoint('Windows_image_after',image_stat());free=shutil.disk_usage(R).free;checkpoint('final_resource_and_immutable_stage_observations',{'C_free_bytes':free,'Windows_cpu_eligible':os.cpu_count(),'stage04_before':stage_before,'stage04_after':sha(R/'state/stages/04.json'),'historical_image_mtime_comparison':'UNKNOWN_NO_HISTORICAL_ANCHOR','cross_OS_device_or_inode_equality_NOT_required':True,'image_content_opened_mounted_or_full_hashed':False});assert win_before==win_after and free>=40*1024**3 and os.cpu_count()>=2 and sha(R/'state/stages/04.json')==stage_before
+- bounded();receipt={'status':'ACTUAL_S1R2_PRELAUNCH_GATES_PASS_NOT_EXECUTION_ADMISSION','started_native_owner':OWNER,'completed_utc':utc(),'elapsed_seconds':time.monotonic()-START,'actual_children':CHILDREN,'observations':{'path':str((E/'observations.json').relative_to(R)),'sha256':sha(E/'observations.json')},'S1R2_source_manifest_sha256':refs[0]['sha256'],'S1R2_plan_sha256':refs[1]['sha256'],'all75_and_old58_sources_exact':True,'ten_FAA_and_annotation0_commits_rootc9_bound':True,'source_holds_preserved':3,'prior_T1_104_24163487500482_and_S1_284_5531904320087_debits_preserved':True,'new_remaining3211_205174_and_second599_056561_preserved':True,'observer_boundary_proof':grant['observer_boundary_proof'],'bash_n_receipt':grant['bash_n_receipt'],'same_platform_image_stats_stable':True,'WSL_sealed_image_file_identity_matches':True,'historical_mtime_anchor':'UNKNOWN','actual_admitted_helper_full_c40_hash_still_required':True,'all_recorded_old_identities_groups_namespaces_loops_absent':True,'common3_OS_leases_reacquired_released_without_bytes_changed':True,'host_registry_unchanged':True,'S1R2_Ready_Stop_claims_unresolved_absent':True,'GUI_and_publisher_exact_birth_responding':True,'stage04_unchanged':True,'no_input_staging_runtime_inference_admission_Ready_or_Stop_mutation':True,'actual_native_exit_requires_external_observer':True,'source_sha256':sha(__file__)};save(E/'receipt.json',receipt);print(json.dumps({'status':receipt['status'],'folder':str(E),'receipt_sha256':sha(E/'receipt.json'),'native_owner':OWNER,'elapsed_seconds':receipt['elapsed_seconds']}),flush=True)
++ bounded();receipt={'status':'ACTUAL_S1R2_PRELAUNCH_V002_GATES_PASS_NOT_EXECUTION_ADMISSION','started_native_owner':OWNER,'completed_utc':utc(),'elapsed_seconds':time.monotonic()-START,'actual_children':CHILDREN,'observations':{'path':str((E/'observations.json').relative_to(R)),'sha256':sha(E/'observations.json')},'S1R2_source_manifest_sha256':refs[0]['sha256'],'S1R2_plan_sha256':refs[1]['sha256'],'all75_and_old58_sources_exact':True,'ten_FAA_and_annotation0_commits_rootc9_bound':True,'source_holds_preserved':3,'prior_T1_104_24163487500482_and_S1_284_5531904320087_debits_preserved':True,'new_remaining3211_205174_and_second599_056561_preserved':True,'observer_boundary_proof':grant['observer_boundary_proof'],'bash_n_receipt':grant['bash_n_receipt'],'same_platform_image_stats_stable':True,'WSL_sealed_image_file_identity_matches':True,'historical_mtime_anchor':'UNKNOWN','actual_admitted_helper_full_c40_hash_still_required':True,'all_recorded_old_identities_groups_namespaces_loops_absent':True,'common3_OS_leases_reacquired_released_without_bytes_changed':True,'host_registry_unchanged':True,'S1R2_Ready_Stop_claims_unresolved_absent':True,'GUI_and_publisher_exact_birth_responding':True,'stage04_unchanged':True,'no_input_staging_runtime_inference_admission_Ready_or_Stop_mutation':True,'actual_native_exit_requires_external_observer':True,'source_sha256':sha(__file__)};save(E/'receipt.json',receipt);print(json.dumps({'status':receipt['status'],'folder':str(E),'receipt_sha256':sha(E/'receipt.json'),'native_owner':OWNER,'elapsed_seconds':receipt['elapsed_seconds']}),flush=True)
+ if __name__=='__main__':
+  parser=argparse.ArgumentParser();parser.add_argument('--grant',required=True);parser.add_argument('--grant-sha256',required=True);args=parser.parse_args()
+  try:main(args)
+  except BaseException as error:
+   if E is None:raise
+-  save(E/'FAILED.json',{'status':'ACTUAL_S1R2_GATE_FAILED_NO_RETRY_NO_DISPATCH','error':str(error),'repr':repr(error),'errno':getattr(error,'errno',None),'filename':getattr(error,'filename',None),'traceback':traceback.format_exc(),'native_owner':OWNER,'actual_children':CHILDREN,'elapsed_seconds':time.monotonic()-START,'all_observations_persisted_path':str(E/'observations.json')});raise
++  save(E/'FAILED.json',{'status':'ACTUAL_S1R2_V002_GATE_FAILED_NO_RETRY_NO_DISPATCH','error':str(error),'repr':repr(error),'errno':getattr(error,'errno',None),'filename':getattr(error,'filename',None),'traceback':traceback.format_exc(),'native_owner':OWNER,'actual_children':CHILDREN,'elapsed_seconds':time.monotonic()-START,'all_observations_persisted_path':str(E/'observations.json')});raise

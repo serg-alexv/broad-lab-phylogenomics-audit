@@ -1,0 +1,19 @@
+{
+  "github": "PROHIBITED_UNTIL_EXPLICIT_REQUEST",
+  "biology_qc": "NOT_RUN",
+  "python": "C:\\Users\\wheel\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "defence": "NOT_RUN",
+  "wsl_memory_mb": 3584,
+  "panel": "PROVISIONAL",
+  "tree": "NOT_RUN",
+  "host": "WD",
+  "disk_min_free_gib": 20,
+  "wsl_max_threads": 4,
+  "target_genomes": 1000,
+  "root": "C:\\Users\\wheel\\Documents\\Codex\\2026-10-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\TREE2_WD_20261026",
+  "ncbi_order_taxid": 186826,
+  "download_workers": 1,
+  "project": "TREE2_WD_20261026",
+  "metadata_workers": 1,
+  "sampling_contract": "USER_CONFIRMED_EVERY_ELIGIBLE_SPECIES_FIRST_BALANCED_STRAINS_NEAR_1000"
+}

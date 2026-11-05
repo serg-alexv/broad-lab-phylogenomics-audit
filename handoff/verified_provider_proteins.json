@@ -1,0 +1,243 @@
+{
+  "status": "PASS",
+  "proteins": [
+    {
+      "path": "raw/GCF_001434395.1/ncbi_dataset/data/GCF_001434395.1/protein.faa",
+      "sha256": "9eca2291d2f55b096fa7861f31599c5a66d6ec3657c5aa49974fafb9c60797a8",
+      "bytes": 975222,
+      "reason": "NCBI protein FASTA verified by provider MD5, acquisition SHA256 and CDS protein IDs"
+    },
+    {
+      "path": "raw/GCF_001437125.1/ncbi_dataset/data/GCF_001437125.1/protein.faa",
+      "sha256": "6754d525d3bf0325ae374e3534bd33bfa6ac4574571c7457dc1238202828ce65",
+      "bytes": 837072,
+      "reason": "NCBI protein FASTA verified by provider MD5, acquisition SHA256 and CDS protein IDs"
+    },
+    {
+      "path": "raw/GCF_003885105.1/ncbi_dataset/data/GCF_003885105.1/protein.faa",
+      "sha256": "8876c115a096fead397f5eb87b41cda3b95289cee2d7c8edf39604bde5500df5",
+      "bytes": 1061273,
+      "reason": "NCBI protein FASTA verified by provider MD5, acquisition SHA256 and CDS protein IDs"
+    },
+    {
+      "path": "raw/GCF_005405125.1/ncbi_dataset/data/GCF_005405125.1/protein.faa",
+      "sha256": "0768084d87ee8e2d915fdc8155bd95858939ba3b868593dc4803d14c2c923516",
+      "bytes": 1075580,
+      "reason": "NCBI protein FASTA verified by provider MD5, acquisition SHA256 and CDS protein IDs"
+    },
+    {
+      "path": "raw/GCF_045862785.1/ncbi_dataset/data/GCF_045862785.1/protein.faa",
+      "sha256": "f4776b046a1aec38bf28e3713f98961b3f364dc3591173dc4509983f72d6fe0c",
+      "bytes": 775450,
+      "reason": "NCBI protein FASTA verified by provider MD5, acquisition SHA256 and CDS protein IDs"
+    },
+    {
+      "path": "analysis/pilot10/runs/20261026T161747Z-cluster-resume-f688a380/cluster_all_seqs.fasta",
+      "sha256": "d73ac41a24ef7459bd90707df36c4277fb971642a9cb8217d9fb76feb25ea4d9",
+      "bytes": 7378891,
+      "reason": "Exact protein identifier and sequence-hash multiset with verified MMseqs representative sentinels"
+    }
+  ],
+  "provider_proof": [
+    {
+      "accession": "GCF_001434395.1",
+      "provider_md5": "f9df2c79be4f67c482fd66d1a1dca99e",
+      "provider_md5_manifest": {
+        "path": "raw/GCF_001434395.1/md5sum.txt",
+        "sha256": "6071c5c5849b38d7445deab143c0bc9ed6f407db6053217d38342d926b192405",
+        "bytes": 510
+      },
+      "acquisition_receipt": {
+        "path": "raw/GCF_001434395.1/acquisition_receipt.json",
+        "sha256": "e972803dcdecddcf3b1eab61b9c0f3d616f3ea9ba13cbbec50ccf55b9a3a41da",
+        "bytes": 5108
+      },
+      "genomic_gff": {
+        "path": "raw/GCF_001434395.1/ncbi_dataset/data/GCF_001434395.1/genomic.gff",
+        "sha256": "8cc23b5411725998ae59aabca2fff86f7efb184d6d9ff10ed79ee32517a682a5",
+        "bytes": 1667130
+      },
+      "protein_records": 2531,
+      "alphabet_ambiguous_CDS_protein_records": [
+        {
+          "protein_id": "WP_235806855.1",
+          "length": 285
+        }
+      ]
+    },
+    {
+      "accession": "GCF_001437125.1",
+      "provider_md5": "fa9297ca1a19dc85437c5bde14a6a041",
+      "provider_md5_manifest": {
+        "path": "raw/GCF_001437125.1/md5sum.txt",
+        "sha256": "bf3a7057d01fe60c9a76ad93f359cd7db74b8b50ebae1441c9f718bd9ed6664c",
+        "bytes": 510
+      },
+      "acquisition_receipt": {
+        "path": "raw/GCF_001437125.1/acquisition_receipt.json",
+        "sha256": "60d645852de70780cdd757c257ffdfc4b50bb867813d893f74d24a97e6715af2",
+        "bytes": 5140
+      },
+      "genomic_gff": {
+        "path": "raw/GCF_001437125.1/ncbi_dataset/data/GCF_001437125.1/genomic.gff",
+        "sha256": "2dd2ea0325eb116960dd3ce2984b9a3c897a0fe752fe6e1c6f215434190099c8",
+        "bytes": 1535976
+      },
+      "protein_records": 2193,
+      "alphabet_ambiguous_CDS_protein_records": [
+        {
+          "protein_id": "WP_179209708.1",
+          "length": 172
+        }
+      ]
+    },
+    {
+      "accession": "GCF_003885105.1",
+      "provider_md5": "ef723a3c25dcff1d6314edb0e4af9651",
+      "provider_md5_manifest": {
+        "path": "raw/GCF_003885105.1/md5sum.txt",
+        "sha256": "be4102f838f671b235a86e3f59e1d31074a31a45576ad28ea3a58a6affdbac50",
+        "bytes": 510
+      },
+      "acquisition_receipt": {
+        "path": "raw/GCF_003885105.1/acquisition_receipt.json",
+        "sha256": "63dbc0695681efb6a10fa8f79feb2346b61a5f3ea0b74a241052c47f3273dae1",
+        "bytes": 5099
+      },
+      "genomic_gff": {
+        "path": "raw/GCF_003885105.1/ncbi_dataset/data/GCF_003885105.1/genomic.gff",
+        "sha256": "2a829c46d4406cff8250796556b316fffe81eea129c9403fea923493e2d7cb7e",
+        "bytes": 1913386
+      },
+      "protein_records": 2759,
+      "alphabet_ambiguous_CDS_protein_records": [
+        {
+          "protein_id": "WP_179950339.1",
+          "length": 111
+        }
+      ]
+    },
+    {
+      "accession": "GCF_005405125.1",
+      "provider_md5": "589e7d22cb1bc82c85a240fd266041d2",
+      "provider_md5_manifest": {
+        "path": "raw/GCF_005405125.1/md5sum.txt",
+        "sha256": "812ac29afe91721f6a147e3769731e94bbc75d92a9d58e5af1a36827d69bf9c8",
+        "bytes": 510
+      },
+      "acquisition_receipt": {
+        "path": "raw/GCF_005405125.1/acquisition_receipt.json",
+        "sha256": "321a7680ff7442208aa66481a60f5d37f7a27ae10954fe3c395cb82d8801225b",
+        "bytes": 5086
+      },
+      "genomic_gff": {
+        "path": "raw/GCF_005405125.1/ncbi_dataset/data/GCF_005405125.1/genomic.gff",
+        "sha256": "3da10a2060c45c6c03a57082aadc18954ac3375083502f8f6606c2452f718443",
+        "bytes": 1721018
+      },
+      "protein_records": 2728,
+      "alphabet_ambiguous_CDS_protein_records": [
+        {
+          "protein_id": "WP_179951416.1",
+          "length": 520
+        }
+      ]
+    },
+    {
+      "accession": "GCF_045862785.1",
+      "provider_md5": "a4db8b89deddb8a092fbeb58538c0883",
+      "provider_md5_manifest": {
+        "path": "raw/GCF_045862785.1/md5sum.txt",
+        "sha256": "5c07eede610fd6e0f1e63953b8056b9627549f885784d473164bc1976a4e4cf6",
+        "bytes": 511
+      },
+      "acquisition_receipt": {
+        "path": "raw/GCF_045862785.1/acquisition_receipt.json",
+        "sha256": "fd9efbd97d3f906673baefd9adddb254927876b72d30cdcae73b4985f5115da8",
+        "bytes": 5087
+      },
+      "genomic_gff": {
+        "path": "raw/GCF_045862785.1/ncbi_dataset/data/GCF_045862785.1/genomic.gff",
+        "sha256": "62bf8be23c0caad0f5cd6c189bd2637a6cb81c7ab3defe8ac4487ffe9c4bf0ac",
+        "bytes": 1403337
+      },
+      "protein_records": 1995,
+      "alphabet_ambiguous_CDS_protein_records": [
+        {
+          "protein_id": "WP_407884926.1",
+          "length": 223
+        },
+        {
+          "protein_id": "WP_407885037.1",
+          "length": 342
+        },
+        {
+          "protein_id": "WP_407885048.1",
+          "length": 268
+        },
+        {
+          "protein_id": "WP_407885060.1",
+          "length": 223
+        },
+        {
+          "protein_id": "WP_407885066.1",
+          "length": 196
+        },
+        {
+          "protein_id": "WP_407885070.1",
+          "length": 189
+        },
+        {
+          "protein_id": "WP_407885078.1",
+          "length": 166
+        },
+        {
+          "protein_id": "WP_407885081.1",
+          "length": 155
+        },
+        {
+          "protein_id": "WP_407885091.1",
+          "length": 140
+        },
+        {
+          "protein_id": "WP_407885095.1",
+          "length": 127
+        }
+      ]
+    }
+  ],
+  "pilot_clustering_proof": {
+    "original_protein_fasta": {
+      "path": "analysis/pilot10/runs/20261026T161747Z-cluster-resume-f688a380/all_proteins.faa",
+      "sha256": "f2b14c4fa45c37696931739588aa294f896d86fe763c5e3f436146990e0327af",
+      "bytes": 7126471
+    },
+    "cluster_mapping": {
+      "path": "analysis/pilot10/runs/20261026T161747Z-cluster-resume-f688a380/cluster_cluster.tsv",
+      "sha256": "2c34d8133c6b19008227169646abc33500e21e35a35c277a18e231f20b850ebe",
+      "bytes": 1151118
+    },
+    "marker_manifest": {
+      "path": "analysis/marker_discovery/pilot10_recovered_v001/candidate_manifest.json",
+      "sha256": "dd33d158f870a7be4cb48d4c146252ac535d530917a320a167d11e470f5791c7",
+      "bytes": 263474
+    },
+    "MMseqs_exit_receipt": {
+      "path": "analysis/pilot10/runs/20261026T161747Z-cluster-resume-f688a380/mmseqs_easy_cluster.exit.json",
+      "sha256": "0a91f2da0d6be43ddcf122ca89c3df830e0c8241017be1b9144a7ec614f4ca1f",
+      "bytes": 1475
+    },
+    "MMseqs_exit_code": 0,
+    "owned_group_empty": true,
+    "nonempty_protein_records": 21317,
+    "empty_cluster_representative_headers": 9015,
+    "exact_ID_and_protein_SHA256_multiset_equal": true
+  },
+  "source": {
+    "path": "handoff/tree2_audit_20261105/verify_provider_proteins.py",
+    "sha256": "45e40bfe463401e053e623024407ed2f175435ab43d5e95e5b2f5ad9ecdede32",
+    "bytes": 7052
+  },
+  "no_nucleotide_files_or_sequence_contents_printed_or_exported": true,
+  "at_utc": "2026-11-05T16:12:34.237247+00:00"
+}

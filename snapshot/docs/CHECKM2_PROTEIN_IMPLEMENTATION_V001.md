@@ -1,0 +1,31 @@
+# 04R1 held implementation v001
+
+This is a separate, reviewable implementation. No genome, FAA, model or author scientific tool was executed while preparing it. The accepted nucleotide controller/entry/native source bytes remain unchanged. The resource STOP remains SHA256 `352c2cacb99a5ba33cd8e35da845a5a32c6404eb137ae0558ac112477e69db16`. The actual strategy-admission file does not exist and no launcher is queued.
+
+## Execution and declared bounds
+
+`checkm2_protein_pilot_v001.py` uses a private module instance of the byte-pinned accepted nucleotide gate source (`9adce984…`), with its own explicit STATE/LAUNCH/progress adapter. It never writes FNA progress. The read-only image, loop/UUID, model/DB, matching overlay/bootstrap and actual private IPC gates remain in force. Shared sources are included in the new admission pins.
+
+Two units are declared. Unit 01 has 600 seconds for a cold, model-free interpreter to call the original sequential ProdigalRunner on a copied, rehashed `<accession>.fna`. Unit 02 has **one combined 600-second budget** for stock protein quality prediction and subsequent feature validation; the validator receives only the remaining time. Each supervised child group retains maximum two CPUs, 2 GiB summed process RSS, 1 GiB Linux headroom and 40 GiB backing-volume reserve. Resource/STOP/deadline/nonzero exits preserve a classified failure and null estimates. A successful direct child with residual descendants is held after forced cleanup; it is not promoted to science success.
+
+The helper verifies original Prodigal source before importing it, rejects an annotation interpreter containing ML modules, and preserves selected FAA plus all ten original return values (identifier and nine measurements). NumPy scalar conversion preserves integer precision and fractional author N50. Independent DNA QC records standard contig N50, base/ambiguous counts and explicit GC denominator. Source and protein record hashes retain case and stops. GFF/FNA deletion is not intercepted; coordinate annotation remains Stage 05 work.
+
+The selected FAA is copied byte-identically as `<versioned-accession>.faa`. A separate protein-quality binding links FNA, selected FAA, original-caller receipts/manifest/closed-unit execution, source and model/DB/overlay hashes, schema and supported flags. The unchanged accepted bootstrap executes `--genes --extension faa --threads 1 --lowmem --dbg_vectors` in auto mode. There is no stock `--resume`, force overwrite or intermediate deletion.
+
+## Collector and feature evidence
+
+The auto protein report must have exactly five columns in original order: Name, Completeness, Contamination, Completeness_Model_Used, Additional_Notes. Exactly the expected versioned accession and finite completeness 0–100/contamination ≥0 are required. The nine omitted DNA columns are not fabricated; measured caller/DNA data stay in their attributed sidecar. No missing value becomes a pass or biological absence.
+
+`--dbg_vectors` is a source-verified output-only flag, recorded in the binding. One first-chunk `feature_vectors_1.pkl` is required. Schema SHA `2be7bda6589a445a8b70023d9cf84ffadc76a380db112b34a70ce0094fc53adb` fixes all 21,242 ordered DataFrame columns (Name plus 21,241 inputs). Validation rejects reordering, duplicates, extra/missing rows, object/string/bool/complex feature storage, nonfinite values, nonintegral/negative counts and membership fractions outside 0–1. All 22 AA metadata features are checked independently against the exact FAA, preserving stop/ambiguous-character length semantics. The actual author's non-Name float conversion is retained; a canonical little-endian float64 row hash is recorded. Original module/denominator semantics are not recomputed or deduplicated.
+
+Complete file manifests, original/canonical feature evidence, warnings, per-unit process identities/peak RSS rows and original code snapshots are preserved. The numeric core stays pending ordinary IPC/image/native closure and final sealed-image SHA. This is an author-supported protein-input resource pilot, not measured numerical equivalence with a nucleotide baseline or production/cohort/taxonomy/defence acceptance.
+
+## Admission, ownership and recovery
+
+The new native/entry/shell set has distinct progress, launch, namespace and analysis paths, and shares the existing Windows installer/launcher and Linux compute leases. Actual Windows WSL PID/creation, Linux process groups, bounded final hashing and explicit unproven-closure failures follow the accepted lifecycle. `state/checkm2_protein_pilot_v001_progress.json` is the future live progress source; root must wire it before admitting a run.
+
+`metadata/checkm2_protein_strategy_template_v001.json` is deliberately **not** an admission. Root must accept source/lifecycle review, bind the actual closed engineering evidence, wire monitoring and record the exact owned-marker transition for decision 04R1 before creating `state/checkm2_protein_strategy_ready_v001.json`. The transition must match owner token `583d75993ca445fca988f7c7264e15e8` and the original STOP SHA. A new/different user STOP is preserved. This implementation removes no marker and creates no admission. Future native invocation must use the full absolute script path for strict process identity matching.
+
+One attempt is claimed per exact admission SHA. Every failed/partial stage and successful annotation manifest is retained for review; no automatic biological retry or legacy/FNA resume is provided. A numeric core with unproved namespace closure is held. The FNA invariance adapter remains unapplied and cannot be reused unchanged for this input route.
+
+The synthetic fixture report covers 23 meaningful checks, including source-free DNA/protein validation, exact large integers/fractional N50, full feature order/domains, extra report cells, incomplete later-unit closure, unknown handling, isolated logging, and real tiny standard-library exit/deadline children with group closure. Fixtures open no genome or FAA and invoke no author scientific code. The native source parses without execution. `metadata/checkm2_protein_implementation_v001.json` binds the frozen source and fixture bytes; preparation scripts only read source/metadata.

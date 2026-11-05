@@ -1,0 +1,18 @@
+{
+  "schema": "TREE2_RETAINED_WORKER_ACTUAL_EXIT_V2",
+  "worker_identity": {
+    "pid": 5124,
+    "windows_creation_filetime_100ns": 134383497954733646,
+    "creation_time_utc": "2026-11-05T10:56:35.4733646Z",
+    "role": "NOVEL_C009_CPU4_V003_STOCK_PROTEIN_SUPPORTED_DEFENCE_20_DISJOINT_INPUTS",
+    "launch_receipt": {
+      "path": "work/defence_bulk_C009_v003/detached_registration/launch.json",
+      "sha256": "082db3a240c7c2f1a9e3d0c9256183ca12eacf16380c55b2be0503129e0d8e11",
+      "bytes": 2934
+    }
+  },
+  "actual_exit_code": 0,
+  "exact_birth_handle_retained": true,
+  "observed_utc": "2026-11-05T13:21:57.935262+00:00",
+  "during_cli_event_sha256": "ccbf93d2b57122b4ea8cc9d84c66d8ffd5ceb0e8fd875bd221a9a4ff656ea2a3"
+}

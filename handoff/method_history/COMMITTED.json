@@ -1,0 +1,43 @@
+{
+  "schema": "TREE2_LOCAL_METHOD_SOURCE_HISTORY_V001",
+  "status": "COMPLETE_ARCHIVE_VERIFIED",
+  "source_HEAD": "254166474375cd02a1d176e1467bdf89a9e4d2f86c9c976a58a0f4229877764d",
+  "observed_local_head_and_tag_refs": [
+    "refs/heads/master 254166474375cd02a1d176e1467bdf89a9e4d2f86c9c976a58a0f4229877764d"
+  ],
+  "reachable_commits_covered": 272,
+  "roots_scoped": [
+    "scripts",
+    "docs",
+    "config",
+    "patches",
+    "AGENTS.md",
+    "README.md",
+    "STATUS.md",
+    "STARTUP_REPORT.md",
+    "REBOOT_CHECKPOINT.md",
+    ".gitattributes",
+    ".gitignore"
+  ],
+  "maximum_raw_blob_bytes": 2097152,
+  "maximum_archive_bytes": 67108864,
+  "archive": {
+    "path": "method_history/tree2_method_history.zip",
+    "sha256": "007b1a1018e56c80054556f76948bc6273578c2678158317c8c5c41e0427aea4",
+    "bytes": 1353954
+  },
+  "counts": {
+    "unique_git_blob_aliases_to_main_package": 652,
+    "retained_lineage_versions": 868,
+    "unique_historical_blob_bytes": 3121498,
+    "unique_archived_sha256_blobs": 210
+  },
+  "omitted_version_reasons": {},
+  "main_package_manifest": "files.ndjson",
+  "current_alias_contract": "Resolve current_package_member by exact SHA256 and byte count in the main package manifest.",
+  "lineage_contract": "All reachable commits, changes and deletions against each commit first parent. Safe source bytes use blobs/<SHA256>; omitted records give a reason without raw blob bytes.",
+  "coverage_limits": "Source-only allowlist, no .git objects, remotes, work/raw/analysis/state, private session data, commit messages, unreachable commits, uncommitted change history, or out-of-scope method helper versions.",
+  "host_paths": "Some exact source bytes contain WD-specific paths or process configuration. Historical source is evidence; machine-local state cannot be reused as live custody.",
+  "verified_archive_blob_SHA256_and_lineage_references": true,
+  "created_utc": "2026-11-05T15:59:06.412027+00:00"
+}

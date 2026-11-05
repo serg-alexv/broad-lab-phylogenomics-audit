@@ -1,0 +1,2629 @@
+{
+  "schema": "TREE2_PRESERVED_PRIMARY_COHORT_HOLDS_V001",
+  "source_bindings": {
+    "frozen919": {
+      "path": "metadata/checkm1_lactobacillales_full919_v001/queue_manifest.json",
+      "sha256": "5ef514a1a39776ab79281128a725c9188a787b054452804150a58d30079f116f",
+      "bytes": 8605479
+    },
+    "quality_registry": {
+      "path": "metadata/checkm1_accepted_method_results_v001.json",
+      "sha256": "accd236a3827bc132475b1b6e746a55ec753d4962adc269551e0f6de1faec3b8",
+      "bytes": 564311
+    },
+    "paired_annotation": {
+      "path": "work/annotation_closure_b37b/verified_proteome_rows.json",
+      "sha256": "d564556f4fc471f3fd3ebe0a63933274cc866bd2e682a3be3c5e1584bb53b4dc",
+      "bytes": 2133497
+    },
+    "cross_method_holds": {
+      "path": "state/checkm1_method_review_holds_v001.json",
+      "sha256": "5c00e89f82b59549028dbb6fe611535e8cf6055371407d22c58eeee3d0f627b6",
+      "bytes": 1816
+    },
+    "acquired_and_held_inventory": {
+      "path": "metadata/tree2_qc_campaign_queue_v001.json",
+      "sha256": "44d456e79af0f84a2c35a2dd3e1b6f8cd748df31d17ee8273becca7a765b75f1",
+      "bytes": 4154855
+    },
+    "preserved_discovery_candidates": {
+      "path": "metadata/candidates_qc.json",
+      "sha256": "11787bbf3f0f1bba082f4acf89af47e6913a7cb1b57a158e42603ded84049901",
+      "bytes": 25665165
+    },
+    "original_provisional_selection": {
+      "path": "metadata/provisional_panel.json",
+      "sha256": "0dbdc7debab41619e6d52ef855a3ba01bb52ed11540a867a46fe041b639536f8",
+      "bytes": 2537936
+    },
+    "closed_quality_acceptance": {
+      "path": "work/checkm1_close_7bbd/Root_closed_method_acceptance.json",
+      "sha256": "5e835c3f13b4f61b109c9f63909d6b9e975d2c569d814f74542968e1ac2bd28e",
+      "bytes": 3602
+    },
+    "source_provenance": {
+      "path": "qc/source_provenance_audit.json",
+      "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+      "bytes": 2395259
+    },
+    "sampling_review": {
+      "path": "docs/SAMPLING_REVIEW.md",
+      "sha256": "d1b435e70eefe3d1fa8c8a4a815fa7d2c342d99a30d60f21e7649e7bd08087a0",
+      "bytes": 7459
+    },
+    "stage_plan": {
+      "path": "docs/STAGE_PLAN.md",
+      "sha256": "9217a04a328309d48a0175a1af43554a47d223d2756259c1fe8386d013206d17",
+      "bytes": 39732
+    }
+  },
+  "status": "PROPOSED_ROOT_ADMISSION_REQUIRED",
+  "rows": [
+    {
+      "accession": "GCF_002993975.1",
+      "stable_analysis_label": "GCF_002993975.1",
+      "original_frozen919_position": 0,
+      "source_species_label": "Apilactobacillus micheneri",
+      "source_species_taxid": 1899430,
+      "source_genus_label": "Apilactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN08331815",
+      "source_strain_label": "Hlig3",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 98.63387978142076,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1462173,
+        "contigs": 12,
+        "ambiguous_bases": 32,
+        "ambiguous_fraction": 2.1885235194467412e-05,
+        "source_lengths": [
+          1462173
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_002993975.1/ncbi_dataset/data/GCF_002993975.1/GCF_002993975.1_ASM299397v1_genomic.fna",
+        "bytes": 1481662,
+        "sha256": "ff97498d122d092dad3f4874668d2ee8f996309cf02262042e32f1ed04cbbf13"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_002993975.1/prodigal_attempt_e3e966be7c0643c8b12c033146140d22/proteins.faa",
+        "sha256": "6fb3ecae05721ea5022d6fac1175a4b06d0f37ad6544d0a195500070d2f47017",
+        "bytes": 474490
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_002993975.1/prodigal_attempt_e3e966be7c0643c8b12c033146140d22/prodigal.gff",
+        "sha256": "54ed706fd8b94185a0e6cd1677e2ebda630f165ddd92c9ba4f4386bd7df93a26",
+        "bytes": 348480
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_002993975.1/prodigal_attempt_e3e966be7c0643c8b12c033146140d22/protein_coordinate_map.json",
+        "sha256": "a0fc7df003d4680bb2edfb8831a6bef9434d6aeddb90369ebecd72d7faa6e74e",
+        "bytes": 1176665
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_002993975.1/commit.json",
+        "sha256": "8153b51003365cd030f527c8747a8dcd17c1ac2ea9cc6b31005c84818a771e1d",
+        "bytes": 5867
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_002993975.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_002993975.1/commit.json",
+          "sha256": "8153b51003365cd030f527c8747a8dcd17c1ac2ea9cc6b31005c84818a771e1d",
+          "bytes": 5867
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_002993975.1/prodigal_attempt_e3e966be7c0643c8b12c033146140d22/proteins.faa",
+          "sha256": "6fb3ecae05721ea5022d6fac1175a4b06d0f37ad6544d0a195500070d2f47017",
+          "bytes": 474490
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_002993975.1/prodigal_attempt_e3e966be7c0643c8b12c033146140d22/protein_coordinate_map.json",
+          "sha256": "a0fc7df003d4680bb2edfb8831a6bef9434d6aeddb90369ebecd72d7faa6e74e",
+          "bytes": 1176665
+        },
+        "protein_count": 1471,
+        "source_metadata": {
+          "accession": "GCF_002993975.1",
+          "species": "Apilactobacillus micheneri",
+          "species_taxid": 1899430,
+          "genus": "Apilactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "checkm_contamination_missing"
+          ],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_002993975.1",
+            "source_report_sha256": "1d31355dbc566da6948906ea9ccbe08f0622c8ff251957aec32e4eae93412343"
+          },
+          "frozen_order": 16,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_002993975.1",
+        "source_report_sha256": "1d31355dbc566da6948906ea9ccbe08f0622c8ff251957aec32e4eae93412343"
+      },
+      "original_source_pending_reasons_preserved": [
+        "checkm_contamination_missing"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_CROSS_METHOD_95_5_DISAGREEMENT"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true,
+      "cross_method_disagreement_preserved": {
+        "accession": "GCF_002993975.1",
+        "status": "HELD_CROSS_METHOD_95_5_DISAGREEMENT",
+        "CheckM1_unrounded": {
+          "Completeness": 98.63387978142076,
+          "Contamination": 0.0
+        },
+        "CheckM2_diagnostic": {
+          "completeness_difference_pp": 4.013879781420755,
+          "contamination_difference_pp": -0.06,
+          "large_completeness_difference_gt5pp": false,
+          "large_contamination_difference_gt3pp": false,
+          "classification_flip": true,
+          "same_original_scoring_FAA_sha256": true,
+          "exact_cross_method_agreement_required": false
+        },
+        "independent_taxonomy_or_final_panel_acceptance": false
+      }
+    },
+    {
+      "accession": "GCF_003264015.2",
+      "stable_analysis_label": "GCF_003264015.2",
+      "original_frozen919_position": 1,
+      "source_species_label": "Dolosigranulum pigrum",
+      "source_species_taxid": 29394,
+      "source_genus_label": "Dolosigranulum",
+      "source_family_label": "Carnobacteriaceae",
+      "source_BioSample": "SAMN06624376",
+      "source_strain_label": "KPL1934_CDC4709-98",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 99.38524590163935,
+      "CheckM1_unrounded_contamination": 3.551912568306011,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1987888,
+        "contigs": 1,
+        "ambiguous_bases": 100,
+        "ambiguous_fraction": 5.030464492969423e-05,
+        "source_lengths": [
+          1987888
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_003264015.2/ncbi_dataset/data/GCF_003264015.2/GCF_003264015.2_ASM326401v2_genomic.fna",
+        "bytes": 2012811,
+        "sha256": "01fe7254aca4b31dbb4407e0cf385fe3d0703091e3c5f0247924a902ebf3408c"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003264015.2/prodigal_attempt_57d650f9e1be4255b3a85240c573a9ae/proteins.faa",
+        "sha256": "11996bf8abebbdc3f6a08ff17a5c7e838669d273247f769a0a505960ca5eeac5",
+        "bytes": 629127
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003264015.2/prodigal_attempt_57d650f9e1be4255b3a85240c573a9ae/prodigal.gff",
+        "sha256": "e0783f7f4cb2938ec847e2471d5f1ad4ba2069b6950d0cdeaed7d6e20a1ffa2e",
+        "bytes": 413955
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003264015.2/prodigal_attempt_57d650f9e1be4255b3a85240c573a9ae/protein_coordinate_map.json",
+        "sha256": "a193ea54474fa2013d3815bc37c76f80d4f1465e302c7599aa4bc716d9e653a4",
+        "bytes": 1417198
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_003264015.2/commit.json",
+        "sha256": "5c59fad33c329d45390c554709018937aef125a76321957dc0bbe08c88e8650f",
+        "bytes": 5824
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_003264015.2",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_003264015.2/commit.json",
+          "sha256": "5c59fad33c329d45390c554709018937aef125a76321957dc0bbe08c88e8650f",
+          "bytes": 5824
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_003264015.2/prodigal_attempt_57d650f9e1be4255b3a85240c573a9ae/proteins.faa",
+          "sha256": "11996bf8abebbdc3f6a08ff17a5c7e838669d273247f769a0a505960ca5eeac5",
+          "bytes": 629127
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_003264015.2/prodigal_attempt_57d650f9e1be4255b3a85240c573a9ae/protein_coordinate_map.json",
+          "sha256": "a193ea54474fa2013d3815bc37c76f80d4f1465e302c7599aa4bc716d9e653a4",
+          "bytes": 1417198
+        },
+        "protein_count": 1779,
+        "source_metadata": {
+          "accession": "GCF_003264015.2",
+          "species": "Dolosigranulum pigrum",
+          "species_taxid": 29394,
+          "genus": "Dolosigranulum",
+          "family": "Carnobacteriaceae",
+          "assembly_level": "Chromosome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_003264015.2",
+            "source_report_sha256": "de597a21a4a0c79a15a3453fa34d3963f01fb38d05660b4689b37675bb111e74"
+          },
+          "frozen_order": 8,
+          "species_round": null
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_003264015.2",
+        "source_report_sha256": "de597a21a4a0c79a15a3453fa34d3963f01fb38d05660b4689b37675bb111e74"
+      },
+      "original_source_pending_reasons_preserved": [],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_CROSS_METHOD_95_5_DISAGREEMENT"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true,
+      "cross_method_disagreement_preserved": {
+        "accession": "GCF_003264015.2",
+        "status": "HELD_CROSS_METHOD_95_5_DISAGREEMENT",
+        "CheckM1_unrounded": {
+          "Completeness": 99.38524590163935,
+          "Contamination": 3.551912568306011
+        },
+        "CheckM2_diagnostic": {
+          "completeness_difference_pp": 0.14524590163935613,
+          "contamination_difference_pp": -2.0680874316939892,
+          "large_completeness_difference_gt5pp": false,
+          "large_contamination_difference_gt3pp": false,
+          "classification_flip": true,
+          "same_original_scoring_FAA_sha256": true,
+          "exact_cross_method_agreement_required": false
+        },
+        "independent_taxonomy_or_final_panel_acceptance": false
+      }
+    },
+    {
+      "accession": "GCF_001050095.1",
+      "stable_analysis_label": "GCF_001050095.1",
+      "original_frozen919_position": 3,
+      "source_species_label": "Enterococcus massiliensis",
+      "source_species_taxid": 1640685,
+      "source_genus_label": "Enterococcus",
+      "source_family_label": "Enterococcaceae",
+      "source_BioSample": "SAMEA3443460",
+      "source_strain_label": "AM1",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 99.18032786885246,
+      "CheckM1_unrounded_contamination": 0.546448087431694,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2712841,
+        "contigs": 7,
+        "ambiguous_bases": 1,
+        "ambiguous_fraction": 3.686172540152556e-07,
+        "source_lengths": [
+          2712841
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_001050095.1/ncbi_dataset/data/GCF_001050095.1/GCF_001050095.1_Enterococcus_massiliensis_genomic.fna",
+        "bytes": 2747364,
+        "sha256": "5abe9a353cb4fb4aa91f100f855b5d091682135a6021536e01deaa687bdffd62"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001050095.1/prodigal_attempt_30d46911caf1481fb927811a94ddafaa/proteins.faa",
+        "sha256": "a30a4c726edffb6722764c3e939c47b5f4a88a6df0d54426bd9b6dec8c85fe4f",
+        "bytes": 870802
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001050095.1/prodigal_attempt_30d46911caf1481fb927811a94ddafaa/prodigal.gff",
+        "sha256": "d0257eae4a4025cc255f095e4c0d8d0b27a97cfd44658f2d09c3ed56435f496e",
+        "bytes": 616732
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001050095.1/prodigal_attempt_30d46911caf1481fb927811a94ddafaa/protein_coordinate_map.json",
+        "sha256": "e9fec5f5e510cdbf9d7b1bec2e4f341586e288f31a67bbf5f54bcba73384f6cf",
+        "bytes": 2094819
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_001050095.1/commit.json",
+        "sha256": "01bec44b05c0e63d24b08dd73cacdbaaeb357fc998e54488f3868cf580154a92",
+        "bytes": 5886
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_001050095.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_001050095.1/commit.json",
+          "sha256": "01bec44b05c0e63d24b08dd73cacdbaaeb357fc998e54488f3868cf580154a92",
+          "bytes": 5886
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_001050095.1/prodigal_attempt_30d46911caf1481fb927811a94ddafaa/proteins.faa",
+          "sha256": "a30a4c726edffb6722764c3e939c47b5f4a88a6df0d54426bd9b6dec8c85fe4f",
+          "bytes": 870802
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_001050095.1/prodigal_attempt_30d46911caf1481fb927811a94ddafaa/protein_coordinate_map.json",
+          "sha256": "e9fec5f5e510cdbf9d7b1bec2e4f341586e288f31a67bbf5f54bcba73384f6cf",
+          "bytes": 2094819
+        },
+        "protein_count": 2617,
+        "source_metadata": {
+          "accession": "GCF_001050095.1",
+          "species": "Enterococcus massiliensis",
+          "species_taxid": 1640685,
+          "genus": "Enterococcus",
+          "family": "Enterococcaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_001050095.1",
+            "source_report_sha256": "a59a4578e6110883552e46572c048cbb083d3352c170184d5e7805c9dadecd21"
+          },
+          "frozen_order": 7,
+          "species_round": null
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_001050095.1",
+        "source_report_sha256": "a59a4578e6110883552e46572c048cbb083d3352c170184d5e7805c9dadecd21"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_900636715.1",
+      "stable_analysis_label": "GCF_900636715.1",
+      "original_frozen919_position": 4,
+      "source_species_label": "Streptococcus milleri",
+      "source_species_taxid": 33040,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMEA3729939",
+      "source_strain_label": "NCTC10708",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 99.18032786885246,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1890902,
+        "contigs": 1,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          1890902
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_900636715.1/ncbi_dataset/data/GCF_900636715.1/GCF_900636715.1_43908_E01_genomic.fna",
+        "bytes": 1914625,
+        "sha256": "d335fd9af1852b3c42480ef4b6700b789475cea4592d3ed50373cb1f1cdec862"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636715.1/prodigal_attempt_4d7e7389654243f988cb274ae82de9f0/proteins.faa",
+        "sha256": "60a1eb087dfd9903cace20c7ae89169e963b6c60f242ededab679e491f62045e",
+        "bytes": 601532
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636715.1/prodigal_attempt_4d7e7389654243f988cb274ae82de9f0/prodigal.gff",
+        "sha256": "b973cc76c8e9cb5b174d3e40dc8c17691a74a764bde781ae20a38912eb1c4a7c",
+        "bytes": 415283
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636715.1/prodigal_attempt_4d7e7389654243f988cb274ae82de9f0/protein_coordinate_map.json",
+        "sha256": "41d4d20509df955f4a139a7a7a77f94ce5301499c80581c6b77ce3b98c591094",
+        "bytes": 1423770
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_900636715.1/commit.json",
+        "sha256": "00ac4353c973002b2024cce8796be13d4c2ef7fe5a4d35f9765ea45962827ba8",
+        "bytes": 5873
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_900636715.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_900636715.1/commit.json",
+          "sha256": "00ac4353c973002b2024cce8796be13d4c2ef7fe5a4d35f9765ea45962827ba8",
+          "bytes": 5873
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_900636715.1/prodigal_attempt_4d7e7389654243f988cb274ae82de9f0/proteins.faa",
+          "sha256": "60a1eb087dfd9903cace20c7ae89169e963b6c60f242ededab679e491f62045e",
+          "bytes": 601532
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_900636715.1/prodigal_attempt_4d7e7389654243f988cb274ae82de9f0/protein_coordinate_map.json",
+          "sha256": "41d4d20509df955f4a139a7a7a77f94ce5301499c80581c6b77ce3b98c591094",
+          "bytes": 1423770
+        },
+        "protein_count": 1790,
+        "source_metadata": {
+          "accession": "GCF_900636715.1",
+          "species": "Streptococcus milleri",
+          "species_taxid": 33040,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_900636715.1",
+            "source_report_sha256": "b5ab8a051a6abab605f42c7e378dd1cb4dfe11135698b30338a640abd2f5c093"
+          },
+          "frozen_order": 17,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_900636715.1",
+        "source_report_sha256": "b5ab8a051a6abab605f42c7e378dd1cb4dfe11135698b30338a640abd2f5c093"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_000831485.1",
+      "stable_analysis_label": "GCF_000831485.1",
+      "original_frozen919_position": 12,
+      "source_species_label": "Streptococcus iniae",
+      "source_species_taxid": 1346,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMN03286870",
+      "source_strain_label": "YSFST01-82",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2086959,
+        "contigs": 1,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          2086959
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_000831485.1/ncbi_dataset/data/GCF_000831485.1/GCF_000831485.1_ASM83148v1_genomic.fna",
+        "bytes": 2113127,
+        "sha256": "149bbcbf24fbfdf9f16f323b401020cf9ec71a8a733e7f2dfc1aec6cc1688fe8"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000831485.1/prodigal_attempt_a36edd2ba8b24c2b95d439091629ad12/proteins.faa",
+        "sha256": "c649276b0ebe67e5832b14bb9024a476b4d2f409c9f91c2c162f46a950b469ee",
+        "bytes": 672228
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000831485.1/prodigal_attempt_a36edd2ba8b24c2b95d439091629ad12/prodigal.gff",
+        "sha256": "1f8d0d7295dc85c60b4e38b8ccfffaaf587640ecc366cfec5cd3a8a0f0d13936",
+        "bytes": 459311
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000831485.1/prodigal_attempt_a36edd2ba8b24c2b95d439091629ad12/protein_coordinate_map.json",
+        "sha256": "693284e48fa58506d2bb4ad62ef37ea4ad87199ca8328103bcfafafe7623f479",
+        "bytes": 1574463
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_000831485.1/commit.json",
+        "sha256": "4e5cdd4e0842285136b3317b158718c5562a9f99462e07f348aec58cb518c666",
+        "bytes": 5909
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_000831485.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_000831485.1/commit.json",
+          "sha256": "4e5cdd4e0842285136b3317b158718c5562a9f99462e07f348aec58cb518c666",
+          "bytes": 5909
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000831485.1/prodigal_attempt_a36edd2ba8b24c2b95d439091629ad12/proteins.faa",
+          "sha256": "c649276b0ebe67e5832b14bb9024a476b4d2f409c9f91c2c162f46a950b469ee",
+          "bytes": 672228
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000831485.1/prodigal_attempt_a36edd2ba8b24c2b95d439091629ad12/protein_coordinate_map.json",
+          "sha256": "693284e48fa58506d2bb4ad62ef37ea4ad87199ca8328103bcfafafe7623f479",
+          "bytes": 1574463
+        },
+        "protein_count": 1978,
+        "source_metadata": {
+          "accession": "GCF_000831485.1",
+          "species": "Streptococcus iniae",
+          "species_taxid": 1346,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_000831485.1",
+            "source_report_sha256": "c6868f84cfc5417e18cbaf6121049c0f3260688a648d82caec84aaf292b85f7e"
+          },
+          "frozen_order": 15,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_000831485.1",
+        "source_report_sha256": "c6868f84cfc5417e18cbaf6121049c0f3260688a648d82caec84aaf292b85f7e"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed",
+        "checkm_contamination_missing"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_001434555.1",
+      "stable_analysis_label": "GCF_001434555.1",
+      "original_frozen919_position": 13,
+      "source_species_label": "Amylolactobacillus amylotrophicus",
+      "source_species_taxid": 376807,
+      "source_genus_label": "Amylolactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN02369421",
+      "source_strain_label": "DSM 20534",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 98.90710382513662,
+      "CheckM1_unrounded_contamination": 0.546448087431694,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1548566,
+        "contigs": 21,
+        "ambiguous_bases": 1136,
+        "ambiguous_fraction": 0.0007335819073904503,
+        "source_lengths": [
+          1548566
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_001434555.1/ncbi_dataset/data/GCF_001434555.1/GCF_001434555.1_ASM143455v1_genomic.fna",
+        "bytes": 1570131,
+        "sha256": "840cae0149275a25b02f90037f4ffa6df530f369ed10d3a1a5e6ee9450bee608"
+      },
+      "canonical_FAA": {
+        "path": "analysis/pilot10/annotations/GCF_001434555.1/proteins.faa",
+        "sha256": "cf5c1e1cf0b3dabc739e10a40b8b721bd17f1c0bc1279f96fbe915c92a66d443",
+        "bytes": 500187
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/pilot10/annotations/GCF_001434555.1/prodigal.gff",
+        "sha256": "ad417352de51c473e32fc2f2c22809d14ac08d4bd5b716a5468964d1f93b1171",
+        "bytes": 370498
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/pilot10/annotations/GCF_001434555.1/protein_coordinate_map.json",
+        "sha256": "ec338f3d97936bb2c54f7463906492e6572a06b82a7cb7e4e5667bd4d26f1231",
+        "bytes": 1245905
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_001434555.1/commit.json",
+        "sha256": "51416ff1f346f2dfdf131eea6bbed31c8167bdf8c44d45522f9598c32a467d4a",
+        "bytes": 5350
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_001434555.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_001434555.1/commit.json",
+          "sha256": "51416ff1f346f2dfdf131eea6bbed31c8167bdf8c44d45522f9598c32a467d4a",
+          "bytes": 5350
+        },
+        "proteins": {
+          "path": "analysis/pilot10/annotations/GCF_001434555.1/proteins.faa",
+          "sha256": "cf5c1e1cf0b3dabc739e10a40b8b721bd17f1c0bc1279f96fbe915c92a66d443",
+          "bytes": 500187
+        },
+        "coordinates": {
+          "path": "analysis/pilot10/annotations/GCF_001434555.1/protein_coordinate_map.json",
+          "sha256": "ec338f3d97936bb2c54f7463906492e6572a06b82a7cb7e4e5667bd4d26f1231",
+          "bytes": 1245905
+        },
+        "protein_count": 1560,
+        "source_metadata": {
+          "accession": "GCF_001434555.1",
+          "species": "Amylolactobacillus amylotrophicus",
+          "species_taxid": 376807,
+          "genus": "Amylolactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_001434555.1",
+            "source_report_sha256": "0c727eebb129bd40f0bce729031b77d24586c89310ac58b948b2493f49b8ba26"
+          },
+          "frozen_order": 14,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_001434555.1",
+        "source_report_sha256": "0c727eebb129bd40f0bce729031b77d24586c89310ac58b948b2493f49b8ba26"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_900636365.1",
+      "stable_analysis_label": "GCF_900636365.1",
+      "original_frozen919_position": 27,
+      "source_species_label": "Streptococcus viridans",
+      "source_species_taxid": 78535,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMEA3529270",
+      "source_strain_label": "NCTC3166",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1998575,
+        "contigs": 1,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          1998575
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_900636365.1/ncbi_dataset/data/GCF_900636365.1/GCF_900636365.1_41559_G01_genomic.fna",
+        "bytes": 2023644,
+        "sha256": "83e097659127920212bccfdd090068d68eac36ea7ca3c847f8a45069fc1259b5"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636365.1/prodigal_attempt_32ea59627b26471a93e38f5c998723da/proteins.faa",
+        "sha256": "1e2b0ffd8cd1e6bdeca16b8bc0baeebc91d35d7287f7504d4493acff7149d0b1",
+        "bytes": 638100
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636365.1/prodigal_attempt_32ea59627b26471a93e38f5c998723da/prodigal.gff",
+        "sha256": "cb2dce5450624bf1c466198c94b57055d0a81130ae39c41ca8935a3e8defb571",
+        "bytes": 435766
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_900636365.1/prodigal_attempt_32ea59627b26471a93e38f5c998723da/protein_coordinate_map.json",
+        "sha256": "2e7e2122456a21c31a280d55dbad2d7f88ded5719de26e1b0f2d24beb532fb16",
+        "bytes": 1494239
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_900636365.1/commit.json",
+        "sha256": "a8d6079b6af43232f33628ed3fca0240683e5a5c1326f22463f091722e090b27",
+        "bytes": 5912
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_900636365.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_900636365.1/commit.json",
+          "sha256": "a8d6079b6af43232f33628ed3fca0240683e5a5c1326f22463f091722e090b27",
+          "bytes": 5912
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_900636365.1/prodigal_attempt_32ea59627b26471a93e38f5c998723da/proteins.faa",
+          "sha256": "1e2b0ffd8cd1e6bdeca16b8bc0baeebc91d35d7287f7504d4493acff7149d0b1",
+          "bytes": 638100
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_900636365.1/prodigal_attempt_32ea59627b26471a93e38f5c998723da/protein_coordinate_map.json",
+          "sha256": "2e7e2122456a21c31a280d55dbad2d7f88ded5719de26e1b0f2d24beb532fb16",
+          "bytes": 1494239
+        },
+        "protein_count": 1878,
+        "source_metadata": {
+          "accession": "GCF_900636365.1",
+          "species": "Streptococcus viridans",
+          "species_taxid": 78535,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed",
+            "checkm_contamination_missing"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_900636365.1",
+            "source_report_sha256": "20202dee0080143a2d0988d801b2819993e2ead0389c0868f3545a5a87795bf2"
+          },
+          "frozen_order": 23,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_900636365.1",
+        "source_report_sha256": "20202dee0080143a2d0988d801b2819993e2ead0389c0868f3545a5a87795bf2"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed",
+        "checkm_contamination_missing"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_019448275.1",
+      "stable_analysis_label": "GCF_019448275.1",
+      "original_frozen919_position": 53,
+      "source_species_label": "Streptococcus humanilactis",
+      "source_species_taxid": 2841061,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMN20086817",
+      "source_strain_label": "IMAU99125",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 0.546448087431694,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2027143,
+        "contigs": 75,
+        "ambiguous_bases": 2672,
+        "ambiguous_fraction": 0.001318111253128171,
+        "source_lengths": [
+          2027143
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_019448275.1/ncbi_dataset/data/GCF_019448275.1/GCF_019448275.1_ASM1944827v1_genomic.fna",
+        "bytes": 2060608,
+        "sha256": "0de66612fbede60a82c59b6306e7b5595c02ad08f7b417d4628369ed241b7c83"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019448275.1/prodigal_attempt_9a838dbc5c0849c78dcdcc9d69e540ef/proteins.faa",
+        "sha256": "23e918a690b1a09405d10cb485969dec6686a372c99fcb762be60cbe23466c65",
+        "bytes": 653815
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019448275.1/prodigal_attempt_9a838dbc5c0849c78dcdcc9d69e540ef/prodigal.gff",
+        "sha256": "5d85de6cb5ea4224b75d8b9b438047a38603fb66c69656bfa3573876169db724",
+        "bytes": 470824
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019448275.1/prodigal_attempt_9a838dbc5c0849c78dcdcc9d69e540ef/protein_coordinate_map.json",
+        "sha256": "e9132f56c924f854a8c411671c216956311d6d740963775cc6f4c7c5db6ee5be",
+        "bytes": 1532140
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_019448275.1/commit.json",
+        "sha256": "81641dbddca923f9fbe38c83bbff41fe94e365235302d0a9486aa036f7e0491b",
+        "bytes": 5875
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_019448275.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_019448275.1/commit.json",
+          "sha256": "81641dbddca923f9fbe38c83bbff41fe94e365235302d0a9486aa036f7e0491b",
+          "bytes": 5875
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_019448275.1/prodigal_attempt_9a838dbc5c0849c78dcdcc9d69e540ef/proteins.faa",
+          "sha256": "23e918a690b1a09405d10cb485969dec6686a372c99fcb762be60cbe23466c65",
+          "bytes": 653815
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_019448275.1/prodigal_attempt_9a838dbc5c0849c78dcdcc9d69e540ef/protein_coordinate_map.json",
+          "sha256": "e9132f56c924f854a8c411671c216956311d6d740963775cc6f4c7c5db6ee5be",
+          "bytes": 1532140
+        },
+        "protein_count": 1907,
+        "source_metadata": {
+          "accession": "GCF_019448275.1",
+          "species": "Streptococcus humanilactis",
+          "species_taxid": 2841061,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_019448275.1",
+            "source_report_sha256": "47d465a59b05e48cf01c70c09771effd038db19cce0fdceddcaaaa5939b8c802"
+          },
+          "frozen_order": 49,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_019448275.1",
+        "source_report_sha256": "47d465a59b05e48cf01c70c09771effd038db19cce0fdceddcaaaa5939b8c802"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_024701915.1",
+      "stable_analysis_label": "GCF_024701915.1",
+      "original_frozen919_position": 54,
+      "source_species_label": "Lactobacillus leichmannii",
+      "source_species_taxid": 28039,
+      "source_genus_label": "Lactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN09630404",
+      "source_strain_label": "JCM 1148",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 98.36065573770492,
+      "CheckM1_unrounded_contamination": 0.273224043715847,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1820371,
+        "contigs": 58,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          1820371
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_024701915.1/ncbi_dataset/data/GCF_024701915.1/GCF_024701915.1_ASM2470191v1_genomic.fna",
+        "bytes": 1849029,
+        "sha256": "7e664ac7c11388f6a5a598e28bc4a6c8577776eb1827eb08bccc3e82bf7183b5"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_024701915.1/prodigal_attempt_796d3d5e40054327aa51e85af0d4a146/proteins.faa",
+        "sha256": "b5bd155869e8361d28a888040ebd3e62613de93a08a986a9e0b6939fd379c437",
+        "bytes": 579727
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_024701915.1/prodigal_attempt_796d3d5e40054327aa51e85af0d4a146/prodigal.gff",
+        "sha256": "edd8feef9f8a7b4da233842b3d5d338a9bd34e1ad38d72bcec1193cbaaeef956",
+        "bytes": 428371
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_024701915.1/prodigal_attempt_796d3d5e40054327aa51e85af0d4a146/protein_coordinate_map.json",
+        "sha256": "131f2d1bf328c09cf8ea04da58c3afe24b0275d368d1a1e59df295e39ae6e272",
+        "bytes": 1410659
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_024701915.1/commit.json",
+        "sha256": "975802cc16c877cd315323ea7a924c41f6105277f49ec277ecfb4099c06658cd",
+        "bytes": 5870
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_024701915.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_024701915.1/commit.json",
+          "sha256": "975802cc16c877cd315323ea7a924c41f6105277f49ec277ecfb4099c06658cd",
+          "bytes": 5870
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_024701915.1/prodigal_attempt_796d3d5e40054327aa51e85af0d4a146/proteins.faa",
+          "sha256": "b5bd155869e8361d28a888040ebd3e62613de93a08a986a9e0b6939fd379c437",
+          "bytes": 579727
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_024701915.1/prodigal_attempt_796d3d5e40054327aa51e85af0d4a146/protein_coordinate_map.json",
+          "sha256": "131f2d1bf328c09cf8ea04da58c3afe24b0275d368d1a1e59df295e39ae6e272",
+          "bytes": 1410659
+        },
+        "protein_count": 1773,
+        "source_metadata": {
+          "accession": "GCF_024701915.1",
+          "species": "Lactobacillus leichmannii",
+          "species_taxid": 28039,
+          "genus": "Lactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_024701915.1",
+            "source_report_sha256": "eacaa95e50b19fc000e3343198308067d4d03a69066b6d9428a0c9d98355d75c"
+          },
+          "frozen_order": 50,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_024701915.1",
+        "source_report_sha256": "eacaa95e50b19fc000e3343198308067d4d03a69066b6d9428a0c9d98355d75c"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_029589235.1",
+      "stable_analysis_label": "GCF_029589235.1",
+      "original_frozen919_position": 59,
+      "source_species_label": "Streptococcus taoyuanensis",
+      "source_species_taxid": 3036443,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMN33875161",
+      "source_strain_label": "ST2",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2155906,
+        "contigs": 25,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          2155906
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_029589235.1/ncbi_dataset/data/GCF_029589235.1/GCF_029589235.1_ASM2958923v1_genomic.fna",
+        "bytes": 2185959,
+        "sha256": "eb3c6dbbeb941cec005d6e137a9b879b2039f54ca7b7b001edbcbc67552edebd"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_029589235.1/prodigal_attempt_3a42220852954cc7bc3e5efba7bc8fed/proteins.faa",
+        "sha256": "cac561076d004e548e76b7b029fb3e6b31a1cfc2076b1de986fd87d70b4814c9",
+        "bytes": 696089
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_029589235.1/prodigal_attempt_3a42220852954cc7bc3e5efba7bc8fed/prodigal.gff",
+        "sha256": "6cc10d3f9229cbc8aee7cd6d11434e5dc405114fbe2fcf4a8165b973336c9cb7",
+        "bytes": 482841
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_029589235.1/prodigal_attempt_3a42220852954cc7bc3e5efba7bc8fed/protein_coordinate_map.json",
+        "sha256": "a4a73df06de65b5f36b782f78a41e5b115f10a4ba481c77fff7582a3fc823c09",
+        "bytes": 1617118
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_029589235.1/commit.json",
+        "sha256": "70553a8d45e0a20b6f211a3802448813b8c9f3bbc2890fbeb6f20deae6373bf7",
+        "bytes": 5873
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_029589235.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_029589235.1/commit.json",
+          "sha256": "70553a8d45e0a20b6f211a3802448813b8c9f3bbc2890fbeb6f20deae6373bf7",
+          "bytes": 5873
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_029589235.1/prodigal_attempt_3a42220852954cc7bc3e5efba7bc8fed/proteins.faa",
+          "sha256": "cac561076d004e548e76b7b029fb3e6b31a1cfc2076b1de986fd87d70b4814c9",
+          "bytes": 696089
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_029589235.1/prodigal_attempt_3a42220852954cc7bc3e5efba7bc8fed/protein_coordinate_map.json",
+          "sha256": "a4a73df06de65b5f36b782f78a41e5b115f10a4ba481c77fff7582a3fc823c09",
+          "bytes": 1617118
+        },
+        "protein_count": 2017,
+        "source_metadata": {
+          "accession": "GCF_029589235.1",
+          "species": "Streptococcus taoyuanensis",
+          "species_taxid": 3036443,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_029589235.1",
+            "source_report_sha256": "97275d2805c47f53dc57419961f0d12a69e93695aedd0b7975aa30032e66f0d6"
+          },
+          "frozen_order": 55,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_029589235.1",
+        "source_report_sha256": "97275d2805c47f53dc57419961f0d12a69e93695aedd0b7975aa30032e66f0d6"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_016900115.1",
+      "stable_analysis_label": "GCF_016900115.1",
+      "original_frozen919_position": 62,
+      "source_species_label": "Limosilactobacillus alvi",
+      "source_species_taxid": 990412,
+      "source_genus_label": "Limosilactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN14913631",
+      "source_strain_label": "An810",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 99.4535519125683,
+      "CheckM1_unrounded_contamination": 0.7285974499089253,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1927291,
+        "contigs": 150,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          1927291
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_016900115.1/ncbi_dataset/data/GCF_016900115.1/GCF_016900115.1_ASM1690011v1_genomic.fna",
+        "bytes": 1970841,
+        "sha256": "db946fd253b08b3236e1681d4241e6ec1c7476f1baa627001e22675410e4872e"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_016900115.1/prodigal_attempt_839fc7030f6d4bc6a788cafcf1cae800/proteins.faa",
+        "sha256": "6a0fa690fd162ff82fc9a76485578d19a54abfee3c8fcf4f0bbc67730a17a4df",
+        "bytes": 602090
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_016900115.1/prodigal_attempt_839fc7030f6d4bc6a788cafcf1cae800/prodigal.gff",
+        "sha256": "c1c45326cf5e98e8a54c17475c5048b4eda9dacb0b5b26e9be47748a20b946d8",
+        "bytes": 474281
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_016900115.1/prodigal_attempt_839fc7030f6d4bc6a788cafcf1cae800/protein_coordinate_map.json",
+        "sha256": "4493f0512da57cc4610c57d2c48774fce9ff8e85116834b566171ddc23ad6787",
+        "bytes": 1465575
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_016900115.1/commit.json",
+        "sha256": "3d9a4b227288b81366025d1364043fb648fe9991c3154fe889517027def203cc",
+        "bytes": 5877
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_016900115.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_016900115.1/commit.json",
+          "sha256": "3d9a4b227288b81366025d1364043fb648fe9991c3154fe889517027def203cc",
+          "bytes": 5877
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_016900115.1/prodigal_attempt_839fc7030f6d4bc6a788cafcf1cae800/proteins.faa",
+          "sha256": "6a0fa690fd162ff82fc9a76485578d19a54abfee3c8fcf4f0bbc67730a17a4df",
+          "bytes": 602090
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_016900115.1/prodigal_attempt_839fc7030f6d4bc6a788cafcf1cae800/protein_coordinate_map.json",
+          "sha256": "4493f0512da57cc4610c57d2c48774fce9ff8e85116834b566171ddc23ad6787",
+          "bytes": 1465575
+        },
+        "protein_count": 1832,
+        "source_metadata": {
+          "accession": "GCF_016900115.1",
+          "species": "Limosilactobacillus alvi",
+          "species_taxid": 990412,
+          "genus": "Limosilactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_016900115.1",
+            "source_report_sha256": "fa4da36c050d3127d960bfabb9fc0a8018715b1c8319423e21538a4db715f783"
+          },
+          "frozen_order": 58,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_016900115.1",
+        "source_report_sha256": "fa4da36c050d3127d960bfabb9fc0a8018715b1c8319423e21538a4db715f783"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_034134805.1",
+      "stable_analysis_label": "GCF_034134805.1",
+      "original_frozen919_position": 69,
+      "source_species_label": "Streptococcus lingualis",
+      "source_species_taxid": 3098076,
+      "source_genus_label": "Streptococcus",
+      "source_family_label": "Streptococcaceae",
+      "source_BioSample": "SAMN38395317",
+      "source_strain_label": "S5",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 0.546448087431694,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2111933,
+        "contigs": 1,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          2111933
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_034134805.1/ncbi_dataset/data/GCF_034134805.1/GCF_034134805.1_ASM3413480v1_genomic.fna",
+        "bytes": 2138410,
+        "sha256": "38e6f8dd3845c167e57be51f734dea14768f38353d65e63f60cf7762801e61e2"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_034134805.1/prodigal_attempt_e9819ed7c8d94bc68cc2937d3e975d5a/proteins.faa",
+        "sha256": "9a1bf58976e506ee3e17001b0b64c1e41c3ac763d2e82d43acf2e3add0376d41",
+        "bytes": 677941
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_034134805.1/prodigal_attempt_e9819ed7c8d94bc68cc2937d3e975d5a/prodigal.gff",
+        "sha256": "446d65fb9a891210544d868fcd806d723797a1049fbce10772348a6e0ec9f194",
+        "bytes": 458448
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_034134805.1/prodigal_attempt_e9819ed7c8d94bc68cc2937d3e975d5a/protein_coordinate_map.json",
+        "sha256": "01ecc372bea18eb77dd1a1824ed794010d445f7d03a3e371b1375efb3330656c",
+        "bytes": 1571588
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_034134805.1/commit.json",
+        "sha256": "1a3903d0cd2527ab86f1e1cbdbe4fe746675a1a2e3e8413eee0b7ceea2611208",
+        "bytes": 5879
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_034134805.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_034134805.1/commit.json",
+          "sha256": "1a3903d0cd2527ab86f1e1cbdbe4fe746675a1a2e3e8413eee0b7ceea2611208",
+          "bytes": 5879
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_034134805.1/prodigal_attempt_e9819ed7c8d94bc68cc2937d3e975d5a/proteins.faa",
+          "sha256": "9a1bf58976e506ee3e17001b0b64c1e41c3ac763d2e82d43acf2e3add0376d41",
+          "bytes": 677941
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_034134805.1/prodigal_attempt_e9819ed7c8d94bc68cc2937d3e975d5a/protein_coordinate_map.json",
+          "sha256": "01ecc372bea18eb77dd1a1824ed794010d445f7d03a3e371b1375efb3330656c",
+          "bytes": 1571588
+        },
+        "protein_count": 1974,
+        "source_metadata": {
+          "accession": "GCF_034134805.1",
+          "species": "Streptococcus lingualis",
+          "species_taxid": 3098076,
+          "genus": "Streptococcus",
+          "family": "Streptococcaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_034134805.1",
+            "source_report_sha256": "497c3cfcb48ae69182a664af0ff62bcf5ffa2cdc3aed6ef6e28aab109086c00d"
+          },
+          "frozen_order": 65,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_034134805.1",
+        "source_report_sha256": "497c3cfcb48ae69182a664af0ff62bcf5ffa2cdc3aed6ef6e28aab109086c00d"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_003173695.1",
+      "stable_analysis_label": "GCF_003173695.1",
+      "original_frozen919_position": 76,
+      "source_species_label": "Lactobacillus helsingborgensis",
+      "source_species_taxid": 1218494,
+      "source_genus_label": "Lactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN07311026",
+      "source_strain_label": "ESL0183",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 97.81420765027322,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1867232,
+        "contigs": 2,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          1867232
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_003173695.1/ncbi_dataset/data/GCF_003173695.1/GCF_003173695.1_ASM317369v1_genomic.fna",
+        "bytes": 1890740,
+        "sha256": "582dec1eaef7d551e2a1460c288a5ed89dc6f187f507ebf70021856cda58ee4e"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003173695.1/prodigal_attempt_73f0d0b69c10466d82b5225f6916f02c/proteins.faa",
+        "sha256": "e102490cfdf65a839c4a646d80f7a60e9a49deb720ab85e998bb11f06adeb687",
+        "bytes": 595876
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003173695.1/prodigal_attempt_73f0d0b69c10466d82b5225f6916f02c/prodigal.gff",
+        "sha256": "c2df4aa816be8d40f1f690de1abcfbcffb94af0d2c260f1ac8c7f94a22e006c1",
+        "bytes": 396231
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_003173695.1/prodigal_attempt_73f0d0b69c10466d82b5225f6916f02c/protein_coordinate_map.json",
+        "sha256": "4223470d3208c63100c5ef9e2c79c387dba2f0195dd6937466d56a309b53cdd6",
+        "bytes": 1355452
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_003173695.1/commit.json",
+        "sha256": "bf7405d517f2df51adfbd1e8cd3bba1aeac054dc98790215fb44d3144d6ffe5f",
+        "bytes": 5886
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_003173695.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_003173695.1/commit.json",
+          "sha256": "bf7405d517f2df51adfbd1e8cd3bba1aeac054dc98790215fb44d3144d6ffe5f",
+          "bytes": 5886
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_003173695.1/prodigal_attempt_73f0d0b69c10466d82b5225f6916f02c/proteins.faa",
+          "sha256": "e102490cfdf65a839c4a646d80f7a60e9a49deb720ab85e998bb11f06adeb687",
+          "bytes": 595876
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_003173695.1/prodigal_attempt_73f0d0b69c10466d82b5225f6916f02c/protein_coordinate_map.json",
+          "sha256": "4223470d3208c63100c5ef9e2c79c387dba2f0195dd6937466d56a309b53cdd6",
+          "bytes": 1355452
+        },
+        "protein_count": 1701,
+        "source_metadata": {
+          "accession": "GCF_003173695.1",
+          "species": "Lactobacillus helsingborgensis",
+          "species_taxid": 1218494,
+          "genus": "Lactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_003173695.1",
+            "source_report_sha256": "af73ae227ecd0689397dcbb1a32a3d448fa0b0332721b609c74fbd4cdb0a9b95"
+          },
+          "frozen_order": 72,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_003173695.1",
+        "source_report_sha256": "af73ae227ecd0689397dcbb1a32a3d448fa0b0332721b609c74fbd4cdb0a9b95"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_009695985.1",
+      "stable_analysis_label": "GCF_009695985.1",
+      "original_frozen919_position": 85,
+      "source_species_label": "Lactobacillus porci",
+      "source_species_taxid": 2012477,
+      "source_genus_label": "Lactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN12619150",
+      "source_strain_label": "Bifido-178-WT-2B",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 98.90710382513662,
+      "CheckM1_unrounded_contamination": 0.819672131147541,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2188901,
+        "contigs": 80,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          2188901
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_009695985.1/ncbi_dataset/data/GCF_009695985.1/GCF_009695985.1_ASM969598v1_genomic.fna",
+        "bytes": 2224292,
+        "sha256": "e54549eb6d41429ec34689522a372378c2776fe564ef884a768039b70152d8cd"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_009695985.1/prodigal_attempt_e7bda0c49261427abf8ed6d72567ea92/proteins.faa",
+        "sha256": "646df50c382c2d02f9b7b68cf00ab8b56bffc388f222f57a4d0fc95816895b45",
+        "bytes": 678108
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_009695985.1/prodigal_attempt_e7bda0c49261427abf8ed6d72567ea92/prodigal.gff",
+        "sha256": "e25498f4f2468b4af4179a8a7edfb46084666147da035d5cd19d383c3ee1c214",
+        "bytes": 483273
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_009695985.1/prodigal_attempt_e7bda0c49261427abf8ed6d72567ea92/protein_coordinate_map.json",
+        "sha256": "dd078eb061f04cfcd2b635beee577414e975a7b2d3713eab10a0680dab4b03db",
+        "bytes": 1578870
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_009695985.1/commit.json",
+        "sha256": "df4fc3865e1594f05d22017f624b4064bab73bb7cb043ebe8b7ab8a2798fa1b4",
+        "bytes": 5866
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_009695985.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_009695985.1/commit.json",
+          "sha256": "df4fc3865e1594f05d22017f624b4064bab73bb7cb043ebe8b7ab8a2798fa1b4",
+          "bytes": 5866
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_009695985.1/prodigal_attempt_e7bda0c49261427abf8ed6d72567ea92/proteins.faa",
+          "sha256": "646df50c382c2d02f9b7b68cf00ab8b56bffc388f222f57a4d0fc95816895b45",
+          "bytes": 678108
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_009695985.1/prodigal_attempt_e7bda0c49261427abf8ed6d72567ea92/protein_coordinate_map.json",
+          "sha256": "dd078eb061f04cfcd2b635beee577414e975a7b2d3713eab10a0680dab4b03db",
+          "bytes": 1578870
+        },
+        "protein_count": 1987,
+        "source_metadata": {
+          "accession": "GCF_009695985.1",
+          "species": "Lactobacillus porci",
+          "species_taxid": 2012477,
+          "genus": "Lactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Contig",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_009695985.1",
+            "source_report_sha256": "8375eff951c761b1ce4be5d3ed2361c8a5b3112d87506aae7772c63f4e9f5616"
+          },
+          "frozen_order": 81,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_009695985.1",
+        "source_report_sha256": "8375eff951c761b1ce4be5d3ed2361c8a5b3112d87506aae7772c63f4e9f5616"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_019469265.1",
+      "stable_analysis_label": "GCF_019469265.1",
+      "original_frozen919_position": 89,
+      "source_species_label": "Lactobacillus panisapium",
+      "source_species_taxid": 2012495,
+      "source_genus_label": "Lactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN13893452",
+      "source_strain_label": "ESL0416",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 97.81420765027322,
+      "CheckM1_unrounded_contamination": 0.0,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2188116,
+        "contigs": 1,
+        "ambiguous_bases": 0,
+        "ambiguous_fraction": 0.0,
+        "source_lengths": [
+          2188116
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_019469265.1/ncbi_dataset/data/GCF_019469265.1/GCF_019469265.1_ASM1946926v1_genomic.fna",
+        "bytes": 2215551,
+        "sha256": "bc05c90747b03689fe65e50fd31abeef7c84470df63f430c7823e80ffee298f0"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019469265.1/prodigal_attempt_90113ac63714447aa9e04c9c0bcc7f3e/proteins.faa",
+        "sha256": "dce9d4e1e66c0117dd6a20f78c7b8d3615831de69bd4f733b811850a331a9388",
+        "bytes": 697147
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019469265.1/prodigal_attempt_90113ac63714447aa9e04c9c0bcc7f3e/prodigal.gff",
+        "sha256": "0fb70a2df36c848b9d77886b4d7de30242807b736f2fc43ae83b0442845f20d4",
+        "bytes": 470854
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_019469265.1/prodigal_attempt_90113ac63714447aa9e04c9c0bcc7f3e/protein_coordinate_map.json",
+        "sha256": "08650aa5d6d43aeebd0ee04eda2d87d8dd32dbe145017ce6f73e4e13fbea7019",
+        "bytes": 1611597
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_019469265.1/commit.json",
+        "sha256": "700988877a12f8b5e316c87ab4e58049e3a33070c0b0d61a22c9c657252ca65d",
+        "bytes": 5881
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_019469265.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_019469265.1/commit.json",
+          "sha256": "700988877a12f8b5e316c87ab4e58049e3a33070c0b0d61a22c9c657252ca65d",
+          "bytes": 5881
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_019469265.1/prodigal_attempt_90113ac63714447aa9e04c9c0bcc7f3e/proteins.faa",
+          "sha256": "dce9d4e1e66c0117dd6a20f78c7b8d3615831de69bd4f733b811850a331a9388",
+          "bytes": 697147
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_019469265.1/prodigal_attempt_90113ac63714447aa9e04c9c0bcc7f3e/protein_coordinate_map.json",
+          "sha256": "08650aa5d6d43aeebd0ee04eda2d87d8dd32dbe145017ce6f73e4e13fbea7019",
+          "bytes": 1611597
+        },
+        "protein_count": 2020,
+        "source_metadata": {
+          "accession": "GCF_019469265.1",
+          "species": "Lactobacillus panisapium",
+          "species_taxid": 2012495,
+          "genus": "Lactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Complete Genome",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [
+            "ani_taxonomy_not_confirmed"
+          ],
+          "source_masks": {
+            "source_ANI_status": "Inconclusive",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": false,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_019469265.1",
+            "source_report_sha256": "2900c73b079f528e263ca825f7f41d227379220fcc4b17675dca13fe4e867f66"
+          },
+          "frozen_order": 85,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_019469265.1",
+        "source_report_sha256": "2900c73b079f528e263ca825f7f41d227379220fcc4b17675dca13fe4e867f66"
+      },
+      "original_source_pending_reasons_preserved": [
+        "ani_taxonomy_not_confirmed"
+      ],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "Inconclusive",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": false,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_000245795.1",
+      "stable_analysis_label": "GCF_000245795.1",
+      "original_frozen919_position": 118,
+      "source_species_label": "Facklamia languida",
+      "source_species_taxid": 82347,
+      "source_genus_label": "Facklamia",
+      "source_family_label": "Aerococcaceae",
+      "source_BioSample": "SAMN02463907",
+      "source_strain_label": "CCUG 37842",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 97.47267759562841,
+      "CheckM1_unrounded_contamination": 2.185792349726776,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 1717767,
+        "contigs": 1,
+        "ambiguous_bases": 9378,
+        "ambiguous_fraction": 0.005459413296448238,
+        "source_lengths": [
+          1717767
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_000245795.1/ncbi_dataset/data/GCF_000245795.1/GCF_000245795.1_Fack_lang_CCUG_37842_V1_genomic.fna",
+        "bytes": 1739329,
+        "sha256": "572f80873aa5e7f5cb17a317d2308ed6be9516e9209f3dd99d5fdccf3f7b8242"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000245795.1/prodigal_attempt_5eaaefc6bdb6448b928b951bfa218eaf/proteins.faa",
+        "sha256": "3897d5cc751dea9906dc5045ab0440fc19ad315001a286223ea810c4bc056b36",
+        "bytes": 533931
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000245795.1/prodigal_attempt_5eaaefc6bdb6448b928b951bfa218eaf/prodigal.gff",
+        "sha256": "3e67ef8b5e851104a1c340f82f0ada86d9fc0f79a90044bc6c5eccfb128d6af5",
+        "bytes": 353603
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000245795.1/prodigal_attempt_5eaaefc6bdb6448b928b951bfa218eaf/protein_coordinate_map.json",
+        "sha256": "04a965a4124db8309a3dbdd77cd705288ea428cc99422bd1fcb2db44ba5d0086",
+        "bytes": 1210961
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_000245795.1/commit.json",
+        "sha256": "b7c96a2419a5fa315f6f454e886187ba31d22f72857d89811b19cf69fd1983bc",
+        "bytes": 5820
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_000245795.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_000245795.1/commit.json",
+          "sha256": "b7c96a2419a5fa315f6f454e886187ba31d22f72857d89811b19cf69fd1983bc",
+          "bytes": 5820
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000245795.1/prodigal_attempt_5eaaefc6bdb6448b928b951bfa218eaf/proteins.faa",
+          "sha256": "3897d5cc751dea9906dc5045ab0440fc19ad315001a286223ea810c4bc056b36",
+          "bytes": 533931
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000245795.1/prodigal_attempt_5eaaefc6bdb6448b928b951bfa218eaf/protein_coordinate_map.json",
+          "sha256": "04a965a4124db8309a3dbdd77cd705288ea428cc99422bd1fcb2db44ba5d0086",
+          "bytes": 1210961
+        },
+        "protein_count": 1522,
+        "source_metadata": {
+          "accession": "GCF_000245795.1",
+          "species": "Facklamia languida",
+          "species_taxid": 82347,
+          "genus": "Facklamia",
+          "family": "Aerococcaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_000245795.1",
+            "source_report_sha256": "5fc31dbbaea1497c7b03c846ba38ec56badb6e4888af7b439d5417af3f92e50c"
+          },
+          "frozen_order": 115,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_000245795.1",
+        "source_report_sha256": "5fc31dbbaea1497c7b03c846ba38ec56badb6e4888af7b439d5417af3f92e50c"
+      },
+      "original_source_pending_reasons_preserved": [],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "EXCLUDED_FROM_PRIMARY_AMBIGUOUS_FRACTION_GT_0_005"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_000393995.1",
+      "stable_analysis_label": "GCF_000393995.1",
+      "original_frozen919_position": 195,
+      "source_species_label": "Enterococcus haemoperoxidus",
+      "source_species_taxid": 155618,
+      "source_genus_label": "Enterococcus",
+      "source_family_label": "Enterococcaceae",
+      "source_BioSample": "SAMN00809117",
+      "source_strain_label": "ATCC BAA-382",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 100.0,
+      "CheckM1_unrounded_contamination": 1.366120218579235,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 3580916,
+        "contigs": 3,
+        "ambiguous_bases": 24696,
+        "ambiguous_fraction": 0.006896559427811208,
+        "source_lengths": [
+          3580916
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_000393995.1/ncbi_dataset/data/GCF_000393995.1/GCF_000393995.1_Ente_haem_BAA-382_V1_genomic.fna",
+        "bytes": 3625997,
+        "sha256": "fcf6e931c3538f8a14a0af6c47707278f9d08398455d4bc01b252f87f1ee0863"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000393995.1/prodigal_attempt_9541a83b092c450d8b60fa14fee22ed5/proteins.faa",
+        "sha256": "7775c30b865009120adeca778b5935cf0a7de2f8fec853fc0014c76bb388644a",
+        "bytes": 1119372
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000393995.1/prodigal_attempt_9541a83b092c450d8b60fa14fee22ed5/prodigal.gff",
+        "sha256": "9facb51475d02034404874b8efed12ea78dbda4c82fd4375749837f320a1133b",
+        "bytes": 748388
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000393995.1/prodigal_attempt_9541a83b092c450d8b60fa14fee22ed5/protein_coordinate_map.json",
+        "sha256": "96709f0140a341c6eaee04e4bc59365eeeef3c77ff0ff6c7af0f871e2406ca23",
+        "bytes": 2560002
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_000393995.1/commit.json",
+        "sha256": "07c24f1bd7310c25cbc02553f77816cba08a94c085f8dd2e825565e3f7bca16e",
+        "bytes": 5834
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_000393995.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_000393995.1/commit.json",
+          "sha256": "07c24f1bd7310c25cbc02553f77816cba08a94c085f8dd2e825565e3f7bca16e",
+          "bytes": 5834
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000393995.1/prodigal_attempt_9541a83b092c450d8b60fa14fee22ed5/proteins.faa",
+          "sha256": "7775c30b865009120adeca778b5935cf0a7de2f8fec853fc0014c76bb388644a",
+          "bytes": 1119372
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000393995.1/prodigal_attempt_9541a83b092c450d8b60fa14fee22ed5/protein_coordinate_map.json",
+          "sha256": "96709f0140a341c6eaee04e4bc59365eeeef3c77ff0ff6c7af0f871e2406ca23",
+          "bytes": 2560002
+        },
+        "protein_count": 3216,
+        "source_metadata": {
+          "accession": "GCF_000393995.1",
+          "species": "Enterococcus haemoperoxidus",
+          "species_taxid": 155618,
+          "genus": "Enterococcus",
+          "family": "Enterococcaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_000393995.1",
+            "source_report_sha256": "9a5f9217b58808e9ad81f548c5f8211b64945aeed0a53a80021e82b887eeb612"
+          },
+          "frozen_order": 195,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_000393995.1",
+        "source_report_sha256": "9a5f9217b58808e9ad81f548c5f8211b64945aeed0a53a80021e82b887eeb612"
+      },
+      "original_source_pending_reasons_preserved": [],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "EXCLUDED_FROM_PRIMARY_AMBIGUOUS_FRACTION_GT_0_005"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_001436805.1",
+      "stable_analysis_label": "GCF_001436805.1",
+      "original_frozen919_position": 547,
+      "source_species_label": "Lactobacillus selangorensis",
+      "source_species_taxid": 81857,
+      "source_genus_label": "Lactobacillus",
+      "source_family_label": "Lactobacillaceae",
+      "source_BioSample": "SAMN02797769",
+      "source_strain_label": "ATCC BAA-66",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 98.90710382513662,
+      "CheckM1_unrounded_contamination": 0.6557377049180327,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2181802,
+        "contigs": 100,
+        "ambiguous_bases": 20144,
+        "ambiguous_fraction": 0.009232735142785642,
+        "source_lengths": [
+          2181802
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_001436805.1/ncbi_dataset/data/GCF_001436805.1/GCF_001436805.1_ASM143680v1_genomic.fna",
+        "bytes": 2219911,
+        "sha256": "fcb99e9e21d2594a8c7183863de7f3f554d61df9e441c21dc1d45dd71881b075"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001436805.1/prodigal_attempt_d359b239b2fa44189712b01700578084/proteins.faa",
+        "sha256": "91f96f207c17b8afc98786170821c6484db3145bf9d4f89dea2380407b871f09",
+        "bytes": 707973
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001436805.1/prodigal_attempt_d359b239b2fa44189712b01700578084/prodigal.gff",
+        "sha256": "a5f68caa16b20c84686234b5b63d0ae22c2e11551ef2ae3a6f2b05315f8e39a5",
+        "bytes": 550666
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_001436805.1/prodigal_attempt_d359b239b2fa44189712b01700578084/protein_coordinate_map.json",
+        "sha256": "ca921e1e8324d172c322c884e2aa7587c486ad40b7bd1cd799dcab2e64292cc3",
+        "bytes": 1786901
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_001436805.1/commit.json",
+        "sha256": "bc4294e65710421ad0d394d45e06c5a6b8f647af0670c5b687a0496ba21e424e",
+        "bytes": 5824
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_001436805.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_001436805.1/commit.json",
+          "sha256": "bc4294e65710421ad0d394d45e06c5a6b8f647af0670c5b687a0496ba21e424e",
+          "bytes": 5824
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_001436805.1/prodigal_attempt_d359b239b2fa44189712b01700578084/proteins.faa",
+          "sha256": "91f96f207c17b8afc98786170821c6484db3145bf9d4f89dea2380407b871f09",
+          "bytes": 707973
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_001436805.1/prodigal_attempt_d359b239b2fa44189712b01700578084/protein_coordinate_map.json",
+          "sha256": "ca921e1e8324d172c322c884e2aa7587c486ad40b7bd1cd799dcab2e64292cc3",
+          "bytes": 1786901
+        },
+        "protein_count": 2236,
+        "source_metadata": {
+          "accession": "GCF_001436805.1",
+          "species": "Lactobacillus selangorensis",
+          "species_taxid": 81857,
+          "genus": "Lactobacillus",
+          "family": "Lactobacillaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_001436805.1",
+            "source_report_sha256": "b1286d8c17478f50eac9b04c40cb6b5da0f0dd901083cf973a14349b2df85011"
+          },
+          "frozen_order": 547,
+          "species_round": 0
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_001436805.1",
+        "source_report_sha256": "b1286d8c17478f50eac9b04c40cb6b5da0f0dd901083cf973a14349b2df85011"
+      },
+      "original_source_pending_reasons_preserved": [],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "EXCLUDED_FROM_PRIMARY_AMBIGUOUS_FRACTION_GT_0_005"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    },
+    {
+      "accession": "GCF_000406945.1",
+      "stable_analysis_label": "GCF_000406945.1",
+      "original_frozen919_position": 744,
+      "source_species_label": "Enterococcus dispar",
+      "source_species_taxid": 44009,
+      "source_genus_label": "Enterococcus",
+      "source_family_label": "Enterococcaceae",
+      "source_BioSample": "SAMN02596962",
+      "source_strain_label": "ATCC 51266",
+      "quality_method": "STOCK_CHECKM1_1_2_5_ORDER_LACTOBACILLALES",
+      "CheckM1_unrounded_completeness": 99.4535519125683,
+      "CheckM1_unrounded_contamination": 0.273224043715847,
+      "CheckM1_95_5": "PASS",
+      "sequence_measurements_from_accepted_acquisition": {
+        "total_sequence_length": 2822228,
+        "contigs": 3,
+        "ambiguous_bases": 17991,
+        "ambiguous_fraction": 0.0063747507288567755,
+        "source_lengths": [
+          2822228
+        ],
+        "fasta_validation": "PASS"
+      },
+      "FNA": {
+        "path": "raw/GCF_000406945.1/ncbi_dataset/data/GCF_000406945.1/GCF_000406945.1_Ente_disp_ATCC51266_V1_genomic.fna",
+        "bytes": 2857796,
+        "sha256": "ee4d35996193ecf4e96de3a6aebee45b58f9d8f89e899f8e06add5e2f4a341b2"
+      },
+      "canonical_FAA": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000406945.1/prodigal_attempt_1a058b59027a4b7ba7df0994005876b3/proteins.faa",
+        "sha256": "61511b9fa49886ea563bfa9969baa1fc9132763ea763de30c63763e745991d53",
+        "bytes": 881879
+      },
+      "Prodigal_GFF": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000406945.1/prodigal_attempt_1a058b59027a4b7ba7df0994005876b3/prodigal.gff",
+        "sha256": "4a038681bd72da850c3897d9fb6b7fd58d584ad44a01fc56d90ee5c9de0d9deb",
+        "bytes": 616880
+      },
+      "protein_coordinate_map": {
+        "path": "analysis/uniform_annotation_v001/units/GCF_000406945.1/prodigal_attempt_1a058b59027a4b7ba7df0994005876b3/protein_coordinate_map.json",
+        "sha256": "f5e45ebd5cfc4cc56dbe4c9fb9c88b44ce1ac91e46004e77cefcbaa8dce057d8",
+        "bytes": 2108676
+      },
+      "uniform_annotation_commit": {
+        "path": "analysis/uniform_annotation_v001/rows/GCF_000406945.1/commit.json",
+        "sha256": "26ad95629adcf15fbca7bd19649b6219bf4fcc938ece2666fee617cdb071522d",
+        "bytes": 5826
+      },
+      "paired_annotation_registry_row": {
+        "accession": "GCF_000406945.1",
+        "commit": {
+          "path": "analysis/uniform_annotation_v001/rows/GCF_000406945.1/commit.json",
+          "sha256": "26ad95629adcf15fbca7bd19649b6219bf4fcc938ece2666fee617cdb071522d",
+          "bytes": 5826
+        },
+        "proteins": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000406945.1/prodigal_attempt_1a058b59027a4b7ba7df0994005876b3/proteins.faa",
+          "sha256": "61511b9fa49886ea563bfa9969baa1fc9132763ea763de30c63763e745991d53",
+          "bytes": 881879
+        },
+        "coordinates": {
+          "path": "analysis/uniform_annotation_v001/units/GCF_000406945.1/prodigal_attempt_1a058b59027a4b7ba7df0994005876b3/protein_coordinate_map.json",
+          "sha256": "f5e45ebd5cfc4cc56dbe4c9fb9c88b44ce1ac91e46004e77cefcbaa8dce057d8",
+          "bytes": 2108676
+        },
+        "protein_count": 2642,
+        "source_metadata": {
+          "accession": "GCF_000406945.1",
+          "species": "Enterococcus dispar",
+          "species_taxid": 44009,
+          "genus": "Enterococcus",
+          "family": "Enterococcaceae",
+          "assembly_level": "Scaffold",
+          "main_panel_member": true,
+          "source_supported_scope": true,
+          "source_eligibility": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "source_holds_preserved": [],
+          "source_pending_reasons": [],
+          "source_masks": {
+            "source_ANI_status": "OK",
+            "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+            "source_type_assertion_not_independently_accepted": true,
+            "production_acceptance": false
+          },
+          "source_provenance_record": {
+            "source": {
+              "path": "qc/source_provenance_audit.json",
+              "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+              "bytes": 2395259
+            },
+            "accession": "GCF_000406945.1",
+            "source_report_sha256": "a27250e8757b0ec5c6b8ab2f4bd98a93bf79ba3d1c2b437ef855b8f1896ed70e"
+          },
+          "frozen_order": 744,
+          "species_round": 1
+        },
+        "scope": "PROVISIONAL_UNIFORM_ANNOTATION_PENDING_INDEPENDENT_QC_TAXONOMY_FINAL_PANEL_FREEZE",
+        "independent_biological_QC": "UNRESOLVED_SEPARATE_WORKFLOW",
+        "final_panel_acceptance": false,
+        "defence_status": "UNKNOWN_UNSEARCHED"
+      },
+      "source_provenance_record": {
+        "source": {
+          "path": "qc/source_provenance_audit.json",
+          "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+          "bytes": 2395259
+        },
+        "accession": "GCF_000406945.1",
+        "source_report_sha256": "a27250e8757b0ec5c6b8ab2f4bd98a93bf79ba3d1c2b437ef855b8f1896ed70e"
+      },
+      "original_source_pending_reasons_preserved": [],
+      "original_source_holds_preserved": [],
+      "source_masks_preserved": {
+        "source_ANI_status": "OK",
+        "independent_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+        "source_type_assertion_not_independently_accepted": true,
+        "production_acceptance": false
+      },
+      "independent_sequence_taxonomy": "UNRESOLVED_NOT_ACCEPTED",
+      "source_type_assertion": "NOT_INDEPENDENTLY_ACCEPTED",
+      "primary_computational_cohort_proposed": false,
+      "exclusion_or_hold_reasons": [
+        "EXCLUDED_FROM_PRIMARY_AMBIGUOUS_FRACTION_GT_0_005"
+      ],
+      "final_high_quality_or_taxonomic_panel_acceptance": false,
+      "defence_state": "UNKNOWN_NOT_INFERRED_BY_THIS_REVIEW",
+      "payload_hashes_recomputed_by_this_review": false,
+      "payload_consumption_requires_bound_upstream_receipts_and_hash_verification": true
+    }
+  ]
+}

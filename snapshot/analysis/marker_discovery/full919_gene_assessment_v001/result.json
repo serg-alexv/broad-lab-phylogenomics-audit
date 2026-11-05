@@ -1,0 +1,1102 @@
+{
+  "status": "BALANCED32_SENSITIVITY20_AND_FULL919_ALL_COPY_DIAGNOSTIC_GENE_TREES196_COMPUTED_PENDING_EXTERNAL_CLOSURE",
+  "sensitivity_commits": [
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00023/COMMITTED.json",
+      "sha256": "70914717e6dccb7732e19e92feed433c744b7aaa3378ed192d4af2ec0801c035",
+      "bytes": 2511
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00110/COMMITTED.json",
+      "sha256": "a297851e5a871dbd2b5861e3470979ffd3a44b692bb0d6c0c116374eed4b4a72",
+      "bytes": 2512
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00006/COMMITTED.json",
+      "sha256": "319018e40b471d102d53e1dcd6e77964e901139dc5bbbf3b915b6c63b95026e0",
+      "bytes": 2510
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00179/COMMITTED.json",
+      "sha256": "965774427ed8015dd7ca3ea64fe328fd063cb4fd484baea073430afeef38ca12",
+      "bytes": 2512
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00271/COMMITTED.json",
+      "sha256": "6377505ef1f4853dc5ade15bc9f54afcfe11148499b3b4f7d927596d0cb7862f",
+      "bytes": 2516
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00025/COMMITTED.json",
+      "sha256": "2c14b35c081fb0667493fa68eac1093a6f7404c14e2e95bf97c685cf0e5b6d9b",
+      "bytes": 2516
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00151/COMMITTED.json",
+      "sha256": "85e81bc1905ff81bbc4692d5f59c8946c274b4e8a4aa74849aa861440ff83f01",
+      "bytes": 2471
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00192/COMMITTED.json",
+      "sha256": "3d72cc7d6ac41d717ded12bd937c148a297cce510a44a4ab696a58d40a847858",
+      "bytes": 2471
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00167/COMMITTED.json",
+      "sha256": "393c8503486753b0f99239d4394f34fa702e359d32bf590e14ea06e1ec842e7e",
+      "bytes": 2513
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00032/COMMITTED.json",
+      "sha256": "9157df5249557f494fdce866fdb66b7eef8bb9b126c1777b1abcc3ff0c903e8f",
+      "bytes": 2519
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00172/COMMITTED.json",
+      "sha256": "90b0ea0a31babd90a362069b95e17d487c5f7fef506551800bafb0f6884dc4ec",
+      "bytes": 2518
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00047/COMMITTED.json",
+      "sha256": "5944c68237ec84f4254559027eab749b6d517e6fd30a7f50aff2aa1febb31c91",
+      "bytes": 2522
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00105/COMMITTED.json",
+      "sha256": "883bd884c7a374b527de7eb0f9f0ecb0914dc9f9b44e37c271d62fb26f4c6d97",
+      "bytes": 2523
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00253/COMMITTED.json",
+      "sha256": "0439020d6664cefbf0cbd5f906987d874e19b12eea90f42510582ee3f0f2e0c9",
+      "bytes": 2524
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00180/COMMITTED.json",
+      "sha256": "20e47cf8b832f699a52ee5f16fcd86c701727571249575933c347719f2e5bf77",
+      "bytes": 2525
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00001/COMMITTED.json",
+      "sha256": "1294dc2fc60d86babce21cbe3f079bfe35218ed31493c449a64b25770db21946",
+      "bytes": 2523
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00007/COMMITTED.json",
+      "sha256": "18bbf5fb890c5b1fc29dcc0239c113fabc02a0e84a64bc4a3950618b197a0871",
+      "bytes": 2525
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00189/COMMITTED.json",
+      "sha256": "0ee2e00e71e08337638cbf9e60d880fe746db89488c8911639423da523d002d0",
+      "bytes": 2523
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00141/COMMITTED.json",
+      "sha256": "aee58efee4f55b42af87b377808c7ea9d2f4f5dbc991f5241f159f9372156c8a",
+      "bytes": 2525
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/sensitivity/T2P10_00183/COMMITTED.json",
+      "sha256": "e5a401b82feb719db1ff07dd18a56889fccb7e76f02f1ae1f8f84fef1ba80252",
+      "bytes": 2526
+    }
+  ],
+  "gene_tree_commits": [
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00001/COMMITTED.json",
+      "sha256": "1adcd411854a473660615be15f340cf8d60340fbd39d8807b16457ac3d5892ef",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00002/COMMITTED.json",
+      "sha256": "7c9137a702c8ce46cb82b26eebe12fd5ae277bc8a39ef2077a26193131bf8a1b",
+      "bytes": 6343
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00003/COMMITTED.json",
+      "sha256": "a187a8facf68c6683d8b66680855505760bcde4e5e5879e82814f1e30f12858e",
+      "bytes": 6144
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00004/COMMITTED.json",
+      "sha256": "cbca68bf116c96e255d0c9ce016c12763397b226bc268bb1c3e815d11170297a",
+      "bytes": 5650
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00006/COMMITTED.json",
+      "sha256": "43979701dd0e4d54ff12d38960bf6ead4278c98a09a0dcde4e1069bd98c064be",
+      "bytes": 5602
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00007/COMMITTED.json",
+      "sha256": "cbdadfe4c27a30c059eac635a9ccd65659dfa9ef5f466a808734ae6c7eefddbf",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00010/COMMITTED.json",
+      "sha256": "6037b0ce22f311818c6a0270805e82218cb9e42a11c062f6cce1fd55bcbd9959",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00011/COMMITTED.json",
+      "sha256": "b5300b36d59d4957cfc5eb09f0edc518c27b79336456b41fa1d92259cc122517",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00012/COMMITTED.json",
+      "sha256": "43d8bcda3bde83fd0b85d7bba2e222978fbeb380eaf49b38f035fca8be280b40",
+      "bytes": 5706
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00015/COMMITTED.json",
+      "sha256": "aabf321d5ed7815fb71458e800ccf1019757f9e039da67782b22a3052fb22fb2",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00018/COMMITTED.json",
+      "sha256": "50423ad7a6902918c06264aebe3b1e67d49606f4321bd9bd92fd053386cc20fc",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00019/COMMITTED.json",
+      "sha256": "cad88ce215e3e86f0196febad363acb773bfe627a9405ba4f6cc99e355d6ed16",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00020/COMMITTED.json",
+      "sha256": "29f8cbab6dd6fd430a70abab7171cd56d4023e6646027be47a625f8186719987",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00021/COMMITTED.json",
+      "sha256": "4c4af4a7f5d1e6e18312d199eb7c11372d01086e9024944378d1f7f4c5f06253",
+      "bytes": 5602
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00022/COMMITTED.json",
+      "sha256": "105216486a593abc7772037e20fcd8b9f0e2d47aae85f8a8f0da18f2c0ea2dc7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00023/COMMITTED.json",
+      "sha256": "d4dbfcf6fac8d714433615aa599116e24dfdeef7aa0a234322dd04ad440c4c5d",
+      "bytes": 5601
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00024/COMMITTED.json",
+      "sha256": "e2c7b5c29bc658fe9202d23ff073347e5f3265e16439d52de2e7b9bf294a650d",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00025/COMMITTED.json",
+      "sha256": "29d55ebec3182f7f8399261685423a308401c93da0458974bf9bba01af958904",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00028/COMMITTED.json",
+      "sha256": "3c36b986ac3663ae766c5ab9c9cfcb08b6ff1c0bd0e392ce5cd238995fd90631",
+      "bytes": 6245
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00029/COMMITTED.json",
+      "sha256": "852196a3b95945dfb7c397f615a0a31b847a677d03b882e6542623459343028a",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00031/COMMITTED.json",
+      "sha256": "a33a986906bc9b7d03d7ce143dfcf71c5cf18822b0d4af5211ba72aefc980e70",
+      "bytes": 7125
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00032/COMMITTED.json",
+      "sha256": "d66dbf76ffad61e6bd06a046c4543729ac80bd43c282555e3b99a631186230f0",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00033/COMMITTED.json",
+      "sha256": "c8d5e4eb919fdcccf4d079f65d56387a1c16f9af1e80d4635882f5ad1f5ff128",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00034/COMMITTED.json",
+      "sha256": "c404bff52f662e70f923a4b55d3fed7f40b2a1487211e5750eeac85a9397c2f8",
+      "bytes": 5708
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00035/COMMITTED.json",
+      "sha256": "0c1e09518f7f2feb1c87dc1ae7e7fea7b057708627d251db0310d1ac5d18c95b",
+      "bytes": 5702
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00036/COMMITTED.json",
+      "sha256": "d3322903b8d4520d820d35932964d3e883e4cb39fc3ca51e15869de4f11b99bf",
+      "bytes": 5749
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00037/COMMITTED.json",
+      "sha256": "d47cad13eed570a74ccfe65dd2252a66b538d5f229ed135de345a84d744ba3c7",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00039/COMMITTED.json",
+      "sha256": "7a65dc2962e807fb0154cf54864f041c84f667db274afeac8a5ad7e4a7ab816c",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00040/COMMITTED.json",
+      "sha256": "6fe4d6d8fab613f5bafb5fe9db145373f67573491fd275c2292ec51d4c3b35e3",
+      "bytes": 5902
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00041/COMMITTED.json",
+      "sha256": "2b78f1837e2983ade38281a41db563169fd87c870c228b5cfd60a082c1eecb99",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00042/COMMITTED.json",
+      "sha256": "3eff1201c75ab2f456ef97672493d67654c670d7e9d38081195bb4abe1e76ea9",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00043/COMMITTED.json",
+      "sha256": "6dcedea642b5550d5b13aa1044b21c32ea192d3fa7909aeca50254db939797c5",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00044/COMMITTED.json",
+      "sha256": "7c53f6f767bfd1c81d1134de36e3752b2e644650477c83da7870a2f853e5485d",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00046/COMMITTED.json",
+      "sha256": "1f2a71b0c01dbc2352893fa3f5ebc49903db09ad71905013fd7d1e63f9186c58",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00047/COMMITTED.json",
+      "sha256": "05faeba0c1c770aa26a5669331d218da3446d409c262a1b516b327c1d1c5232d",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00049/COMMITTED.json",
+      "sha256": "d20a4fe6b4928c00e72e012b45c30b584735cee2059829fd7bf2c245ac62a6f1",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00050/COMMITTED.json",
+      "sha256": "200dace46049def9cef9bd94d86baab03538f79864173d12bef42ce7facf4dbe",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00051/COMMITTED.json",
+      "sha256": "4ba2391843236960af5523cd77510db3a0a281cad276dd4c1098e329669435ab",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00052/COMMITTED.json",
+      "sha256": "e437989a4b9eefc599b41603c82ebae87f54630150227ae43a85e30190a403b4",
+      "bytes": 7766
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00054/COMMITTED.json",
+      "sha256": "7ad0434512309c47e5ad978c2979373db2d7eab7069d253dbcf5dac8cebb3513",
+      "bytes": 5607
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00055/COMMITTED.json",
+      "sha256": "3722fc453f2e909a804f79a575ce8edf5eb98d8f0258c971628bc32372cf2969",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00056/COMMITTED.json",
+      "sha256": "691a2ded52fe0e0c703c8e8f631e049e0a7f82ffd663998c9c48707eba5a8757",
+      "bytes": 6196
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00057/COMMITTED.json",
+      "sha256": "af691828a2f15a03fa25512ca71c90b35fb3f59444df69fdd23d4b89888022cf",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00058/COMMITTED.json",
+      "sha256": "5803bc6382bf7b7c9455b3feb02bd1f5f08c707f5f12ae2331c2da6c0ede692b",
+      "bytes": 5660
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00060/COMMITTED.json",
+      "sha256": "1ee34fe2f5a4973ef6701ea1a9f8dc2d297c8f2fd4f059624cbe26b8b5b68aa9",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00061/COMMITTED.json",
+      "sha256": "ac308ab876fc1f07a5e0a69b77c1a4905601a2545db9323d2555af9bc4379ada",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00064/COMMITTED.json",
+      "sha256": "cced033f784d22f5a6902259791cb821f52675f8232d0297da2d14b53fed8e99",
+      "bytes": 6637
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00065/COMMITTED.json",
+      "sha256": "037009e7b6823d020b29efa33e667b83d72fc7bfa23d7138dc1635eb6b5ad7c4",
+      "bytes": 6980
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00066/COMMITTED.json",
+      "sha256": "f46cb74bf83bcf450c5835ae366454953c47dfd4fcb87de5a1d346e99b95a02c",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00068/COMMITTED.json",
+      "sha256": "25b573f0ca666a2b7e0bb0ff8d903bce626320c47512b8590155418481e74365",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00069/COMMITTED.json",
+      "sha256": "02f1c83e3ba7a76e278bd94b712ad3588932168365cd33aabf3009f961a0dd97",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00071/COMMITTED.json",
+      "sha256": "99d01b43aee9794f8de4311acaad5d0b3ba7a1c15c648424b5d465a1df44fc00",
+      "bytes": 6147
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00072/COMMITTED.json",
+      "sha256": "abe6c7e77de45f34845caeb137828e0e50f372289a58e0c3959555b667cd0550",
+      "bytes": 5804
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00073/COMMITTED.json",
+      "sha256": "9608dcbd1fb13fd9615b6126e16a98ef34ff4423759167ae5ce261aa1ce49ccb",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00075/COMMITTED.json",
+      "sha256": "4c4c2fabc706dff374a6a6d5859d031d134b3afdca1659f39f7edb23cab3400f",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00076/COMMITTED.json",
+      "sha256": "4a0bede93d95cf14a88803ea038575e81b6b28a2eddb9fbc5d9fc88551988ddd",
+      "bytes": 5706
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00077/COMMITTED.json",
+      "sha256": "7d0069d2e175685e8b5a1250210f965abbf198a9b3d8af9ee8214c44b40de1f2",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00078/COMMITTED.json",
+      "sha256": "8119907d15593e14777a431012850c70c45ab2c1aa55ab71ba23e9fdb4ca1dd7",
+      "bytes": 5951
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00079/COMMITTED.json",
+      "sha256": "688308c93cdd3a5e6b2723ae83e6553de7b35ccde7e5df80bacb935983694a6d",
+      "bytes": 6294
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00080/COMMITTED.json",
+      "sha256": "10017e25d3e6904f3bb390a5c595c646ea3ccc87cca11ecb7a1be9e91eaa0450",
+      "bytes": 6147
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00081/COMMITTED.json",
+      "sha256": "7358afa9b925e8bb512aa2fb0da39a0d8ae33480604588b2604bf9013c328395",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00083/COMMITTED.json",
+      "sha256": "92d048741255da6a9a0161fc850df4a10218e243013c1887f7f0a2973044abc1",
+      "bytes": 7617
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00085/COMMITTED.json",
+      "sha256": "288fdaa610b54d8951b9c450771bcb4c0ec8101cf74cb8db377fc05e1a0f1fc7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00086/COMMITTED.json",
+      "sha256": "796e8e52067c0e36cc547f263e596a924ff0058d1422f5c320ff8086392eaa5f",
+      "bytes": 5706
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00087/COMMITTED.json",
+      "sha256": "2e67a9a352a20e9505be2352043e21694e38462655fced2c315aee6e7504f695",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00088/COMMITTED.json",
+      "sha256": "8e8c97aa3174feff7015b10018b93a26273f67d57356cebc9adf8f7b50702bd6",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00089/COMMITTED.json",
+      "sha256": "f9756d4df8eef2d67cbd8ed47cfeb51e53c33094133869600026f7298616883d",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00092/COMMITTED.json",
+      "sha256": "537394b5ba97db84a78c34068eb1c23ba0e0f7a43cc6254ad4482cf3ece6fd27",
+      "bytes": 6000
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00094/COMMITTED.json",
+      "sha256": "f1c678b4241fc1faaa1d8b6e707b3a09b7564fd2b351f22a8633d4d3da3eb54d",
+      "bytes": 6833
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00095/COMMITTED.json",
+      "sha256": "77291ec1cf59e734063810e1390af30d75cdda2215119fd4347033a297a5e6b5",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00096/COMMITTED.json",
+      "sha256": "07e29c106eec15a7e9b9924dd8540d84319eae726274f08bf70fb0d59b34a861",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00098/COMMITTED.json",
+      "sha256": "95d5c87f7c361f45c3496a5e37923155273241f334d71912465f87ed186fe909",
+      "bytes": 5800
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00099/COMMITTED.json",
+      "sha256": "14eedd88676de5fe1d4bb24f30a1f695a5aa01754bae9c7a97f231253984e602",
+      "bytes": 6096
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00101/COMMITTED.json",
+      "sha256": "efc47d33b7049ff1d5ce7f8e5a1ad6fe3db9c08ad9e754ce2b629711f1a694aa",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00102/COMMITTED.json",
+      "sha256": "72734e839be25a7eb3db2572fec0bb81c28cbad01f14c65b5adb7f1189f3baf1",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00103/COMMITTED.json",
+      "sha256": "cac8968d9b81751a12b77fdeb1a6db2f15a71b2087bf74fc9edce7c97746cfa5",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00104/COMMITTED.json",
+      "sha256": "d80332e839d19144dc8e33daac4d6ce90112fdd156e27c724941ea691c7d8094",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00105/COMMITTED.json",
+      "sha256": "2ced79505dfcf64d8cb266bc870140290a5e784e9c4e6cdb399d97aa23d29309",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00107/COMMITTED.json",
+      "sha256": "9f17d1faaea4c45742a28b5e1a6a1a31dd0259247c60653d36daab9c82f1948b",
+      "bytes": 5755
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00109/COMMITTED.json",
+      "sha256": "dc6d5f27255d3b33cbec912af46468a3f84b5604e5a8a32fa6c436d6d19d0741",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00110/COMMITTED.json",
+      "sha256": "94424abf93a38530461d687d4d59dfa362581b2a694c7c817511ef83fb8ec599",
+      "bytes": 5601
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00111/COMMITTED.json",
+      "sha256": "588f92bb9b2f7f5479b45f0c39379076442be9908c9945ff0512901d79082646",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00113/COMMITTED.json",
+      "sha256": "feb559db7ebfb76f8fb1ff3d429d7dcae8ebfd31ab06d22cc7bac6adfbab76ea",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00114/COMMITTED.json",
+      "sha256": "9311b97edddbe912a66934ca5d9507d8da553ccc30f0e3a2b61af8d5d8dbdc40",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00115/COMMITTED.json",
+      "sha256": "4738568322b2aab5110b3c996f5198eb74abd9deda7589fa4f63666a62f7a5fe",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00116/COMMITTED.json",
+      "sha256": "715bb4775f72fa960dfc1173428541ee288d3005b12916ac5126bb76fe268ad5",
+      "bytes": 5602
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00121/COMMITTED.json",
+      "sha256": "ac4e5b2dcd0aec8d83a16525bc4444aa57d5bc1086e573e4338003c9e587f149",
+      "bytes": 6245
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00124/COMMITTED.json",
+      "sha256": "a8420f4792b171a8234621a895239bba099dc29b0ff0b6e834f543ba1916e29c",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00125/COMMITTED.json",
+      "sha256": "b680f2f57f52c94c974007483d4d66941566bcb28ceec1c52dd8826f04cb06d7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00126/COMMITTED.json",
+      "sha256": "9a0e77175c8c00bd869e00b313c282995b68d2e5c1f7af65933ee46b0b88e771",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00128/COMMITTED.json",
+      "sha256": "6d6516dd9e130552084d720266b8ca1352c6e2eb0a53537c448163a80f57d585",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00129/COMMITTED.json",
+      "sha256": "1cc3ccec5c36cf7ca1fac37802ac5d9b8d7a4d05a5d54e290473d18b846d198b",
+      "bytes": 7027
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00130/COMMITTED.json",
+      "sha256": "4eea80f3ca3a5d76f04f6b51acdf74582b679e0ced4c42fcfc1aa7359d32d0fa",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00131/COMMITTED.json",
+      "sha256": "6ea5b9537665aea2cc8c76a42c8b5cd5860502d3fed3248e2807204c4c37219a",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00132/COMMITTED.json",
+      "sha256": "bfb1ee39ae48b0721f6266dd15a8ed40e5cb81f68d00532bfc5d0e2a97842be2",
+      "bytes": 5706
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00134/COMMITTED.json",
+      "sha256": "c001c963cd58f511462c785d8e139917bb835a4cc5a112e058ea470d1e8d33f4",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00135/COMMITTED.json",
+      "sha256": "2439b88a9efcb84b9567b18200590b1aa587a20c105720806a10903336f157c0",
+      "bytes": 5597
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00136/COMMITTED.json",
+      "sha256": "604af0b50dc89bb9612862f4738e3f979aa90d76f5b571b43392a6c18b3df808",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00137/COMMITTED.json",
+      "sha256": "0fbec6015b63b681d519cbe74726c0458f5625c4807bec57cea3cf0f276e181f",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00138/COMMITTED.json",
+      "sha256": "6abcd409258e84deab169ce3aa5df309ecb4ced10a55a7d6d642212c8fe4f1fb",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00139/COMMITTED.json",
+      "sha256": "df4d92853e97b6c909b6248ba289a42591253b2e3d81eb4bcacd06eb09cc849c",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00140/COMMITTED.json",
+      "sha256": "0eb03042856ae76f3b4f5b98f466a7dbd8b32ef12202d14344544483d7744e69",
+      "bytes": 5705
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00141/COMMITTED.json",
+      "sha256": "52536a04d4d5e934510f26938da554660c1084c0bd3b1ec9d374de9ea7dca633",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00143/COMMITTED.json",
+      "sha256": "293ef7a360e4d01ca57e45b36d08bac395847f143b18c725110fc1beef0adcb2",
+      "bytes": 5654
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00144/COMMITTED.json",
+      "sha256": "5c63af958bd51ba42f33d774656071f68442f3b310a529ae2f9c19e8e2f041b4",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00146/COMMITTED.json",
+      "sha256": "b04283483c0a97ab2493e92a7b61e4087ec40c4417a3cfba01532931cfdab126",
+      "bytes": 6684
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00147/COMMITTED.json",
+      "sha256": "6dc1021b66b6a8e0eec3eae4fd3a9433bcb9d6e3aa340bbd9f476cad77b27885",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00148/COMMITTED.json",
+      "sha256": "fa4ec3f5bcdec7ad638f6a79c05c347d9738c59dcadb063f40d2c2e8a6f1ff0f",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00149/COMMITTED.json",
+      "sha256": "ef4ca33f731fd4505c8a39e41e884829fe0a7e37b968017c8fc5a80bce9eb6ff",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00150/COMMITTED.json",
+      "sha256": "58af1503fab7d82f89a13828d42cc41ae35db1d1a9e6203792d4be363b905880",
+      "bytes": 5607
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00151/COMMITTED.json",
+      "sha256": "efc6c49d51ff19bf6f03617e7026891e12228d724822b0083a954a8aafd53a30",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00152/COMMITTED.json",
+      "sha256": "9af6701726eacbce40c5f2e3d133a24b904c5db3e327a421e65b6c673f1e4f66",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00153/COMMITTED.json",
+      "sha256": "19776383605cf5f2d30c2c095f6522b18c47420c4cdacdc4b13dcd8e6cf69367",
+      "bytes": 5651
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00154/COMMITTED.json",
+      "sha256": "59555133006512c3b349cdef5e51b945219f8a36dd5e476c86d0ac9f74a41897",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00155/COMMITTED.json",
+      "sha256": "4c6b4ee685a88a1a8b8751d007f0b42ac6b232b08519bcb1ea85624e56dd5064",
+      "bytes": 6735
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00156/COMMITTED.json",
+      "sha256": "99bf2d17e53625a9687ed5267035a70babbeff81af71e9c5d3ce5ee56d18bf3e",
+      "bytes": 6294
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00157/COMMITTED.json",
+      "sha256": "bae05ad82b0127e2cde3ef98b47cc6d27e41f8ad0b755eae62dcb5dec94bdc76",
+      "bytes": 5706
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00159/COMMITTED.json",
+      "sha256": "0f6c51936669fd7467a34c1366ed0dcca694701d3396e16c0dca30e42abfb2b2",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00160/COMMITTED.json",
+      "sha256": "4b5a6838fb3cf1c05fe08d4aa488409f393f93e3cd00659812fb07e83bb6bd97",
+      "bytes": 6929
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00164/COMMITTED.json",
+      "sha256": "53c073a9e30ea48803069255a520f92e7ceca75e39b0d0c3552ef70e5d915a67",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00165/COMMITTED.json",
+      "sha256": "56eb347651ee9a3fd8d5e76109b5aefdd91997d9b63265945a8f6c7722572e56",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00167/COMMITTED.json",
+      "sha256": "00a59c4e316d543e8935892e8b47f4c8a53048e91646ca6f408e24f143411783",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00168/COMMITTED.json",
+      "sha256": "73400c322c22606015ea17ca3b4edf0592fb1558a24277582cb3a62e44656a4a",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00169/COMMITTED.json",
+      "sha256": "68dbea8e67572f63653314496991d9997d938f55c01944b12d5b242672d6bf7a",
+      "bytes": 5601
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00172/COMMITTED.json",
+      "sha256": "6f5f1d801330e923457f954b98865b7a45497da4ada30d0847c0b5e3c4687505",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00175/COMMITTED.json",
+      "sha256": "f215c9d32c9d6a628a3fa478262060fcff03e347ca4fa5e389fe3b3c1b9248f5",
+      "bytes": 5853
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00177/COMMITTED.json",
+      "sha256": "24aa23956972ca26c05d0ff437cf7a9d6ba35836f2c039d3ee162fd7e916d32a",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00179/COMMITTED.json",
+      "sha256": "b44436e5f7227e0a790ced321c32709ba38465526016a023bd15ff444b2002d3",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00180/COMMITTED.json",
+      "sha256": "9439ee78821848a11b210cc39ba679b92bdf83223069dda6f10a916ce6e60cf1",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00181/COMMITTED.json",
+      "sha256": "11487514b1851eebafcce67dbdcea4f1b5375b93bab4293f7569047bc79639a8",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00183/COMMITTED.json",
+      "sha256": "807ef37b7d95cb9cb423b90d12c5c527781b3b357d085609e07cd637f9442ba7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00184/COMMITTED.json",
+      "sha256": "bcd680d1df2ab93e1a599904bb935a205c1f1bfcfb5e37fd50ccc769f28ac482",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00188/COMMITTED.json",
+      "sha256": "399a6eab3c73e79971a3e5bd551a508bdf8a9d75c0b97de336f60c0ad9489a36",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00189/COMMITTED.json",
+      "sha256": "1093e7694b7926fb1d18691444602973185997ae457d2e2d15129e4b7842edbf",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00190/COMMITTED.json",
+      "sha256": "9415e8c819524fb208c8b156282621eae761ce7f2ad84c5203c652c355957985",
+      "bytes": 6394
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00191/COMMITTED.json",
+      "sha256": "105d60b53a8601b4b0aa0249759c78d506c8af13d3bb44c07dde6feff8b301d6",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00192/COMMITTED.json",
+      "sha256": "780c6ee08338e755f1a3181e23c6a0fe73d3d167b69ca279e9abdb42e42e17e0",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00193/COMMITTED.json",
+      "sha256": "0dc35241667defc7155489e137d9cb6d93e75d6fd6138b2225cc52707aa2b47a",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00195/COMMITTED.json",
+      "sha256": "c39bcd81b1cd95538e18aab78100da8f1644ac01727d016cbb0a62641803ff93",
+      "bytes": 7078
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00197/COMMITTED.json",
+      "sha256": "e75d56264bb04e0675b47226ee59f456db130a6c63d666df5778d1c7ae8e5ce7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00201/COMMITTED.json",
+      "sha256": "9433d70220c0f0e2905041f9013b3f1ef1043bf0d001ddedafd9e3551f298c38",
+      "bytes": 6437
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00202/COMMITTED.json",
+      "sha256": "6a07bfc273645fa281f7cc76ba6361701aa2c2e58ddf960650eccb403f954480",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00207/COMMITTED.json",
+      "sha256": "0e58825e2cd5fe924d4cab7d4f83ae108a054f0f3ed7cf322d2f2a9fcc1f07f7",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00208/COMMITTED.json",
+      "sha256": "cd51204e19aa7b432ac343b51f4645e52f69ebe727bd8517b369230ea221475c",
+      "bytes": 5653
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00209/COMMITTED.json",
+      "sha256": "d212825ceb3f46749bd3196708f4c10d900c085d9837209dab6fdd5b75d66e78",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00210/COMMITTED.json",
+      "sha256": "0d2d4b4a00e8e051ae52855a4e0c68bc128e4d93d4433f30e10d197c24167fc1",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00211/COMMITTED.json",
+      "sha256": "45613851bfbe2fffd6a4885c914c0f7ae0b5b5c2af0c6897023db915fa5b95ec",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00212/COMMITTED.json",
+      "sha256": "97bdd6327387c284f78e98e7b43373cf631f9b21d76dfcbf632040d09c2ebc20",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00213/COMMITTED.json",
+      "sha256": "1cbbd1ff0139d77eeab6a5ffbbc28d765cf3e769953488142da2f7f8cfcdc786",
+      "bytes": 5806
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00216/COMMITTED.json",
+      "sha256": "1bdc8c7869b25b40cea01c876ad2de37954190ed782f253a8ea7051ce0edecb0",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00217/COMMITTED.json",
+      "sha256": "89926ac12d56b862bae373fec8eb4b2219bd5d44dbd57670e07eeca3595ae533",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00218/COMMITTED.json",
+      "sha256": "f42a66a75af6b635411adfe21b84cb79eee43219942ab71768ebe5af27f819df",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00219/COMMITTED.json",
+      "sha256": "9dcee1065c4dcbf03c38fd96d72b8ce8cf43b7504515a72a6f827b803494df70",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00220/COMMITTED.json",
+      "sha256": "5122278111ae725b8690cba35093805e68d4d1c37addfc0738c8f3fffb155ce2",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00221/COMMITTED.json",
+      "sha256": "fcd3b0b502c4cb5057cd4433d3ee0967d8dfc52a1badd75e2a6c7f17ce4e2024",
+      "bytes": 6931
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00222/COMMITTED.json",
+      "sha256": "e8bcccdeb46bbdbced2084a73234428c03ec72aa286ad1d0dad49d94199ed0d9",
+      "bytes": 5654
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00224/COMMITTED.json",
+      "sha256": "63c193154448d47821a582f61a6f7b6d16c7b9c5a7a79575f66147c552802b04",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00225/COMMITTED.json",
+      "sha256": "554c21812c925147103630aad3d0413fe9a04d6dc0866dd542e7e4df6ff4262b",
+      "bytes": 5755
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00227/COMMITTED.json",
+      "sha256": "b157f1f0d9103b8af2eade0cd560411060901c7a851da7028f29d45a6821be5a",
+      "bytes": 6343
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00228/COMMITTED.json",
+      "sha256": "043bed85e57a2b9613e54fff83abad9e2defaef16d4ff9223d757260fb573134",
+      "bytes": 5703
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00231/COMMITTED.json",
+      "sha256": "974742d6d9ea0618d1b90b40d3d50f763c0f10a6ec6be9ffe999ff67b993fd00",
+      "bytes": 5853
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00233/COMMITTED.json",
+      "sha256": "52bf73e7bb754fdd27a60c1bc615fae58a464dc2bd84be50503481f1f581e3e6",
+      "bytes": 5599
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00234/COMMITTED.json",
+      "sha256": "0e971ce45407659504a7584d069a70ab4f6449ddb920cf1133d7e3cf0de2fa28",
+      "bytes": 7421
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00235/COMMITTED.json",
+      "sha256": "d9b1956c3de548ecc31333da3814a1cbdc3d7671b7ba89bbf8942c5f711b0efb",
+      "bytes": 5757
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00236/COMMITTED.json",
+      "sha256": "4cfd6670b2994679d0be3aff4d7e5cf0b764c2c9b4105de335f358d6d0032780",
+      "bytes": 7764
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00237/COMMITTED.json",
+      "sha256": "bec60847fcc6823be304671c8411d5fcc0c5ef61621a65ea86ec6fbfc8c67eea",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00238/COMMITTED.json",
+      "sha256": "275085593b98f432e4641b01448d368c02a01e51468a152dcbaf4d14cdac3fc5",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00239/COMMITTED.json",
+      "sha256": "47491be86ad9a84c8abfe65741dd99618bf96b8dab4ae2e87d0be24c8c9b331b",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00240/COMMITTED.json",
+      "sha256": "6439079c84050a1d26f9adaad33f04154c4c6a67ba6b5f470c66f9cc00a8efcf",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00241/COMMITTED.json",
+      "sha256": "f3bfe4766be26bf0f7624d58c4ddbaa56b710e80f77df85ba11b599acaa3a909",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00242/COMMITTED.json",
+      "sha256": "ce9b30855aa02fdb8aa4e328bbc068c855039224abc7910021e229254704669b",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00244/COMMITTED.json",
+      "sha256": "e968e2bb64998b9c460e762a1332b44446f9d2d46d0cb03f699da0a10a84c6fa",
+      "bytes": 6198
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00246/COMMITTED.json",
+      "sha256": "512bdde6eb4e8781df93c7f4c8ead4e9dd601cf9721fd725df0833ec7a039f3d",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00247/COMMITTED.json",
+      "sha256": "df5f69cb35670cf434ac49da75b5cb88b4654d8205a030f3a2b39df0815a3bf5",
+      "bytes": 5849
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00248/COMMITTED.json",
+      "sha256": "a81f17138dce9906099bee81b1a4e4668f206ad643407b5730b08446d4b9f1d5",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00251/COMMITTED.json",
+      "sha256": "1d95433c84dbac10530407e0aec10f6874ee2cceea7c6fbdfc0aac7940626e68",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00253/COMMITTED.json",
+      "sha256": "78c511f1fbeca04f31e8658a073d30ecfcdd526f8e70cad694d4660aaf131405",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00254/COMMITTED.json",
+      "sha256": "6e17f3c0c952588bea1c21fd81f2cb3891b36deae8de53f4234deafa58b29909",
+      "bytes": 6588
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00256/COMMITTED.json",
+      "sha256": "3ec0505a3b776827366c3e99c965dd679b4f8798fe71a0bdec9e413aa2e68ded",
+      "bytes": 5853
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00260/COMMITTED.json",
+      "sha256": "f309d223ed8b09eddf4b7ecd3df9b3d45fa59ab62bfb8f1e28ea70b9bcd479bf",
+      "bytes": 5653
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00261/COMMITTED.json",
+      "sha256": "a3c49e323745af0cf0e400b910c55234bd97ac669cf2f3d2150b21c6e718fffd",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00262/COMMITTED.json",
+      "sha256": "b444364ed2bf910f825236e6905f78f2f0dbde5e96730c24b35fb2d58b3793a0",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00263/COMMITTED.json",
+      "sha256": "2c2ee280ebd3c262cc5e0546de773140f42f15218f871e7f7477faaff9f06b39",
+      "bytes": 6539
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00264/COMMITTED.json",
+      "sha256": "06ae8ea50e0beab35e7c31badbf46e00d6a1e084859a4bfed804c1dbd5976ecc",
+      "bytes": 5600
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00265/COMMITTED.json",
+      "sha256": "cb37e05cb9d7d6ef3953eea16de2dfd30c4943864e6fe9eb88467d71181b9b16",
+      "bytes": 5602
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00266/COMMITTED.json",
+      "sha256": "c3c2b95a294a27a7c3df8b5048ee9c8257360e8a381b18b23b5572186da09be5",
+      "bytes": 5603
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00267/COMMITTED.json",
+      "sha256": "15675a3c7ee6db99923a96c763159a2c89109023d09c251d651deb9ed36e95be",
+      "bytes": 5598
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00268/COMMITTED.json",
+      "sha256": "2fb0eaa009f66909da1e91831164737243487c015ace004071cf1cce4e3ed343",
+      "bytes": 5602
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00270/COMMITTED.json",
+      "sha256": "5236f59382737a174ae4254c59bf0d2fbf9342a18c5bebf0bfd53be8d02cdb84",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00271/COMMITTED.json",
+      "sha256": "63c97c36e7f5576698aaa7b86f8475b744b2ab03d7fabf43528551a9851f51e4",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00272/COMMITTED.json",
+      "sha256": "75aa563d63ab9a92fd9f4d4f436282251f1f8b6b2e96cb82512d4cfceeb74c98",
+      "bytes": 5607
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00276/COMMITTED.json",
+      "sha256": "89fe385763145e9f19621960e4112333f3898b71f43f7d9d18377b34fc20563e",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00277/COMMITTED.json",
+      "sha256": "c31736298986ed5d4e0e4570b49ccbcf82f8cc985b21e78b8a7d41283c59b6ce",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00278/COMMITTED.json",
+      "sha256": "4296198c5cfdd034e6024e918e4d6ce70ffaaa42ad93f73fa9614b255e3e7cf0",
+      "bytes": 5657
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00279/COMMITTED.json",
+      "sha256": "223b460fd4e97f97b1c525847dc241a201e23794063b3ea2ddac00f65483c12c",
+      "bytes": 5604
+    },
+    {
+      "path": "analysis/marker_discovery/full919_gene_assessment_v001/gene_trees/T2P10_00280/COMMITTED.json",
+      "sha256": "19e502b9c2d249b20bd815dbfe3b6e788dbc2bc3ca429ec0173e36898d8d311d",
+      "bytes": 5706
+    }
+  ],
+  "sensitivity_comparisons": 20,
+  "gene_trees": 196,
+  "genomes_in_source_scope": 919,
+  "input_plan": {
+    "path": "metadata/full919_gene_assessment_v001/Root_plan.json",
+    "sha256": "16070f5319e8e3cd44a3cb50ec7c4dca6878d2daf684e8651aadd3fa0d4c5b05",
+    "bytes": 25839
+  },
+  "actual_scientific_seconds": 26666.54089520192,
+  "cold_seconds": 26912.690284938,
+  "peak_Linux_RSS_plus_private_RAM_bytes": 851542016,
+  "all_previous_annotations_searches_QC_and_full_alignments_reused_without_replay": true,
+  "broader_marker_discovery_reconciliation_and_final_selection_still_required": true,
+  "source_taxonomy_species_balance_full_panel_defence_and_both_final_tree_validations_still_required": true,
+  "final_marker_or_final_tree_acceptance": false
+}

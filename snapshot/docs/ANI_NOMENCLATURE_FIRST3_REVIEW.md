@@ -1,0 +1,21 @@
+# First three priority1 ANI components: source-only review
+
+This bounded review selected `ANI_REVIEW_003`, `ANI_REVIEW_027` and `ANI_REVIEW_046` by component ID, after verifying all eight accepted source-review artifact hashes and the nine cached assembly-report/acquisition-receipt hashes. It neither recomputed ANI nor changed labels, the panel, genome retention or biological QC. Original TYPE_MATERIAL fields remain source assertions.
+
+The new evidence directory is `analysis/sequence_qc/d64e016face251f1/nomenclature_source_review/priority1_first3_20261026/`. It records dated source URLs, response hashes, short raw excerpts, exact cached identifiers, decisions and a SHA256 manifest. Direct PubMed page retrievals returned203 and the PMC genome paper returned403; these failures are preserved. Official NCBI E-utilities independently supplied the five protologue abstracts, and all six LPSN/taxonomy pairs plus four DSMZ catalogue pages were readable.
+
+| Component | Cached genome identifiers | Independent nomenclatural check | Remaining limitation |
+|---|---|---|---|
+|003|ATCC BAA-102; FDAARGOS_1019 with DSM22960; CNU_G2|ATCC BAA-102/DSM22960 identify the infantarius type; CNU_G2 identifies the separately named ruminicola type|FDAARGOS personal alias and cross-label genomic interpretation remain unvalidated|
+|027|DSM15638; TMW2.2523|Both match their respective algida/carnosa type cultures; Lactobacillus algidus is the homotypic synonym of Dellaglioa algida|Final genome identity/QC and retention are not decided|
+|046|DSM21459; SS1998 with DSM21459; D7T301; SS1997 with JCM31178|Unambiguous type-culture identifiers match teuberi and martis respectively|Personal SS aliases, LMG-number discrepancy and cross-label ANI interpretation remain unresolved|
+
+LPSN currently treats the six species names as separate correct names. The infantarius type also underlies the nominate subspecies; DSMZ directly links ATCC BAA-102 and DSM22960. The ruminicola name was effectively published in2022 and validated in2023. No reviewed source establishes ruminicola/infantarius synonymy. [Infantarius LPSN](https://lpsn.dsmz.de/species/streptococcus-infantarius), [DSM22960 catalogue](https://www.dsmz.de/collection/catalogue/details/culture/DSM-22960), [ruminicola LPSN](https://lpsn.dsmz.de/species/streptococcus-ruminicola)
+
+The Dellaglioa pair has a particularly useful primary comparison: the carnosa description reports ANIb95.1% and dDDH63.2% against the algida type, while supporting a separate species. This explains why the existing project skani95.32% flag alone does not establish synonymy; methods and exact comparisons differ. LPSN maps the older Lactobacillus algidus type statement to the current Dellaglioa algida combination. [Original carnosa description](https://pubmed.ncbi.nlm.nih.gov/37148784/), [algida nomenclature](https://lpsn.dsmz.de/species/dellaglioa-algida)
+
+A genuine source discrepancy remains for Vagococcus teuberi: LPSN lists LMG21695, while the original protologue and NCBI taxonomy list LMG24695. The shared DSM21459/CG-21 identifiers agree. These two LMG numbers must not be normalized into one identifier without further primary clarification. [Teuberi LPSN](https://lpsn.dsmz.de/species/vagococcus-teuberi), [original description](https://pubmed.ncbi.nlm.nih.gov/29306597/), [NCBI taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=519472&mode=Info)
+
+One accession-level bridge was independently checked: DSMZ lists genomeCP017267 for the teuberi type; the cached GCF_001870205.1 FASTA begins with RefSeqNZ_CP017267.1. This is an external catalogue-to-accession match, not physical strain authentication, a whole-genome identity test or biological QC. Cached SS1998→DSM21459 and SS1997→JCM31178 collection links still rely on submission assertions. [DSM21459 catalogue](https://www.dsmz.de/collection/catalogue/details/culture/DSM-21459), [martis type definition](https://lpsn.dsmz.de/species/vagococcus-martis)
+
+All three components retain unresolved curation matters. There are zero genome identity authentications and no promoted production type-anchor flags. The review narrows nomenclatural questions and records externally defined type-culture identifiers; it does not close the ANI/identity/biological acceptance gates.

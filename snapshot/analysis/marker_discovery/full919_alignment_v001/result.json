@@ -1,0 +1,1008 @@
+{
+  "status": "ALL196_FULL919_CANDIDATE_FAMILIES_ALIGNED_PENDING_EXTERNAL_CLOSURE",
+  "family_commits": [
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00001/COMMITTED.json",
+      "sha256": "4128cebcd230b8ea52ed575875595e6d2572bd74a8ba5f33e8e1f2ce69950f2c",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00002/COMMITTED.json",
+      "sha256": "a166ca0da01c1b10b46363220d9f176d64dc0168c3e61877355e6f72397067b5",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00003/COMMITTED.json",
+      "sha256": "1ac61bb92bd350dea02f27dfd53e317bc8289645ef6ad50337465966abef2ff9",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00004/COMMITTED.json",
+      "sha256": "d80d3ac5576fb1e125d57507fecfe6fe36e13f99c9d4f9797e02c39f3387f493",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00006/COMMITTED.json",
+      "sha256": "994f07faba88ae1a0ffee61fc2bca9eeda28d6645c7ab493b93e903a529a66f8",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00007/COMMITTED.json",
+      "sha256": "65de6363d05d51400f589d2a455b73ebcc83f2a37f5b9282f37ac859ecfd4b2d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00010/COMMITTED.json",
+      "sha256": "c6f2bc8edfaf8f073de978b8fb674e824c0972c9fc429c7fc96cb88526b2d096",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00011/COMMITTED.json",
+      "sha256": "3bf8335442ba66b5033aaa4f1f24b2e47bcdcaf6b0e6b3eb482629abffe78da4",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00012/COMMITTED.json",
+      "sha256": "bebfae94ce7a3d58da1213ff2c0e868dae3e39c8e55bc005406d5911633c39ef",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00015/COMMITTED.json",
+      "sha256": "dee37c9655c04d53c4b9e982a9125e6c18073787b8d6a96a285460cf429fb307",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00018/COMMITTED.json",
+      "sha256": "56ba496f12f0c18c4b7e4a5ac8e017cbff353f75d72b715832590e4c1ee9a6ad",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00019/COMMITTED.json",
+      "sha256": "cd2db4b2621960be14cb8b2bbd292cd21918c462a2fc9c0430525a268d73597f",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00020/COMMITTED.json",
+      "sha256": "55b2d67aff414c7078867e24767d00da8ca8b0aa53b0b5e43b2ad0de0426ee96",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00021/COMMITTED.json",
+      "sha256": "0c92701d50498275c8ac9ca555fd302c2fa3433caef48f461ef78a8f2040bc16",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00022/COMMITTED.json",
+      "sha256": "709821198bbde2a66c52762099449542e5c6d9bd7c0455c7d1b24e7fab653887",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00023/COMMITTED.json",
+      "sha256": "c389731c0a09d72cdc20191fdd928f1598e6db3329c3c49d31da4904a9999e49",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00024/COMMITTED.json",
+      "sha256": "2bc3384218129e0a0e3e4f9891897ccb908cc1a47228568dbc50bf137b9980fc",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00025/COMMITTED.json",
+      "sha256": "216e76cc84d37c37d2327a9b5bf90e0ef9ad9d81bff4f6bad8fafffea7e781eb",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00028/COMMITTED.json",
+      "sha256": "34755a88a951d126e5b72674315be7e39eb42f2d61eedbd60c50ec19a096646e",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00029/COMMITTED.json",
+      "sha256": "f5ea91fbf6883e6b2b512214fd1f503a51bbf3df653859f1b7b98b24d517f1ab",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00031/COMMITTED.json",
+      "sha256": "41e3ecd20ae5ca89a25fa22cc31803648ecb51ea0a6f118d4f8b770f1c3de669",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00032/COMMITTED.json",
+      "sha256": "8409979516bb327409574ea882964450ea42d3cf5e2e4950760ab9f868ad958f",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00033/COMMITTED.json",
+      "sha256": "7e3a1a334e1113ba34176d171744930f81649d59745b60dfa5858f6eb28f89fb",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00034/COMMITTED.json",
+      "sha256": "0c2536eac22d4f00c5cb5b56c11b96ba7b1bfb1b29d703797c63b9eaa7bf2bb5",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00035/COMMITTED.json",
+      "sha256": "55808b2935493addd03442f5451500b34947868b1cf20149596c9829e6916146",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00036/COMMITTED.json",
+      "sha256": "7791dabdf2c1bed7aa0ed6272422cdd39ae235bac448dee7b8cf13339986322c",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00037/COMMITTED.json",
+      "sha256": "2d40bfe0d41d34feb78716aa62ee37e1eecca2300ad8d8543a95b5ab3c34d895",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00039/COMMITTED.json",
+      "sha256": "78a968ed01c9a8e8fb16c28511eb2128f4c58b8cb4397368647c4db604fa63d7",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00040/COMMITTED.json",
+      "sha256": "5b2f77def4c332c582cb2c3a432bdbfd9bae120b7c1e0577875276c83f267b78",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00041/COMMITTED.json",
+      "sha256": "4539dd5ad564720d25484bf5d17e6acdfa2ee2d9f115adefa5e2437dbc98bdf9",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00042/COMMITTED.json",
+      "sha256": "b6c1eeb491d17dbb7372c3bfd0868782e644daf0355e68ef2c4d0813f1d06a75",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00043/COMMITTED.json",
+      "sha256": "1073ca9708a232a1888df62ef914fde0fcdfb3c17265706f6db0f4374f7d043d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00044/COMMITTED.json",
+      "sha256": "48062b6f9ebadd61bd4ce32199dcff5af7012e954885b051b431e2025e395f69",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00046/COMMITTED.json",
+      "sha256": "cfaa9cf899ed02d3e8a4fc127a12125d6f4ff609730ac6dbe118731de7aa6d89",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00047/COMMITTED.json",
+      "sha256": "c43c20bea2c67ec943492818b28e2929d8a29645492298939f1b4a79b213b3c4",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00049/COMMITTED.json",
+      "sha256": "6228568d4663cc3134b1abcd631770a8d1698908ece3a77d27cf4c70e898b842",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00050/COMMITTED.json",
+      "sha256": "e2249edf4b39672ceaad2bdf8764c8a3413d3e47aa2db7e2b76abcdd759d0db9",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00051/COMMITTED.json",
+      "sha256": "3c004589e552f0ac40184a127330a073dd4e2e5b5e110363f8d5c0ce65672fe0",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00052/COMMITTED.json",
+      "sha256": "cc62740c410768106f21cf27fadb5364bd6624c465ed166fb815565869ebf24f",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00054/COMMITTED.json",
+      "sha256": "03e4ff0738e2a3069c400110a131c10b095b6da4fb7af8849b8598d920e6a8e2",
+      "bytes": 2221
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00055/COMMITTED.json",
+      "sha256": "16071f32e7cf253d155796b2cc27811032332efbf376620200efd364148985e9",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00056/COMMITTED.json",
+      "sha256": "dd96dcf5755cec93159dd5d8ddbe0f6e8f05148574cd55b76e6267d98566c2d7",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00057/COMMITTED.json",
+      "sha256": "04229c9d0a7e19db2525117634bea75d678012e3e90b7759328cc848fb888a3a",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00058/COMMITTED.json",
+      "sha256": "0ba7b3bb9f1eecb09444753c401333937c6c669cbc7dc1b3a2990f93653cd0e2",
+      "bytes": 2221
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00060/COMMITTED.json",
+      "sha256": "04276e8274d64f96cd091db995e7b57e722dbb6f6c5c10ce9420d03c284a4d14",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00061/COMMITTED.json",
+      "sha256": "c558fc5a3b57ef0f461a8c908158e4ab302f92aadd7373319e01247270dd39a8",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00064/COMMITTED.json",
+      "sha256": "e32587f6165d71b06e0452c996b14df03f243bed81ce5edcea10098695e357f1",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00065/COMMITTED.json",
+      "sha256": "410e7f554c7fe37f175cfbea4aa30d4ff18903c5384a96fcef95e7785f0a77c5",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00066/COMMITTED.json",
+      "sha256": "7bab7376d6a751ccf1e29e98a3f0d3f40e4f999ed89179c1ef1bd685b356926b",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00068/COMMITTED.json",
+      "sha256": "cdc1aaa8aaeb01572288138ce027abe1e204fb6b2b4b2a6f6a473acae237914c",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00069/COMMITTED.json",
+      "sha256": "e4a577351f91515b2a7c0b3b93415f9d9a8a055c64f16857806b3b7cd63ea26d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00071/COMMITTED.json",
+      "sha256": "cd3eefb5113d3d228a1d81b16d39be5f53c26bea0255ef80d53e6c7d058fd529",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00072/COMMITTED.json",
+      "sha256": "2b3b608426d150d46bc789a983351fae46d1a05b518ca1955e19b5ef2d5ec377",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00073/COMMITTED.json",
+      "sha256": "073d52bdf403c65bad486771512c107c2ea7a4de187d783fc48f901f8a0e34ed",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00075/COMMITTED.json",
+      "sha256": "8a5809650f9ea3138d04556a339877d3629983c97524aeda4797b37d855c5f51",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00076/COMMITTED.json",
+      "sha256": "80940dba108e6a1a29e0bcc72154d823cb00e8ae0ca5ee78c2a5566127f5ea07",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00077/COMMITTED.json",
+      "sha256": "d5e3abca5a663082c07942eeb1d51acbaf424c096883139d456ef841aab266d4",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00078/COMMITTED.json",
+      "sha256": "6651bd909a1e5d40cd8e82e4da9a38aece250a71a121eea1e06552b0c9f934c0",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00079/COMMITTED.json",
+      "sha256": "bf8ab9d2fad396d5fe227558fe0dd477cd0d53397cd79d7df489d3b4c8313bd1",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00080/COMMITTED.json",
+      "sha256": "9596d0ac28a237d9bd86513459145fee8d94082a634d86bc031af074f303b448",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00081/COMMITTED.json",
+      "sha256": "b26eb70084241a8f16003cb079310192ee3345ec9b4fe7cd3f42b299af178278",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00083/COMMITTED.json",
+      "sha256": "e56c5bb0888c4d83b6b602b25734621407272feed0e67e3c59d9b3edab86b3d5",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00085/COMMITTED.json",
+      "sha256": "e4871c5856d3aeaf0b832c005d0f56411d64bf50c38d5bbe7857484526bfa98e",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00086/COMMITTED.json",
+      "sha256": "a778dfc807416f243edd2e0fb4e6aa5f4ec36413063ed04095156968e98ca647",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00087/COMMITTED.json",
+      "sha256": "6c8200ab78fc2f5b98325a8e6d2c5236a3e1b618f5e70e6419dd8ec974453ad8",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00088/COMMITTED.json",
+      "sha256": "cedf786ff0f633a07e1d604207df31b1ada6ab2311ab011cdc3ede5f89ffa68c",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00089/COMMITTED.json",
+      "sha256": "c36476416a386a2d1a5edbb13aef6875270da4959f82077ee19aebcf96034784",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00092/COMMITTED.json",
+      "sha256": "e2093853df2d0094143a31740224e0db2eb2ff70cfff6d0cb62d21f8415a07d1",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00094/COMMITTED.json",
+      "sha256": "f19e160690575c74cb699713cc91856b016044170dd14ed93ffdfa42e2de8f94",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00095/COMMITTED.json",
+      "sha256": "164b763f95c25da03c62768f3f3e7c8ed2c1c75a6b21422ca241c1824b42ef69",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00096/COMMITTED.json",
+      "sha256": "607b161f0a30dd03df76f9b1bae2b7234427c9cf7e167c2c3df3fe9a926b0948",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00098/COMMITTED.json",
+      "sha256": "418bf9bd9a967783f1454caf3b74ad5598db84c836dd87522595707f67772f39",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00099/COMMITTED.json",
+      "sha256": "a66f44cc2c81b8a0186ada1fd55699d1ad26eed217f272598a73e35fac2daadf",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00101/COMMITTED.json",
+      "sha256": "e81d2f80d49e07a3c9282257f27d6add5e27b4c9117b033c2b7fe2c23b52c2f1",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00102/COMMITTED.json",
+      "sha256": "1953e4609915fcd0ec7e9117a8267259b3b190ccca7e603246818d1941306250",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00103/COMMITTED.json",
+      "sha256": "62ab0817f69930e14e6a781483d9386db8f314480b34b0637c1332e75d6a3299",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00104/COMMITTED.json",
+      "sha256": "31bc05895ad08d51be2187796e8d906d2d89245cb4027aa59a45291859ae366e",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00105/COMMITTED.json",
+      "sha256": "3acc501f1b424cdf94bdf2a6100bd5284250d9475d3722b9fd03bc0a6115e682",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00107/COMMITTED.json",
+      "sha256": "2a76a29751200a707cae87cd632fe0bdc5c74570c977638aa1fc79bbf2139fe4",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00109/COMMITTED.json",
+      "sha256": "cadcacb58ed098859183f0ac5e8d6e88c505e80a75c7178b31c5fbbab5a262e7",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00110/COMMITTED.json",
+      "sha256": "9d049fc4cb9cdcb036708d64168407755404e5fbfc1734087030e3415edb6bf2",
+      "bytes": 2216
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00111/COMMITTED.json",
+      "sha256": "45b87d49f4ad4eeda77f6f71909b1e29fecdc9c69d9ab40187cc59c5eb88dae2",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00113/COMMITTED.json",
+      "sha256": "f07a7a190aa0e39fc4d4bc1d012346e50018a012bdb7ef6311aab7f8c56f23ac",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00114/COMMITTED.json",
+      "sha256": "f4514e68841f66c98acb16d17aee93a3ec11bdc94a4c4d80ac92d36ddc90e8c2",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00115/COMMITTED.json",
+      "sha256": "aaf7648c484f955416b0111ff09a99010d1c259e9b53b6bc649cf522c1f488d8",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00116/COMMITTED.json",
+      "sha256": "26b731ec967969e58382b598d40de60bde25d69ff2537220c2efe68275d9f4ed",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00121/COMMITTED.json",
+      "sha256": "e102e96d91fdbbc8253f64d9d55b8fa55b263b424c47849b1cc826b9b60a8fd1",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00124/COMMITTED.json",
+      "sha256": "e14697a9254f02fdc70e834a4c0e2e714264f5b6b6568118e872d0e31b38f754",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00125/COMMITTED.json",
+      "sha256": "7eb0881fa74d6e0ea0f0d1e05432ce58e63a171a5c7d195f93e55b2eaffe5364",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00126/COMMITTED.json",
+      "sha256": "822d5be2e2cae2dcb5dbd09de0a70479fec42552bafa588d535b1dc3a51368f5",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00128/COMMITTED.json",
+      "sha256": "850c11c36e67060efa28530402d8a1788c0b103afd4e9b9ed1b9893538cd3072",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00129/COMMITTED.json",
+      "sha256": "a81eeff88ea391d06cdc20eb7915170035132b1bde3e2aee5b664731a47618b0",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00130/COMMITTED.json",
+      "sha256": "11f6e5342956a201800d9ebef16930de56de4553f07a5caf6e31b5422d2b7eb4",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00131/COMMITTED.json",
+      "sha256": "00a4e5abc229e7a0dbd2ad576bbbb0ae68aa379c06472f7897615e5cdcc0acb6",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00132/COMMITTED.json",
+      "sha256": "f7a7cc196818785a419347ed55ddba28e2784efe0427d5ab03137ab6e9d4473d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00134/COMMITTED.json",
+      "sha256": "16729f98ed400bf6dfdfd0207aac898ee8f319ba77baf90737a903884aa4c5af",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00135/COMMITTED.json",
+      "sha256": "d2c42bfa8835ba05c3df0b2c9ebc841b1338194fdb33fedcb169533fc534eab0",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00136/COMMITTED.json",
+      "sha256": "06e61c66e207476e489d8feef1ff13a6799ea924e3431a363714afca05a51a96",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00137/COMMITTED.json",
+      "sha256": "da88aaef5fd5d60a6ff10817b17692cce8b4ed1a842039e72b9d250cccd4a64d",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00138/COMMITTED.json",
+      "sha256": "8857891c60ae8ac3239fdfef9d528aaf63abbf37ce6d2e55fbbb2fef7543c122",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00139/COMMITTED.json",
+      "sha256": "e2a53b5cd5e6329286495ecaefea9eb7deb95ca5def192bafb992ece1f8a9465",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00140/COMMITTED.json",
+      "sha256": "66e6d2e5fbbe0857d109372c2ee2d08c8ca40802bdb79b4213149a085d8dc85e",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00141/COMMITTED.json",
+      "sha256": "bc3d72c51c5173ed7aced879e3d79f3e30384a0ca948e5e7bbec4efa0d02fcb6",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00143/COMMITTED.json",
+      "sha256": "0edd6c4da093abb7f09499983cbec0e21ad64c306f728fb6896d51fb74c862cd",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00144/COMMITTED.json",
+      "sha256": "acd4a36d4c4f8887fc8ffbd4453f6001c3811591adf1cadd339cb563284277fe",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00146/COMMITTED.json",
+      "sha256": "81bb78f013d9622d6a72f04cad8cd660cac11993456a57c26ed38a6cc2c88d15",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00147/COMMITTED.json",
+      "sha256": "346821474aa2456fd0affc96cdc204fae29af9cd76467ddbbd6319ea7c7fd8da",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00148/COMMITTED.json",
+      "sha256": "df1c4cc8123385b2de1da64115689859d5d17fa8a99c2924743fb6fae3dcca90",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00149/COMMITTED.json",
+      "sha256": "fa37934e044854bac020d4247566ae019cfe5da7dd3db0bb4481d8bc5e451ffb",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00150/COMMITTED.json",
+      "sha256": "b0be5f8bc3400860e8d872800d19edcb6d4a37d94a939ac6b98ba455bb141b9d",
+      "bytes": 2221
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00151/COMMITTED.json",
+      "sha256": "6c79c1e18e93e375e668b4bd7db094047847d1737103a0d37f96cef09a34b86c",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00152/COMMITTED.json",
+      "sha256": "c623adb848f73ff21e0c128a0486c43f868ae37c55e6c322106de4b994aa35e3",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00153/COMMITTED.json",
+      "sha256": "105d4add3d5d7fe028bd297983ba7232fe0656dc8873f1ceb077ca422af5884c",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00154/COMMITTED.json",
+      "sha256": "f3d8422abd5301de2068f3279fe7913296f39869ff1749f0d43db06c754e56ce",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00155/COMMITTED.json",
+      "sha256": "023e7496aaa4b6b7f9061c89c56d0370dccf6569917a1c71f41dafc30e7e7a4d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00156/COMMITTED.json",
+      "sha256": "a9b8007bd68df77b8be036289aa650ed0e9d3227ba807addfea98addabb35c23",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00157/COMMITTED.json",
+      "sha256": "44516fba6c0a4db56be01e9f5b52bb763a4fb8eddb0e0d002390ceadca438b5e",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00159/COMMITTED.json",
+      "sha256": "de5785f3f7389caa4cce5915670306aead3fba9304bf2da2b11f6d18b10364f8",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00160/COMMITTED.json",
+      "sha256": "5b5b8ed70a20f307d91f8c202fbd975efa9cedd650c4008eba2a0945ac30338b",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00164/COMMITTED.json",
+      "sha256": "9e9af11e7bc091b3b931bf073d209ea6ee2a6ecf6ef06ccb8482ae7d486bdae5",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00165/COMMITTED.json",
+      "sha256": "c3d0196021737c3b542aa11a2643fd5641046ac115842b064e1dc005ac0ab0c1",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00167/COMMITTED.json",
+      "sha256": "a6ee74480df5dcbc4c3c0c56c92aad7b5cc17e10688baa3378baebabe5fba06a",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00168/COMMITTED.json",
+      "sha256": "86d5bdc10ec70fcf609e7087ca941391813bd885f2dbc69be370e6b9a5568c5d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00169/COMMITTED.json",
+      "sha256": "51a0d9bb5ab80f6158a91fe716ef39b12c414a1b8ce7198200509d0805f3367f",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00172/COMMITTED.json",
+      "sha256": "5b016bef569610dc566f378e087fd0cf34804630c6bb950c8fe1c77cf6891095",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00175/COMMITTED.json",
+      "sha256": "2746a9de1ba7073367ab9dcfdce93a2a1afeae94ba5d266ea7e6e95c8e429ca0",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00177/COMMITTED.json",
+      "sha256": "b61c41bf51f6310dd6b98fd01512bebdc3d208e578b2ef059338a985befca267",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00179/COMMITTED.json",
+      "sha256": "fe72263d24bafbec4990b88d4c05312b31d610d5220725207163d9f0319be8bd",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00180/COMMITTED.json",
+      "sha256": "e4762d41367362d6b5f4dc3c3e19439d6ccc4ffb5e7cf08e3f9423cb58516e48",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00181/COMMITTED.json",
+      "sha256": "80344b51261b0ee4b161a8a736241d35dbe3ba54a44a2e5d13df3b4f47092b7b",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00183/COMMITTED.json",
+      "sha256": "4cebe896aa0258814fa629635c888f2196272225e05eba0b3b3330e58144b98a",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00184/COMMITTED.json",
+      "sha256": "ae0b3a26b919a630c9fd1ed93bb6c352c2d506db1e8609c6e8a61ad74a0d92c6",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00188/COMMITTED.json",
+      "sha256": "28a5f3a811ed868fb3d1d09ad328cdbbc984d59e3ad0db607697cbea0ce7a444",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00189/COMMITTED.json",
+      "sha256": "3266db2f7f0c52edf4d23b4cdd9b53595fe5b185ef18f6f7a25b9864711437f4",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00190/COMMITTED.json",
+      "sha256": "43995987a128bf968be432374bd2b8611345c85b6ae0e3e020b7b77e20cb3659",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00191/COMMITTED.json",
+      "sha256": "f58b7031cb68dbb07ffed6c7f679fbf548c24a358ec0479737f1bafaa5297067",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00192/COMMITTED.json",
+      "sha256": "d3094be84fe27dd71657f86a1be05db73309a6ab9cf28cd332e8b585927980b4",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00193/COMMITTED.json",
+      "sha256": "60f2cc0e1ae4f4e339cf6c989abfc34a002b96262ab7976043dbb6dbe8c42d1b",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00195/COMMITTED.json",
+      "sha256": "f41f044479cb62b2b72e254ace783cb3ba6df23b3f27dbf09ab69ac46b69b0fd",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00197/COMMITTED.json",
+      "sha256": "07e0b43c961aec756f191a030bb6e58237a45bb21fc0e34928e9f530c4173bb1",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00201/COMMITTED.json",
+      "sha256": "85d262bea64ed5ad6e26b61602e8270f21bbb340412a24700a109e4fa76ac077",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00202/COMMITTED.json",
+      "sha256": "124b042f66af36fcb6879dd73541c64701246430131a4828fc1e8cc63d6734cc",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00207/COMMITTED.json",
+      "sha256": "364a905452ca3200376a16643b379d3cd57a32785b50458d8518b5704e74bcfc",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00208/COMMITTED.json",
+      "sha256": "ee37fec20750c064dc50564313cb01f83791b297d5ea6f0de6595c431a539fbb",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00209/COMMITTED.json",
+      "sha256": "8c4cfc056a4970cab24302e8c26bc5501909bcf9a21fb7801936f36c80151fbe",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00210/COMMITTED.json",
+      "sha256": "a41952d4b63c49acc7d2e6c76eee4a264d05ca8bd425037806c86f441a5b6849",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00211/COMMITTED.json",
+      "sha256": "9c3cc527396477bf320b28d965a495dc6e137976045c17d0bc58e796ad4ec046",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00212/COMMITTED.json",
+      "sha256": "9e5f27c3963717c256d3497733ddba32af4a6065b7548bfd47dc908310ec0c4d",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00213/COMMITTED.json",
+      "sha256": "d66fb832d2acb5cd630ea855ef9f0c9e5a057e085b4f0b974126bf534684119e",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00216/COMMITTED.json",
+      "sha256": "35743ee84b856e4db71c47dd55eaaf2bcfdf260a69bf1e7b7bcb69f97d12b4ab",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00217/COMMITTED.json",
+      "sha256": "8d00a77881060360bfe6de76e648b17aab23c139c7329dad31ca678e704b771b",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00218/COMMITTED.json",
+      "sha256": "cd9f6adddfae55a26e7d967beb6f459af6752b288904848c9ffbc0eca81fff1c",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00219/COMMITTED.json",
+      "sha256": "29033c0fbc34864ca251a45a1ccfb834f1fdef5b6a2a599f21a449e7b57be9d7",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00220/COMMITTED.json",
+      "sha256": "de1b33b1a9a4bf36aea0934c43746f0b479cb8d7cb07074727d84fc2557d9c60",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00221/COMMITTED.json",
+      "sha256": "521dad296247e4ec82bf2f421fe8e8653f9f41fdcccd74174384bfb0f4926d92",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00222/COMMITTED.json",
+      "sha256": "5859246ee954f709141446edc9bd511fbf00dc4235f38456ff6d36d7848521a6",
+      "bytes": 2215
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00224/COMMITTED.json",
+      "sha256": "edf3057cc0a5edab11f93936f9308da5bd17a4ffac781654378ef287c5f1172d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00225/COMMITTED.json",
+      "sha256": "5dfe5b4a57212e398338d78ea87884bf3a99612c1ca3e9a475f0079daf10143e",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00227/COMMITTED.json",
+      "sha256": "af2ff8353787e5f7d31191ae0fc366eaf0103f62142846ecb2b6406673c7f3dc",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00228/COMMITTED.json",
+      "sha256": "d6318a21db873e20b44213971f799b14134de797f364993c2850a4613425e4c3",
+      "bytes": 2214
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00231/COMMITTED.json",
+      "sha256": "c546fe9f6b36f6d4cbd8bb8bfdcdf4d020c66364772c7c889e976e2caa7c08e8",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00233/COMMITTED.json",
+      "sha256": "c91fff37f8f2517f8404e04c6ac99fe7dd08eb4a04c18c92aec3566217f9dbac",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00234/COMMITTED.json",
+      "sha256": "6f4cd682629cee86363cbd2cda8791e15dfddcdf3800065b21eb272fae6061fa",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00235/COMMITTED.json",
+      "sha256": "5b442f04172a94e74f2fd0058ce7efc609ac1a9ba23b545057acf87ea7c53458",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00236/COMMITTED.json",
+      "sha256": "b8090ea829e78ff91a0613ecf683015c1e59883dbee8c416245c246ab1edd6f2",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00237/COMMITTED.json",
+      "sha256": "e3b0c2a8d19d8454c4307167726853dc86852a48e336cde3b3b27d674b952610",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00238/COMMITTED.json",
+      "sha256": "5da3c493e96f656ed6a72a1f397df694d3588a9f2c548add8462050f8a3f11c0",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00239/COMMITTED.json",
+      "sha256": "4d98b4ac795b3b81d503b2c2784f59932ecab78ddeea03ee38b89061aee61c31",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00240/COMMITTED.json",
+      "sha256": "6b42dfd7e2c21a3849a8904e0e2701d0483119d68acc97709a4613b723611b36",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00241/COMMITTED.json",
+      "sha256": "caa699753afaf27ad9a5da1447c5ca16478ca15a58b4b204257c863df8bf0743",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00242/COMMITTED.json",
+      "sha256": "d0049750faa64812aef6032deabbf9a555b2f9ee80c8cce5080234c23792e0c1",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00244/COMMITTED.json",
+      "sha256": "a66098b9c93ce108a0a5de01c481a01f7f6478a9581baba981e01d391936caf2",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00246/COMMITTED.json",
+      "sha256": "df09a32ad66f3d35a8d152241f912ad0509e35064ba6c2e527080ebccd9e6763",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00247/COMMITTED.json",
+      "sha256": "48be241337f3fd03f485de8e4c1463e2eeabc9ee3504f3652c326511dc08bc14",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00248/COMMITTED.json",
+      "sha256": "740d3a7c0bd1f81afe06cc1f1948993d2b43c79d875e2511eb18e9655235ce6c",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00251/COMMITTED.json",
+      "sha256": "4d5e119216fe436ef36bd815f97e3c9deaf91c1f63b3cee34b7ee0f5cad5c06d",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00253/COMMITTED.json",
+      "sha256": "181d204d0446977e223b1d177214a4c76d8bf9febb4fdcf8a4375947a0d27a89",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00254/COMMITTED.json",
+      "sha256": "bf12d1116b7c00ad52b8ba985d037ad1c8f6d0e133fb75593697c4074c7e746d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00256/COMMITTED.json",
+      "sha256": "621c79ab2b9fb5a057b4f7f23b5c1b8b69b08dcc1647b928dcadad1f36bf67e4",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00260/COMMITTED.json",
+      "sha256": "8b1119e2a8084b97d6564e87460b44b1a4000b5248aae31678beb6901b3390b5",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00261/COMMITTED.json",
+      "sha256": "f0f6712a6d73c67a34bb83e1145ce1a975deadab9d19ed104e64e4ae42106f53",
+      "bytes": 2219
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00262/COMMITTED.json",
+      "sha256": "9d14f3549bc6f5e43a393d4560fe2343e3e02c0e05c0b4e2b886cd66913c49bd",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00263/COMMITTED.json",
+      "sha256": "5fde15c1ecd8c85c316dd5c25e073a8e4ddd5b43d7428f218dd7ec91a048136d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00264/COMMITTED.json",
+      "sha256": "cd6d91461b71e9e51f37ce191403947b6ecebf61bc405b9c93e28cf9c3909426",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00265/COMMITTED.json",
+      "sha256": "b6b3fe756fe76b116a40060353540750a04eae2c0c487356e9573adb9d86b4ba",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00266/COMMITTED.json",
+      "sha256": "184274b1596a6dc45afd58a720abb88fa1e8eeba6f98d8121118edfc9d64f16c",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00267/COMMITTED.json",
+      "sha256": "61a214513eb2fc9136ed711c1dc270e0ba9c7e2b372d7a38aff782f6c031566a",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00268/COMMITTED.json",
+      "sha256": "238aaadf1602a413f1a2aded73dec00acd42abdd8c6b82eab1c90cbf094bed30",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00270/COMMITTED.json",
+      "sha256": "d45036f877c2c2c2eb7954e7f72a4d712b773afa7f698f26a89b88aeaa9d2c28",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00271/COMMITTED.json",
+      "sha256": "838222018cb2341b271575e5b4a6f8dcc5a5b4bd2330339ff797f975e9549316",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00272/COMMITTED.json",
+      "sha256": "341550f53036dbd08bbed841fac7246dcec7f7f84ca2ff3266e5c010bc2649bf",
+      "bytes": 2221
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00276/COMMITTED.json",
+      "sha256": "7946059e0bf45f0ae44ef428ee222c7a6baaa1d25df2cd269197fb4ec5b719fd",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00277/COMMITTED.json",
+      "sha256": "6ca9ba44e6cf62b42dcce5f53d22ac66f1948646ebad0184aeb173d207344284",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00278/COMMITTED.json",
+      "sha256": "2b17a728f9946f18da846fccdd098dabccdae3525203d8aac5fe2984d047700d",
+      "bytes": 2218
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00279/COMMITTED.json",
+      "sha256": "8ee5d1d729716ea304a2b30e66a7cc794b4a56e6cb1baa3fa3832bef2d92f2c5",
+      "bytes": 2217
+    },
+    {
+      "path": "analysis/marker_discovery/full919_alignment_v001/families/T2P10_00280/COMMITTED.json",
+      "sha256": "853f5a0232626c5e15977d687a01536cfa49134a63942863c9cd8f0ef6e50532",
+      "bytes": 2218
+    }
+  ],
+  "families": 196,
+  "genomes": 919,
+  "QC_closed_authority": {
+    "path": "work/checkm1_close_7bbd/Root_closed_method_acceptance.json",
+    "sha256": "5e835c3f13b4f61b109c9f63909d6b9e975d2c569d814f74542968e1ac2bd28e",
+    "bytes": 3602
+  },
+  "screen_closed_authority": {
+    "path": "work/fullpanel_marker_screen_v001/local_controller_closed_acceptance_1cf28cbc.json",
+    "sha256": "55682b2cc66b9b89f5951dd087ae5f2a54b7e5972a3fd07477ee47f62923fa10",
+    "bytes": 3731
+  },
+  "input_plan": {
+    "path": "metadata/full919_alignment_v001/Root_plan.json",
+    "sha256": "44c1a377f854cfb3e89ea63622ff9cbd435e1fde1741f55182253c914052c3e7",
+    "bytes": 14696
+  },
+  "science_seconds": 645.1880439539746,
+  "cold_elapsed_seconds": 1053.5672919520002,
+  "peak_controller_and_owned_sample_RSS_plus_private_RAM_bytes": 464257024,
+  "all_original_leaf_IDs_residues_copies_and_masks_preserved": true,
+  "orthology_paralogy_gene_tree_sensitivity_broader_discovery_still_required": true,
+  "final_marker_or_panel_or_full_or_representative_tree_acceptance": false
+}

@@ -1,0 +1,93 @@
+--- scripts/checkm2_single_faa_feature_validator_S1.py
++++ scripts/checkm2_single_faa_feature_validator_S1R2.py
+@@ -1,4 +1,4 @@
+-"""HELD single-FAA saved-feature validator; no caller, DIAMOND or model calls.
++"""HELD S1R2 fresh-target saved-feature validator; no caller, DIAMOND or model calls.
+ Derived from accepted cc9b single-row math with exact-ten annotation/source gates.
+ Scientific imports and one owned unpickle occur only after all bound prerequisites.
+ """
+@@ -14,7 +14,7 @@
+ R = Path(__file__).resolve().parents[1]
+ ACCEPTED_VALIDATOR_SHA = 'c820c9d9c9e5e86343f7a80f8fc853ae8dfb1684779ca9f0ef218973e95a01ff'
+ SCHEMA_SHA = '90e482515c6924386a888aa14a036f7659acf9ad0c49814cb08a3a7e1f76f5ee'
+-CONTRACT_SHA = '904d6be6f4370a0370f6d6adacdbfab0742047b278ebb0dbe65272cae070a574'
++CONTRACT_SHA = 'cf4102adf0399294c35b25ca53a113c74bc9470718cb467249cc9c2deaa8b598'
+ RECIPE_SHA = '2e003f02e6b1886ebe65c4e4d7a9351d84e6ad404d09384ece668089ba3f5fce'
+ CALLER_SHA = '4d962b423281b81edf3e9eec7ce3219388a0df8ae52c13cde883419826592b6f'
+ BENCHMARK_VALIDATOR_SHA = '221c04021d718960c7b736a5255c48bb5f7792e980ae512f2a6ef463ddcd933b'
+@@ -31,7 +31,7 @@
+     if v.sha(path) != expected_sha:
+         raise RuntimeError('Single-FAA feature request SHA256 differs before any unpickle')
+     request = v.read(path)
+-    if request.get('request_schema') != 'TREE2_SINGLE_FAA_FEATURE_REQUEST_S1':
++    if request.get('request_schema') != 'TREE2_SINGLE_FAA_FEATURE_REQUEST_S1R2':
+         raise RuntimeError('Wrong control feature request schema')
+     return request
+ 
+@@ -86,7 +86,7 @@
+     sources = manifest.get('sources')
+     if not isinstance(sources, list) or not sources:
+         raise RuntimeError('A complete reviewed source manifest is required')
+-    required = {'scripts/checkm2_single_faa_feature_validator_S1.py': v.sha(__file__),
++    required = {'scripts/checkm2_single_faa_feature_validator_S1R2.py': v.sha(__file__),
+                 'scripts/checkm2_posthoc_v002_validator.py': ACCEPTED_VALIDATOR_SHA,
+                 'scripts/checkm2_benchmark10_feature_validator_v002.py': BENCHMARK_VALIDATOR_SHA,
+                 'scripts/checkm2_membership_recompute_v002.py': 'e1a0216db7db3716102745f3a78c3ff65f14040601a6cbb6cffb9edc7e4d4efe',
+@@ -108,14 +108,14 @@
+         raise RuntimeError('Exact ten original logical inputs are required')
+     if contract['expected_source_hold_accessions'] != recipe['expected_ancillary_hold_accessions']:
+         raise RuntimeError('Original three source holds differ')
+-    if request['accession'] not in expected:raise RuntimeError('Unknown or extra accession')
++    if request['accession'] not in contract['fresh_target_accessions']:raise RuntimeError('Preserved or unknown accession cannot be recomputed by S1R2')
+     item = next(x for x in recipe['inputs'] if x['accession'] == request['accession'])
+     protocol = v.read(v.bind(request['protocol_admission']))
+-    if (protocol.get('schema') != 'TREE2_SINGLE_FAA_INFERENCE_ADMISSION_S1' or
+-        protocol.get('status') != 'ADMITTED_ONE_SERIAL_TEN_FAA_SERIES' or
+-        protocol.get('role') != 'SINGLE_FAA_INFERENCE_ONLY_METHOD_QC_S1' or
++    if (protocol.get('schema') != 'TREE2_SINGLE_FAA_INFERENCE_ADMISSION_S1R2' or
++        protocol.get('status') != 'ADMITTED_ONE_OPERATIONAL_REPAIR_NINE_FAA_SERIES' or
++        protocol.get('role') != 'SINGLE_FAA_INFERENCE_ONLY_METHOD_QC_S1R2' or
+         protocol.get('single_faa_execution_authorized') is not True or
+-        protocol.get('phase') not in ('RUN_FRESH_SERIES', 'RECOVER_CLOSED_ROWS') or
++        protocol.get('phase') not in ('RUN_FRESH_TARGETS',) or
+         protocol.get('max_predictions_per_accession') != 1 or
+         protocol.get('max_query_genomes_per_prediction') != 1 or
+         protocol.get('input_plan_sha256') != request['input_plan_sha256'] or
+@@ -124,9 +124,18 @@
+         raise RuntimeError('Matching finite single-FAA series root admission is required')
+     if not isinstance(request['input_plan_sha256'], str) or not re.fullmatch('[a-f0-9]{64}', request['input_plan_sha256']):
+         raise RuntimeError('Exact admitted input-plan SHA256 is required')
+-    for gate in ('annotation_reuse_gate_passed', 'prior_failure_context_closed',
++    for gate in ('preserved_row_reuse_gate_passed', 'explicit_second_attempt_exception',
++                 'annotation_reuse_gate_passed', 'prior_failure_context_closed',
+                  'monitor_standard_stage04_ready', 'source_math_GO', 'resource_lifecycle_GO'):
+         if protocol.get(gate) is not True:raise RuntimeError('Required source/resource/monitor gate is absent: ' + gate)
++    if protocol['preserved_row_authority'] != contract['preserved_row_authority']:
++        raise RuntimeError('Root preserved-row-only authority differs')
++    preserved = v.read(v.bind(protocol['preserved_row_authority']))
++    if (preserved.get('schema') != 'TREE2_ROOT_S1_CLOSED_ROW_ONLY_AUTHORITY' or
++        preserved.get('method_estimate_reuse_authorized') is not True or
++        preserved.get('recalculate_accepted_row_authorized') is not False or
++        preserved.get('prediction_execution_authorized') is not False):
++        raise RuntimeError('Accepted old row must be reused without new ML')
+     artifacts = request['artifacts']
+     for name in ('raw_pickle', 'selected_faa', 'annotation_receipt', 'annotation_unit_execution',
+                  'annotation_commit', 'quality_report', 'quality_unit_execution'):
+@@ -218,7 +227,7 @@
+     v.no_models()
+     canonical = np.asarray(values, dtype='<f8', order='C')
+     result = {
+-        'status': 'SINGLE_FAA_FEATURES_S1_PASS_PENDING_NATIVE_CLOSURE',
++        'status': 'SINGLE_FAA_FEATURES_S1R2_PASS_PENDING_NATIVE_CLOSURE',
+         'row_count': 1, 'cohort_contract_sha256': CONTRACT_SHA,
+         'annotation_reuse_authority_sha256': protocol['annotation_reuse_authority']['sha256'],
+         'annotation_commit_sha256': artifacts['annotation_commit']['sha256'],
+@@ -256,7 +265,7 @@
+     try:
+         main(args)
+     except BaseException as error:
+-        v.save(v.inside(args.output).with_name('single_faa_feature_validation_failure.json'),
++        v.save(v.inside(args.output).with_name('single_faa_feature_validation_failure_S1R2.json'),
+                {'status': 'SINGLE_FAA_FEATURE_VALIDATION_FAILED_OR_UNRESOLVED', 'error': repr(error),
+                 'validator_calls_no_annotation_DIAMOND_or_ML': True})
+         raise

@@ -1,0 +1,7 @@
+N5 computation completed; its post-run audit never started.
+
+The original scientific native and WSL exits are both observed0. All20 phase units have actual exit0 and empty owned groups; allfive pending method-row commits and feature validations remain present and checksum-matched. Scientific debit is1511.3240271129616seconds. This receipt review did not independently probe current OS closure or admit the results.
+
+The failed audit owner waited180seconds for the dispatcher to attach. The dispatcher was synchronously waiting for its headless CLI turn to finish, and only attaches a newly handed worker after that CLI exits. The owner timed out at11:10:17.499802Z with no child. The dispatcher accepted CLI exit0/handoff afterward and its OpenProcess(new owner24336) failed withWin87. The traceback identifies that exact operation. No audit child, audit claim/output, model rerun or finalizer was launched by this owner. Its own exit remains UNKNOWN in the existing terminal until an independent actual exit/closure observation.
+
+FAILED_UNKNOWN_CLOSURE therefore describes this unfinished external validation/controller handoff, not a failed genome calculation or missing inputs. Continue from preserved artifacts after verification: repair the handoff/ownership, perform the still-unstarted file/OS audit, then separately finalize and review. This finding neither launches that recovery nor grants production/panel/taxonomy acceptance.

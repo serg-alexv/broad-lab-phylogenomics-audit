@@ -1,0 +1,9 @@
+# S1 bound annotation authority supplement
+
+The initial unbound component remains preserved at Git checkpoint2f09e2a and in `checkpoints/S1_component_unbound_2f09e2a/receipt.json`. Its unbound cohort contract remains byte-identical at `metadata/checkm2_single_faa_cohort_contract_S1.json` (58b959e4...).
+
+The current executable source proposal uses the separate `metadata/checkm2_single_faa_cohort_contract_S1_bound.json` (904d6be6...) and validator1d41c651.... It binds Root's actual `root_ten_annotation_reuse_authority.json` (c9d163bb...) with annotation_reuse_authorized=true and prediction_execution_authorized=false. This permits source preparation from the accepted ten annotation commits; it does not admit another prediction or convert the failed T1 quality into success. The original native exit remains UNKNOWN, while actual outer/WSL failure and the resource-stop debit remain recorded.
+
+The only change from the initial source proposal is the real bound authority/cohort hash and explicit rejection of a claimed whole-ten QC/panel pass. Exact source/hold projection and all finite-domain, 22-FAA, raw-KO membership and canonical serialization expressions remain unchanged. The same six small synthetic fixtures pass; no real FAA, pickle, model, scoring or runtime was used. This author's fixtures are not independent approval.
+
+Setup may now freeze its new source tuple using this bound contract, schema90e, unchanged validator221c and the agreed S1 protocol. A separate root execution admission, new isolated claims, active standard monitor and independent source/resource review are still required. Quality and validation for each genome share min(600 seconds, remaining global budget); all ten rows together retain the3495.758365-second remaining allowance. No fake successful batch receipt, automatic fallback, annotation replay, next20 or full-panel grant follows.

@@ -1,0 +1,58 @@
+--- scripts/checkm2_benchmark10_common_v002.py
++++ scripts/checkm2_benchmark10_common_T1.py
+@@ -6,12 +6,14 @@
+ STRATEGY_SHA='c0c3a2c65e3ba3a7d12d9d0ba2eeb9d600d3df9cf06343dade9e157bca90acdc'
+ LIMITS={'cpu_affinity_max':2,'stock_threads':1,'sum_group_RSS_bytes':2147483648,'linux_available_minimum_bytes':1073741824,'disk_reserve_bytes':42949672960,'annotation_unit_seconds':600,'max_annotation_units':10,'max_total_annotation_compute_seconds':6000,'protein_batch_plus_validation_seconds':3600}
+ PHASES=('BOUNDARY_AFTER_FIRST_ANNOTATION','CONTINUE','VALIDATE_COMMITTED_BATCH')
+-E=R/'evidence/checkm2_benchmark10_protein_v002'
+-OUT=R/'analysis/checkm2_benchmark10_protein_v002'
+-STATE=R/'state/checkm2_benchmark10_protein_v002_progress.json'
+-LAUNCH=R/'state/launch_checkm2_benchmark10_protein_v002.json'
+-STOP=R/'state/STOP_CHECKM2_BENCHMARK10_PROTEIN_V002'
+-ADMISSION=R/'state/checkm2_benchmark10_protein_protocol_ready_v002.json'
++E=R/'evidence/checkm2_benchmark10_protein_recovery_T1'
++OUT=R/'analysis/checkm2_benchmark10_protein_recovery_T1'
++STATE=R/'state/checkm2_benchmark10_protein_recovery_T1_progress.json'
++LAUNCH=R/'state/launch_checkm2_benchmark10_protein_recovery_T1.json'
++STOP=R/'state/STOP_CHECKM2_BENCHMARK10_RECOVERY_T1'
++ADMISSION=R/'state/checkm2_benchmark10_protein_recovery_T1_ready.json'
++UNRESOLVED_HANDOFF=E/'unresolved_ownership_handoff.json'
++
+ def path(value):
+  p=Path(value)
+  text=str(p).replace('\\','/')
+@@ -77,9 +79,11 @@
+  recipe=read(bind(plan['recipe']))
+  if recipe.get('inputs')!=strategy['inputs'] or recipe.get('limits')!=LIMITS:raise RuntimeError('Pinned recipe cohort/limits differ from strategy')
+  for item in read(bind(plan['source_manifest']))['sources']:bind(item)
+- if not require_admission:return plan,strategy,None
++ recovery_policy_gate(plan)
++ if not require_admission:unresolved_ownership_gate();return plan,strategy,None
+  if not ADMISSION.exists():raise RuntimeError('HELD_BENCHMARK_ADMISSION_ABSENT')
+  a=read(ADMISSION)
++ recovery_policy_gate(plan,a);unresolved_ownership_gate(a)
+  if a.get('schema')!='TREE2_BENCHMARK10_PROTEIN_ADMISSION_V002' or a.get('status')!='ADMITTED_ONE_BENCHMARK10_BATCH' or a.get('role')!=ROLE or a.get('benchmark_execution_authorized') is not True or a.get('max_batch_prediction_attempts')!=1 or a.get('phase') not in PHASES:raise RuntimeError('No explicit benchmark phase authority')
+  if a.get('input_plan_sha256')!=expected_sha or a.get('source_manifest_sha256')!=plan['source_manifest']['sha256'] or a.get('recipe_sha256')!=plan['recipe']['sha256'] or a.get('limits')!=LIMITS:raise RuntimeError('Benchmark admission binding/resources differ')
+  if any(a.get(k) is not True for k in ('format_control_gate_passed','monitor_standard_stage04_ready','source_math_GO','resource_lifecycle_GO')):raise RuntimeError('Benchmark control/source/monitor gates held')
+@@ -90,3 +94,21 @@
+  for item in authority['closed_chain']:bind(item)
+  if a['phase']!='BOUNDARY_AFTER_FIRST_ANNOTATION':resume_proof(a,plan['session_identity_sha256'])
+  return plan,strategy,a
++
++def unresolved_ownership_gate(admission=None):
++ records=list((UNRESOLVED_HANDOFF.parent/'unresolved_ownership').glob('*.json'))
++ if UNRESOLVED_HANDOFF.exists():records.append(UNRESOLVED_HANDOFF)
++ if not records:return
++ if not admission or not admission.get('unresolved_ownership_external_closure'):raise RuntimeError('HELD_UNRESOLVED_T1_OWNERSHIP_HANDOFF_NO_RELAUNCH')
++ closure=read(bind(admission['unresolved_ownership_external_closure']))
++ expected={bind(x).resolve() for x in closure.get('unresolved_handoff_bindings',[])}
++ if {p.resolve() for p in records}!=expected or closure.get('status')!='T1_UNRESOLVED_OWNER_EXTERNALLY_CLOSED' or any(closure.get(k) is not True for k in ('all_recorded_identities_absent','all_groups_contexts_and_loops_closed','common_leases_released','image_unchanged')):raise RuntimeError('Any unresolved T1 ownership requires separately bound external closure of the exact complete handoff set')
++def recovery_policy_gate(plan,admission=None):
++ policy=read(bind(plan['operational_recovery_policy']))
++ expected={'old_annotation_attempts':1,'old_accepted_annotation_commits':0,'original_annotation_compute_budget_seconds':6000,'historical_unknown_attempt_conservative_debit_seconds':600,'new_session_annotation_budget_seconds':5400,'per_physical_unit_max_seconds':600,'new_logical_genomes':10,'maximum_new_physical_annotation_attempts':10,'maximum_total_physical_annotation_attempts':11,'batch_prediction_attempts_before_recovery':0,'batch_prediction_plus_validation_seconds_remaining':3600}
++ if any(policy.get(k)!=v for k,v in expected.items()) or policy.get('old_annotation_exit')!='UNKNOWN_MISSING_EXECUTION_RECEIPT' or policy.get('old_partials_reused_promoted_deleted_or_overwritten') is not False:raise RuntimeError('T1 prior attempt/debit/preservation policy differs')
++ if policy['failed_boundary_closure']['sha256']!='ad6de26da985d250acaf202bc33bd3e7a0b8b32e7358cc29e5726c36cca357ea':raise RuntimeError('T1 prior failed closure differs')
++ bind(policy['failed_boundary_closure'])
++ if policy['original_scientific_recipe']['sha256']!=plan['recipe']['sha256'] or plan['recipe']['sha256']!='2e003f02e6b1886ebe65c4e4d7a9351d84e6ad404d09384ece668089ba3f5fce' or policy.get('workspace')!=OUT.relative_to(R).as_posix():raise RuntimeError('T1 scientific recipe or isolated workspace differs')
++ if admission is not None and admission.get('operational_recovery_policy_sha256')!=plan['operational_recovery_policy']['sha256']:raise RuntimeError('T1 phase authority does not bind the historical debit/recovery policy')
++ return policy

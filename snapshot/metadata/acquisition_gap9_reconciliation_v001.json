@@ -1,0 +1,849 @@
+{
+  "schema": "TREE2_LOCAL_ACQUISITION_GAP9_RECONCILIATION_V001",
+  "status": "METADATA_RECONCILIATION_ONLY_NO_INPUT_REPAIR_REQUIRED_FOR_CURRENT_LABEL_COVERAGE",
+  "created_utc": "2026-10-27T05:24:07.300438+00:00",
+  "sources": [
+    {
+      "path": "metadata/checkm2_post_benchmark_qc_scaling_design_v001.json",
+      "sha256": "5a961ff145719710c64b12a7d017e19cc37f17fa57db1e5adcb9c2c6489be701",
+      "bytes": 16876
+    },
+    {
+      "path": "metadata/provisional_panel.json",
+      "sha256": "0dbdc7debab41619e6d52ef855a3ba01bb52ed11540a867a46fe041b639536f8",
+      "bytes": 2537936
+    },
+    {
+      "path": "metadata/candidates_qc.json",
+      "sha256": "11787bbf3f0f1bba082f4acf89af47e6913a7cb1b57a158e42603ded84049901",
+      "bytes": 25665165
+    },
+    {
+      "path": "metadata/selection_summary.json",
+      "sha256": "b9f09fb33dc7dea4dc6b4a9522ff422a4c2e0a4697cea7c4fffcd978f218c6a0",
+      "bytes": 39782
+    },
+    {
+      "path": "metadata/selection_commit.json",
+      "sha256": "ad07eb0cb011b5db4be92cca2d01aee5f96e4303028d8468947ca426c35b300b",
+      "bytes": 947
+    },
+    {
+      "path": "qc/source_provenance_audit.json",
+      "sha256": "36daf5fd11e923a845554643215042f02f377997f4f57f7722767fdcdd044db4",
+      "bytes": 2395259
+    },
+    {
+      "path": "qc/acquisition_validation.json",
+      "sha256": "4056f924420f24fd27f0b48c12b77feb6fb6ced67cc57a7c0f8deea55c712e61",
+      "bytes": 40070185
+    },
+    {
+      "path": "qc/current_panel_acquisition_coverage.json",
+      "sha256": "2bf4699dd3feefc0020f42e88feebf0373ccfd216598838cb15ba5759124dd3a",
+      "bytes": 257
+    },
+    {
+      "path": "analysis/sequence_qc/d64e016face251f1/input_manifest.json",
+      "sha256": "89f43f0df3a9d12e8ac619acb80987846bf0fe3801e528b00780eefbd570a7f8",
+      "bytes": 2619072
+    },
+    {
+      "path": "state/acquisition_last_exit.json",
+      "sha256": "35612b3aa4ed73f6eb12e1fa50071b5a6c09d6d857bc3084ddad3ebca8d8bfc3",
+      "bytes": 58980
+    },
+    {
+      "path": "metadata/acquisition_replacements_20261026T163425Z_346dc10a_audit.json",
+      "sha256": "e0eb618873a71fe8720bea8573747848ad116e58e0ed589f88befe599f39b131",
+      "bytes": 10918
+    },
+    {
+      "path": "metadata/acquisition_batch_001.json",
+      "sha256": "346dc10aef468d0d0036569d2eac366348d9a04c7e786f124ee15bb7031610d0",
+      "bytes": 1446257
+    },
+    {
+      "path": "metadata/acquisition_batch_002.json",
+      "sha256": "b0e755d14da54ccd0c8a3b300f424793914968c5d8a7ff60c142eded4cea68ac",
+      "bytes": 52953
+    },
+    {
+      "path": "metadata/acquisition_batch_002_fullpanel.json",
+      "sha256": "373f4aed58fd9a2ef672a92e4532216109cae7e40fc14f643e38bde38f8f999b",
+      "bytes": 1448243
+    },
+    {
+      "path": "metadata/acquisition_batch_003_provenance_corrected.json",
+      "sha256": "2d0a92c06cb2bf78fd96128b7f8af85b8e2e288b1500ecbcacaa8303592b3a4f",
+      "bytes": 348979
+    },
+    {
+      "path": "metadata/acquisition_qc_review_only.json",
+      "sha256": "a63452f76ed4295f925bc84a4893f2f524483a17466917a2c86ac3c5ca50dbcc",
+      "bytes": 70851
+    },
+    {
+      "path": "metadata/acquisition_replacements_20261026T163425Z_346dc10a.json",
+      "sha256": "04120c2286cfa65f91ea0bcb4dbddb0da2b914400028429c4e5ec56c38b224b4",
+      "bytes": 1689
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T155316Z-659e9d2c.json",
+      "sha256": "482d3bfafe64a996908e7066b528d069ea7dfe9f77b4d16baf0c7a32b875746d",
+      "bytes": 4702
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T155615Z-d9884ae6.json",
+      "sha256": "1b39f1c8fc062184b0c4acb05c0587cd959c6006bf3a92629aa411d07708a37b",
+      "bytes": 2178
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T155707Z-c5e4bd69.json",
+      "sha256": "3193518bbcf9cb25de540c083fe7f582e2046552ca9f6c35f149182bc2169a65",
+      "bytes": 426147
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T163426Z-b42d4232.json",
+      "sha256": "ef87098c1ceee388796e9f215b80b31531bb2fb2974e49646cf872cea41450ea",
+      "bytes": 15410
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T163525Z-5f2eed1f.json",
+      "sha256": "5064ebe46a6079e258bda53b0025f810f274937b9e3a17d321fc31a2a23ca1d5",
+      "bytes": 10176
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T163647Z-5201974f.json",
+      "sha256": "2e1dc984978cadb4f60b64d40a081d085a978f5474eda954eb6a74d81d051dd1",
+      "bytes": 870
+    },
+    {
+      "path": "logs/acquisition_exit_20261026T165831Z-e8606030.json",
+      "sha256": "35612b3aa4ed73f6eb12e1fa50071b5a6c09d6d857bc3084ddad3ebca8d8bfc3",
+      "bytes": 58980
+    },
+    {
+      "path": "state/acquisition_progress.json",
+      "sha256": "9fca0ae90413cd8f60c32a24bf1e56d80a7cfbea0da9e570f3fdb6a46572cefa",
+      "bytes": 58660
+    }
+  ],
+  "scope": "New WD project only; no genome/FAA/pickle/model/caller/S1 runtime or network access",
+  "counts": {
+    "bound_panel_accessions": 1000,
+    "bound_panel_accessions_acquired": 991,
+    "missing_balanced_strain_accessions": 9,
+    "missing_species_labels_among_these_nine": 0,
+    "audited_acquisition_receipts": 1170,
+    "same_number_paired_or_version_substitutes_among1170": 0,
+    "missing_accessions_with_recorded_attempt_or_rejection": 0,
+    "all_nine_labels_have_source_supported_bound_and_824_screened_alternate": 9,
+    "different_rejected_accessions_for_same_nine_labels": 5,
+    "related_rejection_receipts": 10,
+    "recorded_progress_entries_for_missing_accessions": 0
+  },
+  "chronology": {
+    "last_recorded_acquisition_end_utc": "2026-10-26T17:01:38.524286+00:00",
+    "final_bound_panel_selection_utc": "2026-10-26T17:03:08.364814+00:00",
+    "evidence_conclusion": "Final bound selection postdates the last recorded acquisition and its nine balanced additions are absent from every recorded immutable batch. No local attempt, HTTP error, technical rejection or acquired paired/version alias explains these exact IDs.",
+    "causal_limit": "The recorded scheduling mismatch is established; no claim is made about an unlogged external action or current remote availability."
+  },
+  "records": [
+    {
+      "original_provisional_accession": "GCF_039544835.1",
+      "paired_accession_in_local_catalog": "GCA_039544835.1",
+      "current_accession_in_local_catalog": "GCF_039544835.1",
+      "species_label": "Alloiococcus otitis",
+      "species_taxid": 1652,
+      "biosample": "SAMD00538776",
+      "strain": "NBRC 15545",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 747,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_900445205.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_900445205.1",
+          "species_label": "Alloiococcus otitis",
+          "species_taxid": 1652,
+          "local_paired_accession": "GCA_900445205.1",
+          "local_current_accession": "GCF_900445205.1",
+          "biosample": "SAMEA4535746",
+          "strain": "NCTC13840",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_900445205.1/acquisition_receipt.json",
+            "sha256": "cdd8dbfc7046089ffdee661d94ed8462a1423732e0b637389c6e9e09684de9d1",
+            "bytes": 5000
+          },
+          "source_report_sha256": "e7998a20fcd775dba29f526bef80ccedeaee087e065c27a56cbd86dd3e0abb8b",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [
+        {
+          "accession": "GCF_000315445.1",
+          "run_id": "20261026T155707Z-c5e4bd69",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.012476502770957092,
+          "receipt": {
+            "path": "work/rejected/GCF_000315445.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+            "sha256": "33c67f241a81375fe6c36afdf1fb762d768a11e2e2cdeb997ddd865a41f801bd",
+            "bytes": 3648
+          },
+          "unchanged_retry_authorized": false
+        },
+        {
+          "accession": "GCF_000315445.1",
+          "run_id": "20261026T165831Z-e8606030",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.012476502770957092,
+          "receipt": {
+            "path": "work/rejected/GCF_000315445.1-20261026T165831Z-e8606030/rejection_receipt.json",
+            "sha256": "57f5c0f9937106f33a2d5da53f85acd9dce4fd4baf87abd0ae1d2637273be9f3",
+            "bytes": 4833
+          },
+          "unchanged_retry_authorized": false
+        }
+      ],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_000407365.1",
+      "paired_accession_in_local_catalog": "GCA_000407365.1",
+      "current_accession_in_local_catalog": "GCF_000407365.1",
+      "species_label": "Enterococcus asini",
+      "species_taxid": 57732,
+      "biosample": "SAMN02596946",
+      "strain": "ATCC 700915",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 873,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_001885725.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_001885725.1",
+          "species_label": "Enterococcus asini",
+          "species_taxid": 57732,
+          "local_paired_accession": "GCA_001885725.1",
+          "local_current_accession": "GCF_001885725.1",
+          "biosample": "SAMN03267161",
+          "strain": "DSM 11492",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_001885725.1/acquisition_receipt.json",
+            "sha256": "916f57503f322deca414e6bbd691a5ef7caedfd3e66b4e3afb23c9a4fd857626",
+            "bytes": 5027
+          },
+          "source_report_sha256": "a25b45751909ddc92eb9cb9e2976453f1c8ce10b7cf2b7d73f8c9c3d20c88c05",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [
+        {
+          "accession": "GCF_000393955.1",
+          "run_id": "20261026T155707Z-c5e4bd69",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.015379855652235482,
+          "receipt": {
+            "path": "work/rejected/GCF_000393955.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+            "sha256": "9b08bbf5f400a81a5d8d21e36dc61a823a61d814553c2006a1b543499fe067af",
+            "bytes": 3596
+          },
+          "unchanged_retry_authorized": false
+        },
+        {
+          "accession": "GCF_000393955.1",
+          "run_id": "20261026T165831Z-e8606030",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.015379855652235482,
+          "receipt": {
+            "path": "work/rejected/GCF_000393955.1-20261026T165831Z-e8606030/rejection_receipt.json",
+            "sha256": "cf99015a546264cc52dbc70e1f29c7229bf870ea5d61e34cce99e832c0aa586f",
+            "bytes": 4524
+          },
+          "unchanged_retry_authorized": false
+        }
+      ],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_001885995.1",
+      "paired_accession_in_local_catalog": "GCA_001885995.1",
+      "current_accession_in_local_catalog": "GCF_001885995.1",
+      "species_label": "Enterococcus italicus",
+      "species_taxid": 246144,
+      "biosample": "SAMN03267176",
+      "strain": "DSM 15952",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 903,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_053761085.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_023743875.1",
+          "species_label": "Enterococcus italicus",
+          "species_taxid": 246144,
+          "local_paired_accession": "GCA_023743875.1",
+          "local_current_accession": "GCF_023743875.1",
+          "biosample": "SAMN28911231",
+          "strain": "DRD-111",
+          "source_disposition": "HOLD",
+          "holds_preserved": [
+            "HOLD_ISOLATE_SOURCE_UNRESOLVED"
+          ],
+          "in_bound_provisional_panel": false,
+          "in_824_DNA_consistency_screen": false,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_023743875.1/acquisition_receipt.json",
+            "sha256": "1cdf67da46eeda8d55e52a90bda15bb4c90698bbe3f6b2fa063b75e056fae2b8",
+            "bytes": 5015
+          },
+          "source_report_sha256": "c428ed38d043bc7ef0811ea620d794b15692b0c557b1ffac6d22060b893dabec",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        },
+        {
+          "accession": "GCF_053761085.1",
+          "species_label": "Enterococcus italicus",
+          "species_taxid": 246144,
+          "local_paired_accession": "GCA_053761085.1",
+          "local_current_accession": "GCF_053761085.1",
+          "biosample": "SAMN53316627",
+          "strain": "SS1773",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_053761085.1/acquisition_receipt.json",
+            "sha256": "a1b094083b6954dff6cff67bea7cabceddc7bfbd466390f9ff3c8cf76eec81fd",
+            "bytes": 6231
+          },
+          "source_report_sha256": "5f1a4dbe2275b428c98d4e56d6f15ee6cf4015608aae048bc2cfc724702a7574",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [
+        {
+          "accession": "GCF_000185365.1",
+          "run_id": "20261026T155707Z-c5e4bd69",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.044478654583928724,
+          "receipt": {
+            "path": "work/rejected/GCF_000185365.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+            "sha256": "b5f09f4b0112e3bba6ab4d710dd5eaca980cee9d124868e31deaf9eeb7cafd26",
+            "bytes": 3587
+          },
+          "unchanged_retry_authorized": false
+        },
+        {
+          "accession": "GCF_000185365.1",
+          "run_id": "20261026T165831Z-e8606030",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.044478654583928724,
+          "receipt": {
+            "path": "work/rejected/GCF_000185365.1-20261026T165831Z-e8606030/rejection_receipt.json",
+            "sha256": "00d69583c4aaf4e98b44ef65569a61d116891dccd9e7081e8fcedf797cb3dd5c",
+            "bytes": 4923
+          },
+          "unchanged_retry_authorized": false
+        }
+      ],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_000260755.1",
+      "paired_accession_in_local_catalog": "GCA_000260755.1",
+      "current_accession_in_local_catalog": "GCF_000260755.1",
+      "species_label": "Streptococcus infantis",
+      "species_taxid": 68892,
+      "biosample": "SAMN00761850",
+      "strain": "ATCC 700779",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 963,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_053205985.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_053205985.1",
+          "species_label": "Streptococcus infantis",
+          "species_taxid": 68892,
+          "local_paired_accession": "GCA_053205985.1",
+          "local_current_accession": "GCF_053205985.1",
+          "biosample": "SAMN52092829",
+          "strain": "SS1641",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_053205985.1/acquisition_receipt.json",
+            "sha256": "26dcfc7bfcf256135866ab981bded22f342f7e0243ed7740859fb34606561c66",
+            "bytes": 6230
+          },
+          "source_report_sha256": "71a0b5fd79a4100f675065ef2e75fc92d9db8fafad4e13a41b0fa5c628f54b13",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        },
+        {
+          "accession": "GCF_988228545.1",
+          "species_label": "Streptococcus infantis",
+          "species_taxid": 68892,
+          "local_paired_accession": "GCA_988228545.1",
+          "local_current_accession": "GCF_988228545.1",
+          "biosample": "SAMEA123409258",
+          "strain": "AF117-1-104",
+          "source_disposition": "HOLD",
+          "holds_preserved": [
+            "HOLD_ISOLATE_SOURCE_UNRESOLVED"
+          ],
+          "in_bound_provisional_panel": false,
+          "in_824_DNA_consistency_screen": false,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_988228545.1/acquisition_receipt.json",
+            "sha256": "c18a75ef5711719f6cfbf4b7fb441829d140ef318899bae8508b5d5f78ca58ea",
+            "bytes": 4992
+          },
+          "source_report_sha256": "505c6f59c41bf340c038454292c7046ccf084192d407632397f09eaed538c5f3",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [
+        {
+          "accession": "GCF_000187465.1",
+          "run_id": "20261026T155707Z-c5e4bd69",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.0113757513179544,
+          "receipt": {
+            "path": "work/rejected/GCF_000187465.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+            "sha256": "b605fb7bd7379dcae94eb08310a11268a70fb37d60457a5afc066ceb9284159f",
+            "bytes": 3655
+          },
+          "unchanged_retry_authorized": false
+        },
+        {
+          "accession": "GCF_000187465.1",
+          "run_id": "20261026T165831Z-e8606030",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.0113757513179544,
+          "receipt": {
+            "path": "work/rejected/GCF_000187465.1-20261026T165831Z-e8606030/rejection_receipt.json",
+            "sha256": "2edcc4a0844e442c76d049b3d55986759a105395e20c3e233fcfbc1239d16367",
+            "bytes": 4982
+          },
+          "unchanged_retry_authorized": false
+        }
+      ],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_001434465.1",
+      "paired_accession_in_local_catalog": "GCA_001434465.1",
+      "current_accession_in_local_catalog": "GCF_001434465.1",
+      "species_label": "Limosilactobacillus oris",
+      "species_taxid": 1632,
+      "biosample": "SAMN02369408",
+      "strain": "DSM 4864",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 986,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_025311495.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_025311495.1",
+          "species_label": "Limosilactobacillus oris",
+          "species_taxid": 1632,
+          "local_paired_accession": "GCA_025311495.1",
+          "local_current_accession": "GCF_025311495.1",
+          "biosample": "SAMN30837125",
+          "strain": "AM_LB10",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_025311495.1/acquisition_receipt.json",
+            "sha256": "790f24e6b8aa99d01e63ac8534e1beec50bf7566663f7367e8cfd2a52a77264c",
+            "bytes": 5055
+          },
+          "source_report_sha256": "a7c23c34d9f0c29efbeed5ee55c7bf757ba0428cb91d0235be3445076f15376d",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        },
+        {
+          "accession": "GCF_030053195.1",
+          "species_label": "Limosilactobacillus oris",
+          "species_taxid": 1632,
+          "local_paired_accession": "GCA_030053195.1",
+          "local_current_accession": "GCF_030053195.1",
+          "biosample": "SAMN35006292",
+          "strain": "BSLO1801",
+          "source_disposition": "HOLD",
+          "holds_preserved": [
+            "HOLD_ISOLATE_SOURCE_UNRESOLVED"
+          ],
+          "in_bound_provisional_panel": false,
+          "in_824_DNA_consistency_screen": false,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_030053195.1/acquisition_receipt.json",
+            "sha256": "da2a591f58e0d73f847621660eb5cd183c7bbb4ae9bf5490e4bf257618f2c120",
+            "bytes": 5013
+          },
+          "source_report_sha256": "86eeda08dc4b1b99555baae6b40c98b59c18effb031bdf994cdb6537e845101a",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_053207465.1",
+      "paired_accession_in_local_catalog": "GCA_053207465.1",
+      "current_accession_in_local_catalog": "GCF_053207465.1",
+      "species_label": "Streptococcus australis",
+      "species_taxid": 113107,
+      "biosample": "SAMN52092843",
+      "strain": "SS1708",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 995,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_900476055.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_900476055.1",
+          "species_label": "Streptococcus australis",
+          "species_taxid": 113107,
+          "local_paired_accession": "GCA_900476055.1",
+          "local_current_accession": "GCF_900476055.1",
+          "biosample": "SAMEA103899862",
+          "strain": "NCTC13166",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_900476055.1/acquisition_receipt.json",
+            "sha256": "13129bf91b720a9b2ab44d417d4b5c05f51a157496e86383c1d249091d48c238",
+            "bytes": 5117
+          },
+          "source_report_sha256": "6bad6f876d9dc6e8a3df83527b4303d614e82da688f0b27ad16c52911fe62bd8",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [
+        {
+          "accession": "GCF_000186465.1",
+          "run_id": "20261026T155707Z-c5e4bd69",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.010361261492624485,
+          "receipt": {
+            "path": "work/rejected/GCF_000186465.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+            "sha256": "f913c38385b850d5f895b1a6e6beade6ffa87b1a569b1498460a1b6848f98d6c",
+            "bytes": 3604
+          },
+          "unchanged_retry_authorized": false
+        },
+        {
+          "accession": "GCF_000186465.1",
+          "run_id": "20261026T165831Z-e8606030",
+          "recorded_status": "FAIL_SEQUENCE_QC",
+          "reason": "Genomic FASTA ambiguous fraction exceeds 1%",
+          "recorded_ambiguous_fraction": 0.010361261492624485,
+          "receipt": {
+            "path": "work/rejected/GCF_000186465.1-20261026T165831Z-e8606030/rejection_receipt.json",
+            "sha256": "b77eb3c43e7fc7f1305c6d267f5fb65fae3d9f42743a2e3c9238a11441a6fcb6",
+            "bytes": 4942
+          },
+          "unchanged_retry_authorized": false
+        }
+      ],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_005405465.1",
+      "paired_accession_in_local_catalog": "GCA_005405465.1",
+      "current_accession_in_local_catalog": "GCF_005405465.1",
+      "species_label": "Weissella thailandensis",
+      "species_taxid": 89061,
+      "biosample": "SAMD00164319",
+      "strain": "JCM 10695",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 998,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_001932615.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_001932615.1",
+          "species_label": "Weissella thailandensis",
+          "species_taxid": 89061,
+          "local_paired_accession": "GCA_001932615.1",
+          "local_current_accession": "GCF_001932615.1",
+          "biosample": "SAMN04193338",
+          "strain": "FOL01",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_001932615.1/acquisition_receipt.json",
+            "sha256": "1dd52391abde637b8b5c0306b616d3c5b9e83d447ab3fa1abc541611265d1414",
+            "bytes": 5039
+          },
+          "source_report_sha256": "c85fc4b9b7485780e7c2318b5f871c5f1650b223d2b242273738589a3d226004",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_053203605.1",
+      "paired_accession_in_local_catalog": "GCA_053203605.1",
+      "current_accession_in_local_catalog": "GCF_053203605.1",
+      "species_label": "Streptococcus pseudoporcinus",
+      "species_taxid": 361101,
+      "biosample": "SAMN52092875",
+      "strain": "SS1796",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 999,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_900637075.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_900637075.1",
+          "species_label": "Streptococcus pseudoporcinus",
+          "species_taxid": 361101,
+          "local_paired_accession": "GCA_900637075.1",
+          "local_current_accession": "GCF_900637075.1",
+          "biosample": "SAMEA4030748",
+          "strain": "NCTC13786",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_900637075.1/acquisition_receipt.json",
+            "sha256": "a0fa248b4e5bfa2c3251de6aa476e740b9ea98a7b26500b8280ead9ff1752069",
+            "bytes": 5125
+          },
+          "source_report_sha256": "619625a08fdda48a190d92e8b43bcc415d313180df8777823d7e3e9bb974b6ea",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    },
+    {
+      "original_provisional_accession": "GCF_007992055.1",
+      "paired_accession_in_local_catalog": "GCA_007992055.1",
+      "current_accession_in_local_catalog": "GCF_007992055.1",
+      "species_label": "Companilactobacillus mindensis",
+      "species_taxid": 167481,
+      "biosample": "SAMD00172649",
+      "strain": "NBRC 107162",
+      "selection_phase": "SPECIES_BALANCED_ADDITION",
+      "selection_index": 1000,
+      "metadata_qc_preserved": "QC_METADATA_PASS",
+      "source_assertion_preserved": "ISOLATE_SOURCE_SUPPORTED_NOT_INDEPENDENTLY_VERIFIED",
+      "raw_directory_present": false,
+      "recorded_acquisition_batch_membership": [],
+      "recorded_attempt_results": [],
+      "matching_package_partial_rejection_quarantine_or_staging_names": [],
+      "same_assembly_number_or_version_acquired": [],
+      "local_gap_classification": "FINAL_PANEL_BALANCED_STRAIN_ADDITION_NOT_SUBMITTED_IN_RECORDED_BATCHES",
+      "remote_availability_and_latest_version": "UNKNOWN_NOT_QUERIED",
+      "recorded_failure_of_this_accession": null,
+      "source_label_already_represented": true,
+      "primary_acquired_label_representative": "GCF_001434275.1",
+      "all_acquired_same_label_alternates": [
+        {
+          "accession": "GCF_001434275.1",
+          "species_label": "Companilactobacillus mindensis",
+          "species_taxid": 167481,
+          "local_paired_accession": "GCA_001434275.1",
+          "local_current_accession": "GCF_001434275.1",
+          "biosample": "SAMN02369489",
+          "strain": "DSM 14500",
+          "source_disposition": "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN",
+          "holds_preserved": [],
+          "in_bound_provisional_panel": true,
+          "in_824_DNA_consistency_screen": true,
+          "acquisition_validation": "PASS_WITH_NOTES",
+          "acquisition_receipt": {
+            "path": "raw/GCF_001434275.1/acquisition_receipt.json",
+            "sha256": "eb0d369f465d6cfd5a24a4b4e374ac84cd433e3c14716f74f44c26ca99705372",
+            "bytes": 5066
+          },
+          "source_report_sha256": "b83f4bf63a8caa6235bb37f285921eb0129500b8417ab6ffd0c1e9364812969d",
+          "biological_quality_acceptance": "NOT_GRANTED",
+          "taxonomy_acceptance": "NOT_GRANTED"
+        }
+      ],
+      "different_accession_technical_rejections_for_same_label": [],
+      "input_repair_required_now_for_label_coverage": false,
+      "biological_or_taxonomy_acceptance": null
+    }
+  ],
+  "next_input_repair": {
+    "required_now": false,
+    "action": "No download, retry or panel edit; retain nine pending optional strain slots and QC the acquired same-label representatives.",
+    "conditional_trigger_only": "If future independent QC/source/taxonomy decisions leave an eligible label without any acceptable acquired representative, separately review one accession-specific controlled input repair from the local corpus, or report the precise required current-version/source query before network access.",
+    "unchanged_technical_reject_retry": false,
+    "species_loss_on_metadata_alone": false
+  },
+  "limits": {
+    "acquisition_or_sequence_consistency_is_not_biological_QC": true,
+    "alternate_same_taxid_label_is_not_independent_taxonomic_authentication": true,
+    "all_source_holds_failed_receipts_and_original_accessions_retained": true,
+    "no_current58_plan_Ready_standard04_or_bound_provisional_panel_mutated": true,
+    "no_live_availability_or_latest_version_verified": true
+  },
+  "small_checkpoint_source_paths": [
+    "raw/GCF_001434275.1/acquisition_receipt.json",
+    "raw/GCF_001885725.1/acquisition_receipt.json",
+    "raw/GCF_001932615.1/acquisition_receipt.json",
+    "raw/GCF_023743875.1/acquisition_receipt.json",
+    "raw/GCF_025311495.1/acquisition_receipt.json",
+    "raw/GCF_030053195.1/acquisition_receipt.json",
+    "raw/GCF_053205985.1/acquisition_receipt.json",
+    "raw/GCF_053761085.1/acquisition_receipt.json",
+    "raw/GCF_900445205.1/acquisition_receipt.json",
+    "raw/GCF_900476055.1/acquisition_receipt.json",
+    "raw/GCF_900637075.1/acquisition_receipt.json",
+    "raw/GCF_988228545.1/acquisition_receipt.json",
+    "work/rejected/GCF_000185365.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+    "work/rejected/GCF_000185365.1-20261026T165831Z-e8606030/rejection_receipt.json",
+    "work/rejected/GCF_000186465.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+    "work/rejected/GCF_000186465.1-20261026T165831Z-e8606030/rejection_receipt.json",
+    "work/rejected/GCF_000187465.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+    "work/rejected/GCF_000187465.1-20261026T165831Z-e8606030/rejection_receipt.json",
+    "work/rejected/GCF_000315445.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+    "work/rejected/GCF_000315445.1-20261026T165831Z-e8606030/rejection_receipt.json",
+    "work/rejected/GCF_000393955.1-20261026T155707Z-c5e4bd69/rejection_receipt.json",
+    "work/rejected/GCF_000393955.1-20261026T165831Z-e8606030/rejection_receipt.json"
+  ]
+}

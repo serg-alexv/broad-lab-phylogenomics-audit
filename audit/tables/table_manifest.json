@@ -1,0 +1,304 @@
+{
+  "source_artifacts": {
+    "metadata/defence_preparation_queue_20261029/input_queue.json": {
+      "path": "metadata/defence_preparation_queue_20261029/input_queue.json",
+      "bytes": 3171469,
+      "sha256": "c388a286eefb552b8b213f862782dd92481a4de9d6c9b528180eae84c7d653a0"
+    },
+    "state/defence_campaign_v001/ledger.json": {
+      "path": "state/defence_campaign_v001/ledger.json",
+      "bytes": 149448,
+      "sha256": "26a671265c95764b3ee86e354e5addf2cb9baea815619bf7349e09f6666edc59"
+    },
+    "qc/source_provenance_audit.tsv": {
+      "path": "qc/source_provenance_audit.tsv",
+      "bytes": 1149003,
+      "sha256": "867a32586c223fe3ae52956cea89103237393e96fead001ac3f14ced5aa6d363"
+    },
+    "qc/acquisition_validation.tsv": {
+      "path": "qc/acquisition_validation.tsv",
+      "bytes": 395501,
+      "sha256": "699df6db88047e52473e7c83713016dec505ab78f9931d6accb2d765ec4bf2e0"
+    },
+    "metadata/provisional_panel.tsv": {
+      "path": "metadata/provisional_panel.tsv",
+      "bytes": 1351493,
+      "sha256": "c82708120eee6cd1d8f4ba3a278da29149ddb37860e9d8150b127d4dbe513a50"
+    },
+    "qc/checkm1_lactobacillales_all919_v001.tsv": {
+      "path": "qc/checkm1_lactobacillales_all919_v001.tsv",
+      "bytes": 335678,
+      "sha256": "c01c60230d96756623ef14545fb68c4f95fcffa8314148ab10f9b9ed57e37649"
+    },
+    "metadata/panel_critical_path_review_20261029/cohort_manifest_v001.json": {
+      "path": "metadata/panel_critical_path_review_20261029/cohort_manifest_v001.json",
+      "bytes": 5369503,
+      "sha256": "420e5da3f76d9312794ca27c73642ca7e66270154a9dc03cd0074cb35405329f"
+    },
+    "metadata/panel_critical_path_review_20261029/held19_manifest_v001.json": {
+      "path": "metadata/panel_critical_path_review_20261029/held19_manifest_v001.json",
+      "bytes": 119672,
+      "sha256": "fc2e9ea3d8dfd34c075c5423ea7f226b72f47a1681c97c4672e07ded6267ca03"
+    },
+    "metadata/panel_critical_path_review_20261029/composition_review_v001.json": {
+      "path": "metadata/panel_critical_path_review_20261029/composition_review_v001.json",
+      "bytes": 81195,
+      "sha256": "9b085498c2a12f1a57b464549269eacc7277ff9f014fc027a9b537a8954522e1"
+    },
+    "analysis/defence_bulk_C009_v003/COHORT_COMPLETE.json": {
+      "path": "analysis/defence_bulk_C009_v003/COHORT_COMPLETE.json",
+      "bytes": 14124,
+      "sha256": "e269dc900fab9385f95e79d66058de1705305b02b4a66c849716b7d6aaeecb45"
+    },
+    "work/defence_bulk_C009_v003/WSL_actual_exit.json": {
+      "path": "work/defence_bulk_C009_v003/WSL_actual_exit.json",
+      "bytes": 304,
+      "sha256": "412cc943c1d3dd0bd0aae1d2a71bb8f4ffcbbf6f631c7f75d0e297a90e25627c"
+    },
+    "state/local_continuation_v8/events/7111b588e3a5c92e03eb751c67d9f044a922f41fb3124da17d263d18cabcd625/early_worker_actual_exit.json": {
+      "path": "state/local_continuation_v8/events/7111b588e3a5c92e03eb751c67d9f044a922f41fb3124da17d263d18cabcd625/early_worker_actual_exit.json",
+      "bytes": 731,
+      "sha256": "a1fb8e7acb6dfe53ecfffd0c74709f8325fbc5f1b16824514a5e4ef4a84fd792"
+    },
+    "work/defence_C008_failed_c2ad/Root_C008_failed_disposition.json": {
+      "path": "work/defence_C008_failed_c2ad/Root_C008_failed_disposition.json",
+      "bytes": 5673,
+      "sha256": "33791635ce16838399f8fa0967ffb5252433d146549d3c6f48535f126f9e8751"
+    },
+    "work/stage09_accept_defence_1f62/Root_closed_stage09_computational_acceptance.json": {
+      "path": "work/stage09_accept_defence_1f62/Root_closed_stage09_computational_acceptance.json",
+      "bytes": 6482,
+      "sha256": "c78d354bce2eb2eb481591f9ea4b7afac5cb14b67f3a1b459f402fc0f2b075e7"
+    }
+  },
+  "accepted_cohort_evidence": [
+    {
+      "cohort": "C001",
+      "acceptance": {
+        "path": "work/defence_C001_accept_efb8/Root_closed_C001_acceptance.json",
+        "sha256": "e4c9d5f27de6c84873cc7f1cab90ef774a3391b7beae959fc5f45aa6ba633dc9",
+        "bytes": 6285
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/34948_134381806311821871.json",
+        "sha256": "e7ca825d2c1359c7bba72f14105a8eaa36219ce7ef3c690ce3fd87c5e5cd7be2",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C001_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "1c0c85f497bce591d03a3871f4107f3c6fa13d7206191fad08c06c8c0b60528e",
+        "bytes": 34568
+      }
+    },
+    {
+      "cohort": "C002",
+      "acceptance": {
+        "path": "work/defence_C002_accept_d60a/Root_closed_C002_acceptance.json",
+        "sha256": "b9ce10f10427c691b9911db474226d6464b5141b0e040fa57517a0e4105ff043",
+        "bytes": 6301
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/8992_134382015627004047.json",
+        "sha256": "98443faafe0b390fd68af47b31bcaef610afdd174fdbdef3caa1427758e08136",
+        "bytes": 661
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C002_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "e136216e568e982862ef585b550c1ab0b05c9bba645af9590e3749fea503db28",
+        "bytes": 34583
+      }
+    },
+    {
+      "cohort": "C003",
+      "acceptance": {
+        "path": "work/defence_C003_accept_f951/Root_closed_C003_acceptance.json",
+        "sha256": "1c6e6d2726956c48284a23c12953328a9f813cd52f1af39b7da29d93aadb9018",
+        "bytes": 6299
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/28456_134382215255340822.json",
+        "sha256": "1ba0ebdc931bf5d4763bf189cb43e01f4aacb5042a9e757c42a0ac7770c8c64e",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C003_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "9736ba3cf84a5e6c4ffc44301ce49b9ec1726f88ccc9df5195cafbecf921c11b",
+        "bytes": 34555
+      }
+    },
+    {
+      "cohort": "C004",
+      "acceptance": {
+        "path": "work/defence_C004_accept_9b1f/Root_closed_C004_acceptance.json",
+        "sha256": "54f4c550a6c4b31ec2d2149c64ec43e26a10b67d50a08f13184b090f27667b57",
+        "bytes": 6300
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/19224_134382422441307843.json",
+        "sha256": "b380546b82ef177ffcf86f532998d3c3ec3033dabc2d63c0db29fd4d263cf21e",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C004_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "f84d147076e2e7e05bd0ed879515d0c2c0d593da296b948d2a0488557508c33b",
+        "bytes": 34557
+      }
+    },
+    {
+      "cohort": "C005",
+      "acceptance": {
+        "path": "work/defence_C005_accept_520e/Root_closed_C005_acceptance.json",
+        "sha256": "5f2a961a7e09ba57808ee0e7c6481bc8e743ed15a1304d38198b2ed1f0a9bf66",
+        "bytes": 6904
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/25252_134382599189809673.json",
+        "sha256": "d604d3b38672d2b308615190ecb58b8c3d05f26460a9360388de706dad7e378a",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C005_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "09a0d7135e5fb460e30812b944508ba83a281e6527db6537fb1b1fbd88b8a3a0",
+        "bytes": 34546
+      }
+    },
+    {
+      "cohort": "C006",
+      "acceptance": {
+        "path": "work/defence_C006_accept_dc34/Root_closed_C006_acceptance.json",
+        "sha256": "53eb66fcf25ca2f2e6d62c3706bc41d5ccef84d63fc4f8f252f078aae1b8de5c",
+        "bytes": 6904
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/21784_134382749040770354.json",
+        "sha256": "424990cdfdbc40e912f9fa0fc3bed033a231916b54e8858dd370b65f43d9a95a",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C006_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "dc9bb542a7a391636c0f4a32d52a735c2e0061e9418919999c17e8108e3504d0",
+        "bytes": 34575
+      }
+    },
+    {
+      "cohort": "C007",
+      "acceptance": {
+        "path": "work/defence_C007_accept_cd67/Root_closed_C007_acceptance.json",
+        "sha256": "da09044b8d902063b9827fc157b555006c420dcfe8a808ba005918b9a7c42726",
+        "bytes": 6895
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v7/worker_exits/24888_134382906262352222.json",
+        "sha256": "2b30be8bfa3cd67bf43ad0f1f64f1126978081b1537bf36fb56f6eeea0fd0057",
+        "bytes": 662
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C007_file_QA_v001/validated_cohort_rows.json",
+        "sha256": "3cd61699b28581196302009f795ca19d38315758cea4438f521c780fae369d0b",
+        "bytes": 34567
+      }
+    },
+    {
+      "cohort": "C008",
+      "acceptance": {
+        "path": "work/defence_C008R_accept_ccbf/Root_closed_C008_acceptance.json",
+        "sha256": "1acfffc2b4e95e2c9aa289c14b77f4852ce9d173a29b1cf2704bd22311e635af",
+        "bytes": 9075
+      },
+      "typed_QA_actual_exit": {
+        "path": "state/local_continuation_v8/worker_exits/38160_134383474468316163.json",
+        "sha256": "9c4f2b305b58761a20733434c8a095a9849eddfb987e5b392a23c61e1d09b3d4",
+        "bytes": 655
+      },
+      "validated_rows": {
+        "path": "analysis/defence_C008R_file_QA_v003/validated_cohort_rows.json",
+        "sha256": "75d2059fa88855422cbf2abdaf627c0743b69064a63e2efa0c9d2f8f6355209b",
+        "bytes": 39268
+      }
+    },
+    {
+      "cohort": "ACCEPTED_PILOT_5",
+      "acceptance": {
+        "path": "work/defence_close_880c/Root_closed_defence_pilot_acceptance.json",
+        "sha256": "7561549422fffe67dcd5bd727dd1d9cb979b5aad90cfe61b6d15986568e7397c",
+        "bytes": 4030
+      },
+      "typed_QA_actual_exit": {
+        "path": "work/defence_close_880c/validation_v002_actual_exit.json",
+        "sha256": "d8953005f4faceede787f256abeef54e514d0f78c76e5401a6e87755d15c4db4",
+        "bytes": 758
+      },
+      "validated_rows": {
+        "path": "work/defence_close_880c/validated_pilot_rows.json",
+        "sha256": "35eda32e215ff1f9b693cef99d2cdb073cdef4aeb0d14039d4dc77bcd29ec00d",
+        "bytes": 8784
+      }
+    }
+  ],
+  "counts": {
+    "acquired": 1170,
+    "provisional_selection_total": 1000,
+    "acquired_in_provisional_selection": 991,
+    "source_audit_dispositions": {
+      "SOURCE_SUPPORTED_BIOLOGICAL_QC_NOT_RUN": 919,
+      "EXCLUDED_SOURCE": 28,
+      "HOLD": 223
+    },
+    "CheckM1_method_PASS_95_5": 919,
+    "frozen_defence_target": 919,
+    "full900_computational_tree": 900,
+    "full900_source_species": 684,
+    "held_from_full900": 19,
+    "full900_hold_reasons": {
+      "HELD_CROSS_METHOD_95_5_DISAGREEMENT": 2,
+      "HELD_SOURCE_ANI_INCONCLUSIVE_NOT_TAXONOMIC_FAIL": 13,
+      "EXCLUDED_FROM_PRIMARY_AMBIGUOUS_FRACTION_GT_0_005": 4
+    },
+    "full900_composition_flags": 9,
+    "CheckM2_diagnostic_rows": 17,
+    "defence_current_states": {
+      "CLOSED_PAIRED_PROTEIN_SCOPE_ACCEPTED": 165,
+      "NOT_RUN_UNKNOWN": 734,
+      "COMPUTED_PENDING_INDEPENDENT_QA": 20
+    },
+    "detector_states": {
+      "PADLOC": {
+        "ACCEPTED_PRIMARY_COMPLETE_PREDICTIONS": 162,
+        "NOT_RUN_UNKNOWN": 734,
+        "ACCEPTED_ZERO_COMPLETE_PREDICTIONS_IN_ASSESSED_SCOPE": 1,
+        "COMPUTED_PENDING_INDEPENDENT_QA": 20,
+        "ACCEPTED_ZERO_PRIMARY_WITH_OTHER_COMPLETE_STOCK_CALLS": 2
+      },
+      "DefenseFinder": {
+        "ACCEPTED_PRIMARY_COMPLETE_PREDICTIONS": 163,
+        "NOT_RUN_UNKNOWN": 734,
+        "ACCEPTED_ZERO_COMPLETE_PREDICTIONS_IN_ASSESSED_SCOPE": 2,
+        "COMPUTED_PENDING_INDEPENDENT_QA": 20
+      }
+    }
+  },
+  "publication_limits": [
+    "No genome nucleotide payload",
+    "Accepted results are model-relative predicted systems",
+    "Numerical CheckM1 method pass is separate from taxonomy or final panel acceptance",
+    "C009 actual native/WSL exits zero establish computed output only",
+    "Blank counts are unavailable or outside accepted scope, never zeros",
+    "RNA and other unavailable or excluded model scope stays UNKNOWN",
+    "C008 failed adapter output is historical and independently recovered"
+  ],
+  "schema": "TREE2_LIGHTWEIGHT_COHORT_DEFENCE_TABLES_V001",
+  "status": "PASS",
+  "outputs": {
+    "acquired_genomes.tsv": {
+      "sha256": "5ff4245b30d2afcf5c8bbaaf72660a62f38ffe454a99db1a868b7cc1af155174",
+      "bytes": 637218,
+      "rows": 1170
+    },
+    "defence_status.tsv": {
+      "sha256": "c93effcf0b1362f4f45ccb3fe88f6f3adbb7453f20589b6737b1f69a80fd4c20",
+      "bytes": 380176,
+      "rows": 919
+    }
+  },
+  "created_utc": "2026-11-05T17:31:31.515723+00:00"
+}

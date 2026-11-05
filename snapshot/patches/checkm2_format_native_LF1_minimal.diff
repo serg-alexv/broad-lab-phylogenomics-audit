@@ -1,0 +1,20 @@
+--- scripts/checkm2_format_native_v002.py
++++ scripts/checkm2_format_native_v002_LF1.py
+@@ -26,7 +26,7 @@
+  native=(R/'state/checkm2_pilot_launcher.lock').open('r+b');native.seek(0);msvcrt.locking(native.fileno(),msvcrt.LK_NBLCK,1)
+  install=(R/'state/checkm2_install.lock').open('r+b');install.seek(0);msvcrt.locking(install.fileno(),msvcrt.LK_NBLCK,1)
+  c.E.mkdir(parents=True,exist_ok=True)
+- with (c.E/'native_once_claim.json').open('x') as f:json.dump({'at_utc':base.utc(),'native_owner':base.OWNER,'token':TOKEN,'input_plan_sha256':a.input_plan_sha256,'protocol_admission_sha256':c.v.sha(c.ADMISSION)},f);f.flush();os.fsync(f.fileno())
++ with (c.E/'native_once_claim_LF1.json').open('x') as f:json.dump({'at_utc':base.utc(),'native_owner':base.OWNER,'token':TOKEN,'input_plan_sha256':a.input_plan_sha256,'protocol_admission_sha256':c.v.sha(c.ADMISSION)},f);f.flush();os.fsync(f.fileno())
+  previous=R/'state/stages/04.json'
+  if previous.exists():c.v.save(c.E/'previous_stage04_registration.json',c.v.read(previous))
+  registry_before=base.private.registry();bio_before=file_state(R/'state/STOP_CHECKM2_PILOT');child=None;child_id=None;code=None;closed=False;envelope=None;run=None;guest_closed=False;error=None;status='CONTROL_FAILED_OR_CLOSURE_UNPROVEN'
+@@ -40,7 +40,7 @@
+   with (requests/(TOKEN+'.json')).open('x') as f:json.dump(request,f,indent=2);f.flush();os.fsync(f.fileno())
+   env={**os.environ,'TREE2_CHECKM2_PILOT_LAUNCH_TOKEN':TOKEN,'PYTHONDONTWRITEBYTECODE':'1','PYTHONNOUSERSITE':'1'}
+   with (c.E/'namespace_stdout.txt').open('w') as out,(c.E/'namespace_stderr.txt').open('w') as err:
+-   child=subprocess.Popen(['wsl','-d','Ubuntu','--','/bin/bash',base.L+'/scripts/checkm2_private_setup_ns.sh','outer','run',base.L+'/scripts/checkm2_format_v002.sh'],env=env,stdout=out,stderr=err)
++   child=subprocess.Popen(['wsl','-d','Ubuntu','--','/bin/bash',base.L+'/scripts/checkm2_private_setup_ns.sh','outer','run',base.L+'/scripts/checkm2_format_v002_LF1.sh'],env=env,stdout=out,stderr=err)
+    child_id=identity(child);launch['wsl_child']=child_id;c.v.save(c.LAUNCH,launch)
+    deadline=time.monotonic()+2700;last=0
+    while child.poll() is None:

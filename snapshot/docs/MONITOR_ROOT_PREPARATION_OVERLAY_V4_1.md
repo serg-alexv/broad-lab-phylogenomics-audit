@@ -1,0 +1,9 @@
+# Local-controller preparation overlay
+
+This source-only amendment leaves the running V4 GUI and every scientific source unchanged. The actual display-only focus action minimized old V3 PID22744 and brought V4 PID24796 to the foreground after exact FILETIME, project-command and HWND-owner checks. Both processes remain alive; monitor_current_roles.json is unchanged. The separate receipt is state/monitor_display_v4/window_focus_receipt.json.
+
+V4.1 resolves the current runtime pointer and hash-bound controller role, checks the controller's actual process birth/source path, reads public AI_TURN_ACTIVE metadata and its exact checkpoint/event binding, then checks the current CLI's actual birth, executable family and parent dispatcher. It reads no prompts, model output, private Codex sessions or authentication. A completed-turn public marker selects CLI cleanup rather than preparation.
+
+When no live scientific workflow owner is registered, that verified local activity can label the current mode PREPARATION. It cannot imply genome processing or overwrite a live scientific unit. The original stage remains unchanged, and a separately hash-bound last failed attempt remains visible as historical TIMEOUT/native2/WSL1 rather than being presented as the current activity. Method-estimate counts still come from the existing verified registry/queue logic.
+
+Five pure overlay cases passed, including preservation of the failed outcome, no input mutation, refusal of unverified controller data, precedence of a live scientific owner, and completed-CLI cleanup. A read-only -Once preview verified current Root/CLI births and displayed PREPARATION, LAST FAILED ATTEMPT TIMEOUT,0/19 current job, and15/919 accepted method estimates. It did not start a GUI, controller, model or scientific worker. The visible GUI remains V4 pending Root's separate display-source handoff;30-second cadence, QuickEdit isolation and stable-frame behavior carry forward.

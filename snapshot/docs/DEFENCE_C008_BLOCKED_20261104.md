@@ -1,0 +1,17 @@
+C008 is blocked on a stock-output adapter contract, with no automatic recovery admission.
+
+The exact retained native owner was PID 13032, creation FILETIME 134382944895290986. Its actual exit was 1; its retained WSL child 12032/134382944900677022 also exited 1. The terminal event is `a3f548ce856941104a24f0f6680ad636145251b8d18d1aea77dad0d48c84c93d`, SHA256 `c2ad6ee6d6added3da601109d0bf4ae8d4e8bf45027c3142809baccde1f707a1`.
+
+For GCF_000219805.1, stock PADLOC and its typed HMMER child both exited 0. The complete HMMER raw output is preserved. Stock stdout reports “Nothing found for padloc_canonical.” The pinned `usr/local/bin/padloc.R` writes CSV/GFF only for a nonempty assembled system table (lines 869–881). The V002 adapter at `scripts/defence_bulk_v002.py:67` unconditionally requires the CSV and therefore rejected this normal stock output convention. The raw domain output contains hits; neither zero HMMER hits nor biological absence follows from this failure.
+
+Eight prior PADLOC phases remain committed pending independent QA. The ninth stock unit's raw output and actual exits remain uncommitted by the adapter. Eleven PADLOC units and all 20 DefenseFinder units were not run. No complete paired genome was accepted from C008. All source, taxonomy, orthology, method, quality and unavailable-feature UNKNOWN holds remain.
+
+No measured resource guard failure occurred: native plus retained WSL peaked at 28,971,008 bytes; the highest sampled unit owned Linux RSS plus used private RAM was 1,371,189,248 bytes; minimum sampled Linux available memory was 1,936,584,704 bytes. The original 1.75 GiB/1.25 GiB/128 MiB/40 GiB guards and finite budgets remain unchanged.
+
+Fresh closure found no matching owner among all 37 captured Linux identities, no members of the 10 groups, no private mount/IPC namespace or namespace-FD references, no owned output/RAM FDs, no unapproved scientific owners, and no old runtime loop. Native and Linux common/stage leases were reacquired and released unchanged. This proof uses typed retained exits and a fresh complete census.
+
+The immutable recovery snapshot is [SNAPSHOT_COMMITTED.json](../recovery/defence_C008_failed_c2ad/SNAPSHOT_COMMITTED.json). It preserves the entire quiescent C008 work/output/plan metadata, source records, empty directories and symlink. All 275 regular files (135,821,338 source bytes), archive members and symlink targets were verified; all source trees were enumerated and posthashed again. Archive SHA256: `a53998bb2ef75b96d68ee35176173d7f4f1b773dc0b0851c74460debfefabcfd`.
+
+C008 consumed 891.1653609039786 scientific seconds and 923.4845150530164 cold seconds. Its evidence preservation is separate from science and independent scientific QA. The failure transaction retains cumulative defence scientific seconds 68216.74891608392, cold seconds 100395.33115186603, and prior closed file-QA wall seconds 28460.453000000038. All prior accepted rows and costs remain unchanged.
+
+The ledger has 145 accepted paired protein-model dispositions, 20 C008 failed/partial UNKNOWN dispositions, and 754 other not-run UNKNOWN entries. The C008 reservation and one-shot claims remain consumed; C009 is not reserved. No report was fabricated, checkpoint edited, successful search replayed, source repaired, resource guard relaxed, or new science/controller/GUI/publisher launched. Full scientific/tree/ring acceptance remains pending; 3D remains deferred.

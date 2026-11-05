@@ -1,0 +1,21 @@
+# CheckM1 Lactobacillales pilot18
+
+Proceed with the supported CheckM1 1.2.5 taxonomic workflow as a distinct primary marker-QC method: `taxon_set order Lactobacillales`, protein-input `analyze`, then `qa`. This route does not call tree placement, pplacer, DIAMOND or Prodigal. It reuses the actual closed uniform annotation artifacts and preserves all previous method results, failed claims, costs and source/taxonomy holds.
+
+The source database has 490 Lactobacillales references. Its raw order row has337 markers in184 collocated sets. Stock exclusion of TIGR00398/TIGR00399 yields335 markers in183 nonempty sets. The stock marker file also retains ancestors, so its HMM extraction union is367; do not reject that inventory for exceeding335. Both distinctions are verified in the packaged source and immutable local inspection receipts.
+
+This is scientifically appropriate for source-supported Lactobacillales, with limitations. The original paper supports lineage-specific collocated marker sets and documents poorer interpretation for reduced, poorly represented genomes. Marker loss can underestimate completeness; duplicate-marker counts are a contamination proxy, and foreign DNA without duplicated markers can escape detection. Closer lineage sets can be more informative than a single order set. These limitations require row review, not tuning the marker list to obtain a desired score. [Parks et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4484387/).
+
+The frozen selection is18 bins:13 existing accepted CheckM2 diagnostic controls and all5 historical donors. It includes all five families, Apilactobacillus micheneri with CheckM2 completeness94.62 and Dolosigranulum pigrum with contamination5.62. Each actual acquisition receipt explicitly records order Lactobacillales/taxid186826. This verifies source assignment, not independent sequence taxonomy.
+
+Use byte-identical original `prodigal.faa` contents staged under unique `<accession>.faa` filenames. Original headers support stock adjacent-ORF correction; renamed canonical IDs do not. Canonical FAA, GFF, coordinate map and FNA structural receipts remain bound crossrefs. Do not accept protein-input size/GC/N50 columns as DNA measurements.
+
+Pilot GO requires all18 named outputs, actual successful process/group closure, fixed model thresholds/corrections, finite scores, retained missing/multicopy-marker evidence and independent set-weighted score recomputation. A main-process zero alone is insufficient because stock worker exceptions may be caught. Completeness averages per-set marker presence; contamination averages per-set excess copies. Contamination may exceed100 and must not be clamped or reduced by strain heterogeneity.
+
+The unchanged95/5 criteria classify individual rows; all18 need not pass for the method to work. CheckM2 differences are diagnostic: flag greater than5 percentage points completeness, greater than3 contamination, or a95/5 classification flip for review. Exact agreement is not required. Different original protein inputs remain visible. Proposed limits are one thread, total2GiB RSS, available memory at least1GiB, disk reserve40GiB, analyze1800s, QA/file validation300s and cold3600s, subject to Root admission and actual fit.
+
+The latest CheckM2 attempt spent1846.642s searching,59.639s validating raw output and22.658s in the failed control comparison, within a2630.298s context. Its serial/shared control has895/897 rows and11 changed or added queries, including two added KOs. It stayed within its memory guard; the hold is a real scientific-equivalence failure with an unknown mechanism, not a demonstrated RAM or timeout failure.
+
+The saved17-query raw search can support an optional separately admitted CheckM2 batch-profile crosscheck without repeating DIAMOND. Preserve the failed equivalence gate and disclose its changed raw/model inputs. One genuine stock-resume batch and full own-row feature validation would be new work, not rescue of an existing prediction. This secondary route must not delay the primary CheckM1 pilot or overwrite accepted serial estimates.
+
+Frozen metadata: `metadata/checkm1_lactobacillales_pilot18_v001/selection_ready.json`. No runtime, model, FAA/FNA/GFF payload read, staging or scientific execution was performed by this review/selection.

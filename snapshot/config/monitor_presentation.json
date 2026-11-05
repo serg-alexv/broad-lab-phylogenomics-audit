@@ -1,0 +1,9 @@
+{
+  "schema": "TREE2_MONITOR_PRESENTATION_POLICY_V001",
+  "at_utc": "2026-10-27T10:23:47.064436+00:00",
+  "user_instruction": "Monitor updates every30seconds; supersedes earlier3-5second display rules",
+  "visible_refresh_seconds": 30,
+  "preparation_observer_interval_seconds": 30,
+  "scientific_resource_ownership_polling_unchanged": true,
+  "no_active_scientific_worker_source_edits": true
+}

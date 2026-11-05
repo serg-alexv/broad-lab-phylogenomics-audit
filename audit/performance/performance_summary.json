@@ -1,0 +1,28 @@
+{
+  "ledger_revision": "CLOSE_C008_RECOVERY_1acfffc2b4e95e2c9aa289c14b77f485",
+  "ledger_source_supported_genomes": 919,
+  "closed_accepted_paired_genomes": 165,
+  "computed_pending_acceptance_genomes": 20,
+  "unsearched_genomes": 734,
+  "distinct_stock_execution_receipts": 370,
+  "stock_execution_rows_by_scope_state": {
+    "accepted_protein_scope": 321,
+    "accepted_via_C008_recovery": 9,
+    "computed_pending_closure_and_file_QA": 40
+  },
+  "historical_CPU4_C005_C006_C007_cycle_seconds": [
+    14638.125976,
+    15325.77917,
+    15781.599648
+  ],
+  "historical_CPU4_mean_cycle_seconds_per20": 15248.501597999999,
+  "illustrative_v003_cycle_seconds_per20": 12106.333569613002,
+  "estimated_unsearched_work_days_historical_cycle": 6.477083433409722,
+  "estimated_unsearched_work_days_v003_scenario": 5.142389375055523,
+  "C009_predictor_wall_seconds": 4890.123529368993,
+  "C009_worker_other_wall_seconds": 3828.3509782440087,
+  "C009_worker_cold_wall_seconds": 8718.474507613002,
+  "C009_native_birth_to_WSL_exit_wall_seconds": 8722.409266,
+  "C009_independent_QA_wall_seconds": null,
+  "timing_definition": "Per-stock execution elapsed wall time, not CPU time. Recovery attempt and inherited costs are separate."
+}

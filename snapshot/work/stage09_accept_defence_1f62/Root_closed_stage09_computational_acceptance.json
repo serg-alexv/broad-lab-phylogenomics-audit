@@ -1,0 +1,143 @@
+{
+  "schema": "TREE2_ROOT_STAGE09_COMPUTATIONAL_OUTPUT_ACCEPTANCE_V001",
+  "status": "ROOT_ACCEPTED_CLOSED_FULL900_COMPUTATIONAL_OUTPUT_INTEGRITY_AND_SUPPORTS_ONLY",
+  "event": {
+    "path": "state/local_continuation_v7/events/b998b83e9c7a1282863590d43f15c48373ac9f50bf387c678299036c2c8910b2/event.json",
+    "sha256": "1f62c69d4c961d294251f4d97fbb7019835807b46ba5d3319aa5002f60ce556a",
+    "bytes": 8260
+  },
+  "actual_native_exit": {
+    "path": "state/local_continuation_v7/worker_exits/28048_134381632579484624.json",
+    "sha256": "050101cd65f5862c367349ae3d6aaa05279023f3af2124fd48b75898bb3f9272",
+    "bytes": 653
+  },
+  "worker": {
+    "pid": 28048,
+    "windows_creation_filetime_100ns": 134381632579484624,
+    "creation_time_utc": "2026-11-03T07:07:37.9484624Z",
+    "role": "INDEPENDENT_STAGE09_CORRECTED_PRINTED_PRECISION_SAVED_OUTPUT_VALIDATION",
+    "launch_receipt": {
+      "path": "work/stage09_full900_artifact_validation_v002/detached_registration/launch.json",
+      "sha256": "f608bcdc4bc1436c8d62eb65cfb3e89f7bd0499f846c74a6b9c2d14ccb11c8e4",
+      "bytes": 3047
+    }
+  },
+  "source_plan": {
+    "path": "metadata/stage09_full900_artifact_validation_v002/Root_plan.json",
+    "sha256": "d98c86ee8280fc124eb9a797216cee28808cb7c6d32e9f96f247e07e9d30aa51",
+    "bytes": 11080
+  },
+  "source_admission": {
+    "path": "metadata/stage09_full900_artifact_validation_v002/Root_scientific_admission.json",
+    "sha256": "41010f73ae8c7f72f6aa5e2447f2941b1916d16a6e726e24fcacbdb81a672317",
+    "bytes": 2426
+  },
+  "source_review": {
+    "path": "metadata/stage09_full900_artifact_validation_v002/Root_source_review.json",
+    "sha256": "576999139a894ab12e19c215480c49486666c8436817eca7c0c97b0be79ebf04",
+    "bytes": 3777
+  },
+  "independent_validation_commit": {
+    "path": "analysis/phylogeny/full900_stage09_artifact_validation_v002/COMMITTED.json",
+    "sha256": "3b5af2da4717f965ce3121344d73271d3fecc754fd378d8d57ec2f714058d746",
+    "bytes": 5104
+  },
+  "actual_native_RSS_and_wall_guard": {
+    "path": "work/stage09_full900_artifact_validation_v002/native_file_QC_guard.json",
+    "sha256": "9ccbf3d00259ed641ec1b978e428ec7b1ca620f7c8a7111a40569a97dfebaa52",
+    "bytes": 290
+  },
+  "production_native_WSL_IQTREE_all_owned_closure": {
+    "path": "work/full900_completed_event_74ae/Root_full_owned_completion_closure.json",
+    "sha256": "0b218e768911875f55b0b1bf6d89967945e9f5835977c8217db1b96671ffcef2",
+    "bytes": 3183
+  },
+  "unchanged_entire_completed_prefix_snapshot": {
+    "path": "recovery/full900_completed_20261103/attempt006_prefix/SNAPSHOT_COMMITTED.json",
+    "sha256": "cb058324a784666b93f93f076eca78acd4f6f9d9c4848741f1e993313c712d0e",
+    "bytes": 4949
+  },
+  "file_QC_owner_has_no_children_WSL_namespaces_scientific_leases_or_remaining_owned_FDs": true,
+  "source_level_no_process_creation_and_actual_native_handle_exit_verified": true,
+  "science_four_leases_not_touched_to_prove_controller_exclusivity": true,
+  "current_control_roles": [
+    {
+      "role": "custodian",
+      "identity": {
+        "creation_time_utc": "2026-11-03T06:18:16.1903623Z",
+        "pid": 8516,
+        "windows_creation_filetime_100ns": 134381602961903623
+      },
+      "source": null,
+      "parent_pid": 25408,
+      "command_sha256": "4d7302496ed83de25229c3b7c4f4c815e074d133591c9989013747216507281c"
+    },
+    {
+      "role": "supervisor",
+      "identity": {
+        "creation_time_utc": "2026-11-03T06:18:16.4510918Z",
+        "pid": 33448,
+        "windows_creation_filetime_100ns": 134381602964510918
+      },
+      "source": {
+        "path": "C:\\Users\\wheel\\Documents\\Codex\\2026-10-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\TREE2_WD_20261026\\scripts\\finalization_controller_v007\\tree2_supervisor_v007.py",
+        "bytes": 7053,
+        "sha256": "9c6dc13d71f959cbb45350aa256920f4ce8b137ecb959a9d407c326149554794"
+      },
+      "parent_pid": 8516,
+      "command_sha256": "4bad35d2b91160374e13e342ac4e6317fc6cd8eb3beba2745c53e62393933e78"
+    },
+    {
+      "role": "dispatcher",
+      "identity": {
+        "creation_time_utc": "2026-11-03T06:18:16.7524461Z",
+        "pid": 26052,
+        "windows_creation_filetime_100ns": 134381602967524461
+      },
+      "source": {
+        "path": "C:\\Users\\wheel\\Documents\\Codex\\2026-10-26\\referenced-chatgpt-conversation-this-is-an\\outputs\\TREE2_WD_20261026\\scripts\\finalization_controller_v007\\tree2_dispatcher_v007.py",
+        "bytes": 31086,
+        "sha256": "f4da0ad3b73ceb4bcf879f823368dd606d1bdfe3325f697aa79120253816c568"
+      },
+      "parent_pid": 33448,
+      "command_sha256": "3e4210d4a093fe61beefab0eb407125f83b00f877e8db3424d4e2c387508de7c"
+    },
+    {
+      "role": "THIS_EXACT_EVENT_CLI",
+      "identity": {
+        "pid": 28220,
+        "windows_creation_filetime_100ns": 134381632749487549,
+        "creation_time_utc": "2026-11-03T07:07:54.9487549Z"
+      },
+      "source": null,
+      "parent_pid": 26052,
+      "command_sha256": "743f16c49ada2098f56e0d4d1be691fb9807f705c84b1f2ad3417f489b37bb2f"
+    }
+  ],
+  "exact900tips_and1000bootstrap_tree_validation": true,
+  "SH_aLRT1000_completed_output_provenance_and_columns_validated_algorithm_not_rerun": true,
+  "raw_bootstrap_frequencies_retained_at_full_count_precision": true,
+  "ML_consensus_RF10_diagnostic_not_forced_to_zero": true,
+  "genome_holds": 19,
+  "alignment_sensitive_marker_holds": 3,
+  "composition_flags": 9,
+  "retained_holds": {
+    "source_taxonomy_type_eligibility_uncertainty_masks": "PRESERVED",
+    "genome_holds": 19,
+    "alignment_sensitive_marker_holds": 3,
+    "composition_review_flags": 9,
+    "taxonomy_orthology_model_adequacy_expanded_seed_rescue_obligations": "UNRESOLVED",
+    "broader_Stage09_seed_gene_concordance_rooting_sensitivity": "OWED_SEPARATE_SCIENTIFIC_ADMISSION",
+    "defence_feature_unavailability_failed_unsearched": "UNKNOWN_NOT_NEGATIVE",
+    "full_panel_final_scientific_acceptance": false,
+    "representative_panel_final_acceptance": false
+  },
+  "broader_Stage09_scientific_adequacy_seed_concordance_rooting_expanded_seed_rescue": "OWED_NOT_CLEARED_BY_ARTIFACT_VALIDATION",
+  "full_panel_final_acceptance": false,
+  "representative_final_acceptance": false,
+  "production_scientific_seconds_unchanged": 324742.032609984,
+  "file_QC_wall_seconds_separate": 14.25,
+  "original_production_deadline_unix": 1793887122.165764,
+  "old_failed_validator_claims_and_all_debits_preserved": true,
+  "at_utc": "2026-11-03T07:11:47.926830+00:00"
+}
