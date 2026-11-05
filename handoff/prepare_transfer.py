@@ -149,7 +149,13 @@ def assemble():
                  payload_bytes=sum(part["bytes"] for group in groups for part in group["parts"]),
                  created_utc=builder.utc(), release_scope="one signed registry receipt replaced by separately documented sanitized copy")
     builder.atomic_json(TRANSFER / "package_index.json", index)
+    return verify_existing()
 
+
+def verify_existing():
+    builder.BUNDLE = TRANSFER
+    index = load(TRANSFER / "package_index.json")
+    exclusion = load(PUBLISH / "release_exclusion.json")
     print("Verifying the exact release-scoped snapshot", flush=True)
     process = subprocess.run([sys.executable, "-B", "-u", str(SOURCE / "verify_and_restore.py"), str(TRANSFER)], check=False)
     builder.atomic_json(TRANSFER / "VERIFICATION.json", {
@@ -164,7 +170,9 @@ def assemble():
 if __name__ == "__main__":
     if sys.argv[1:] == ["--filter-evidence"]:
         print(json.dumps(clean_evidence()), flush=True)
+    elif sys.argv[1:] == ["--verify-existing"]:
+        raise SystemExit(verify_existing())
     elif not sys.argv[1:]:
         raise SystemExit(assemble())
     else:
-        raise SystemExit("usage: prepare_transfer.py [--filter-evidence]")
+        raise SystemExit("usage: prepare_transfer.py [--filter-evidence | --verify-existing]")

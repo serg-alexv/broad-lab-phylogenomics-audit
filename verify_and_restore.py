@@ -5,6 +5,8 @@ Usage: python verify_and_restore.py [BUNDLE] [--restore NEW_DIRECTORY]
 The default bundle is the directory containing this script.
 Verification uses a temporary disk index inside the writable bundle directory.
 Ordered group manifests can stand in for an omitted combined files.ndjson.
+Restoring case-distinct evidence requires a case-sensitive destination, such as
+a native Linux filesystem or a WSL distribution's Linux filesystem.
 """
 
 import argparse
@@ -67,7 +69,7 @@ def portable_key(name):
 
 
 def disk_key(name):
-    return hashlib.sha256(portable_key(name).encode("utf-8")).digest()
+    return hashlib.sha256(name.encode("utf-8")).digest()
 
 
 def bundle_file(root, name):
@@ -265,7 +267,7 @@ def load_inventory(root, database):
         created = database.execute("INSERT OR IGNORE INTO nodes (key, name) VALUES (?, ?)", (key, name))
         if created.rowcount == 0:
             existing = database.execute("SELECT name, group_name FROM nodes WHERE key = ?", (key,)).fetchone()
-            require(existing == (name, None), f"Portable path collision: {name}")
+            require(existing == (name, None), f"File and directory path conflict: {name}")
 
     entries = 0
     for manifest_group, line in manifest_lines(root, manifest, archives, grouped):
@@ -282,7 +284,7 @@ def load_inventory(root, database):
             database.execute("INSERT INTO nodes (key, name, group_name, size, sha256) VALUES (?, ?, ?, ?, ?)",
                              (disk_key(name), name, group, ref["bytes"], bytes.fromhex(ref["sha256"])))
         except sqlite3.IntegrityError:
-            raise ValueError(f"Portable path collision or duplicate manifest file: {name}") from None
+            raise ValueError(f"File and directory path conflict or duplicate manifest file: {name}") from None
         groups[group][0] += 1
         groups[group][1] += ref["bytes"]
         entries += 1
@@ -294,6 +296,49 @@ def load_inventory(root, database):
                 f"Index and manifest group totals differ: {archive['group']}")
     database.commit()
     return archives
+
+
+def filesystem_aliases(path):
+    """Probe actual filesystem name equivalence in an otherwise empty directory."""
+    uppercase = path / "CaseProbe"
+    composed = path / "\u00e9"
+    created = []
+    try:
+        uppercase.touch(exist_ok=False)
+        created.append(uppercase)
+        composed.touch(exist_ok=False)
+        created.append(composed)
+        return (path / "caseprobe").exists(), (path / "e\u0301").exists()
+    finally:
+        for item in created:
+            item.unlink(missing_ok=True)
+
+
+def preflight_restore(destination, database):
+    # Probe the destination itself and a newly created child, because some
+    # filesystems can apply case sensitivity per directory.
+    root_aliases = filesystem_aliases(destination)
+    with tempfile.TemporaryDirectory(prefix=".tree2-name-test-", dir=destination) as probe:
+        child_aliases = filesystem_aliases(Path(probe))
+    case_alias = root_aliases[0] or child_aliases[0]
+    unicode_alias = root_aliases[1] or child_aliases[1]
+    if not case_alias and not unicode_alias:
+        return
+
+    database.execute("CREATE TABLE restore_names (key BLOB PRIMARY KEY, name TEXT) WITHOUT ROWID")
+    for (name,) in database.execute("SELECT name FROM nodes"):
+        normalized = unicodedata.normalize("NFC", name) if unicode_alias else name
+        normalized = normalized.casefold() if case_alias else normalized
+        key = disk_key(normalized)
+        try:
+            database.execute("INSERT INTO restore_names VALUES (?, ?)", (key, name))
+        except sqlite3.IntegrityError:
+            other = database.execute("SELECT name FROM restore_names WHERE key = ?", (key,)).fetchone()[0]
+            raise ValueError(f"Destination filesystem aliases {other!r} and {name!r}. "
+                             "Choose a new destination on a filesystem that preserves both names "
+                             "(for example, a native Linux or WSL Linux filesystem).") from None
+    database.execute("DROP TABLE restore_names")
+    database.commit()
 
 
 def verify_member(archive, member, ref, destination):
@@ -384,6 +429,7 @@ def run(bundle, restore):
                 destination.mkdir(exist_ok=False)
                 with (destination / MARKER).open("x", encoding="utf-8") as marker:
                     marker.write("Restore has not passed complete bundle verification.\n")
+                preflight_restore(destination, database)
             for archive in archives:
                 verify_archive(root, archive, database, destination)
                 print(f"Verified {archive['group']}: {archive['members']:,} files, "

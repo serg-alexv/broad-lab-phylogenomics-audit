@@ -4,7 +4,7 @@
   "inventory_source_snapshot_utc": "2026-11-05T16:14:31.353411+00:00",
   "relative_path_bases": {
     "project_files": "root of the verified restored Tree 2 project",
-    "bundle_files": "root directory containing package_index.json and verify_and_restore.py"
+    "bundle_files": "repository root for verify_and_restore.py and repository handoff/ for both coverage reports"
   },
   "scientific_checkpoint": {
     "acquired_source_records": 1170,
@@ -678,8 +678,8 @@
     },
     {
       "path": "verify_and_restore.py",
-      "sha256": "0bc398faa9a0e2b6126ccc60ccfb5f0298a34222390e474597ec2665daacb490",
-      "bytes": 17055
+      "sha256": "6421dd3611cfada4bbec7faf6a178cc8d2a3956d5b0e7b00d6d62ed86cb333f1",
+      "bytes": 19279
     }
   ],
   "excluded_or_host_local": [

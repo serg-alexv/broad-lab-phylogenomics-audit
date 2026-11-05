@@ -20,7 +20,7 @@ This is the 5 November 2026 audit snapshot of the authoritative WD Tree 2 worksp
 
 ## Download and verify
 
-Clone or download this repository. Run the following from its root with Python 3.11 or later. The downloader verifies each asset's byte count and SHA-256 and reuses verified files on retry. The restore directory must be new and its parent must exist.
+Clone or download this repository. Run the following from its root with Python 3.11 or later. The downloader verifies each asset's byte count and SHA-256 and reuses verified files on retry. Use a case-sensitive filesystem for the restore, such as the Linux home filesystem under WSL. The archive preserves two intentionally case-distinct files from a runtime probe. The restore directory must be new and its parent must exist.
 
 ```text
 python download_snapshot.py ../tree2_bundle

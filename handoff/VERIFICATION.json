@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "index": {
+    "path": "package_index.json",
+    "sha256": "b52bdbf26539a7de7a3c294ab3b553b29438eca3ae15ba1e8654b707d106dc80",
+    "bytes": 61981
+  },
+  "release_exclusion": {
+    "path": "evidence/model_routes/oci_metadata_20261027/registry_manifest_receipts.json",
+    "sha256": "3f7f2556ce5fea7e0402f5df397cc1f8c0e302e4ca42eeb3b197266a0b184908",
+    "bytes": 5812,
+    "type": "file",
+    "reason": "original_registry_receipt_contains_presigned_URL_credentials"
+  },
+  "members": 1674413,
+  "unpacked_bytes": 27905946724,
+  "payload_bytes": 7204350160,
+  "verified_utc": "2026-11-05T17:52:02.746585+00:00"
+}
