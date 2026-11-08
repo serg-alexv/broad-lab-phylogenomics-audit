@@ -1,0 +1,49 @@
+name: Tree 2 Stage 10C independent nine-locus profile check
+on:
+  push:
+    branches:
+      - audit/tree2-stage10c-model-roles-20261108
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  targeted-model-roles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout scientific script and original source pins
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reuse original SHA-verified 44-protein artifact (no bulk genomic rerun)
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 42492932970
+          repository: serg-alexv/broad-lab-phylogenomics-audit
+          github-token: ${{ github.token }}
+          name: tree2-stage10c-nine-loci-44-original-peptides
+          path: ${{ runner.temp }}/stage10c/peptides
+      - name: Install HMMER for independent targeted model role testing
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq hmmer
+          hmmsearch -h | head -5
+      - name: Verify source peptides and run pinned public profile banks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 audit/stage10c_independent_profile_check.py \
+            "$RUNNER_TEMP/stage10c/peptides" \
+            "$RUNNER_TEMP/stage10c/models" \
+            "$RUNNER_TEMP/stage10c/results"
+      - name: Store bounded original model source and new role evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tree2-stage10c-44-protein-targeted-model-role-evidence
+          path: ${{ runner.temp }}/stage10c/results
+          if-no-files-found: warn
+          retention-days: 30
