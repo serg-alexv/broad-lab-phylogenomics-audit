@@ -1,0 +1,31 @@
+name: Tree 2 Stage 10C 44 pinned original proteins
+on:
+  push:
+    branches:
+      - audit/tree2-stage10c-nine-loci-20261108
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract-original-proteins:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Extract 44 pinned Prodigal peptide sequences from historical release
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 audit/stage10c_extract_pinned_peptides.py \
+            "$RUNNER_TEMP/stage10c_parts" \
+            "$RUNNER_TEMP/stage10c_peptides"
+      - name: Publish exact-source peptides and hashes (not a biological acceptance)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tree2-stage10c-nine-loci-44-original-peptides
+          path: ${{ runner.temp }}/stage10c_peptides
+          retention-days: 30
+          if-no-files-found: error
