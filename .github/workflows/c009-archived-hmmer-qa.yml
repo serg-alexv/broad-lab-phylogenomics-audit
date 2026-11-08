@@ -1,0 +1,44 @@
+name: C009 frozen raw HMMER evidence QA
+on:
+  push:
+    branches:
+      - audit/c009-raw-hmmer-qa-20261108
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archived-raw-hmmer-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout audit code (not the historical WD workspace)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Retrieve exact frozen C009 release asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/c009"
+          curl --fail --location --show-error --silent --retry 4 --retry-delay 2 \
+            --connect-timeout 30 --max-time 900 \
+            -o "$RUNNER_TEMP/c009/c009.tar.gz.part0001" \
+            "https://github.com/serg-alexv/broad-lab-phylogenomics-audit/releases/download/tree2-audit-20261105/results--defence_bulk_C009_v003.tar.gz.part0001"
+          printf '%s  %s\n' \
+            'ff49a11de531ecce280df61d8213dd15eca62d66af17392bb0b6a3c97c14a2dd' \
+            "$RUNNER_TEMP/c009/c009.tar.gz.part0001" | sha256sum --check
+      - name: Independently rehash archived C009 HMMER raw evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 audit/c009_raw_hmmer_archive_qa_v2.py \
+            "$RUNNER_TEMP/c009/c009.tar.gz.part0001" \
+            "$RUNNER_TEMP/c009/C009_ARCHIVED_RAW_HMMER_FILE_QA_V2.json"
+      - name: Publish report without touching accepted ledger
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c009-archived-raw-hmmer-qa-v2
+          path: ${{ runner.temp }}/c009/C009_ARCHIVED_RAW_HMMER_FILE_QA_V2.json
+          retention-days: 30
+          if-no-files-found: error
