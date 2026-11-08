@@ -117,7 +117,7 @@ def main():
  for origin in SOURCES:
   bank=work/(origin.replace("-","_")+".hmm")
   dom=out/(origin.replace("-","_")+".domtblout")
-  cmd=["hmmsearch","--cpu","2","--noali","--notextw","--E","10","--domE","10",
+  cmd=["hmmsearch","--cpu","2","--noali","--notextw","-E","10","--domE","10",
        "--domtblout",str(dom),str(bank),str(inp/"44_verified_original_source_peptides.faa")]
   print("BEGIN_TARGETED_HMMER",origin,flush=True)
   with (out/(origin.replace("-","_")+".log")).open("w") as logfile:
