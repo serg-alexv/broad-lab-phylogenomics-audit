@@ -1,0 +1,53 @@
+name: Tree 2 Stage 10B targeted original HMMER evidence
+on:
+  push:
+    branches:
+      - audit/tree2-stage10b-locus-evidence-20261108
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract-original-hmmer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout read-only audit code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Retrieve original C003 C005 C006 C007 C008 and provenance archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/stage10b/source"
+          assets=(
+            data_provenance.tar.gz.part0001
+            results--defence_bulk_C003_v001.tar.gz.part0001
+            results--defence_bulk_C005_v002.tar.gz.part0001
+            results--defence_bulk_C006_v002.tar.gz.part0001
+            results--defence_bulk_C007_v002.tar.gz.part0001
+            results--defence_bulk_C008_recovery_v003.tar.gz.part0001
+            results--defence_bulk_C008_v002.tar.gz.part0001
+          )
+          for asset in "${assets[@]}"; do
+            echo "RETRIEVING_PINNED_ASSET $asset"
+            curl --fail --location --show-error --silent --retry 4 --retry-delay 3 \
+              --connect-timeout 30 --max-time 1200 \
+              -o "$RUNNER_TEMP/stage10b/source/$asset" \
+              "https://github.com/serg-alexv/broad-lab-phylogenomics-audit/releases/download/tree2-audit-20261105/$asset"
+          done
+      - name: Verify all release bytes and extract six-locus original stock and HMMER evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 audit/stage10b_extract_original_hmmer.py \
+            "$RUNNER_TEMP/stage10b/source" \
+            "$RUNNER_TEMP/stage10b/output"
+      - name: Upload narrow evidence only
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tree2-stage10b-six-original-loci
+          path: ${{ runner.temp }}/stage10b/output
+          if-no-files-found: error
+          retention-days: 30
