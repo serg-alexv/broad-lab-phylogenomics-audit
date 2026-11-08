@@ -1,0 +1,18 @@
+{
+  "schema": "TREE2_STAGE10B_900_TIP_PROVISIONAL_OVERLAY_RECEIPT_V1",
+  "status": "PASS_STAGE10B_PROVISIONAL_OVERLAY_900_OF_900",
+  "source_file": "900_tip_provisional_family_matrix.tsv (ChatGPT Stage 9 conversation artifact)",
+  "source_sha256": "aece9f05d7d66591f7682a024b7e74f6163813b06e0fab543a6b49db7881e4c2",
+  "output_file": "900_TIP_STAGE10B_PROVISIONAL_ANNOTATION_OVERLAY.tsv (retained in current work session; not uploaded to GitHub)",
+  "output_sha256": "693f7d86cb75e6e37002fb44a3af0d96ae7eea6d9c5f0a576341ed56e1dfe324",
+  "tree_tips": 900,
+  "loci_with_source_model_role_review": 5,
+  "unreviewed_tree_tips": 895,
+  "held_genomes_excluded": [
+    "GCF_024701915.1"
+  ],
+  "all_original_stage9_column_values_preserved": true,
+  "biological_systems_accepted": 0,
+  "final_ring_accepted": false,
+  "full_919_model_calls_modified": false
+}
