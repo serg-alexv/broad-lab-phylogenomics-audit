@@ -1,0 +1,7 @@
+accession	cohort	in_900_tip_tree	provisional_molecular_disposition	key_original_hmmer_evidence	original_defensefinder_context	biological_system_count_accepted
+GCF_001870205.1	C003	YES	II_A_FAVORED_CSN2	Csn2 gene000643 3.9e-23; Csn2 gene000644 2.9e-41; Cas9 Cas1 Cas2 strong	DF II-C includes only Cas9 Cas1 Cas2	NO
+GCF_002847845.2	C005	YES	II_A_FAVORED_CSN2	Csn2 gene000430 8.3e-24; Cas9 Cas1 Cas2 strong	DF II-C excludes gene000430 Csn2	NO
+GCF_024701915.1	C006	NO	MCRBC_ONE_GENE_CROSSHIT_UNRESOLVED	RM II MTase gene001758 4.3e-101; REase-II gene001760 1e-48	DF one-gene McrBC model on gene001760 (RM_Type_IV__FAM_1 1.1e-46)	NO
+GCF_026131645.1	C007	YES	III_D_FAVORED_DF_CONCORDANT	Cas10d gene001553 3e-109; Cas5 IIId gene001554 6.4e-103; Cas7 IIId gene001555 2e-90	DF has III-D five-gene call AND additional nested III-B two-gene call	NO
+GCF_030222485.2	C008	YES	II_A_FAVORED_CSN2	Csn2 gene000430 8.3e-24; Cas9 Cas1 Cas2 strong	DF II-C excludes gene000430 Csn2	NO
+GCF_900129415.1	C006	YES	TYPE_IV_VS_TYPE_I_DIFFERENT_ROLES_UNRESOLVED	mREase-IV gene002103 6.5e-228; HsdM gene002107 1.5e-180; HsdS gene002108 8.6e-86; HsdR gene002111 4e-255	DF Type I includes a weaker crosshit on gene002103 plus independent HsdR gene002111	NO
