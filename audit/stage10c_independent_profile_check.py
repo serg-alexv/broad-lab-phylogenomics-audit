@@ -64,6 +64,14 @@ def build_banks(work):
     # Only native HMMER 3 flat model files. No unverified conversion or model rebuilding.
     if not data.lstrip().startswith((b"HMMER3/",b"HMMER3")) or b"\n//" not in data:
      invalid+=1;continue
+    if origin=="CasFinder":
+     # Per-file parser check; no model recalibration or reconstruction.
+     valid_model=subprocess.run(["hmmconvert",str(p)],stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+     if valid_model.returncode:
+      invalid+=1
+      print("SKIPPED_INVALID_UPSTREAM_CASFINDER_HMM",p.relative_to(unpack).as_posix(),
+            hashlib.sha256(data).hexdigest(),flush=True)
+      continue
     if not data.endswith(b"\n"):data+=b"\n"
     for match in re.finditer(rb"(?m)^NAME\s+(\S+)\s*$",data):
      id=match.group(1).decode("utf8","replace")
