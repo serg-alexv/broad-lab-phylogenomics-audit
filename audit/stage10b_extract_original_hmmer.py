@@ -181,7 +181,36 @@ def main(src,out):
  # Make evidence accessible for following analysis without exposing 6*1,000 full receipts or raw files.
  for x in by_locus:
   x.pop("target_raw_hmmer_hits")
+ # Bind each original DefenseFinder gembase gene ID to its verified canonical ID and
+ # retain exact stock gene-level role assignments (without rerunning MacSyFinder).
+ target_map={}
+ for acc in TARGET:
+  canonical_targets={acc+"|"+gid for gid in TARGET[acc]}
+  mapping=orig_maps.get(acc,{}).get("df_to_canonical",{})
+  target_map[acc]={dfid:canon for dfid,canon in mapping.items() if canon in canonical_targets}
+ df_role_rows=[]
+ for path,record in stockfiles.items():
+  if not (path.endswith("_defense_finder_genes.tsv") or path.endswith("_defense_finder_hmmer.tsv")):
+   continue
+  acc=next((a for a in TARGET if "/"+a+"/" in path),None)
+  if acc is None:continue
+  for row in csv.DictReader(io.StringIO(record["content"]),delimiter="\t"):
+   gene=target_map[acc].get(row.get("hit_id",""))
+   if gene:
+    df_role_rows.append({"accession":acc,"canonical_protein_id":gene,
+      "source_path":path,"source_sha256":record["sha256"],
+      "DF_gene_id":row["hit_id"],"DF_hit_name":row.get("gene_name",""),
+      "DF_model":row.get("model_fqn",""),"DF_hit_i_eval":row.get("hit_i_eval",row.get("i_eval","")),
+      "DF_hit_score":row.get("hit_score",""),"DF_hit_status":row.get("hit_status",""),
+      "DF_system_id":row.get("sys_id","")})
+ with (out/"target_defensefinder_stock_gene_roles.tsv").open("w",newline="") as f:
+  cols=["accession","canonical_protein_id","source_path","source_sha256","DF_gene_id",
+        "DF_hit_name","DF_model","DF_hit_i_eval","DF_hit_score","DF_hit_status","DF_system_id"]
+  writer=csv.DictWriter(f,fieldnames=cols,delimiter="\t");writer.writeheader();writer.writerows(df_role_rows)
  metadata.update({
+  "target_df_id_mapping":target_map,
+  "target_df_stock_role_rows":len(df_role_rows),
+  "original_defensefinder_raw_samples":[h for h in rawhits if "/DefenseFinder/" in h["source_path"]][:5],
   "genomes":by_locus,
   "phase_source_gates":gates,
   "original_stock_file_inventory":[{"path":p,"sha256":v["sha256"],"bytes":v["bytes"]}
