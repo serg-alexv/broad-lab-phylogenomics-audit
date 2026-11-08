@@ -1,0 +1,55 @@
+name: Tree 2 Stage 10C pinned protein-file discovery
+on:
+  push:
+    branches:
+      - audit/tree2-stage10c-nine-loci-20261108
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-manifest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout evidence branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Inspect the original verified 919-genome protein inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/stage10c"
+          curl --fail --location --silent --show-error --retry 4 \
+            --output "$RUNNER_TEMP/stage10c/manifest.ndjson" \
+            "https://github.com/serg-alexv/broad-lab-phylogenomics-audit/releases/download/tree2-audit-20261105/manifest--results--uniform_annotation_v001.ndjson"
+          printf '%s  %s\n' \
+            '822ba81e55ce16587d8c658c256284c60625913e4d6fde297695062fe1c25fd3' \
+            "$RUNNER_TEMP/stage10c/manifest.ndjson" | sha256sum --check
+          python3 - "$RUNNER_TEMP/stage10c/manifest.ndjson" "$RUNNER_TEMP/stage10c/files.json" <<'PY'
+          import json,re,sys
+          path,out=sys.argv[1:]
+          targets=['GCF_001885945.1','GCF_002706745.1','GCF_003946485.1','GCF_016861785.1','GCF_024397795.1','GCF_053758405.1','GCF_053761245.1','GCF_054784775.1','GCF_057364865.1']
+          found={t:[] for t in targets}
+          with open(path) as f:
+           for line in f:
+            for t in targets:
+             if t in line:
+              try: obj=json.loads(line)
+              except:obj={'raw':line[:500]}
+              found[t].append(obj)
+          def describe(obj):
+           s=json.dumps(obj)
+           return s[:500]
+          with open(out,'w') as f:json.dump(found,f,indent=2)
+          for k,v in found.items():
+           print('TARGET_INVENTORY',k,len(v),flush=True)
+           for row in v[:7]:print('TARGET_ROW',k,describe(row),flush=True)
+          assert len(found)==9
+          PY
+      - name: Save manifest-only proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage10c-target-archived-protein-inventory
+          path: ${{ runner.temp }}/stage10c/files.json
+          retention-days: 30
